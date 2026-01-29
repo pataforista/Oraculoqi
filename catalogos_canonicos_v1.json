@@ -1,0 +1,124 @@
+{
+  "catalogos_canonicos": {
+    "categoria": [
+      "aceptacion",
+      "accion",
+      "accion_comprometida",
+      "aprendizaje",
+      "atencion",
+      "autoconfianza",
+      "autocuidado",
+      "autorregulacion",
+      "cuerpo",
+      "comunicacion",
+      "compasion",
+      "constancia",
+      "control",
+      "creatividad",
+      "discernimiento",
+      "dialogo_interno",
+      "duelo",
+      "ego",
+      "eleccion",
+      "energia",
+      "esperanza",
+      "finitud",
+      "flexibilidad",
+      "gratitud",
+      "habitos",
+      "honestidad",
+      "humildad",
+      "identidad",
+      "incertidumbre",
+      "lenguaje",
+      "lenguaje_y_realidad",
+      "limites",
+      "momento_presente",
+      "no_saber",
+      "paciencia",
+      "priorizacion",
+      "practica",
+      "regulacion",
+      "relaciones",
+      "relacion_consigo",
+      "resiliencia",
+      "saturacion",
+      "silencio",
+      "simplicidad",
+      "sombra",
+      "tiempo",
+      "tolerancia",
+      "valores",
+      "wu_wei",
+      "self_como_contexto",
+      "defusion",
+      "claridad",
+      "experiencia_directa",
+      "deseo",
+      "responsabilidad",
+      "coherencia"
+    ],
+    "linaje": [
+      "zen",
+      "taoismo",
+      "budismo",
+      "ACT",
+      "sufismo",
+      "estoicismo",
+      "mindfulness",
+      "existencialismo",
+      "psicologia_profunda",
+      "sistemica",
+      "humanista",
+      "semantica_general",
+      "neurociencia",
+      "trauma",
+      "contemporaneo"
+    ]
+  },
+  "reglas_de_uso": {
+    "formato": {
+      "snake_case": true,
+      "sin_acentos": true,
+      "sin_espacios": true,
+      "sin_guiones": true
+    },
+    "cardinalidad": {
+      "categoria": "exactamente_1",
+      "linaje": "exactamente_1"
+    },
+    "criterios_categoria": [
+      "Debe describir la funcion psicologica dominante (no el tema literario).",
+      "Evitar sinonimos usar 'atencion' y no 'foco'; usar 'relaciones' y no 'vinculo'.",
+      "Si una entrada podria caer en dos, elige la que mejor predice la practica_hoy."
+    ],
+    "criterios_linaje": [
+      "Usar el linaje mas cercano a la fuente o tradicion real.",
+      "Si es mezcla o derivacion moderna, usar 'contemporaneo' en vez de forzar una tradiciones.",
+      "Si se apoya en un marco clinico (ACT, trauma), preferir ese linaje aunque tenga tono zentaoista."
+    ],
+    "control_antirredundancia": {
+      "por_bloque_25": {
+        "max_por_categoria": 3,
+        "max_por_linaje": 6
+      },
+      "distancia_semantica": [
+        "No repetir la misma practica_hoy con cambios cosmeticos.",
+        "Si reaparece un motivo (p.ej., defusion), cambiar el mecanismo lenguaje_y_realidad vs dialogo_interno vs atencion.",
+        "Evitar dos frases consecutivas con el mismo verbo rector (p.ej., 'elige', 'nombra', 'di')."
+      ]
+    },
+    "nota_editorial": {
+      "tipos_permitidos": [
+        "cita_directa",
+        "parafrasis",
+        "adaptacion_libre",
+        "inspiracion"
+      ],
+      "politica_atribucion": [
+        "Si no hay autor verificable declarar 'atribucion variable' o 'autor desconocido'.",
+        "No usar 'cita directa' salvo estar razonablemente seguro del origen."
+      ]
+    }
+  }
+}

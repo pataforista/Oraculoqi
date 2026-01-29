@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Trozos de Sabiduría</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#050608">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <link rel="stylesheet" href="Galaxy.css">
+  <link rel="stylesheet" href="ElectricBorder.css">
+  <link rel="stylesheet" href="ProfileCard.css">
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      background: #050608;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Dataset -->
+  <script src="dataset_qi_v1.js?v=1.1.0"></script>
+
+  <!-- React & Babel for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react",
+        "react-dom/client": "https://esm.sh/react-dom/client"
+      }
+    }
+  </script>
+
+  <script type="text/babel" data-type="module">
+    import React from 'react';
+    import { createRoot } from 'react-dom/client';
+    import App from './App.js';
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js");
+      });
+    }
+  </script>
+</body>
+
+</html>
