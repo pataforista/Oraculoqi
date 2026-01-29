@@ -614,9 +614,9 @@ void main() {
             .date-sync { font-size: 0.75rem; opacity: 0.6; margin: 2px 0 0; text-transform: uppercase; letter-spacing: 0.05em; }
             .card-stage { display: flex; justify-content: center; perspective: 1000px; }
             .card-anim-container { width: 100%; transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
-            .card-placeholder { aspect-ratio: 3 / 4.2; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 24px; cursor: pointer; height: 100%; width: 100%; }
+            .card-placeholder { aspect-ratio: 3 / 5.2; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 24px; cursor: pointer; height: 100%; width: 100%; }
             .reveal-overlay { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #c5a059; text-transform: uppercase; letter-spacing: 0.1em; }
-            .pc-text-container { padding: 10px 0; display: flex; flex-direction: column; gap: 15px; max-height: 300px; overflow-y: auto; scrollbar-width: none; }
+            .pc-text-container { flex: 1; display: flex; flex-direction: column; gap: 15px; scrollbar-width: none; min-height: 0; }
             .pc-text-container::-webkit-scrollbar { display: none; }
             .card-frase { font-size: 1.3rem; font-weight: 500; line-height: 1.4; margin: 0; }
             .card-interpretacion { font-size: 0.95rem; opacity: 0.8; line-height: 1.6; margin: 0; }
