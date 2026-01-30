@@ -42,7 +42,7 @@
     background: var(--inner-gradient);
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 38px;
     color: #fff;
     justify-content: center;
 }
@@ -117,4 +117,56 @@
     margin: 0;
     line-height: 1.5;
     opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+    .pc-inside {
+        padding: 46px;
+    }
+
+    .pc-frase {
+        font-size: 1.8rem;
+    }
+
+    .pc-interpretacion {
+        font-size: 1rem;
+    }
+
+    .pc-practica p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pc-card {
+        border-radius: 28px;
+    }
+
+    .pc-inside {
+        padding: 26px;
+    }
+
+    .pc-content {
+        gap: 16px;
+    }
+
+    .pc-frase {
+        font-size: 1.35rem;
+    }
+
+    .pc-interpretacion {
+        font-size: 0.9rem;
+    }
+
+    .pc-practica {
+        padding-left: 16px;
+    }
+
+    .pc-practica label {
+        font-size: 0.65rem;
+    }
+
+    .pc-practica p {
+        font-size: 0.8rem;
+    }
 }
