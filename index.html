@@ -375,6 +375,22 @@
         try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(`${data.text}\n${data.url}`); alert('Copiado al portapapeles'); } } catch (e) { console.error(e); }
       }, [card]);
 
+      const refreshCard = useCallback(() => {
+        if (!window.QI_DATASET_V1) return;
+        const deck = window.QI_DATASET_V1.cards;
+        let newCard;
+        // Ensure we get a different card if possible
+        do {
+          newCard = deck[Math.floor(Math.random() * deck.length)];
+        } while (card && newCard.id === card.id && deck.length > 1);
+
+        // Reset state for the new card
+        setIsRevealed(false);
+        // Small timeout to allow the transition to start if needed, 
+        // but here we just update the card immediately.
+        setCard(newCard);
+      }, [card]);
+
       if (!card) return <div className="loading">Cargando sabiduría...</div>;
       const isFav = favorites.some(f => f.id === card.id);
 
@@ -411,7 +427,7 @@
                     </button>
                   </div>
 
-                  <button className="btn-refresh" onClick={() => window.location.reload()}>Otra sincronía para hoy</button>
+                  <button className="btn-refresh" onClick={refreshCard}>Otra sincronía para hoy</button>
                 </div>
               )}
             </div>
