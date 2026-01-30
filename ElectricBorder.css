@@ -28,26 +28,26 @@
 .eb-glow-1 {
     position: absolute;
     inset: 2px;
-    border-radius: inherit;
+    border-radius: var(--radius-panel, 6px);
     box-shadow: inset 0 0 15px 2px var(--electric-border-color);
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .eb-glow-2 {
     position: absolute;
     inset: 0;
-    border-radius: inherit;
+    border-radius: var(--radius-panel, 6px);
     box-shadow: 0 0 10px 1px var(--electric-border-color);
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .eb-background-glow {
     position: absolute;
     inset: -20px;
-    border-radius: inherit;
+    border-radius: var(--radius-panel, 6px);
     background: radial-gradient(circle, var(--electric-border-color) 0%, transparent 70%);
     filter: blur(30px);
-    opacity: 0.05;
+    opacity: 0.03;
 }
 
 .eb-content {
@@ -55,6 +55,7 @@
     z-index: 2;
     width: 100%;
     height: 100%;
-    border-radius: inherit;
-    overflow: hidden;
+    border-radius: var(--radius-panel, 6px);
+    overflow: visible;
+    /* Allow content like cards to show overflow if needed, though they usually manage their own */
 }

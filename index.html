@@ -8,11 +8,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;600&display=swap"
     rel="stylesheet">
 
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#050608">
+  <meta name="theme-color" content="#121015">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
 
   <link rel="stylesheet" href="Galaxy.css">
@@ -20,16 +21,77 @@
   <link rel="stylesheet" href="ProfileCard.css">
 
   <style>
+    :root {
+      /* Ritual Aesthetic Tokens - Default Dark (Médico Gótico) */
+      --bg-primary: #121015;
+      --bg-secondary: #1A1620;
+      --bg-panel: #201B28;
+      --bg-etched: #15121A;
+
+      --ink-primary: #E8DFC8;
+      --ink-secondary: #B8AE97;
+      --ink-muted: #7E7768;
+
+      --ritual-red: #C4455C;
+      --ritual-pink: #E27DA1;
+      --ritual-purple: #6B4E77;
+
+      --risk-amber: #D0A94A;
+      --risk-shadow: #3A2A2A;
+
+      --tech-muted: #5FA3A2;
+      --tech-glow: rgba(95, 163, 162, 0.25);
+
+      --metal-bronze: #7A5C3A;
+      --metal-copper: #8C5A3C;
+
+      --font-base: "Inter", "Source Sans 3", system-ui, sans-serif;
+      --font-ritual: "EB Garamond", serif;
+      --font-mono: "JetBrains Mono", "IBM Plex Mono", monospace;
+
+      --font-line-height: 1.55;
+      --radius-panel: 6px;
+      --radius-chip: 3px;
+
+      --border-thin: 1px solid rgba(232, 223, 200, 0.15);
+      --border-ritual: 1px solid rgba(196, 69, 92, 0.35);
+
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+
+      --transition-slow: 320ms cubic-bezier(0.3, 0, 0.2, 1);
+      --transition-xslow: 520ms cubic-bezier(0.3, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      /* Contemplativo Aesthetic Tokens (Light) */
+      --bg-primary: #F3D6E4;
+      --bg-secondary: #E7BFD6;
+      --bg-panel: #F7EAF1;
+      --bg-etched: #F0DCEA;
+
+      --ink-primary: #2A2431;
+      --ink-secondary: #5A4E61;
+      --ink-muted: #8E7A94;
+
+      --border-thin: 1px solid rgba(42, 36, 49, 0.1);
+      --border-ritual: 1px solid rgba(196, 69, 92, 0.2);
+    }
+
     body,
     html {
       margin: 0;
       padding: 0;
-      background: #050608;
+      background: var(--bg-primary);
       height: 100%;
       width: 100%;
       overflow-x: hidden;
-      color: white;
-      font-family: 'Noto Serif', serif;
+      color: var(--ink-primary);
+      font-family: var(--font-base);
+      transition: background var(--transition-slow);
     }
 
     .app-container {
@@ -37,7 +99,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 24px 24px 72px;
+      padding: var(--space-lg) var(--space-lg) calc(var(--space-xl) * 4);
     }
 
     .main-content {
@@ -45,9 +107,9 @@
       max-width: 520px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: var(--space-xl);
       z-index: 10;
-      margin-top: 20px;
+      margin-top: var(--space-md);
     }
 
     /* Header Styling */
@@ -56,82 +118,53 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 15px;
-      margin-bottom: 10px;
+      gap: var(--space-md);
+      margin-bottom: var(--space-sm);
     }
 
     .app-logo {
       width: 64px;
       height: 64px;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      border-radius: var(--radius-panel);
+      border: var(--border-thin);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     .brand-title {
+      font-family: var(--font-ritual);
       margin: 0;
-      font-size: 1.5rem;
-      font-weight: 600;
+      font-size: 1.8rem;
+      font-weight: 500;
       letter-spacing: -0.01em;
+      color: var(--ink-primary);
     }
 
     .sync-label {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       opacity: 0.5;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.2em;
       line-height: 1.4;
+      color: var(--ink-muted);
     }
 
-    /* Actions Bar */
-    .actions-bar {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-top: -10px;
-    }
-
-    .action-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: white;
-      width: 48px;
-      height: 48px;
-      border-radius: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-
-    .action-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
-    }
-
-    .action-btn.is-fav {
-      color: #c5a059;
-      border-color: rgba(197, 160, 89, 0.3);
-      background: rgba(197, 160, 89, 0.1);
-    }
-
-    /* Reveal Area */
+    /* Card Area */
     .card-stage {
       display: flex;
       justify-content: center;
       perspective: 1000px;
+      width: 100%;
     }
 
     .card-placeholder {
-      aspect-ratio: 3 / 4;
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(10px);
-      border-radius: 40px;
-      cursor: pointer;
-      height: 100%;
       width: 100%;
+      max-width: 480px;
+      min-height: 480px;
+      background: var(--bg-panel);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      cursor: pointer;
+      position: relative;
     }
 
     .reveal-overlay {
@@ -140,31 +173,174 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 600;
-      color: #c5a059;
+      font-family: var(--font-ritual);
+      font-weight: 500;
+      color: var(--ritual-pink);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      font-size: 1rem;
+      padding: var(--space-xl);
+      text-align: center;
     }
 
-    /* Refresh Button */
+    /* Floating Menu Styles */
+    .floating-menu-container {
+      position: fixed;
+      bottom: var(--space-xl);
+      right: var(--space-xl);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .menu-main-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--bg-panel);
+      border: var(--border-ritual);
+      color: var(--ritual-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all var(--transition-slow);
+      z-index: 2;
+    }
+
+    .menu-main-btn:active {
+      transform: scale(0.95);
+    }
+
+    .menu-options {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+      pointer-events: none;
+      transition: all var(--transition-slow);
+    }
+
+    .floating-menu-container.active .menu-options {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .menu-opt-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-panel);
+      border: var(--border-thin);
+      color: var(--ink-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-slow);
+      position: relative;
+    }
+
+    .menu-opt-btn:hover {
+      background: var(--bg-secondary);
+      color: var(--ritual-pink);
+      transform: scale(1.1);
+    }
+
+    .menu-opt-btn.is-fav {
+      color: var(--ritual-red);
+    }
+
+    /* Modal / Codex Styles */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-primary);
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-xl);
+      overflow-y: auto;
+      transition: opacity var(--transition-slow);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-xl);
+      width: 100%;
+      max-width: 800px;
+      margin-inline: auto;
+    }
+
+    .modal-title {
+      font-family: var(--font-ritual);
+      font-size: 2rem;
+      color: var(--ritual-pink);
+    }
+
+    .close-btn {
+      background: transparent;
+      border: none;
+      color: var(--ink-muted);
+      cursor: pointer;
+      font-size: 2rem;
+    }
+
+    .codex-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      width: 100%;
+      max-width: 1000px;
+      margin-inline: auto;
+      padding-bottom: var(--space-xl);
+    }
+
+    .codex-item {
+      background: var(--bg-panel);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .codex-item-frase {
+      font-family: var(--font-ritual);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .codex-item-cat {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: var(--ritual-pink);
+      letter-spacing: 0.1em;
+    }
+
+    /* Common */
     .btn-refresh {
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: rgba(255, 255, 255, 0.6);
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-size: 0.8rem;
+      border: var(--border-thin);
+      color: var(--ink-secondary);
+      padding: 12px 28px;
+      border-radius: var(--radius-panel);
+      font-size: 0.85rem;
+      font-family: var(--font-ritual);
       cursor: pointer;
-      margin-top: 20px;
-      transition: all 0.3s;
+      margin-top: var(--space-xl);
+      transition: all var(--transition-slow);
       width: fit-content;
       align-self: center;
-    }
-
-    .btn-refresh:hover {
-      color: white;
-      background: rgba(255, 255, 255, 0.05);
+      letter-spacing: 0.05em;
     }
 
     .loading {
@@ -172,57 +348,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #000;
-      color: #c5a059;
+      background: var(--bg-primary);
+      color: var(--ritual-pink);
+      font-family: var(--font-ritual);
+      font-size: 1.5rem;
     }
 
-    @media (min-width: 768px) {
-      .main-content {
-        max-width: 600px;
-        gap: 36px;
-      }
-
-      .brand-title {
-        font-size: 1.7rem;
-      }
-
-      .action-btn {
-        width: 52px;
-        height: 52px;
-      }
+    .info-content {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: var(--ink-secondary);
+      font-family: var(--font-base);
     }
 
-    @media (max-width: 480px) {
-      .app-container {
-        padding: 20px 18px 56px;
-      }
-
-      .main-content {
-        gap: 24px;
-      }
-
-      .app-header {
-        gap: 12px;
-      }
-
-      .brand-title {
-        font-size: 1.3rem;
-      }
-
-      .card-placeholder {
-        border-radius: 28px;
-      }
-
-      .action-btn {
-        width: 44px;
-        height: 44px;
-        border-radius: 22px;
-      }
-
-      .btn-refresh {
-        width: 100%;
-        text-align: center;
-      }
+    .info-content h3 {
+      font-family: var(--font-ritual);
+      color: var(--ink-primary);
+      margin-top: var(--space-lg);
     }
   </style>
 </head>
@@ -251,9 +394,140 @@
     import { createRoot } from 'react-dom/client';
     import { Renderer, Program, Mesh, Color, Triangle } from 'ogl';
 
-    /* --- GALAXY COMPONENT (Unchanged) --- */
-    const vertexShader = `attribute vec2 uv; attribute vec2 position; varying vec2 vUv; void main() { vUv = uv; gl_Position = vec4(position, 0, 1); }`;
-    const fragmentShader = `precision highp float; uniform float uTime; uniform vec3 uResolution; uniform vec2 uFocal; uniform vec2 uRotation; uniform float uStarSpeed; uniform float uDensity; uniform float uHueShift; uniform float uSpeed; uniform vec2 uMouse; uniform float uGlowIntensity; uniform float uSaturation; uniform bool uMouseRepulsion; uniform float uTwinkleIntensity; uniform float uRotationSpeed; uniform float uRepulsionStrength; uniform float uMouseActiveFactor; uniform float uAutoCenterRepulsion; uniform bool uTransparent; varying vec2 vUv; #define NUM_LAYER 4.0 #define STAR_COLOR_CUTOFF 0.2 #define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071) #define PERIOD 3.0 float Hash21(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); } float tri(float x) { return abs(fract(x) * 2.0 - 1.0); } float tris(float x) { float t = fract(x); return 1.0 - smoothstep(0.0, 1.0, abs(2.0 * t - 1.0)); } float trisn(float x) { float t = fract(x); return 2.0 * (1.0 - smoothstep(0.0, 1.0, abs(2.0 * t - 1.0))) - 1.0; } vec3 hsv2rgb(vec3 c) { vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0); vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www); return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y); } float Star(vec2 uv, float flare) { float d = length(uv); float m = (0.05 * uGlowIntensity) / d; float rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0)); m += rays * flare * uGlowIntensity; uv *= MAT45; rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0)); m += rays * 0.3 * flare * uGlowIntensity; m *= smoothstep(1.0, 0.2, d); return m; } vec3 StarLayer(vec2 uv) { vec3 col = vec3(0.0); vec2 gv = fract(uv) - 0.5; vec2 id = floor(uv); for (int y = -1; y <= 1; y++) { for (int x = -1; x <= 1; x++) { vec2 offset = vec2(float(x), float(y)); vec2 si = id + vec2(float(x), float(y)); float seed = Hash21(si); float size = fract(seed * 345.32); float glossLocal = tri(uStarSpeed / (PERIOD * seed + 1.0)); float flareSize = smoothstep(0.9, 1.0, size) * glossLocal; float red = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 1.0)) + STAR_COLOR_CUTOFF; float blu = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 3.0)) + STAR_COLOR_CUTOFF; float grn = min(red, blu) * seed; vec3 base = vec3(red, grn, blu); float hue = atan(base.g - base.r, base.b - base.r) / (2.0 * 3.14159) + 0.5; hue = fract(hue + uHueShift / 360.0); float sat = length(base - vec3(dot(base, vec3(0.299, 0.587, 0.114)))) * uSaturation; float val = max(max(base.r, base.g), base.b); base = hsv2rgb(vec3(hue, sat, val)); vec2 pad = vec2(tris(seed * 34.0 + uTime * uSpeed / 10.0), tris(seed * 38.0 + uTime * uSpeed / 30.0)) - 0.5; float star = Star(gv - offset - pad, flareSize); vec3 color = base; float twinkle = trisn(uTime * uSpeed + seed * 6.2831) * 0.5 + 1.0; twinkle = mix(1.0, twinkle, uTwinkleIntensity); star *= twinkle; col += star * size * color; } } return col; } void main() { vec2 focalPx = uFocal * uResolution.xy; vec2 uv = (vUv * uResolution.xy - focalPx) / uResolution.y; vec2 mouseNorm = uMouse - vec2(0.5); if (uAutoCenterRepulsion > 0.0) { vec2 centerUV = vec2(0.0, 0.0); float centerDist = length(uv - centerUV); vec2 repulsion = normalize(uv - centerUV) * (uAutoCenterRepulsion / (centerDist + 0.1)); uv += repulsion * 0.05; } else if (uMouseRepulsion) { vec2 mousePosUV = (uMouse * uResolution.xy - focalPx) / uResolution.y; float mouseDist = length(uv - mousePosUV); vec2 repulsion = normalize(uv - mousePosUV) * (uRepulsionStrength / (mouseDist + 0.1)); uv += repulsion * 0.05 * uMouseActiveFactor; } else { vec2 mouseOffset = mouseNorm * 0.1 * uMouseActiveFactor; uv += mouseOffset; } float autoRotAngle = uTime * uRotationSpeed; mat2 autoRot = mat2(cos(autoRotAngle), -sin(autoRotAngle), sin(autoRotAngle), cos(autoRotAngle)); uv = autoRot * uv; uv = mat2(uRotation.x, -uRotation.y, uRotation.y, uRotation.x) * uv; vec3 col = vec3(0.0); for (float i = 0.0; i < 1.0; i += 1.0 / NUM_LAYER) { float depth = fract(i + uStarSpeed * uSpeed); float scale = mix(20.0 * uDensity, 0.5 * uDensity, depth); float fade = depth * smoothstep(1.0, 0.9, depth); col += StarLayer(uv * scale + i * 453.32) * fade; } if (uTransparent) { float alpha = length(col); alpha = smoothstep(0.0, 0.3, alpha); alpha = min(alpha, 1.0); gl_FragColor = vec4(col, alpha); } else { gl_FragColor = vec4(col, 1.0); } }`;
+    /* --- GALAXY COMPONENT --- */
+    const vertexShader = `
+attribute vec2 uv;
+attribute vec2 position;
+varying vec2 vUv;
+void main() {
+  vUv = uv;
+  gl_Position = vec4(position, 0, 1);
+}`;
+    const fragmentShader = `
+precision highp float;
+uniform float uTime;
+uniform vec3 uResolution;
+uniform vec2 uFocal;
+uniform vec2 uRotation;
+uniform float uStarSpeed;
+uniform float uDensity;
+uniform float uHueShift;
+uniform float uSpeed;
+uniform vec2 uMouse;
+uniform float uGlowIntensity;
+uniform float uSaturation;
+uniform bool uMouseRepulsion;
+uniform float uTwinkleIntensity;
+uniform float uRotationSpeed;
+uniform float uRepulsionStrength;
+uniform float uMouseActiveFactor;
+uniform float uAutoCenterRepulsion;
+uniform bool uTransparent;
+varying vec2 vUv;
+
+#define NUM_LAYER 4.0
+#define STAR_COLOR_CUTOFF 0.2
+#define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071)
+#define PERIOD 3.0
+
+float Hash21(vec2 p) {
+  p = fract(p * vec2(123.34, 456.21));
+  p += dot(p, p + 45.32);
+  return fract(p.x * p.y);
+}
+
+float tri(float x) { return abs(fract(x) * 2.0 - 1.0); }
+float tris(float x) { float t = fract(x); return 1.0 - smoothstep(0.0, 1.0, abs(2.0 * t - 1.0)); }
+float trisn(float x) { float t = fract(x); return 2.0 * (1.0 - smoothstep(0.0, 1.0, abs(2.0 * t - 1.0))) - 1.0; }
+vec3 hsv2rgb(vec3 c) {
+  vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+  vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+  return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+float Star(vec2 uv, float flare) {
+  float d = length(uv);
+  float m = (0.05 * uGlowIntensity) / d;
+  float rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0));
+  m += rays * flare * uGlowIntensity;
+  uv *= MAT45;
+  rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0));
+  m += rays * 0.3 * flare * uGlowIntensity;
+  m *= smoothstep(1.0, 0.2, d);
+  return m;
+}
+
+vec3 StarLayer(vec2 uv) {
+  vec3 col = vec3(0.0);
+  vec2 gv = fract(uv) - 0.5;
+  vec2 id = floor(uv);
+  for (int y = -1; y <= 1; y++) {
+    for (int x = -1; x <= 1; x++) {
+      vec2 offset = vec2(float(x), float(y));
+      vec2 si = id + vec2(float(x), float(y));
+      float seed = Hash21(si);
+      float size = fract(seed * 345.32);
+      float glossLocal = tri(uStarSpeed / (PERIOD * seed + 1.0));
+      float flareSize = smoothstep(0.9, 1.0, size) * glossLocal;
+      float red = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 1.0)) + STAR_COLOR_CUTOFF;
+      float blu = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 3.0)) + STAR_COLOR_CUTOFF;
+      float grn = min(red, blu) * seed;
+      vec3 base = vec3(red, grn, blu);
+      float hue = atan(base.g - base.r, base.b - base.r) / (2.0 * 3.14159) + 0.5;
+      hue = fract(hue + uHueShift / 360.0);
+      float sat = length(base - vec3(dot(base, vec3(0.299, 0.587, 0.114)))) * uSaturation;
+      float val = max(max(base.r, base.g), base.b);
+      base = hsv2rgb(vec3(hue, sat, val));
+      vec2 pad = vec2(tris(seed * 34.0 + uTime * uSpeed / 10.0), tris(seed * 38.0 + uTime * uSpeed / 30.0)) - 0.5;
+      float star = Star(gv - offset - pad, flareSize);
+      vec3 color = base;
+      float twinkle = trisn(uTime * uSpeed + seed * 6.2831) * 0.5 + 1.0;
+      twinkle = mix(1.0, twinkle, uTwinkleIntensity);
+      star *= twinkle;
+      col += star * size * color;
+    }
+  }
+  return col;
+}
+
+void main() {
+  vec2 focalPx = uFocal * uResolution.xy;
+  vec2 uv = (vUv * uResolution.xy - focalPx) / uResolution.y;
+  vec2 mouseNorm = uMouse - vec2(0.5);
+  if (uAutoCenterRepulsion > 0.0) {
+    vec2 centerUV = vec2(0.0, 0.0);
+    float centerDist = length(uv - centerUV);
+    vec2 repulsion = normalize(uv - centerUV) * (uAutoCenterRepulsion / (centerDist + 0.1));
+    uv += repulsion * 0.05;
+  } else if (uMouseRepulsion) {
+    vec2 mousePosUV = (uMouse * uResolution.xy - focalPx) / uResolution.y;
+    float mouseDist = length(uv - mousePosUV);
+    vec2 repulsion = normalize(uv - mousePosUV) * (uRepulsionStrength / (mouseDist + 0.1));
+    uv += repulsion * 0.05 * uMouseActiveFactor;
+  } else {
+    vec2 mouseOffset = mouseNorm * 0.1 * uMouseActiveFactor;
+    uv += mouseOffset;
+  }
+  float autoRotAngle = uTime * uRotationSpeed;
+  mat2 autoRot = mat2(cos(autoRotAngle), -sin(autoRotAngle), sin(autoRotAngle), cos(autoRotAngle));
+  uv = autoRot * uv;
+  uv = mat2(uRotation.x, -uRotation.y, uRotation.y, uRotation.x) * uv;
+  vec3 col = vec3(0.0);
+  for (float i = 0.0; i < 1.0; i += 1.0 / NUM_LAYER) {
+    float depth = fract(i + uStarSpeed * uSpeed);
+    float scale = mix(20.0 * uDensity, 0.5 * uDensity, depth);
+    float fade = depth * smoothstep(1.0, 0.9, depth);
+    col += StarLayer(uv * scale + i * 453.32) * fade;
+  }
+  if (uTransparent) {
+    float alpha = length(col);
+    alpha = smoothstep(0.0, 0.3, alpha);
+    alpha = min(alpha, 1.0);
+    gl_FragColor = vec4(col, alpha);
+  } else {
+    gl_FragColor = vec4(col, 1.0);
+  }
+}`;
 
     function Galaxy({ focal = [0.5, 0.5], rotation = [1.0, 0.0], starSpeed = 0.5, density = 1, hueShift = 140, disableAnimation = false, speed = 1.0, mouseInteraction = true, glowIntensity = 0.3, saturation = 0.0, mouseRepulsion = true, repulsionStrength = 2, twinkleIntensity = 0.3, rotationSpeed = 0.1, autoCenterRepulsion = 0, transparent = true, ...rest }) {
       const ctnDom = useRef(null); const targetMousePos = useRef({ x: 0.5, y: 0.5 }); const smoothMousePos = useRef({ x: 0.5, y: 0.5 }); const targetMouseActive = useRef(0.0); const smoothMouseActive = useRef(0.0);
@@ -270,11 +544,11 @@
         function handleMouseLeave() { targetMouseActive.current = 0.0; } if (mouseInteraction) { ctn.addEventListener('mousemove', handleMouseMove); ctn.addEventListener('mouseleave', handleMouseLeave); }
         return () => { cancelAnimationFrame(animateId); window.removeEventListener('resize', resize); if (mouseInteraction) { ctn.removeEventListener('mousemove', handleMouseMove); ctn.removeEventListener('mouseleave', handleMouseLeave); } ctn.removeChild(gl.canvas); gl.getExtension('WEBGL_lose_context')?.loseContext(); };
       }, [focal, rotation, starSpeed, density, hueShift, disableAnimation, speed, mouseInteraction, glowIntensity, saturation, mouseRepulsion, twinkleIntensity, rotationSpeed, repulsionStrength, autoCenterRepulsion, transparent]);
-      return <div ref={ctnDom} className="galaxy-container" {...rest} />;
+      return <div ref={ctnDom} className="galaxy-container" style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }} {...rest} />;
     }
 
     /* --- ELECTRIC BORDER COMPONENT --- */
-    const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, borderRadius = 40, className, style }) => {
+    const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, borderRadius = 6, className, style }) => {
       const canvasRef = useRef(null), containerRef = useRef(null), animationRef = useRef(null), timeRef = useRef(0), lastFrameTimeRef = useRef(0);
       const random = useCallback(x => (Math.sin(x * 12.9898) * 43758.5453) % 1, []);
       const noise2D = useCallback((x, y) => { const i = Math.floor(x), j = Math.floor(y), fx = x - i, fy = y - j; const a = random(i + j * 57), b = random(i + 1 + j * 57), c = random(i + (j + 1) * 57), d = random(i + 1 + (j + 1) * 57); const ux = fx * fx * (3.0 - 2.0 * fx), uy = fy * fy * (3.0 - 2.0 * fy); return a * (1 - ux) * (1 - uy) + b * ux * (1 - uy) + c * (1 - ux) * uy + d * ux * uy; }, [random]);
@@ -282,10 +556,13 @@
       const getCornerPoint = useCallback((cx, cy, radius, startAngle, arcLength, progress) => { const angle = startAngle + progress * arcLength; return { x: cx + radius * Math.cos(angle), y: cy + radius * Math.sin(angle) }; }, []);
       const getRoundedRectPoint = useCallback((t, left, top, width, height, radius) => { const sw = width - 2 * radius, sh = height - 2 * radius, ca = (Math.PI * radius) / 2, tp = 2 * sw + 2 * sh + 4 * ca, d = t * tp; let acc = 0; if (d <= acc + sw) return { x: left + radius + ((d - acc) / sw) * sw, y: top }; acc += sw; if (d <= acc + ca) return getCornerPoint(left + width - radius, top + radius, radius, -Math.PI / 2, Math.PI / 2, (d - acc) / ca); acc += ca; if (d <= acc + sh) return { x: left + width, y: top + radius + ((d - acc) / sh) * sh }; acc += sh; if (d <= acc + ca) return getCornerPoint(left + width - radius, top + height - radius, radius, 0, Math.PI / 2, (d - acc) / ca); acc += ca; if (d <= acc + sw) return { x: left + width - radius - ((d - acc) / sw) * sw, y: top + height }; acc += sw; if (d <= acc + ca) return getCornerPoint(left + radius, top + height - radius, radius, Math.PI / 2, Math.PI / 2, (d - acc) / ca); acc += ca; if (d <= acc + sh) return { x: left, y: top + height - radius - ((d - acc) / sh) * sh }; acc += sh; return getCornerPoint(left + radius, top + radius, radius, Math.PI, Math.PI / 2, (d - acc) / ca); }, [getCornerPoint]);
       useEffect(() => {
-        const canvas = canvasRef.current, ctn = containerRef.current; if (!canvas || !ctn) return; const ctx = canvas.getContext('2d'); if (!ctx) return; const updateSize = () => { const rect = ctn.getBoundingClientRect(), width = rect.width + 120, height = rect.height + 120, dpr = Math.min(window.devicePixelRatio || 1, 2); canvas.width = width * dpr; canvas.height = height * dpr; canvas.style.width = `${width}px`; canvas.style.height = `${height}px`; ctx.scale(dpr, dpr); return { width, height }; }; let { width, height } = updateSize();
+        const canvas = canvasRef.current, ctn = containerRef.current; if (!canvas || !ctn) return; const ctx = canvas.getContext('2d'); if (!ctx) return;
+        const updateSize = () => { const rect = ctn.getBoundingClientRect(), width = rect.width + 120, height = rect.height + 120, dpr = Math.min(window.devicePixelRatio || 1, 2); canvas.width = width * dpr; canvas.height = height * dpr; canvas.style.width = `${width}px`; canvas.style.height = `${height}px`; ctx.scale(dpr, dpr); return { width, height }; }; let { width, height } = updateSize();
         const draw = ts => {
           const dt = (ts - lastFrameTimeRef.current) / 1000; timeRef.current += dt * speed; lastFrameTimeRef.current = ts; const dpr = Math.min(window.devicePixelRatio || 1, 2); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.scale(dpr, dpr); ctx.strokeStyle = color; ctx.lineWidth = 1; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-          const left = 60, top = 60, bw = width - 120, bh = height - 120, rad = Math.min(borderRadius, Math.min(bw, bh) / 2), ap = 2 * (bw + bh) + 2 * Math.PI * rad, sc = Math.floor(ap / 2); ctx.beginPath(); for (let i = 0; i <= sc; i++) { const p = i / sc, pt = getRoundedRectPoint(p, left, top, bw, bh, rad), xN = octavedNoise(p * 8, 10, 1.6, 0.7, chaos, 10, timeRef.current, 0, 0), yN = octavedNoise(p * 8, 10, 1.6, 0.7, chaos, 10, timeRef.current, 1, 0); if (i === 0) ctx.moveTo(pt.x + xN * 60, pt.y + yN * 60); else ctx.lineTo(pt.x + xN * 60, pt.y + yN * 60); } ctx.closePath(); ctx.stroke(); animationRef.current = requestAnimationFrame(draw);
+          const left = 60, top = 60, bw = width - 120, bh = height - 120, rad = Math.min(borderRadius, Math.min(bw, bh) / 2), ap = 2 * (bw + bh) + 2 * Math.PI * rad, sc = Math.floor(ap / 2); ctx.beginPath();
+          for (let i = 0; i <= sc; i++) { const p = i / sc, pt = getRoundedRectPoint(p, left, top, bw, bh, rad), xN = octavedNoise(p * 8, 10, 1.6, 0.7, chaos, 10, timeRef.current, 0, 0), yN = octavedNoise(p * 8, 10, 1.6, 0.7, chaos, 10, timeRef.current, 1, 0); if (i === 0) ctx.moveTo(pt.x + xN * 60, pt.y + yN * 60); else ctx.lineTo(pt.x + xN * 60, pt.y + yN * 60); }
+          ctx.closePath(); ctx.stroke(); animationRef.current = requestAnimationFrame(draw);
         };
         const ro = new ResizeObserver(() => { const sz = updateSize(); width = sz.width; height = sz.height; }); ro.observe(ctn); animationRef.current = requestAnimationFrame(draw); return () => { cancelAnimationFrame(animationRef.current); ro.disconnect(); };
       }, [color, speed, chaos, borderRadius, octavedNoise, getRoundedRectPoint]);
@@ -310,7 +587,6 @@
         const start = () => { if (!running) { running = true; lastTs = 0; rafId = requestAnimationFrame(step); } };
         return { setImmediate(x, y) { curX = x; curY = y; }, setTarget(x, y) { tarX = x; tarY = y; start(); }, toCenter() { const s = shellRef.current; if (s) this.setTarget(s.clientWidth / 2, s.clientHeight / 2); }, beginInitial(ms) { initUntil = performance.now() + ms; start(); }, getCurrent() { return { x: curX, y: curY, tx: tarX, ty: tarY }; }, cancel() { if (rafId) cancelAnimationFrame(rafId); running = false; } };
       }, []);
-
       useEffect(() => {
         const shell = shellRef.current; if (!shell) return;
         const onEnter = e => { const r = shell.getBoundingClientRect(); tiltEngine.setTarget(e.clientX - r.left, e.clientY - r.top); };
@@ -320,10 +596,9 @@
         tiltEngine.setImmediate(shell.clientWidth / 2, shell.clientHeight / 2); tiltEngine.toCenter(); tiltEngine.beginInitial(1200);
         return () => { shell.removeEventListener('pointerenter', onEnter); shell.removeEventListener('pointermove', onMove); shell.removeEventListener('pointerleave', onLeave); tiltEngine.cancel(); };
       }, [tiltEngine]);
-
       return (
-        <div ref={wrapRef} className="pc-card-wrapper" style={{ '--inner-gradient': 'linear-gradient(145deg,#1a1c20 0%,#2a2d34 100%)', '--behind-glow-color': 'rgba(197, 160, 89, 0.2)', '--behind-glow-size': '70%' }}>
-          <div className="pc-behind" />
+        <div ref={wrapRef} className="pc-card-wrapper">
+          <div className="pc-behind" style={{ '--behind-glow-size': '70%' }} />
           <div ref={shellRef} className="pc-card-shell">
             <section className="pc-card">
               <div className="pc-inside">
@@ -353,6 +628,10 @@
       const [card, setCard] = useState(null);
       const [isRevealed, setIsRevealed] = useState(false);
       const [favorites, setFavorites] = useState(() => JSON.parse(localStorage.getItem('trozos_sabiduria_favorites') || '[]'));
+      const [theme, setTheme] = useState(() => localStorage.getItem('ritual_theme') || 'dark');
+      const [menuOpen, setMenuOpen] = useState(false);
+      const [showCodex, setShowCodex] = useState(false);
+      const [showInfo, setShowInfo] = useState(false);
 
       useEffect(() => {
         if (window.QI_DATASET_V1) {
@@ -362,11 +641,25 @@
         }
       }, []);
 
+      useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('ritual_theme', theme);
+      }, [theme]);
+
       useEffect(() => { localStorage.setItem('trozos_sabiduria_favorites', JSON.stringify(favorites)); }, [favorites]);
 
       const toggleFavorite = useCallback(() => {
         if (!card) return;
         setFavorites(f => f.find(x => x.id === card.id) ? f.filter(x => x.id !== card.id) : [...f, card]);
+      }, [card]);
+
+      const refreshCard = useCallback(() => {
+        if (!window.QI_DATASET_V1) return;
+        const deck = window.QI_DATASET_V1.cards;
+        let newCard;
+        do { newCard = deck[Math.floor(Math.random() * deck.length)]; } while (card && newCard.id === card.id && deck.length > 1);
+        setIsRevealed(false);
+        setCard(newCard);
       }, [card]);
 
       const shareCard = useCallback(async () => {
@@ -375,28 +668,13 @@
         try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(`${data.text}\n${data.url}`); alert('Copiado al portapapeles'); } } catch (e) { console.error(e); }
       }, [card]);
 
-      const refreshCard = useCallback(() => {
-        if (!window.QI_DATASET_V1) return;
-        const deck = window.QI_DATASET_V1.cards;
-        let newCard;
-        // Ensure we get a different card if possible
-        do {
-          newCard = deck[Math.floor(Math.random() * deck.length)];
-        } while (card && newCard.id === card.id && deck.length > 1);
+      if (!card) return <div className="loading">Invocando sabiduría...</div>;
 
-        // Reset state for the new card
-        setIsRevealed(false);
-        // Small timeout to allow the transition to start if needed, 
-        // but here we just update the card immediately.
-        setCard(newCard);
-      }, [card]);
-
-      if (!card) return <div className="loading">Cargando sabiduría...</div>;
       const isFav = favorites.some(f => f.id === card.id);
 
       return (
         <div className="app-container">
-          <Galaxy speed={0.4} density={1.2} hueShift={140} twinkleIntensity={0.4} />
+          <Galaxy speed={0.4} density={theme === 'dark' ? 1.2 : 0.6} hueShift={theme === 'dark' ? 140 : 200} twinkleIntensity={0.4} />
 
           <main className="main-content">
             <header className="app-header">
@@ -410,28 +688,86 @@
             <div className="card-stage">
               {!isRevealed ? (
                 <div className="card-placeholder" onClick={() => setIsRevealed(true)}>
-                  <ElectricBorder color="#c5a059" speed={0.6} chaos={0.08}>
-                    <div className="reveal-overlay"><span>Revelar Sabiduría</span></div>
+                  <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08}>
+                    <div className="reveal-overlay"><span>Revelar Arcanum</span></div>
                   </ElectricBorder>
                 </div>
               ) : (
-                <div className="revealed-content" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                <div className="revealed-content" style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
                   <WisdomCard card={card} />
-
-                  <div className="actions-bar">
-                    <button className={`action-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
-                    </button>
-                    <button className="action-btn" onClick={shareCard} title="Compartir">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
-                    </button>
-                  </div>
-
                   <button className="btn-refresh" onClick={refreshCard}>Otra sincronía para hoy</button>
                 </div>
               )}
             </div>
           </main>
+
+          {/* Floating Menu */}
+          <div className={`floating-menu-container ${menuOpen ? 'active' : ''}`}>
+            <button className="menu-main-btn" onClick={() => setMenuOpen(!menuOpen)}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+            </button>
+            <div className="menu-options">
+              <button className={`menu-opt-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+              </button>
+              <button className="menu-opt-btn" onClick={shareCard} title="Compartir">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
+              </button>
+              <button className="menu-opt-btn" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} title="Tema">
+                {theme === 'dark' ? (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
+                ) : (
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+                )}
+              </button>
+              <button className="menu-opt-btn" onClick={() => setShowCodex(true)} title="Codex">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16.5a2.5 2.5 0 0 0-2.5-2.5H6.5A2.5 2.5 0 0 0 4 19.5z" /></svg>
+              </button>
+              <button className="menu-opt-btn" onClick={() => setShowInfo(true)} title="Info">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Codex Modal */}
+          {showCodex && (
+            <div className="modal-overlay">
+              <header className="modal-header">
+                <h2 className="modal-title">El Codex</h2>
+                <button className="close-btn" onClick={() => setShowCodex(false)}>&times;</button>
+              </header>
+              <div className="codex-list">
+                {favorites.length === 0 ? (
+                  <p style={{ textAlign: 'center', gridColumn: '1/-1', opacity: 0.5 }}>No has guardado sabiduría aún.</p>
+                ) : (
+                  favorites.map(f => (
+                    <div key={f.id} className="codex-item" onClick={() => { setCard(f); setShowCodex(false); setIsRevealed(true); }}>
+                      <span className="codex-item-cat">{f.categoria}</span>
+                      <p className="codex-item-frase">"{f.frase}"</p>
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Info Modal */}
+          {showInfo && (
+            <div className="modal-overlay">
+              <header className="modal-header">
+                <h2 className="modal-title">Protocolo Erudito</h2>
+                <button className="close-btn" onClick={() => setShowInfo(false)}>&times;</button>
+              </header>
+              <div className="info-content">
+                <h3>Sobre el Conocimiento</h3>
+                <p>El conocimiento médico no es neutral. A veces se explora como un paisaje. A veces se ejecuta como un ritual. En ambos casos, tiene consecuencias.</p>
+                <h3>Créditos</h3>
+                <p>Diseño y Concepto: Cosmología Visual del Conocimiento Médico.</p>
+                <p>Desarrollado para la introspección clínica diaria.</p>
+                <div style={{ marginTop: '40px', textAlign: 'center', opacity: 0.3, fontSize: '0.8rem' }}>Trozos de Sabiduría v1.1.0</div>
+              </div>
+            </div>
+          )}
         </div>
       );
     }
