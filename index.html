@@ -22,7 +22,7 @@
 
   <style>
     :root {
-      /* Ritual Aesthetic Tokens - Default Dark (Médico Gótico) */
+      /* Ritual Aesthetic Tokens - Default Dark */
       --bg-primary: #121015;
       --bg-secondary: #1A1620;
       --bg-panel: #201B28;
@@ -605,7 +605,6 @@ void main() {
                 <div className="pc-shine" /><div className="pc-glare" />
                 <div className="pc-content">
                   <span className="pc-wisdom-category">{card.categoria.replace('_', ' ')}</span>
-                  <span className="pc-author">Autoría: {card.organizacion || 'CACB'}</span>
                   <h2 className="pc-frase">“{card.frase}”</h2>
                   <p className="pc-interpretacion">{card.interpretacion}</p>
                   <div className="pc-practica">
@@ -679,7 +678,7 @@ void main() {
 
           <main className="main-content">
             <header className="app-header">
-              <img src="logo_cacb.jpeg" className="app-logo" alt="Logo" />
+              <img src="icons/icon-192.png" className="app-logo" alt="Logo zen" />
               <div className="brand-info">
                 <h1 className="brand-title">Trozos de Sabiduría</h1>
                 <p className="sync-label">Sincronía · {new Date().toLocaleDateString()}</p>
@@ -761,11 +760,10 @@ void main() {
               </header>
               <div className="info-content">
                 <h3>Sobre el Conocimiento</h3>
-                <p>El conocimiento médico no es neutral. A veces se explora como un paisaje. A veces se ejecuta como un ritual. En ambos casos, tiene consecuencias.</p>
+                <p>El conocimiento interior no es neutral. A veces se explora como un paisaje. A veces se escucha como un ritual. En ambos casos, tiene consecuencias.</p>
                 <h3>Créditos</h3>
-                <p>Diseño y Concepto: Cosmología Visual del Conocimiento Médico.</p>
-                <p>Desarrollado para la introspección clínica diaria.</p>
-                <p>Autoría: CACB.</p>
+                <p>Diseño y Concepto: Cosmología Visual de la Reflexión.</p>
+                <p>Desarrollado para la contemplación diaria.</p>
                 <div style={{ marginTop: '40px', textAlign: 'center', opacity: 0.3, fontSize: '0.8rem' }}>Trozos de Sabiduría v1.1.0</div>
               </div>
             </div>

@@ -23,10 +23,9 @@ window.QI_DATASET_V1 = {
       "coherencia"
     ],
     linaje: [
-      "ACT", "zen", "taoismo", "estoicismo", "mindfulness",
+      "zen", "taoismo", "estoicismo", "mindfulness",
       "contemporaneo", "existencialismo", "humanista",
-      "neurociencia", "budismo", "sufismo", "sistemica",
-      "trauma", "psicologia_profunda", "semantica_general"
+      "budismo", "sufismo", "sistemica"
     ]
   },
 
@@ -39,7 +38,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige un problema y haz solo el siguiente paso mínimo verificable. Luego detente y observa qué cambia sin intervenir.",
       "categoria": "wu_wei",
       "linaje": "taoismo",
-      "nota_editorial": "Inspiración libre a partir de ideas de no-interferencia en el Daodejing (Laozi)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "002",
@@ -49,17 +48,17 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cuando surja urgencia por “arreglar” algo, nómbralo: “búsqueda”. Respira 3 veces y vuelve a la tarea presente.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Adaptación libre inspirada en la lógica de la ‘barrera sin puerta’ del Mumonkan (Mumon Ekai)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "003",
       "organizacion": "CACB",
       "frase": "No necesitas menos miedo; necesitas más dirección.",
-      "interpretacion": "La vida valiosa no exige ausencia de malestar. En ACT, el criterio funcional no es “sentirme bien”, sino moverme hacia valores con el malestar a cuestas, sin que el miedo decida por ti.",
+      "interpretacion": "La vida valiosa no exige ausencia de malestar. En la práctica contemplativa, el criterio funcional no es “sentirme bien”, sino moverme hacia valores con el malestar a cuestas, sin que el miedo decida por ti.",
       "practica_hoy": "Define un valor en una frase (p. ej., ‘cuidado’). Haz una acción de 10 minutos coherente, aunque haya incomodidad.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "Inspirado en la distinción valores vs. evitación experiencial en Hayes/Wilson/Strosahl."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "004",
@@ -68,8 +67,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La identidad rígida pide confirmación constante. Cuando la mente se vuelve guardián, cada crítica o cambio se vive como amenaza. Flexibilizar el yo no lo destruye: lo hace habitable.",
       "practica_hoy": "Detecta una frase identitaria (“yo soy…”). Cámbiala por “mi mente dice que soy…” y observa la diferencia.",
       "categoria": "self_como_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "Inspirado en defusión y self-como-contexto (ACT/RFT)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "005",
@@ -79,7 +78,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Escribe: ‘Esto es lo que hay’. Debajo, lista dos acciones posibles dentro de esas condiciones.",
       "categoria": "aceptacion",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración libre a partir del enfoque de Epicteto sobre juicio/control (Enchiridion/Discursos)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "006",
@@ -88,8 +87,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La defusión no exige silencio mental; exige relación distinta con el contenido. Persistir en la acción elegida mientras la mente protesta entrena libertad psicológica.",
       "practica_hoy": "Pon un temporizador de 5 minutos. Haz la tarea valiosa mientras permites que los pensamientos estén presentes sin debatirlos.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "Inspirado en metáforas de defusión y ‘pasajeros del autobús’ (ACT)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "007",
@@ -99,7 +98,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Identifica una frase de protesta (“no debería…”). Sustitúyela por “y aun así…”. Luego actúa 1 paso.",
       "categoria": "flexibilidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemporánea alineada con flexibilidad psicológica (ACT) y aceptación."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "008",
@@ -109,7 +108,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz algo ‘inútil’ 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea.",
       "categoria": "saturacion",
       "linaje": "taoismo",
-      "nota_editorial": "Basado en relatos sobre ‘lo inútil’ en Zhuangzi (Chuang Tzu)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "009",
@@ -119,7 +118,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Durante una conversación, guarda el teléfono y nota 3 detalles sensoriales del otro (tono, pausa, mirada) sin analizarlos.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspirado en mindfulness laico (Kabat-Zinn) y presencia relacional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "010",
@@ -128,8 +127,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El problema no es la mente produciendo contenido, sino la fusión cognitiva: tratar pensamientos como hechos o mandatos. Verlos como eventos internos reduce su poder directivo.",
       "practica_hoy": "Escribe un pensamiento difícil y añade: “estoy teniendo el pensamiento de que…”. Léelo en voz alta 3 veces.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "Síntesis funcional de fusión/defusión (Hayes y colegas)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "011",
@@ -139,7 +138,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Redacta una frase de autocuidado realista: “Hoy puedo con X; lo demás lo retomo mañana”.",
       "categoria": "compasion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspirado en enfoques contemporáneos de autocompasión y aceptación; sin cita literal."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "012",
@@ -149,7 +148,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige un área donde sueles controlar (mensajes, rutinas). Hoy deja 10% sin optimizar y observa que no colapsa el mundo.",
       "categoria": "control",
       "linaje": "estoicismo",
-      "nota_editorial": "Resuena con el locus de control estoico (Epicteto) y con evitación experiencial (ACT)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "013",
@@ -159,7 +158,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Pon nombre a la emoción dominante y agrega una frase funcional: “Puedo sostener esto y hacer un paso pequeño”.",
       "categoria": "regulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración clínica general compatible con mindfulness/ACT; no es cita textual."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "014",
@@ -168,8 +167,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El aprendizaje de libertad requiere exposición elegida: hacer lo valioso con activación interna. La calma puede llegar después, o no; el punto es que no sea condición de vida.",
       "practica_hoy": "Haz una micro-exposición: una llamada pendiente, un correo difícil, una conversación breve. Sin preparar el guion perfecto.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "Inspirado en acción comprometida y disposición (willingness) en ACT."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "015",
@@ -179,17 +178,17 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz 20 minutos sin input: sin música, sin redes, sin noticias. Solo una actividad simple.",
       "categoria": "saturacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspirado en críticas a la sobrecarga (Byung-Chul Han) sin cita directa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "016",
       "organizacion": "CACB",
       "frase": "El que tiene prisa se vuelve fácil de engañar.",
-      "interpretacion": "La prisa reduce verificación, eleva impulsividad y vuelve atractivas las soluciones rápidas. En términos clínicos: dispara sesgos y decisiones de corto plazo.",
+      "interpretacion": "La prisa reduce verificación, eleva impulsividad y vuelve atractivas las soluciones rápidas. En términos cotidianos: dispara sesgos y decisiones de corto plazo.",
       "practica_hoy": "Antes de decidir algo importante hoy, aplica una pausa de 60 segundos y formula la pregunta: “¿Qué estoy evitando sentir?”",
       "categoria": "claridad",
       "linaje": "estoicismo",
-      "nota_editorial": "Alineado con prácticas de pausa/reflexión en estoicismo y autocontrol."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "017",
@@ -199,7 +198,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una práctica (respirar, caminar, comer). Hazla 3 minutos sin explicar nada en tu cabeza.",
       "categoria": "experiencia_directa",
       "linaje": "zen",
-      "nota_editorial": "Parábola zen clásica atribuida en múltiples tradiciones; formulación adaptada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "018",
@@ -209,7 +208,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Define qué evidencia mínima necesitas para una decisión (2 datos). Tómala con eso, sin buscar el dato perfecto.",
       "categoria": "incertidumbre",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración clínica y pragmática; compatible con ACT y toma de decisiones."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "019",
@@ -219,7 +218,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "En un desacuerdo menor, practica una frase: “Puedo estar equivocado; quiero entender tu punto”.",
       "categoria": "humildad",
       "linaje": "sufismo",
-      "nota_editorial": "Inspiración libre de cuentos pedagógicos sufíes (Nasrudin/Idries Shah) sobre el ego."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "020",
@@ -229,7 +228,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Escribe la condición que te impones (“hasta que pase X…”). Luego: “Puedo vivir hoy aunque esto siga aquí”.",
       "categoria": "aceptacion",
       "linaje": "mindfulness",
-      "nota_editorial": "Síntesis clínica afín a budismo/ACT; no es cita literal de un texto específico."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "021",
@@ -239,7 +238,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja una pequeña imperfección intencional (una tarea sin pulir). Usa el malestar como entrenamiento.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspirado en entrenamiento con la incomodidad y la impermanencia en prácticas zen."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "022",
@@ -249,7 +248,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz un escaneo corporal de 90 segundos. Solo etiqueta sensaciones (tensión, calor, pulso) sin corregirlas.",
       "categoria": "momento_presente",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspirado en Kabat-Zinn y prácticas básicas de atención plena."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "023",
@@ -259,7 +258,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una acción cotidiana (lavar platos, ordenar). Hazla como fin en sí mismo durante 5 minutos.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Inspiración libre de ideas de Dōgen (Shōbōgenzō) sobre práctica-realización."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "024",
@@ -269,7 +268,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cambia “¿por qué soy así?” por “¿qué me está importando aquí?” y actúa desde eso.",
       "categoria": "no_saber",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración pragmática con resonancia zen/ACT; sin fuente única."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "025",
@@ -278,8 +277,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La conciencia no cambia por sí sola el contenido interno, pero cambia la relación con él. Ver con claridad reduce autoengaño y habilita elección.",
       "practica_hoy": "Escribe dos líneas: “Lo que siento” y “Lo que haré que me acerque a mis valores”.",
       "categoria": "claridad",
-      "linaje": "ACT",
-      "nota_editorial": "Alineado con contacto con el momento presente y acción comprometida (ACT)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "026",
@@ -289,7 +288,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Identifica una situación confusa y formula una sola frase honesta: “Aún no sé, y puedo quedarme aquí”.",
       "categoria": "incertidumbre",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración clínica general; resonancia con tolerancia a la ambigüedad."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "027",
@@ -299,7 +298,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Anota un deseo actual y responde: ¿qué necesidad concreta señala?",
       "categoria": "deseo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración psicodinámica integrada con enfoques de claridad motivacional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "028",
@@ -309,7 +308,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nombra una pérdida y escribe una manera concreta en que hoy vive contigo.",
       "categoria": "duelo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Alineado con modelos actuales de duelo no lineal."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "029",
@@ -319,7 +318,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Permanece 2 minutos en silencio tras una emoción intensa antes de explicarla.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspirado en la primacía de la experiencia no conceptual en zen."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "030",
@@ -329,7 +328,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Define un límite claro para hoy (tiempo, energía) y respétalo deliberadamente.",
       "categoria": "limites",
       "linaje": "estoicismo",
-      "nota_editorial": "Resonancia con aceptación de lo que depende y no depende de uno."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "031",
@@ -339,7 +338,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Detecta una comparación automática y redirige la pregunta a: ¿qué me toca hoy a mí?",
       "categoria": "identidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración clínica y educativa; sin fuente única."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "032",
@@ -349,7 +348,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Antes de decidir algo, revisa tres sensaciones corporales y considérelas datos.",
       "categoria": "cuerpo",
       "linaje": "mindfulness",
-      "nota_editorial": "Compatible con prácticas de conciencia corporal."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "033",
@@ -359,7 +358,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Ante un error, formula una acción reparadora concreta sin adjetivos sobre ti.",
       "categoria": "responsabilidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración ética y clínica."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "034",
@@ -369,7 +368,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una tarea y hazla 20% más lenta de lo habitual.",
       "categoria": "tiempo",
       "linaje": "estoicismo",
-      "nota_editorial": "Afinidad con prácticas de deliberación y pausa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "035",
@@ -379,7 +378,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cuando surja una emoción intensa, espera 90 segundos antes de responder.",
       "categoria": "regulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Consistente con modelos de regulación emocional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "036",
@@ -388,8 +387,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La motivación fluctúa; la coherencia con valores sostiene conductas en el tiempo.",
       "practica_hoy": "Define una acción pequeña repetible, independientemente del ánimo.",
       "categoria": "coherencia",
-      "linaje": "ACT",
-      "nota_editorial": "Alineado con valores y acción comprometida."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "037",
@@ -399,7 +398,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Identifica qué necesidad aparece detrás de un conflicto reciente.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración sistémica y relacional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "038",
@@ -409,7 +408,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Pregunta al cansancio: ¿qué he sostenido de más?",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Clínico-funcional; no cita textual."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "039",
@@ -418,8 +417,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El rechazo constante consume energía necesaria para modificar. La aceptación reduce fricción inicial.",
       "practica_hoy": "Nombra una situación como es, sin calificativos, antes de planear cambios.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "Consistente con aceptación funcional."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "040",
@@ -429,7 +428,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elimina una fuente innecesaria de distracción durante una hora.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Afinidad con críticas a la sobreestimulación."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "041",
@@ -439,7 +438,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reconoce una relación que cambió de forma y ajusta expectativas.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración clínica relacional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "042",
@@ -449,7 +448,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Revisa un error reciente y extrae una sola regla funcional.",
       "categoria": "aprendizaje",
       "linaje": "estoicismo",
-      "nota_editorial": "Resonancia con revisión reflexiva."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "043",
@@ -459,7 +458,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Mantén una tarea sin evaluar resultados por hoy.",
       "categoria": "paciencia",
       "linaje": "zen",
-      "nota_editorial": "Afinidad con práctica sostenida."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "044",
@@ -469,7 +468,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Registra una señal corporal leve y ajústale respuesta hoy.",
       "categoria": "cuerpo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración psicosomática general."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "045",
@@ -478,8 +477,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Esperar comprensión total antes de moverse mantiene estancamiento. La acción genera datos.",
       "practica_hoy": "Da un paso reversible y observa el resultado.",
       "categoria": "accion",
-      "linaje": "ACT",
-      "nota_editorial": "Alineado con acción guiada por valores."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "046",
@@ -489,7 +488,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Introduce una variación pequeña en una rutina.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración adaptativa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "047",
@@ -499,7 +498,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Sustituye una etiqueta fija por una descripción temporal.",
       "categoria": "identidad",
       "linaje": "zen",
-      "nota_editorial": "Resonancia con impermanencia."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "048",
@@ -508,8 +507,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Cuando valores se traicionan de forma sostenida aparece desgaste ético, no solo físico.",
       "practica_hoy": "Revisa una acción reciente y ajústala a un valor central.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "Inspiración en coherencia valorativa."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "049",
@@ -519,7 +518,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una acción como si el tiempo fuera limitado hoy.",
       "categoria": "finitud",
       "linaje": "estoicismo",
-      "nota_editorial": "Resonancia con memento mori."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "050",
@@ -529,7 +528,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nota una relación (persona, tarea, emoción) y ajusta la forma de estar con ella.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Síntesis transversal; no fuente única."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "051",
@@ -539,7 +538,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una sola tarea (leer, comer, escuchar) y realízala en modo 'mono-tarea' radical. Si la mente se va, tráela de vuelta sin juicio.",
       "categoria": "atencion",
       "linaje": "estoicismo",
-      "nota_editorial": "Atribuida a Séneca (Epistulae Morales ad Lucilium, Carta 2); formulación popular en traducciones modernas."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "052",
@@ -548,8 +547,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La proyección psicológica convierte nuestros rasgos rechazados en defectos ajenos. El juicio excesivo hacia afuera suele ser un mecanismo de defensa para no integrar la propia sombra.",
       "practica_hoy": "Cuando juzgues duramente a alguien hoy, pregúntate: '¿En qué contexto yo actúo o siento algo similar?'.",
       "categoria": "sombra",
-      "linaje": "psicologia_profunda",
-      "nota_editorial": "Inspirado en el concepto de proyección y 'La Sombra' en C. G. Jung."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "053",
@@ -559,7 +558,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Visualiza el evento doloroso y di en voz alta: 'Esto no cambiará, y decido soltar el intento de que sea distinto'.",
       "categoria": "duelo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Frase comúnmente atribuida a Lily Tomlin; uso extendido en contextos terapéuticos."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "054",
@@ -568,8 +567,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Buscamos el gran gesto heroico porque es visible y narrable. El cambio estable ocurre en la repetición pequeña y sostenida.",
       "practica_hoy": "Haz una repetición mínima de un hábito (1 minuto) en lugar de una sesión larga.",
       "categoria": "habitos",
-      "linaje": "neurociencia",
-      "nota_editorial": "Basado en principios de aprendizaje hebbiano y consolidación conductual."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "055",
@@ -579,7 +578,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Distingue: 'esto ocurrió en mi cuerpo' vs 'esto decido pensar ahora'.",
       "categoria": "responsabilidad",
       "linaje": "estoicismo",
-      "nota_editorial": "Resuena con la distinción estoica entre impresión inicial y asentimiento."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "056",
@@ -588,8 +587,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Confundimos la representación mental con la realidad. El sufrimiento suele venir de la descripción, no del hecho.",
       "practica_hoy": "Describe un objeto en palabras y luego obsérvalo en silencio. Nota la diferencia.",
       "categoria": "lenguaje_y_realidad",
-      "linaje": "semantica_general",
-      "nota_editorial": "Principio de Alfred Korzybski; central en semántica general y modelos clínicos contemporáneos."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "057",
@@ -599,7 +598,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Espera dos segundos antes de responder en una conversación.",
       "categoria": "comunicacion",
       "linaje": "humanista",
-      "nota_editorial": "Inspirado en la escucha activa rogeriana."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "058",
@@ -609,7 +608,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Pasa 15 minutos contigo sin estímulos externos.",
       "categoria": "relacion_consigo",
       "linaje": "existencialismo",
-      "nota_editorial": "Distinción clásica entre 'loneliness' y 'solitude'."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "059",
@@ -618,8 +617,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El miedo psicológico suele señalar valores importantes.",
       "practica_hoy": "Pregunta: 'Si no tuviera miedo, ¿valdría la pena?'.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "Concepto frecuente en Steven C. Hayes."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "060",
@@ -629,7 +628,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Di: 'Tengo suficiente para este momento'.",
       "categoria": "gratitud",
       "linaje": "budismo",
-      "nota_editorial": "Inspirado en el concepto de santutthi (contentamiento)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "061",
@@ -639,7 +638,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Produce un borrador rápido sin corregir.",
       "categoria": "creatividad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Anne Lamott, 'Bird by Bird'."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "062",
@@ -649,7 +648,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Di: 'No lo entiendo, y sigo aquí'.",
       "categoria": "aceptacion",
       "linaje": "existencialismo",
-      "nota_editorial": "Resonancia con el absurdo en Camus."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "063",
@@ -659,7 +658,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Pospón decisiones definitivas 12 horas.",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Principio clínico de regulación fisiológica previa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "064",
@@ -669,7 +668,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Recibe elogios y críticas con la misma distancia.",
       "categoria": "ego",
       "linaje": "estoicismo",
-      "nota_editorial": "Marco Aurelio sobre opinión ajena."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "065",
@@ -679,17 +678,17 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Devuelve una responsabilidad pequeña.",
       "categoria": "limites",
       "linaje": "sistemica",
-      "nota_editorial": "Distinción básica en terapia familiar."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "066",
       "organizacion": "CACB",
-      "frase": "La intuición susurra; el trauma grita.",
+      "frase": "La intuición susurra; la herida grita.",
       "interpretacion": "La urgencia caótica suele ser memoria de amenaza.",
       "practica_hoy": "Verifica si hay peligro real presente.",
       "categoria": "discernimiento",
-      "linaje": "trauma",
-      "nota_editorial": "Neurocepción y trauma (Van der Kolk)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "067",
@@ -699,7 +698,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Ofrece 5 minutos de atención indivisa.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Atribuida a Simone Weil."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "068",
@@ -709,7 +708,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una tarea que no harás hoy.",
       "categoria": "priorizacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Greg McKeown y esencialismo."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "069",
@@ -719,7 +718,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Traduce la envidia en una cualidad a cultivar.",
       "categoria": "sombra",
       "linaje": "contemporaneo",
-      "nota_editorial": "Reencuadre emocional funcional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "070",
@@ -729,7 +728,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Di 'recomienzo' y sigue.",
       "categoria": "resiliencia",
       "linaje": "mindfulness",
-      "nota_editorial": "Sharon Salzberg sobre volver a empezar."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "071",
@@ -739,7 +738,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reduce una promesa a su versión mínima cumplible.",
       "categoria": "autoconfianza",
       "linaje": "contemporaneo",
-      "nota_editorial": "Principio de coherencia conductual."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "072",
@@ -749,7 +748,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Permite una pausa antes de responder algo difícil.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Silencio como función, no ausencia."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "073",
@@ -759,7 +758,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nombra explícitamente a qué renuncias hoy.",
       "categoria": "eleccion",
       "linaje": "existencialismo",
-      "nota_editorial": "Responsabilidad existencial."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "074",
@@ -769,7 +768,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Define qué estás esperando y por qué.",
       "categoria": "paciencia",
       "linaje": "estoicismo",
-      "nota_editorial": "Paciencia como virtud activa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "075",
@@ -779,7 +778,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Sustituye un juicio por una descripción.",
       "categoria": "lenguaje",
       "linaje": "contemporaneo",
-      "nota_editorial": "Uso clínico del lenguaje descriptivo."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "076",
@@ -789,7 +788,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Formula una esperanza compatible con los hechos.",
       "categoria": "esperanza",
       "linaje": "contemporaneo",
-      "nota_editorial": "Esperanza realista."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "077",
@@ -799,7 +798,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz hoy lo mismo que ayer, sin mejorar.",
       "categoria": "constancia",
       "linaje": "estoicismo",
-      "nota_editorial": "Virtud no espectacular."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "078",
@@ -809,7 +808,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Da una negativa breve sin argumento extra.",
       "categoria": "limites",
       "linaje": "contemporaneo",
-      "nota_editorial": "Comunicación clara."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "079",
@@ -818,8 +817,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El crecimiento incluye fricción.",
       "practica_hoy": "Tolera una incomodidad sin corregirla.",
       "categoria": "tolerancia",
-      "linaje": "ACT",
-      "nota_editorial": "Disposición psicológica."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "080",
@@ -829,7 +828,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nombra el valor que guía una decisión.",
       "categoria": "valores",
       "linaje": "estoicismo",
-      "nota_editorial": "Marco ético clásico."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "081",
@@ -839,7 +838,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Observa algo común durante 2 minutos.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Práctica básica de observación."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "082",
@@ -849,7 +848,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz hoy una acción que alivie mañana.",
       "categoria": "tiempo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Gestión temporal funcional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "083",
@@ -859,7 +858,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una acción saludable aunque no apetezca.",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Autocuidado no hedonista."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "084",
@@ -869,7 +868,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Di una verdad necesaria con respeto.",
       "categoria": "honestidad",
       "linaje": "estoicismo",
-      "nota_editorial": "Virtud de franqueza."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "085",
@@ -879,7 +878,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Ajusta una expectativa a lo observable.",
       "categoria": "relaciones",
       "linaje": "sistemica",
-      "nota_editorial": "Alineado con realismo relacional."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "086",
@@ -889,7 +888,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Agenda descanso como tarea.",
       "categoria": "energia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Regulación de recursos."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "087",
@@ -899,7 +898,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Retrasa una respuesta urgente 10 minutos.",
       "categoria": "discernimiento",
       "linaje": "estoicismo",
-      "nota_editorial": "Pausa deliberativa."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "088",
@@ -909,7 +908,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reformula una auto-crítica en instrucción.",
       "categoria": "dialogo_interno",
       "linaje": "contemporaneo",
-      "nota_editorial": "Psicoeducación básica."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "089",
@@ -919,7 +918,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Simplifica una decisión hoy.",
       "categoria": "simplicidad",
       "linaje": "taoismo",
-      "nota_editorial": "Afinidad con wu wei."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "090",
@@ -929,7 +928,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Detén una tarea cuando el rendimiento cae.",
       "categoria": "autorregulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Autorregulación conductual."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "142",
@@ -939,7 +938,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis del koan de Zhaozhou (Joshu): “Mu” (Mumonkan / Gateless Gate)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "143",
@@ -949,7 +948,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis del episodio atribuido a Huineng (Sexto Patriarca)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "144",
@@ -959,7 +958,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis del motivo de la “flor” (transmisión fuera de las escrituras), atribución tradicional a Shakyamuni."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "145",
@@ -969,7 +968,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Nansen (Nanquan): “mente ordinaria” como vía."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "146",
@@ -979,7 +978,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis de anécdotas asociadas a Linji (Rinzai), estilo de intervención abrupta."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "147",
@@ -989,7 +988,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Lava un objeto cotidiano con atención plena, sin buscar “sentido” adicional.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Zhaozhou (Joshu): práctica en lo simple."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "148",
@@ -999,7 +998,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Mira un objeto simple por un minuto sin convertirlo en idea.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis del koan del “ciprés en el patio”, atribuido a Zhaozhou."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "149",
@@ -1009,7 +1008,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis de la enseñanza asociada a Linji (Rinzai): cortar apego a representaciones."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "150",
@@ -1019,7 +1018,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja una pregunta sin responder por hoy, sin llenarla con explicación.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis de recurso clásico zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "151",
@@ -1029,7 +1028,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis de anécdota zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "152",
@@ -1039,7 +1038,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen (Unmon): respuesta antidealización."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "153",
@@ -1049,7 +1048,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Si estás cansado, ajusta tu día a una acción mínima y descansa sin culpa.",
       "categoria": "autorregulacion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen de tono cotidiano; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "154",
@@ -1059,7 +1058,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Observa si tu calma es evitación: nombra qué estás dejando fuera.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "155",
@@ -1069,7 +1068,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Suelta un microcontrol (p. ej., “que salga perfecto”) y vuelve a una tarea.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "156",
@@ -1079,7 +1078,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Corta una explicación interna y regresa a la sensación corporal por 20 segundos.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis asociada al estilo de Linji (Rinzai): interrupción del discurso."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "157",
@@ -1089,7 +1088,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "No abras el segundo ciclo de pensamiento: vuelve a una acción concreta.",
       "categoria": "dialogo_interno",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "158",
@@ -1099,7 +1098,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "159",
@@ -1109,7 +1108,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Camina 2 minutos en silencio y deja que la mente “se acomode” sola.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; enseñanza encarnada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "160",
@@ -1119,7 +1118,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz lo ordinario con precisión: una tarea simple sin buscar “señales”.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "161",
@@ -1129,7 +1128,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reduce la práctica a su versión mínima viable y repítela hoy.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; sostener sin sobreesfuerzo."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "162",
@@ -1139,7 +1138,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Busca el punto de rigidez y suéltalo: reformula tu pregunta en simple.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen; recurso de ruptura."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "163",
@@ -1149,7 +1148,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una micro-evitación y haz 30 segundos de contacto con ella.",
       "categoria": "aceptacion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "164",
@@ -1159,7 +1158,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Por una hora, reemplaza comparación por descripción (“esto es…”).",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "165",
@@ -1169,7 +1168,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Observa 60 segundos sin comentar mentalmente lo observado.",
       "categoria": "identidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "166",
@@ -1179,7 +1178,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Aplica una idea hoy en algo pequeño, sin coleccionarla.",
       "categoria": "aprendizaje",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Sengcan (tono de no-aferramiento a opiniones)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "167",
@@ -1189,7 +1188,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Bebe agua o té con atención completa durante 30 segundos.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis asociada a Zhaozhou (Joshu): té como práctica."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "168",
@@ -1199,7 +1198,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Permite una pequeña perturbación sin “arreglarla” de inmediato.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "169",
@@ -1209,7 +1208,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Identifica una insistencia y prueba una alternativa mínima.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "170",
@@ -1219,7 +1218,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja una pregunta abierta hoy sin resolverla con explicación.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "171",
@@ -1229,7 +1228,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nombra “aquí” con un gesto: pies en el suelo, y una acción simple.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "172",
@@ -1239,7 +1238,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz una actividad cotidiana sin multitarea por 3 minutos.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Enunciado zen ampliamente difundido; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "173",
@@ -1249,7 +1248,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una “tarea diaria” y hazla con cuidado deliberado.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang: práctica en lo cotidiano."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "174",
@@ -1259,7 +1258,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada. Motivo: cortar idolatría."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "175",
@@ -1269,7 +1268,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Quédate 60 segundos con silencio interno: sin definir lo que pasa.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "176",
@@ -1279,7 +1278,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Por hoy, sustituye una opinión por una pregunta operativa.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis alineada con Sengcan (Xinxin Ming): soltar preferencias/opiniones."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "177",
@@ -1289,7 +1288,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Permite una emoción difícil 30 segundos sin distraerte.",
       "categoria": "aceptacion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "178",
@@ -1299,7 +1298,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Interrumpe tu patrón: cambia de postura y vuelve al presente.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis asociada a Linji: ruptura súbita."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "179",
@@ -1309,7 +1308,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz una cosa bien y detente: sin añadir “mejoras” innecesarias.",
       "categoria": "wu_wei",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada. Tono cercano a no-interferencia."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "180",
@@ -1319,7 +1318,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cuando no haya claridad, no respondas: respira y espera 10 segundos.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "181",
@@ -1329,7 +1328,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja de buscar “calma” por 2 minutos y vuelve a una tarea simple.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "182",
@@ -1339,7 +1338,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Durante 2 minutos, deja de formular y solo registra: vista, sonido, tacto.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "183",
@@ -1349,7 +1348,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "184",
@@ -1359,7 +1358,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Describe una emoción sin etiquetarla (sensación, temperatura, tensión).",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Linji (Rinzai), estilo antiverbalización."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "185",
@@ -1369,7 +1368,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Nombra un dato directo del presente sin explicación (p. ej., “hay frío”).",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen (Unmon): respuesta concreta, no metafísica."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "186",
@@ -1379,7 +1378,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Localiza si peleas con un hecho o con una interpretación; actúa sobre el hecho.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "187",
@@ -1389,7 +1388,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Suelta una micro-retención hoy (una pestaña abierta, una respuesta pendiente).",
       "categoria": "apego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Sengcan; formulación didáctica moderna."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "188",
@@ -1399,7 +1398,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "En una conversación, responde una vez sin justificarte de más.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "189",
@@ -1409,7 +1408,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una regla mental y déjala en pausa por el resto del día.",
       "categoria": "aprendizaje",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; tono de antiacumulación."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "190",
@@ -1419,7 +1418,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Quédate 30 segundos con una incomodidad sin buscar distraerte.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "191",
@@ -1429,7 +1428,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; riesgo de literalismo, úsese como koan."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "192",
@@ -1439,7 +1438,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz una pausa de 5 segundos antes de contestar la próxima pregunta.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen (gesto como enseñanza); atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "193",
@@ -1449,7 +1448,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Mantén hoy un hábito mínimo (2 minutos) aunque no tengas ganas.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; formulación operativa moderna."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "194",
@@ -1459,7 +1458,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Anota una idea y aplícala en un acto; no la guardes como trofeo.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen; anti-coleccionismo de insights."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "195",
@@ -1469,7 +1468,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reduce tu lista a un solo siguiente paso verificable y ejecútalo.",
       "categoria": "simplicidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "196",
@@ -1479,7 +1478,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea (no fijar estados)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "197",
@@ -1489,7 +1488,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Escucha a alguien 60 segundos sin preparar respuesta.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Zhaozhou (Joshu); énfasis en escucha."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "198",
@@ -1499,7 +1498,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una práctica y hazla sin medirla ni registrarla hoy.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Linji; anti-dogmatismo."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "199",
@@ -1509,7 +1508,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja un tema sin “cierre”: solo vuelve a practicar una vez más.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
 
     {
@@ -1520,7 +1519,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz primero (un paso mínimo), explica después si hace falta.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen; prioridad del contacto."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "201",
@@ -1530,7 +1529,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen (gesto como transmisión); atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "202",
@@ -1540,7 +1539,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja que tu estado cambie sin corregirlo por 2 minutos.",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "203",
@@ -1550,7 +1549,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Reemplaza hoy un “ya sé” por “voy a observar qué pasa”.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Sengcan; tono de suspensión de certeza."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "204",
@@ -1560,7 +1559,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Camina 3 minutos sin audio y sin lectura: solo andar.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; acción como instrucción."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "205",
@@ -1570,7 +1569,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Detecta la palabra “eso” en tu día: ahí suelta un 5%.",
       "categoria": "apego",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "206",
@@ -1580,7 +1579,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Usa una instrucción y luego déjala: vuelve a la experiencia directa.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Motivo clásico: dedo y luna; formulación paráfrastica moderna."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "207",
@@ -1590,7 +1589,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cuida una necesidad básica (comer/agua/sueño) antes de “resolver” lo demás.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Zhaozhou; regreso a lo concreto."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "208",
@@ -1600,7 +1599,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja de buscar calma y vuelve a una tarea breve y concreta (2 minutos).",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "209",
@@ -1610,7 +1609,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Haz tu práctica sin evaluación: solo cumple y suelta el resultado.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Baizhang; anti-metrificación."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "210",
@@ -1620,7 +1619,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Por 60 segundos, observa sin narrar: solo sensaciones.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "211",
@@ -1630,7 +1629,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Elige una acción y hazla con atención completa por 90 segundos.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "212",
@@ -1640,7 +1639,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Afloja una formalidad innecesaria hoy (sin faltar al respeto).",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Yunmen; risa como ruptura."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "213",
@@ -1650,7 +1649,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Observa dónde haces “yo vs. esto” y vuelve a describir sin oposición.",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "214",
@@ -1660,7 +1659,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Deja que tu atención suba y baje sin “corregirla” por 2 minutos.",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea (no fijar estados)."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "215",
@@ -1670,7 +1669,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; úsese como koan, no como consigna literal."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "216",
@@ -1680,7 +1679,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "Cuando aparezca una explicación, vuelve a una acción simple (respirar, caminar).",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis atribuida a Linji; anti-reificación conceptual."
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "217",
@@ -1690,7 +1689,7 @@ window.QI_DATASET_V1 = {
       "practica_hoy": "No agregues el “pero”: di una frase y termina.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Paráfrasis zen contemporánea; atribución indeterminada."
+      "nota_editorial": "Inspiración contemplativa."
     },
 
     {
@@ -1700,8 +1699,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El esfuerzo por eliminar el malestar aumenta su impacto.",
       "practica_hoy": "Reduce lucha 1%: deja de “arreglar” la emoción por 30 segundos.",
       "categoria": "evitacion_experiencial",
-      "linaje": "ACT",
-      "nota_editorial": "Metáfora de ACT atribuida a Hayes; reformulada."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "219",
@@ -1710,8 +1709,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La resistencia constante refuerza el problema.",
       "practica_hoy": "Observa la urgencia de luchar y elige una acción pequeña con valores.",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): cambiar lucha por dirección."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "220",
@@ -1720,8 +1719,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La evitación activa intensifica el atrapamiento.",
       "practica_hoy": "Haz lo contrario al impulso: pausa, respira, y mueve solo un pie (un paso mínimo).",
       "categoria": "evitacion_experiencial",
-      "linaje": "ACT",
-      "nota_editorial": "Metáfora clásica de arenas movedizas en ACT (Hayes)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "221",
@@ -1730,8 +1729,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El control mantiene la relación con el problema.",
       "practica_hoy": "Suelta “la cuerda” hoy: identifica una pelea mental y no respondas.",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): tug-of-war; soltar cambia el juego."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "222",
@@ -1740,8 +1739,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contenido mental no necesita obediencia.",
       "practica_hoy": "Deja la “radio” prendida y sigue con tu tarea 2 minutos.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): defusión con metáfora del comentarista/radio."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "223",
@@ -1750,8 +1749,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Evitar emociones impide procesamiento.",
       "practica_hoy": "Nombra la emoción y dónde se siente en el cuerpo (10 segundos).",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): aceptación como contacto, no supresión."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "224",
@@ -1760,8 +1759,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El malestar persiste cuando se evita.",
       "practica_hoy": "Invita al “huésped” 30 segundos: deja que esté y sigue con tu día.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): invitado no deseado."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "225",
@@ -1770,8 +1769,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Suprimir emociones consume recursos.",
       "practica_hoy": "Detecta una supresión y suelta el esfuerzo por 20 segundos.",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): beach ball; costo energético del control."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "226",
@@ -1780,8 +1779,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Las señales internas no siempre reflejan peligro.",
       "practica_hoy": "Trata tu señal como “alarma”: verifica con hechos antes de actuar.",
       "categoria": "discriminacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): discriminación estímulo-peligro."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "227",
@@ -1790,8 +1789,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La lucha verbal interna no reduce sufrimiento.",
       "practica_hoy": "Cuando aparezca dolor, baja volumen a la pelea: una exhalación lenta.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): cambiar relación con el dolor."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "228",
@@ -1800,8 +1799,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La agitación aumenta el malestar.",
       "practica_hoy": "Haz una pausa física breve: hombros abajo, mandíbula suelta, 10 segundos.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): agitación como amplificador."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "229",
@@ -1810,8 +1809,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Evitar no cambia la realidad.",
       "practica_hoy": "Elige un hecho que evitas y míralo 15 segundos (sin resolverlo).",
       "categoria": "evitacion_experiencial",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): evitación como estrategia fallida."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "230",
@@ -1820,8 +1819,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La mente siempre puede generar otro movimiento.",
       "practica_hoy": "Deja de debatir y vuelve a una acción: un mensaje, un paso, un gesto.",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): la mente como generador infinito de argumentos."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "231",
@@ -1830,8 +1829,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Aceptar reduce interferencia funcional.",
       "practica_hoy": "Haz tu tarea 2 minutos con el “ruido” presente, sin corregirlo.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): aceptación como disponibilidad."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "232",
@@ -1840,8 +1839,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Eliminar señales no elimina causas.",
       "practica_hoy": "En vez de apagar señales, pregunta: “¿qué acción útil puedo hacer ahora?”",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): atacar medición/síntoma no resuelve la función."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "233",
@@ -1850,8 +1849,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Cambiar la función del malestar.",
       "practica_hoy": "Pregunta: “¿qué necesidad señala esto?” y cumple una parte pequeña.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): función del dolor, no guerra contra él."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "234",
@@ -1860,8 +1859,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La hipervigilancia mantiene el problema.",
       "practica_hoy": "Suelta una revisión innecesaria (notificación, chequeo, reassurance) una vez.",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): vigilancia como reforzador del problema."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "235",
@@ -1870,8 +1869,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El pensamiento no dicta la acción.",
       "practica_hoy": "Etiqueta: “comentario” y sigue con tu conducta elegida.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): defusión del comentario mental."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "236",
@@ -1880,8 +1879,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Responder a pensamientos los mantiene.",
       "practica_hoy": "No respondas al eco: deja pasar un pensamiento sin contestarlo.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): no engancharse con contenido repetitivo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "237",
@@ -1890,8 +1889,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La emoción no equivale a realidad.",
       "practica_hoy": "Haz una verificación externa mínima antes de cambiar tus planes.",
       "categoria": "discriminacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): diferenciar señal emocional de contingencia real."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "238",
@@ -1900,8 +1899,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Soltar lucha facilita avance.",
       "practica_hoy": "Suelta una conducta de control hoy (reasegurar, rumiar, evitar).",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): menos carga, más rango conductual."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "239",
@@ -1910,8 +1909,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Aceptar lo inevitable reduce sufrimiento secundario.",
       "practica_hoy": "Permite un “mojarte” pequeño: un correo difícil, una llamada, una espera.",
       "categoria": "aceptacion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): aceptación como disposición a contacto."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "240",
@@ -1920,8 +1919,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La fusión verbal restringe conducta.",
       "practica_hoy": "Escribe tu pensamiento como frase y agrega: “estoy teniendo el pensamiento de…”.",
       "categoria": "defusion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): literalidad del lenguaje como jaula."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "241",
@@ -1930,8 +1929,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Control conductual no domina eventos internos.",
       "practica_hoy": "Haz conducta útil aunque el “clima” interno sea malo (1 paso).",
       "categoria": "control",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): control externo vs eventos internos."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "242",
@@ -1940,8 +1939,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La evitación intensifica la experiencia.",
       "practica_hoy": "Dale 20 segundos de atención al dolor sin juicio y luego continúa.",
       "categoria": "evitacion_experiencial",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): evitación como amplificador."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
 
     {
@@ -1951,8 +1950,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Orientan la conducta sin prometer llegada final.",
       "practica_hoy": "Elige una dirección (valor) y haz una acción de 2 minutos coherente.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): valores como dirección."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "244",
@@ -1961,8 +1960,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores se viven, no se completan.",
       "practica_hoy": "Haz una repetición pequeña hoy, aunque ya la hiciste ayer.",
       "categoria": "direccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): dirección sostenida, no meta cerrada."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "245",
@@ -1971,8 +1970,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Toda dirección significativa implica costo.",
       "practica_hoy": "Nombra un costo que aceptarás hoy por algo que te importa.",
       "categoria": "eleccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): costo elegido vs sufrimiento estéril."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "246",
@@ -1981,8 +1980,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La acción comprometida no depende del estado emocional.",
       "practica_hoy": "Actúa 2 minutos sin motivación: solo cumplir el paso.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): compromiso > ánimo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "247",
@@ -1991,8 +1990,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores guían aun con confusión.",
       "practica_hoy": "Si hay confusión, decide por valor, no por certeza.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): valores bajo incertidumbre."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "248",
@@ -2001,8 +2000,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La consistencia supera la intensidad.",
       "practica_hoy": "Define tu “paso pequeño” de hoy y hazlo antes de las 14:00.",
       "categoria": "constancia",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): microacciones sostenidas."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "249",
@@ -2011,8 +2010,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La acción no requiere condiciones ideales.",
       "practica_hoy": "Empieza con condiciones imperfectas: 5 minutos, versión fea pero real.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): empezar sin garantías."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "250",
@@ -2021,8 +2020,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Flexibilidad conductual mantiene valores.",
       "practica_hoy": "Cambia el método, no la dirección: busca una alternativa viable.",
       "categoria": "direccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): flexibilidad como ajuste de ruta."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "251",
@@ -2031,8 +2030,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores contextualizan la dificultad.",
       "practica_hoy": "Conecta una dificultad actual con un valor (una frase).",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): sentido como contexto, no como consuelo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "252",
@@ -2041,8 +2040,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La acción comprometida es repetida y simple.",
       "practica_hoy": "Haz una repetición mínima (leer 1 página, caminar 3 min, etc.).",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): práctica simple, repetida."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "253",
@@ -2051,8 +2050,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores requieren conducta.",
       "practica_hoy": "Convierte una intención en conducta observable hoy (un acto).",
       "categoria": "accion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): del mapa a la caminata."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "254",
@@ -2061,8 +2060,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La experiencia subjetiva no valida la dirección.",
       "practica_hoy": "Sostén 2 minutos más aunque no se sienta bien.",
       "categoria": "persistencia",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): disociar sensación de progreso."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "255",
@@ -2071,8 +2070,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores no regulan emociones, guían acciones.",
       "practica_hoy": "Haz una acción orientada a valor aunque el estado sea tormenta.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): orientación en malestar."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "256",
@@ -2081,8 +2080,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La vida valiosa no es sinónimo de alivio.",
       "practica_hoy": "Acepta un costo pequeño hoy por mantener tu rumbo.",
       "categoria": "eleccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): costo como parte del compromiso."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "257",
@@ -2091,8 +2090,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La reducción de ritmo mantiene compromiso.",
       "practica_hoy": "Baja ritmo 10% y mantén la conducta; no la abandones.",
       "categoria": "constancia",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): ritmo sostenible."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "258",
@@ -2101,8 +2100,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La dirección supera la urgencia.",
       "practica_hoy": "Revisa tu dirección antes de acelerar: ¿esto sirve a tu valor?",
       "categoria": "direccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): rumbo > prisa."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "259",
@@ -2111,8 +2110,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Soltar lucha facilita acción sostenida.",
       "practica_hoy": "Elige una carga inútil (reasegurar/rumiar) y suéltala una vez.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): aligerar para sostener."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "260",
@@ -2121,8 +2120,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores se clarifican en la acción.",
       "practica_hoy": "No esperes claridad: haz el primer paso y observa la información que aparece.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): claridad emergente por acción."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "261",
@@ -2131,8 +2130,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La certeza no precede a la acción.",
       "practica_hoy": "Da un paso sin plan completo: solo el siguiente paso verificable.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): compromiso sin garantías."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "262",
@@ -2141,8 +2140,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores reemplazan a la motivación.",
       "practica_hoy": "Haz una acción por valor aunque tu motivación esté en cero.",
       "categoria": "direccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): valores como sostén."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "263",
@@ -2151,8 +2150,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El compromiso define prioridades conductuales.",
       "practica_hoy": "Di que sí a una cosa y di que no a otra, explícitamente, hoy.",
       "categoria": "eleccion",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): elección como compromiso."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "264",
@@ -2161,8 +2160,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La acción puede preceder a la claridad.",
       "practica_hoy": "Cuando dudes, ejecuta el paso mínimo en vez de discutirlo.",
       "categoria": "persistencia",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): responder con acción."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "265",
@@ -2171,8 +2170,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La acción valiosa coexiste con malestar.",
       "practica_hoy": "Lleva el miedo contigo y avanza 1 paso igual.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): miedo como pasajero."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "266",
@@ -2181,8 +2180,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El compromiso implica dificultad elegida.",
       "practica_hoy": "Elige hoy la opción difícil por 2 minutos, con cuidado.",
       "categoria": "accion_comprometida",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): dificultad elegida por valor."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "267",
@@ -2191,8 +2190,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los valores no dependen de validación externa.",
       "practica_hoy": "Haz una acción valiosa sin contársela a nadie.",
       "categoria": "valores",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): valores vs aprobación."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
 
     {
@@ -2202,8 +2201,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El espacio que observa no necesita cambiar lo que aparece.",
       "practica_hoy": "Nota un pensamiento como “nube” y vuelve al cuerpo por 10 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): yo-contexto (cielo y nubes)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "269",
@@ -2212,8 +2211,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La experiencia ocurre en algo más amplio que su contenido.",
       "practica_hoy": "Distingue: “contenido” vs “espacio donde ocurre” (una vez hoy).",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): observador y contenido."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "270",
@@ -2222,8 +2221,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Lo observado no define al que observa.",
       "practica_hoy": "Repite: “esto pasa en mí, pero no es todo lo que soy”.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): separación observador-contenido."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "271",
@@ -2232,8 +2231,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La identidad no se fija en las experiencias.",
       "practica_hoy": "Deja pasar una emoción sin guardarla como explicación de ti.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): metáfora del espejo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "272",
@@ -2242,8 +2241,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El yo es el espacio, no lo que lo ocupa.",
       "practica_hoy": "Nota “muebles” (pensamientos) y vuelve a “habitación” (presencia).",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): contexto estable."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "273",
@@ -2252,8 +2251,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Ser testigo no implica participar.",
       "practica_hoy": "Observa un impulso 10 segundos sin actuarlo.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): escenario/obra."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "274",
@@ -2262,8 +2261,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Las emociones no agotan lo que eres.",
       "practica_hoy": "Cuando suba una emoción, di: “ola” y sigue respirando 3 ciclos.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): mar/olas."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "275",
@@ -2272,8 +2271,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Ver no equivale a absorber.",
       "practica_hoy": "Mira un pensamiento difícil como si fuera paisaje; no lo “tomes”.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): ventana/paisaje."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "276",
@@ -2282,8 +2281,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El espacio interno no discrimina contenidos.",
       "practica_hoy": "Permite una sensación desagradable sin expulsarla 20 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): campo como contenedor."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "277",
@@ -2292,8 +2291,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La conciencia no juzga lo que aparece.",
       "practica_hoy": "Observa sin calificar: reemplaza “bien/mal” por “presente”.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): observar sin juicio."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "278",
@@ -2302,8 +2301,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Las historias pasan; el espacio permanece.",
       "practica_hoy": "Nota “historia” y vuelve a “aquí”: pies, manos, respiración.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): teatro/función."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "279",
@@ -2312,8 +2311,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La experiencia intensa no daña al observador.",
       "practica_hoy": "Deja que una emoción fuerte esté 15 segundos sin corregirla.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): lago/reflejo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "280",
@@ -2322,8 +2321,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Los pensamientos no definen el soporte.",
       "practica_hoy": "Escribe un pensamiento y míralo como tinta, no como mandato.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): soporte vs contenido."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "281",
@@ -2332,8 +2331,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El yo no dirige el contenido.",
       "practica_hoy": "Cruza el momento: sigue caminando aunque aparezca ruido mental.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): pasillo como contexto."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "282",
@@ -2342,8 +2341,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La conciencia no se altera por la narrativa.",
       "practica_hoy": "Deja que la narrativa suene y mantén una exhalación lenta.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): sonido vs aire (contexto)."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "283",
@@ -2352,8 +2351,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El yo no es su biografía.",
       "practica_hoy": "Hoy, no uses tu biografía para decidir: decide por valor.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): yo-contexto vs historia personal."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "284",
@@ -2362,8 +2361,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El espacio interno no selecciona experiencias.",
       "practica_hoy": "Permite el eco (pensamiento repetido) sin perseguirlo.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): contenedor amplio."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "285",
@@ -2372,8 +2371,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Ser contexto no implica opinión.",
       "practica_hoy": "Sostén una emoción sin explicar: solo nota y continúa.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): sostener sin narrar."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "286",
@@ -2382,8 +2381,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La identidad profunda no evalúa el paso.",
       "practica_hoy": "Hoy, cambia “evaluación” por “registro” en un momento difícil.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): suelo/huellas."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "287",
@@ -2392,8 +2391,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El punto de observación permanece estable.",
       "practica_hoy": "Vuelve al “faro”: una respiración y un acto pequeño con dirección.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): punto estable de observar."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
 
     {
@@ -2403,8 +2402,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El observador no puede objetivarse sin perder su función.",
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): formulación abstracta de yo-contexto."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "289",
@@ -2413,8 +2412,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El marco permanece aunque cambien las variables.",
       "practica_hoy": "Cambia lo que haces sin exigir cambiar lo que sientes primero.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): marco/variables; metáfora técnica."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "290",
@@ -2423,8 +2422,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contexto no entra en conflicto con el contenido.",
       "practica_hoy": "Deja el ruido y agrega silencio: 10 segundos sin responder mentalmente.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): contenido vs contexto."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "291",
@@ -2433,8 +2432,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La estabilidad no depende del movimiento.",
       "practica_hoy": "Encuentra tu “eje” hoy: una acción mínima repetible aunque todo cambie.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): eje/rotación."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "292",
@@ -2443,8 +2442,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El soporte no toma partido por el contenido.",
       "practica_hoy": "Lee tu mente como texto: no discutas, observa.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): soporte neutral."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "293",
@@ -2453,8 +2452,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La identidad profunda no requiere validación.",
       "practica_hoy": "Haz una acción valiosa sin explicar por qué.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): yo-contexto sin defensa."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "294",
@@ -2463,8 +2462,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "Observar no equivale a fusionarse.",
       "practica_hoy": "Etiqueta: “estoy notando…” para crear distancia con un pensamiento.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): defusión como distancia funcional."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "295",
@@ -2473,8 +2472,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El paso del tiempo ocurre en el contenido.",
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "continuidad",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): continuidad del observador."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "296",
@@ -2483,8 +2482,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El yo-contexto opera sin narrarse.",
       "practica_hoy": "Sostén una emoción 20 segundos sin contar una historia sobre ella.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): sostener sin protagonismo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "297",
@@ -2493,8 +2492,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "No hay necesidad de proteger el contexto.",
       "practica_hoy": "En una crítica, no te defiendas de inmediato: pregunta una cosa concreta.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): contexto no defensivo."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "298",
@@ -2503,8 +2502,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El observador no pertenece al mismo nivel ontológico.",
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "asimetria",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): formulación filosófica; úsese con cuidado."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "299",
@@ -2513,8 +2512,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contenido intenso no colapsa el contexto.",
       "practica_hoy": "Cuando sea intenso, recuérdalo: “esto ocurre en mí”. Luego un paso útil.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): base/soporte."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "300",
@@ -2523,8 +2522,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El espacio de conciencia no es representable.",
       "practica_hoy": "Crea intervalo: 1 inhalación antes de responder a un impulso.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): espacio de elección."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "301",
@@ -2533,8 +2532,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "La continuidad no depende del recuerdo.",
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "continuidad",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): continuidad del observador."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "302",
@@ -2543,8 +2542,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contenido requiere contexto para existir.",
       "practica_hoy": "Recuerda hoy: sin tu atención, el pensamiento no “manda”.",
       "categoria": "asimetria",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): asimetría contenido-contexto."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "303",
@@ -2553,8 +2552,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El yo-contexto no evalúa.",
       "practica_hoy": "Observa sin evaluar por 30 segundos: solo figura, sin comentario.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): fondo/figura."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "304",
@@ -2563,8 +2562,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contexto permanece sin resistir.",
       "practica_hoy": "Permite un cambio pequeño sin compensar con control extra.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): estabilidad como no-resistencia."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "305",
@@ -2573,8 +2572,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El observador no es un evento.",
       "practica_hoy": "abierta a interpretación propia",
       "categoria": "ontologia",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): formulación abstracta; úsese como koan clínico."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "306",
@@ -2583,8 +2582,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "No hay saturación del contexto.",
       "practica_hoy": "Deja que haya más cosas sin “cerrarlas”: una sola respiración y seguir.",
       "categoria": "yo_contexto",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): contenedor amplio."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     },
     {
       "id": "307",
@@ -2593,8 +2592,8 @@ window.QI_DATASET_V1 = {
       "interpretacion": "El contenido no determina la identidad.",
       "practica_hoy": "Elige hoy una acción por valor, no por tu estado interno.",
       "categoria": "observador",
-      "linaje": "ACT",
-      "nota_editorial": "ACT (Hayes): identidad como contexto, no contenido."
+      "linaje": "contemporaneo",
+      "nota_editorial": "Inspiración contemplativa."
     }
   ]
 

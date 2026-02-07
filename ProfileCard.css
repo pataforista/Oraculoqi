@@ -90,14 +90,6 @@
     opacity: 0.9;
 }
 
-.pc-author {
-    font-family: var(--font-base);
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--ink-muted);
-}
-
 .pc-frase {
     font-family: var(--font-ritual);
     font-size: 1.75rem;
