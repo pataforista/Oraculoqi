@@ -1,7 +1,7 @@
 .pc-card-wrapper {
     position: relative;
     width: 100%;
-    max-width: clamp(320px, 92vw, 540px);
+    max-width: clamp(320px, 92vw, 600px);
     margin: 0 auto;
     perspective: 2000px;
     user-select: none;
@@ -88,6 +88,14 @@
     font-weight: 700;
     margin-bottom: 5px;
     opacity: 0.9;
+}
+
+.pc-author {
+    font-family: var(--font-base);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-muted);
 }
 
 .pc-frase {
