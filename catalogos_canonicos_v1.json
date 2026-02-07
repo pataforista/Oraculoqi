@@ -74,17 +74,12 @@
       "zen",
       "taoismo",
       "budismo",
-      "ACT",
       "sufismo",
       "estoicismo",
       "mindfulness",
       "existencialismo",
-      "psicologia_profunda",
       "sistemica",
       "humanista",
-      "semantica_general",
-      "neurociencia",
-      "trauma",
       "contemporaneo"
     ]
   },
@@ -107,7 +102,7 @@
     "criterios_linaje": [
       "Usar el linaje mas cercano a la fuente o tradicion real.",
       "Si es mezcla o derivacion moderna, usar 'contemporaneo' en vez de forzar una tradiciones.",
-      "Si se apoya en un marco clinico (ACT, trauma), preferir ese linaje aunque tenga tono zentaoista."
+      "Si se apoya en una tradicion contemplativa moderna, preferir ese linaje aunque tenga tono zentaoista."
     ],
     "control_antirredundancia": {
       "por_bloque_25": {
