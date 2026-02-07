@@ -104,7 +104,7 @@
 
     .main-content {
       width: 100%;
-      max-width: 520px;
+      max-width: clamp(320px, 92vw, 600px);
       display: flex;
       flex-direction: column;
       gap: var(--space-xl);
@@ -158,8 +158,8 @@
 
     .card-placeholder {
       width: 100%;
-      max-width: 480px;
-      min-height: 480px;
+      max-width: clamp(320px, 92vw, 600px);
+      min-height: clamp(360px, 60vh, 560px);
       background: var(--bg-panel);
       border: var(--border-thin);
       border-radius: var(--radius-panel);
