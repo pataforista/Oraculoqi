@@ -99,7 +99,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: var(--space-lg) var(--space-lg) calc(var(--space-xl) * 4);
+      justify-content: center;
+      padding: var(--space-lg);
+      padding-bottom: calc(var(--space-xl) * 4);
     }
 
     .main-content {
@@ -382,6 +384,7 @@
 
   <!-- React & Babel for JSX -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
   <script type="importmap">
     {
@@ -615,6 +618,9 @@ void main() {
                     <label>Invitación hoy</label>
                     <p>{card.practica_hoy}</p>
                   </div>
+                  <div className="pc-card-footer">
+                    <img src="icons/enso-logo.svg" className="pc-card-logo" alt="Enso" />
+                  </div>
                 </div>
               </div>
             </section>
@@ -668,8 +674,46 @@ void main() {
 
       const shareCard = useCallback(async () => {
         if (!card) return;
-        const data = { title: 'Trozos de Sabiduría', text: `"${card.frase}"\n\n- Trozos de Sabiduría`, url: window.location.href };
-        try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(`${data.text}\n${data.url}`); alert('Copiado al portapapeles'); } } catch (e) { console.error(e); }
+
+        const cardElement = document.querySelector('.pc-card');
+        if (!cardElement) return;
+
+        try {
+          // Use html2canvas to capture the card
+          const canvas = await html2canvas(cardElement, {
+            scale: 2, // Higher resolution
+            backgroundColor: null, // Transparent background if possible, or match theme
+            logging: false,
+            useCORS: true
+          });
+
+          canvas.toBlob(async (blob) => {
+            if (!blob) return;
+            const file = new File([blob], 'trozo-sabiduria.png', { type: 'image/png' });
+            const data = {
+              title: 'Trozos de Sabiduría',
+              text: `"${card.frase}"\n\n- Trozos de Sabiduría`,
+              files: [file]
+            };
+
+            if (navigator.canShare && navigator.canShare(data)) {
+              await navigator.share(data);
+            } else {
+              // Fallback for desktop or unsupported browsers: Download the image
+              const link = document.createElement('a');
+              link.download = 'trozo-sabiduria.png';
+              link.href = canvas.toDataURL();
+              link.click();
+              alert('Imagen descargada (tu navegador no soporta compartir imágenes directamente).');
+            }
+          }, 'image/png');
+
+        } catch (e) {
+          console.error("Error al compartir imagen:", e);
+          // Fallback to text sharing if image fails
+          const dataText = { title: 'Trozos de Sabiduría', text: `"${card.frase}"\n\n- Trozos de Sabiduría`, url: window.location.href };
+          try { if (navigator.share) await navigator.share(dataText); else { await navigator.clipboard.writeText(`${dataText.text}\n${dataText.url}`); alert('Texto copiado al portapapeles (error generando imagen).'); } } catch (err) { console.error(err); }
+        }
       }, [card]);
 
       if (!card) return <div className="loading">Invocando sabiduría...</div>;

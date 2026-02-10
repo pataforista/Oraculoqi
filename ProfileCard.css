@@ -197,3 +197,26 @@
         font-size: 0.85rem;
     }
 }
+
+.pc-card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pc-card-logo {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+    transition: all var(--transition-slow);
+}
+
+.pc-card:hover .pc-card-logo {
+    opacity: 1;
+    transform: scale(1.1) rotate(15deg);
+    filter: drop-shadow(0 0 12px rgba(226, 125, 161, 0.4));
+}
