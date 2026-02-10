@@ -9,7 +9,8 @@ const CORE_ASSETS = [
   "./ElectricBorder.css",
   "./ProfileCard.css",
   "./icons/enso-logo.svg",
-  "./icons/icon-192.png"
+  "./icons/icon-192.png",
+  "./icons/enso-8bit.png"
 ];
 
 // Install: precache mínimo
