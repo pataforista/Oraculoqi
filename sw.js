@@ -1,5 +1,5 @@
 /* sw.js — Trozos de Sabiduría */
-const CACHE_VERSION = "sabiduria-v1.2.1";
+const CACHE_VERSION = "sabiduria-v1.3.0";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -8,8 +8,6 @@ const CORE_ASSETS = [
   "./Galaxy.css",
   "./ElectricBorder.css",
   "./ProfileCard.css",
-  "./icons/enso-logo.svg",
-  "./icons/icon-192.png",
   "./icons/enso-8bit.png"
 ];
 
