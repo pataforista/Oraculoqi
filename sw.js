@@ -1,5 +1,5 @@
 /* sw.js — Trozos de Sabiduría */
-const CACHE_VERSION = "sabiduria-v1.3.0";
+const CACHE_VERSION = "sabiduria-v1.4.0";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -55,6 +55,9 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Evitar cache de peticiones no idempotentes
+  if (req.method !== "GET") return;
+
   // JS/CSS/PNG/etc: cache-first
   event.respondWith(cacheFirst(req));
 });
@@ -64,8 +67,10 @@ async function cacheFirst(req) {
   if (cached) return cached;
   try {
     const fresh = await fetch(req);
-    const cache = await caches.open(CACHE_VERSION);
-    cache.put(req, fresh.clone());
+    if (fresh.ok) {
+      const cache = await caches.open(CACHE_VERSION);
+      cache.put(req, fresh.clone());
+    }
     return fresh;
   } catch (e) {
     return new Response("Offline resource", { status: 404 });
@@ -75,8 +80,10 @@ async function cacheFirst(req) {
 async function networkFirst(req) {
   try {
     const fresh = await fetch(req);
-    const cache = await caches.open(CACHE_VERSION);
-    cache.put(req, fresh.clone());
+    if (fresh.ok) {
+      const cache = await caches.open(CACHE_VERSION);
+      cache.put(req, fresh.clone());
+    }
     return fresh;
   } catch {
     const cached = await caches.match(req);
