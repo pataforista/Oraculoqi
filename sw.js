@@ -1,5 +1,5 @@
 /* sw.js — Oráculo Taoísta */
-const CACHE_VERSION = "oraculo-taoista-v2.1.0";
+const CACHE_VERSION = "oraculo-taoista-v2.1.1";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -35,7 +35,13 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   const url = new URL(req.url);
 
-  if (url.origin !== self.location.origin && !url.hostname.includes("fonts")) return;
+  const isAllowedOrigin = url.origin === self.location.origin ||
+    url.hostname.includes("fonts") ||
+    url.hostname.includes("unpkg.com") ||
+    url.hostname.includes("esm.sh") ||
+    url.hostname.includes("html2canvas");
+
+  if (!isAllowedOrigin) return;
   if (req.method !== "GET") return;
 
   if (req.mode === "navigate" || (req.headers.get("accept") || "").includes("text/html")) {
@@ -47,7 +53,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 async function cacheFirst(req) {
-  const cached = await caches.match(req);
+  const cached = await caches.match(req, { ignoreSearch: true });
   if (cached) return cached;
   try {
     const fresh = await fetch(req);
@@ -70,7 +76,7 @@ async function networkFirst(req) {
     }
     return fresh;
   } catch {
-    const cached = await caches.match(req);
+    const cached = await caches.match(req, { ignoreSearch: true });
     return cached || new Response("Offline", { status: 503, headers: { "Content-Type": "text/plain" } });
   }
 }
