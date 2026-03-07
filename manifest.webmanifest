@@ -1,7 +1,7 @@
 {
-  "name": "Trozos de Sabiduría",
-  "short_name": "Sabiduría",
-  "description": "Carta del día — Sincronía y Reflexión",
+  "name": "Oráculo Taoísta",
+  "short_name": "Taoísta",
+  "description": "Consulta diaria del Oráculo Taoísta, online y offline.",
   "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",

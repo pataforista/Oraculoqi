@@ -1,7 +1,8 @@
 const fs = require('fs');
+const path = require('path');
 
-const datasetPath = 'c:/Users/Admin/Documents/GitHub/Oraculoqi/dataset_qi.js';
-const catalogPath = 'c:/Users/Admin/Documents/GitHub/Oraculoqi/catalogos_canonicos_v1.json';
+const datasetPath = path.join(__dirname, 'dataset_taoista.js');
+const catalogPath = path.join(__dirname, 'catalogos_canonicos_v1.json');
 
 // --- Load Catalog ---
 const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8')).catalogos_canonicos;
@@ -10,7 +11,7 @@ const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8')).catalogos_canon
 const datasetContent = fs.readFileSync(datasetPath, 'utf8');
 const cardsMatch = datasetContent.match(/(?:\"cards\"|cards):\s*(\[.*\])/s);
 if (!cardsMatch) {
-    console.error('Could not find cards array in dataset_qi.js');
+    console.error('Could not find cards array in dataset_taoista.js');
     process.exit(1);
 }
 const cards = JSON.parse(cardsMatch[1]);

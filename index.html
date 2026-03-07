@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Trozos de Sabiduría</title>
+  <title>Oráculo Taoísta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="PWA de reflexión diaria con una carta de sabiduría, modo offline y guardado local de favoritas." />
@@ -618,7 +618,7 @@
   <div id="root"></div>
 
   <!-- Dataset -->
-  <script src="dataset_qi.js?v=2.0.0"></script>
+  <script src="dataset_taoista.js?v=2.1.0"></script>
 
   <!-- React & Babel for JSX -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -896,8 +896,8 @@ void main() {
       }, []);
 
       useEffect(() => {
-        if (window.QI_DATASET) {
-          const deck = window.QI_DATASET.cards, today = new Date().toISOString().split('T')[0];
+        if (window.TAOISTA_DATASET) {
+          const deck = window.TAOISTA_DATASET.cards, today = new Date().toISOString().split('T')[0];
           let hash = 0; for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
           setCard(deck[Math.abs(hash | 0) % deck.length]);
         }
@@ -936,8 +936,8 @@ void main() {
       }, [card]);
 
       const refreshCard = useCallback(() => {
-        if (!window.QI_DATASET) return;
-        const deck = window.QI_DATASET.cards;
+        if (!window.TAOISTA_DATASET) return;
+        const deck = window.TAOISTA_DATASET.cards;
         let newCard;
         do { newCard = deck[Math.floor(Math.random() * deck.length)]; } while (card && newCard.id === card.id && deck.length > 1);
         setIsRevealed(false);
@@ -967,10 +967,10 @@ void main() {
 
           canvas.toBlob(async (blob) => {
             if (!blob) return;
-            const file = new File([blob], 'trozo-sabiduria.png', { type: 'image/png' });
+            const file = new File([blob], 'oraculo-taoista.png', { type: 'image/png' });
             const data = {
-              title: 'Trozos de Sabiduría',
-              text: `"${card.frase}"\n\n- Trozos de Sabiduría`,
+              title: 'Oráculo Taoísta',
+              text: `"${card.frase}"\n\n- Oráculo Taoísta`,
               files: [file]
             };
 
@@ -979,7 +979,7 @@ void main() {
             } else {
               // Fallback for desktop or unsupported browsers: Download the image
               const link = document.createElement('a');
-              link.download = 'trozo-sabiduria.png';
+              link.download = 'oraculo-taoista.png';
               link.href = canvas.toDataURL();
               link.click();
               alert('Imagen descargada (tu navegador no soporta compartir imágenes directamente).');
@@ -989,7 +989,7 @@ void main() {
         } catch (e) {
           console.error("Error al compartir imagen:", e);
           // Fallback to text sharing if image fails
-          const dataText = { title: 'Trozos de Sabiduría', text: `"${card.frase}"\n\n- Trozos de Sabiduría`, url: window.location.href };
+          const dataText = { title: 'Oráculo Taoísta', text: `"${card.frase}"\n\n- Oráculo Taoísta`, url: window.location.href };
           try { if (navigator.share) await navigator.share(dataText); else { await navigator.clipboard.writeText(`${dataText.text}\n${dataText.url}`); alert('Texto copiado al portapapeles (error generando imagen).'); } } catch (err) { console.error(err); }
         }
       }, [card]);
@@ -1003,7 +1003,7 @@ void main() {
         }
       }, [installPrompt, isInstalled]);
 
-      if (!card) return <div className="loading">Invocando sabiduría...</div>;
+      if (!card) return <div className="loading">Consultando el Oráculo Taoísta...</div>;
 
       const isFav = favorites.some(f => f.id === card.id);
 
@@ -1015,7 +1015,7 @@ void main() {
             <header className="app-header">
               <img src="icons/enso-8bit.png" className="app-logo" alt="Logo Enso" />
               <div className="brand-info">
-                <h1 className="brand-title">Trozos de Sabiduría</h1>
+                <h1 className="brand-title">Oráculo Taoísta</h1>
                 <p className="sync-label">Sincronía · {new Date().toLocaleDateString()}</p>
               </div>
             </header>
@@ -1100,7 +1100,7 @@ void main() {
                 <h3>Créditos</h3>
                 <p>Diseño y Concepto: Cosmología Visual de la Reflexión.</p>
                 <p>Desarrollado para la contemplación diaria.</p>
-                <div style={{ marginTop: '40px', textAlign: 'center', opacity: 0.3, fontSize: '0.8rem' }}>Trozos de Sabiduría v1.1.0</div>
+                <div style={{ marginTop: '40px', textAlign: 'center', opacity: 0.3, fontSize: '0.8rem' }}>Oráculo Taoísta v1.1.0</div>
               </div>
             </div>
           )}
