@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <title>Trozos de Sabiduría</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PWA de reflexión diaria con una carta de sabiduría, modo offline y guardado local de favoritas." />
+  <meta name="description"
+    content="PWA de reflexión diaria con una carta de sabiduría, modo offline y guardado local de favoritas." />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -18,6 +20,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#121015">
   <link rel="apple-touch-icon" href="icons/enso-8bit.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="Galaxy.css">
   <link rel="stylesheet" href="ElectricBorder.css">
@@ -26,38 +29,42 @@
   <style>
     :root {
       /* Ritual Aesthetic Tokens - Default Dark */
-      --bg-primary: #121015;
-      --bg-secondary: #1A1620;
-      --bg-panel: #201B28;
-      --bg-etched: #15121A;
+      --bg-primary: #0a090c;
+      --bg-secondary: #121015;
+      --bg-panel: rgba(26, 22, 32, 0.85);
+      --bg-etched: #050406;
 
-      --ink-primary: #E8DFC8;
-      --ink-secondary: #B8AE97;
-      --ink-muted: #7E7768;
+      --ink-primary: #f0e9d8;
+      --ink-secondary: #c9bfab;
+      --ink-muted: #8a8375;
 
-      --ritual-red: #C4455C;
-      --ritual-pink: #E27DA1;
-      --ritual-purple: #6B4E77;
+      --ritual-red: #d64d65;
+      --ritual-pink: #eb94b3;
+      --ritual-purple: #7d5c8a;
 
-      --risk-amber: #D0A94A;
-      --risk-shadow: #3A2A2A;
+      --risk-amber: #e0b95d;
+      --risk-shadow: #2a1f1f;
 
-      --tech-muted: #5FA3A2;
-      --tech-glow: rgba(95, 163, 162, 0.25);
+      --tech-muted: #6eb5b4;
+      --tech-glow: rgba(110, 181, 180, 0.3);
 
-      --metal-bronze: #7A5C3A;
-      --metal-copper: #8C5A3C;
+      --metal-bronze: #8c6a45;
+      --metal-copper: #a66b4a;
 
-      --font-base: "Inter", "Source Sans 3", system-ui, sans-serif;
+      --font-base: "Inter", system-ui, -apple-system, sans-serif;
       --font-ritual: "EB Garamond", serif;
-      --font-mono: "JetBrains Mono", "IBM Plex Mono", monospace;
+      --font-mono: "JetBrains Mono", monospace;
 
-      --font-line-height: 1.55;
-      --radius-panel: 6px;
-      --radius-chip: 3px;
+      --font-line-height: 1.6;
+      --radius-panel: 12px;
+      --radius-chip: 4px;
 
-      --border-thin: 1px solid rgba(232, 223, 200, 0.15);
-      --border-ritual: 1px solid rgba(196, 69, 92, 0.35);
+      --glass-bg: rgba(26, 22, 32, 0.7);
+      --glass-border: 1px solid rgba(240, 233, 216, 0.1);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+      --border-thin: 1px solid rgba(240, 233, 216, 0.1);
+      --border-ritual: 1px solid rgba(214, 77, 101, 0.4);
 
       --space-xs: 4px;
       --space-sm: 8px;
@@ -65,23 +72,60 @@
       --space-lg: 24px;
       --space-xl: 32px;
 
-      --transition-slow: 320ms cubic-bezier(0.3, 0, 0.2, 1);
-      --transition-xslow: 520ms cubic-bezier(0.3, 0, 0.2, 1);
+      --bg-overlay: rgba(10, 9, 12, 0.4);
+      --ink-overlay: #f0e9d8;
+
+      --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     [data-theme="light"] {
       /* Contemplativo Aesthetic Tokens (Light) */
-      --bg-primary: #F3D6E4;
-      --bg-secondary: #E7BFD6;
-      --bg-panel: #F7EAF1;
-      --bg-etched: #F0DCEA;
+      --bg-primary: #fcf6f9;
+      --bg-secondary: #f4e8f0;
+      --bg-panel: rgba(255, 255, 255, 0.8);
+      --bg-etched: #f0dfe8;
 
-      --ink-primary: #2A2431;
-      --ink-secondary: #5A4E61;
-      --ink-muted: #8E7A94;
+      --ink-primary: #2d2833;
+      --ink-secondary: #5d5466;
+      --ink-muted: #918499;
 
-      --border-thin: 1px solid rgba(42, 36, 49, 0.1);
-      --border-ritual: 1px solid rgba(196, 69, 92, 0.2);
+      --glass-bg: rgba(255, 255, 255, 0.5);
+      --glass-border: 1px solid rgba(45, 40, 51, 0.08);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
+      --border-thin: 1px solid rgba(45, 40, 51, 0.08);
+      --border-ritual: 1px solid rgba(214, 77, 101, 0.15);
+
+      --bg-overlay: rgba(255, 255, 255, 0.6);
+      --ink-overlay: #2d2833;
+    }
+
+    [data-theme="sumi-e"] {
+      /* Sumi-e Aesthetic Tokens (Ink Wash) */
+      --bg-primary: #f2f2f0;
+      --bg-secondary: #e8e8e6;
+      --bg-panel: rgba(255, 255, 255, 0.6);
+      --bg-etched: #dadada;
+
+      --ink-primary: #1a1a1a;
+      --ink-secondary: #4a4a4a;
+      --ink-muted: #808080;
+
+      --ritual-red: #8b0000;
+      --ritual-pink: #c08081;
+      --ritual-purple: #4a3a4a;
+
+      --glass-bg: rgba(255, 255, 255, 0.3);
+      --glass-border: 1px solid rgba(0, 0, 0, 0.1);
+      --glass-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+      --border-thin: 1px solid rgba(0, 0, 0, 0.06);
+      --border-ritual: 2px solid rgba(0, 0, 0, 0.8);
+
+      --bg-overlay: rgba(242, 242, 240, 0.8);
+      --ink-overlay: #1a1a1a;
     }
 
     body,
@@ -128,33 +172,62 @@
     }
 
     .app-logo {
-      width: 96px;
-      height: 96px;
-      padding: 10px;
+      width: 88px;
+      height: 88px;
+      padding: 12px;
       box-sizing: border-box;
       object-fit: contain;
-      border-radius: var(--radius-panel);
+      border-radius: 50%;
       border: var(--border-thin);
       background: var(--bg-etched);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--glass-shadow);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(2deg);
+      }
+    }
+
+    @keyframes revealIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        filter: blur(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+      }
     }
 
     .brand-title {
       font-family: var(--font-ritual);
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 500;
       letter-spacing: -0.01em;
       color: var(--ink-primary);
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .sync-label {
-      font-size: 0.7rem;
-      opacity: 0.5;
+      font-size: 0.75rem;
+      opacity: 0.6;
       text-transform: uppercase;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.25em;
       line-height: 1.4;
       color: var(--ink-muted);
+      font-weight: 500;
     }
 
     /* Card Area */
@@ -202,26 +275,29 @@
       flex-direction: column-reverse;
       align-items: center;
       gap: var(--space-md);
+      padding: 10px;
     }
 
     .menu-main-btn {
-      width: 60px;
-      height: 60px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
-      background: var(--bg-panel);
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border: var(--border-ritual);
       color: var(--ritual-red);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      transition: all var(--transition-slow);
+      box-shadow: var(--glass-shadow);
+      transition: all var(--transition-base);
       z-index: 2;
     }
 
     .menu-main-btn:active {
-      transform: scale(0.95);
+      transform: scale(0.9);
     }
 
     .menu-options {
@@ -241,24 +317,28 @@
     }
 
     .menu-opt-btn {
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      background: var(--bg-panel);
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border: var(--border-thin);
       color: var(--ink-secondary);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: all var(--transition-slow);
+      transition: all var(--transition-bounce);
       position: relative;
+      box-shadow: var(--glass-shadow);
     }
 
     .menu-opt-btn:hover {
       background: var(--bg-secondary);
       color: var(--ritual-pink);
-      transform: scale(1.1);
+      transform: scale(1.15) translateY(-5px);
+      border-color: var(--ritual-pink);
     }
 
     .menu-main-btn:focus-visible,
@@ -279,17 +359,19 @@
       color: var(--ritual-red);
     }
 
-    /* Modal / Codex Styles */
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: var(--bg-primary);
+      background: var(--bg-overlay);
+      color: var(--ink-overlay);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       z-index: 2000;
       display: flex;
       flex-direction: column;
       padding: var(--space-xl);
       overflow-y: auto;
-      transition: opacity var(--transition-slow);
+      transition: all var(--transition-slow);
     }
 
     .modal-header {
@@ -298,42 +380,67 @@
       align-items: center;
       margin-bottom: var(--space-xl);
       width: 100%;
-      max-width: 800px;
+      max-width: 900px;
       margin-inline: auto;
+      border-bottom: var(--border-thin);
+      padding-bottom: var(--space-md);
     }
 
     .modal-title {
       font-family: var(--font-ritual);
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: var(--ritual-pink);
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
     .close-btn {
-      background: transparent;
-      border: none;
+      background: var(--bg-panel);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: var(--border-thin);
       color: var(--ink-muted);
       cursor: pointer;
-      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all var(--transition-base);
+    }
+
+    .close-btn:hover {
+      color: var(--ritual-pink);
+      border-color: var(--ritual-pink);
+      transform: rotate(90deg);
     }
 
     .codex-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: var(--space-lg);
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--space-xl);
       width: 100%;
-      max-width: 1000px;
+      max-width: 1100px;
       margin-inline: auto;
-      padding-bottom: var(--space-xl);
+      padding-bottom: calc(var(--space-xl) * 2);
     }
 
     .codex-item {
-      background: var(--bg-panel);
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
       border: var(--border-thin);
       border-radius: var(--radius-panel);
-      padding: var(--space-md);
+      padding: var(--space-xl);
       display: flex;
       flex-direction: column;
-      gap: var(--space-sm);
+      gap: var(--space-md);
+      transition: all var(--transition-base);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .codex-item:hover {
+      transform: translateY(-5px);
+      border-color: var(--ritual-pink);
+      box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.6);
     }
 
     .codex-item-frase {
@@ -351,19 +458,133 @@
 
     /* Common */
     .btn-refresh {
-      background: transparent;
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border: var(--border-thin);
       color: var(--ink-secondary);
-      padding: 12px 28px;
+      padding: 14px 32px;
       border-radius: var(--radius-panel);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-family: var(--font-ritual);
       cursor: pointer;
       margin-top: var(--space-xl);
-      transition: all var(--transition-slow);
+      transition: all var(--transition-bounce);
       width: fit-content;
       align-self: center;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .btn-refresh:hover {
+      color: var(--ritual-pink);
+      border-color: var(--ritual-pink);
+      transform: scale(1.05);
+      background: var(--bg-secondary);
+    }
+
+    /* Buy Me a Coffee Button */
+    .bmc-btn {
+      position: fixed;
+      bottom: var(--space-xl);
+      left: var(--space-xl);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      background: #FFDD00;
+      color: #000000;
+      border-radius: 50px;
+      font-family: var(--font-base);
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all var(--transition-bounce);
+      font-size: 0.85rem;
+    }
+
+    .bmc-btn:hover {
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Donation Reminder */
+    .donation-reminder {
+      position: fixed;
+      top: var(--space-xl);
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      border: var(--border-thin);
+      padding: 12px 24px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: var(--glass-shadow);
+      z-index: 3000;
+      transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .donation-reminder.active {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .donation-reminder p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--ink-primary);
+      font-family: var(--font-base);
+    }
+
+    .donation-close {
+      cursor: pointer;
+      color: var(--ink-muted);
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .donation-close:hover {
+      color: var(--ritual-red);
+    }
+
+    /* Sumi-e specific overrides */
+    [data-theme="sumi-e"] .pc-card {
+      border: none;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+      background: url('https://www.transparenttextures.com/patterns/papyrus-dark.png'), #fff;
+    }
+
+    [data-theme="sumi-e"] .pc-inside {
+      border: 3px solid #1a1a1a;
+      margin: 12px;
+      padding: 30px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    [data-theme="sumi-e"] .pc-frase {
+      font-weight: 700;
+      color: #000;
+    }
+
+    [data-theme="sumi-e"] .pc-wisdom-category {
+      color: #8b0000;
+      letter-spacing: 0.4em;
+    }
+
+    [data-theme="sumi-e"] .brand-title {
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      text-shadow: none;
+    }
+
+    .btn-refresh:active {
+      transform: scale(0.95);
     }
 
     .loading {
@@ -381,7 +602,7 @@
       max-width: 600px;
       margin: 0 auto;
       line-height: 1.8;
-      color: var(--ink-secondary);
+      color: var(--ink-overlay);
       font-family: var(--font-base);
     }
 
@@ -397,7 +618,7 @@
   <div id="root"></div>
 
   <!-- Dataset -->
-  <script src="dataset_qi_v1.js?v=1.1.0"></script>
+  <script src="dataset_qi.js?v=2.0.0"></script>
 
   <!-- React & Babel for JSX -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -661,10 +882,22 @@ void main() {
       const [showInfo, setShowInfo] = useState(false);
       const [installPrompt, setInstallPrompt] = useState(null);
       const [isInstalled, setIsInstalled] = useState(window.matchMedia('(display-mode: standalone)').matches);
+      const [donationVisible, setDonationVisible] = useState(false);
 
       useEffect(() => {
-        if (window.QI_DATASET_V1) {
-          const deck = window.QI_DATASET_V1.cards, today = new Date().toISOString().split('T')[0];
+        // Show donation reminder after 3 minutes for the first time
+        const firstTimer = setTimeout(() => {
+          setDonationVisible(true);
+        }, 3 * 60 * 1000);
+
+        // Every 30 minutes thereafter if not dismissed? 
+        // Let's just keep it simple with one reminder per session or simple interval
+        return () => clearTimeout(firstTimer);
+      }, []);
+
+      useEffect(() => {
+        if (window.QI_DATASET) {
+          const deck = window.QI_DATASET.cards, today = new Date().toISOString().split('T')[0];
           let hash = 0; for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
           setCard(deck[Math.abs(hash | 0) % deck.length]);
         }
@@ -703,13 +936,19 @@ void main() {
       }, [card]);
 
       const refreshCard = useCallback(() => {
-        if (!window.QI_DATASET_V1) return;
-        const deck = window.QI_DATASET_V1.cards;
+        if (!window.QI_DATASET) return;
+        const deck = window.QI_DATASET.cards;
         let newCard;
         do { newCard = deck[Math.floor(Math.random() * deck.length)]; } while (card && newCard.id === card.id && deck.length > 1);
         setIsRevealed(false);
         setCard(newCard);
       }, [card]);
+
+      const cycleTheme = useCallback(() => {
+        const themes = ['dark', 'light', 'sumi-e'];
+        const next = themes[(themes.indexOf(theme) + 1) % themes.length];
+        setTheme(next);
+      }, [theme]);
 
       const shareCard = useCallback(async () => {
         if (!card) return;
@@ -784,12 +1023,12 @@ void main() {
             <div className="card-stage">
               {!isRevealed ? (
                 <div className="card-placeholder" onClick={() => setIsRevealed(true)}>
-                  <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08}>
+                  <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08} borderRadius={12}>
                     <div className="reveal-overlay"><span>Desvelar el Tao</span></div>
                   </ElectricBorder>
                 </div>
               ) : (
-                <div className="revealed-content" style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div className="revealed-content" style={{ width: '100%', display: 'flex', flexDirection: 'column', animation: 'revealIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards' }}>
                   <WisdomCard card={card} />
                   <button className="btn-refresh" onClick={refreshCard}>Otra sincronía para hoy</button>
                 </div>
@@ -809,12 +1048,10 @@ void main() {
               <button className="menu-opt-btn" onClick={shareCard} title="Compartir" aria-label="Compartir carta">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
               </button>
-              <button className="menu-opt-btn" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} title="Tema" aria-label="Cambiar tema">
-                {theme === 'dark' ? (
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
-                ) : (
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
-                )}
+              <button className="menu-opt-btn" onClick={cycleTheme} title="Tema" aria-label="Cambiar tema">
+                {theme === 'dark' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>}
+                {theme === 'light' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>}
+                {theme === 'sumi-e' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>}
               </button>
               <button className="menu-opt-btn" onClick={installApp} title={isInstalled ? 'Instalada' : 'Instalar app'} aria-label="Instalar aplicación" disabled={!installPrompt || isInstalled}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
@@ -837,7 +1074,7 @@ void main() {
               </header>
               <div className="codex-list">
                 {favorites.length === 0 ? (
-                  <p style={{ textAlign: 'center', gridColumn: '1/-1', opacity: 0.5 }}>No has guardado sabiduría aún.</p>
+                  <p style={{ textAlign: 'center', gridColumn: '1/-1', opacity: 0.7, color: 'var(--ink-overlay)' }}>No has guardado sabiduría aún.</p>
                 ) : (
                   favorites.map(f => (
                     <div key={f.id} className="codex-item" onClick={() => { setCard(f); setShowCodex(false); setIsRevealed(true); }}>
@@ -867,6 +1104,19 @@ void main() {
               </div>
             </div>
           )}
+
+          {/* Buy Me a Coffee */}
+          <a href="https://buymeacoffee.com/herramente" target="_blank" rel="noopener noreferrer" className="bmc-btn">
+            <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee" />
+            <span>Apoyar Herramente</span>
+          </a>
+
+          {/* Donation Reminder */}
+          <div className={`donation-reminder ${donationVisible ? 'active' : ''}`}>
+            <p>¿Te gusta esta sabiduría? Considera donar para mantener el servidor vivo.</p>
+            <a href="https://buymeacoffee.com/herramente" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ritual-red)', fontWeight: 'bold', textDecoration: 'none' }}>Donar</a>
+            <span className="donation-close" onClick={() => setDonationVisible(false)}>&times;</span>
+          </div>
         </div>
       );
     }

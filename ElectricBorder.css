@@ -28,26 +28,26 @@
 .eb-glow-1 {
     position: absolute;
     inset: 2px;
-    border-radius: var(--radius-panel, 6px);
-    box-shadow: inset 0 0 15px 2px var(--electric-border-color);
-    opacity: 0.2;
+    border-radius: var(--radius-panel, 12px);
+    box-shadow: inset 0 0 10px 1px var(--electric-border-color);
+    opacity: 0.1;
 }
 
 .eb-glow-2 {
     position: absolute;
     inset: 0;
-    border-radius: var(--radius-panel, 6px);
-    box-shadow: 0 0 10px 1px var(--electric-border-color);
-    opacity: 0.15;
+    border-radius: var(--radius-panel, 12px);
+    box-shadow: 0 0 12px 1px var(--electric-border-color);
+    opacity: 0.08;
 }
 
 .eb-background-glow {
     position: absolute;
-    inset: -20px;
-    border-radius: var(--radius-panel, 6px);
-    background: radial-gradient(circle, var(--electric-border-color) 0%, transparent 70%);
-    filter: blur(30px);
-    opacity: 0.03;
+    inset: -15px;
+    border-radius: var(--radius-panel, 12px);
+    background: radial-gradient(circle, var(--electric-border-color) 0%, transparent 60%);
+    filter: blur(25px);
+    opacity: 0.02;
 }
 
 .eb-content {

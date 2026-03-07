@@ -1,10 +1,9 @@
 /* sw.js — Trozos de Sabiduría */
-const CACHE_VERSION = "sabiduria-v1.4.0";
-const CORE_ASSETS = [
-  "./",
+const CACHE_VERSION = "sabiduria-v1.4.3";
+"./",
   "./index.html",
   "./manifest.webmanifest",
-  "./dataset_qi_v1.js",
+  "./dataset_qi.js",
   "./Galaxy.css",
   "./ElectricBorder.css",
   "./ProfileCard.css",

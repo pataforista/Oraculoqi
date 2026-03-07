@@ -30,14 +30,17 @@
 .pc-card {
     position: relative;
     width: 100%;
-    /* Removed aspect-ratio to prevent cutoff */
-    min-height: clamp(360px, 60vh, 540px);
-    border-radius: var(--radius-panel, 6px);
+    min-height: clamp(380px, 65vh, 580px);
+    border-radius: var(--radius-panel, 12px);
     overflow: hidden;
     background: var(--bg-panel);
     border: var(--border-thin);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 10px 30px -10px rgba(0, 0, 0, 0.5),
+        0 20px 60px -15px rgba(0, 0, 0, 0.7);
     transition: background var(--transition-slow), border var(--transition-slow);
+    display: flex;
+    flex-direction: column;
 }
 
 .pc-inside {
@@ -49,9 +52,10 @@
     background: var(--bg-panel);
     display: flex;
     flex-direction: column;
-    padding: var(--space-xl, 32px) var(--space-lg, 24px);
+    padding: var(--space-xl, 40px) var(--space-lg, 24px);
     color: var(--ink-primary);
     justify-content: center;
+    backdrop-filter: blur(4px);
 }
 
 .pc-shine,
@@ -59,76 +63,78 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
+    z-index: 6;
 }
 
 .pc-shine {
-    background: radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgba(232, 223, 200, 0.05) 0%, transparent 60%);
-    z-index: 3;
+    background: radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgba(240, 233, 216, 0.2) 0%, transparent 45%);
+    mix-blend-mode: soft-light;
 }
 
 .pc-glare {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 50%, rgba(0, 0, 0, 0.03) 100%);
-    z-index: 2;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 40%, rgba(0, 0, 0, 0.05) 100%);
 }
 
 /* Wisdom Content Styling */
 .pc-content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-lg, 24px);
+    gap: var(--space-lg, 32px);
     z-index: 5;
 }
 
 .pc-wisdom-category {
     font-family: var(--font-base);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.3em;
     color: var(--ritual-pink);
     font-weight: 700;
-    margin-bottom: 5px;
-    opacity: 0.9;
+    margin-bottom: 8px;
+    opacity: 0.8;
 }
 
 .pc-frase {
     font-family: var(--font-ritual);
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.25;
     margin: 0;
     color: var(--ink-primary);
+    letter-spacing: -0.01em;
 }
 
 .pc-interpretacion {
     font-family: var(--font-base);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: var(--font-line-height);
     margin: 0;
     color: var(--ink-secondary);
+    font-weight: 400;
 }
 
 .pc-practica {
-    margin-top: var(--space-md, 16px);
-    border-left: 1px solid var(--ritual-red);
-    padding-left: var(--space-md, 16px);
+    margin-top: var(--space-md, 24px);
+    border-left: 2px solid var(--ritual-red);
+    padding-left: var(--space-lg, 24px);
 }
 
 .pc-practica label {
     display: block;
     font-family: var(--font-base);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     color: var(--ritual-red);
-    margin-bottom: var(--space-sm, 8px);
+    margin-bottom: var(--space-sm, 12px);
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
 }
 
 .pc-practica p {
     font-family: var(--font-base);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--ink-primary);
 }
 
