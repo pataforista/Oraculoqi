@@ -24,6 +24,9 @@
     position: relative;
     width: 100%;
     transform-style: preserve-3d;
+}
+
+.pc-card-shell:hover {
     will-change: transform;
 }
 
@@ -219,19 +222,237 @@
 
 .pc-card-logo {
     width: 48px;
-    /* Slightly larger */
     height: 48px;
     opacity: 0.9;
-    /* Increased visibility */
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
-    /* Stronger glow for contrast */
     transition: all var(--transition-slow);
     display: block;
-    /* Ensure it takes space */
 }
 
 .pc-card:hover .pc-card-logo {
     opacity: 1;
     transform: scale(1.1) rotate(15deg);
     filter: drop-shadow(0 0 15px rgba(226, 125, 161, 0.6));
+}
+
+/* --- TOAST NOTIFICATIONS --- */
+.toast-container {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.toast-notification {
+    background: var(--bg-panel);
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    border: var(--border-thin);
+    color: var(--ink-primary);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-family: var(--font-base);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: auto;
+    animation: toastIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+               toastOut 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.6s forwards;
+    max-width: min(90vw, 480px);
+}
+
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes toastOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+/* --- DONATION ESTHETICS --- */
+@keyframes gentlePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); filter: drop-shadow(0 0 8px var(--ritual-pink)); }
+    100% { transform: scale(1); }
+}
+
+.donation-pulse {
+    animation: gentlePulse 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.pc-donation-gentle {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.78rem;
+    opacity: 0.55;
+    transition: opacity 0.3s var(--transition-base), transform 0.3s var(--transition-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.pc-donation-gentle:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.pc-donation-gentle a {
+    color: var(--ink-secondary);
+    text-decoration: none;
+    font-family: var(--font-base);
+    border-bottom: 1px dotted var(--ritual-red);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+}
+
+.pc-donation-gentle a:hover {
+    color: var(--ritual-pink);
+}
+
+.pc-donation-gentle span {
+    color: var(--ritual-red);
+    font-size: 0.9rem;
+}
+
+/* Empty Codex donation styles */
+.codex-empty-donation {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    background: var(--glass-bg);
+    border: var(--border-thin);
+    border-radius: var(--radius-panel);
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: var(--glass-shadow);
+}
+
+.codex-empty-donation p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink-secondary);
+}
+
+.codex-empty-donation a {
+    color: var(--ritual-pink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ritual-red);
+    font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+.codex-empty-donation a:hover {
+    color: var(--ritual-red);
+    border-bottom-color: var(--ritual-pink);
+}
+
+/* 5-click refresh invitation styles */
+.donation-invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: var(--space-lg);
+    background: var(--glass-bg);
+    border: var(--border-thin);
+    border-radius: var(--radius-panel);
+    margin-top: var(--space-xl);
+    max-width: 460px;
+    align-self: center;
+    text-align: center;
+    animation: revealIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    box-shadow: var(--glass-shadow);
+}
+
+.donation-invite p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink-secondary);
+}
+
+.donation-invite-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-donation-coffee {
+    background: var(--ritual-red);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-panel);
+    font-family: var(--font-ritual);
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: all var(--transition-bounce);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(214, 77, 101, 0.3);
+}
+
+.btn-donation-coffee:hover {
+    transform: scale(1.05);
+    background: var(--ritual-pink);
+}
+
+.btn-donation-skip {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--ink-secondary);
+    padding: 12px 20px;
+    border: var(--border-thin);
+    border-radius: var(--radius-panel);
+    font-family: var(--font-ritual);
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all var(--transition-base);
+}
+
+.btn-donation-skip:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--ink-primary);
+}
+
+.revealed-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: revealIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.info-modal-version {
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.3;
+    font-size: 0.8rem;
 }

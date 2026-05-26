@@ -1,0 +1,13 @@
+# Caching policy for PWA Service Worker - Never Cache
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  Service-Worker-Allowed: /
+
+# Caching policy for Web Manifest - Never Cache
+/manifest.webmanifest
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/manifest+json; charset=utf-8
+
+# Caching policy for compiled static assets - Cache Forever
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

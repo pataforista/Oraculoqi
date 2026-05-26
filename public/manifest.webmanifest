@@ -1,0 +1,19 @@
+{
+  "name": "Oráculo Taoísta",
+  "short_name": "Taoísta",
+  "description": "Consulta diaria del Oráculo Taoísta, online y offline.",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#121015",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/enso-8bit.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

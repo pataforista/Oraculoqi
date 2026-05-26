@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oráculo Taoísta — Sin Conexión</title>
+  <style>
+    :root {
+      --bg-primary: #0a090c;
+      --bg-panel: rgba(26, 22, 32, 0.85);
+      --ink-primary: #f0e9d8;
+      --ink-secondary: #c9bfab;
+      --ink-muted: #8a8375;
+      --ritual-red: #d64d65;
+      --ritual-pink: #eb94b3;
+      --font-base: "Inter", system-ui, -apple-system, sans-serif;
+      --font-ritual: "EB Garamond", serif;
+      --border-thin: 1px solid rgba(240, 233, 216, 0.1);
+      --radius-panel: 12px;
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-primary);
+      color: var(--ink-primary);
+      font-family: var(--font-base);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .offline-container {
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--bg-panel);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      box-shadow: var(--glass-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .offline-logo {
+      width: 100px;
+      height: 100px;
+      padding: 12px;
+      border-radius: 50%;
+      border: var(--border-thin);
+      background: #050406;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+      animation: floatLogo 6s ease-in-out infinite;
+    }
+
+    .offline-title {
+      font-family: var(--font-ritual);
+      font-size: 1.8rem;
+      margin: 0;
+      color: var(--ink-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .offline-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--ink-secondary);
+      margin: 0;
+    }
+
+    .offline-hint {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin: 0;
+      font-style: italic;
+    }
+
+    .btn-retry {
+      background: rgba(240, 233, 216, 0.05);
+      border: var(--border-thin);
+      color: var(--ink-primary);
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-family: var(--font-ritual);
+      font-size: 0.9rem;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .btn-retry:hover {
+      background: var(--ink-primary);
+      color: var(--bg-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(240, 233, 216, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes floatLogo {
+      0%, 100% {
+        transform: translateY(0) rotate(0);
+      }
+      50% {
+        transform: translateY(-8px) rotate(3deg);
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="offline-container">
+    <img src="icons/enso-8bit.png" class="offline-logo" alt="Círculo Enso - Símbolo taoísta de presencia y vacío">
+    <h1 class="offline-title">Espacio en Calma</h1>
+    <p class="offline-text">
+      Has entrado en un vacío de red. El oráculo respira contigo en el presente, pero no logramos conectar con el servidor.
+    </p>
+    <p class="offline-hint">
+      Si ya has visitado el oráculo hoy, tus sabidurías guardadas y las reflexiones principales siguen estando accesibles sin conexión.
+    </p>
+    <button class="btn-retry" onclick="window.location.reload()">Reintentar Sincronía</button>
+  </div>
+</body>
+</html>

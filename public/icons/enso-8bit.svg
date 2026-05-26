@@ -1,0 +1,17 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ensoStroke" x1="36" y1="24" x2="156" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7EAD1" />
+      <stop offset="60%" stop-color="#E8DFC8" />
+      <stop offset="100%" stop-color="#C9B89A" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M56 40
+       A72 72 0 1 1 142 142"
+    stroke="url(#ensoStroke)"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

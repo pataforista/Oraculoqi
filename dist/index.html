@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Oráculo Taoísta — Sincronía y Sabiduría Diaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Una aplicación web progresiva (PWA) de meditación y sincronía diaria. Explora 579 reflexiones de sabiduría taoísta y zen en español con soporte offline completo." />
+  <meta name="keywords" content="oraculo taoista, oraculoqi, sabiduria taoista, sincronia, zen, meditacion, mindfulness, taoismo, lao tzu, zhuangzi, PWA, reflexion diaria, paz interior, calma" />
+  <meta name="author" content="Herramente" />
+  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://oraculoqi.pages.dev/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oraculoqi.pages.dev/" />
+  <meta property="og:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
+  <meta property="og:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
+  <meta property="og:image" content="https://oraculoqi.pages.dev/icons/enso-8bit.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:url" content="https://oraculoqi.pages.dev/" />
+  <meta property="twitter:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
+  <meta property="twitter:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
+  <meta property="twitter:image" content="https://oraculoqi.pages.dev/icons/enso-8bit.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Oráculo Taoísta",
+      "alternateName": "Oraculoqi",
+      "url": "https://oraculoqi.pages.dev/",
+      "description": "Una aplicación web progresiva (PWA) de meditación y sincronía diaria que ofrece 579 reflexiones de sabiduría taoísta y zen en español con modo offline completo.",
+      "applicationCategory": "HealthApplication, Lifestyle, Meditación, Espiritualidad",
+      "operatingSystem": "All",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramente",
+        "url": "https://buymeacoffee.com/herramente"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#121015">
+  <link rel="apple-touch-icon" href="/assets/enso-8bit-Blu4m5M-.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+  <style>
+    :root {
+      /* Ritual Aesthetic Tokens - Default Dark */
+      --bg-primary: #0a090c;
+      --bg-secondary: #121015;
+      --bg-panel: rgba(26, 22, 32, 0.85);
+      --bg-etched: #050406;
+
+      --ink-primary: #f0e9d8;
+      --ink-secondary: #c9bfab;
+      --ink-muted: #8a8375;
+
+      --ritual-red: #d64d65;
+      --ritual-pink: #eb94b3;
+      --ritual-purple: #7d5c8a;
+
+      --risk-amber: #e0b95d;
+      --risk-shadow: #2a1f1f;
+
+      --tech-muted: #6eb5b4;
+      --tech-glow: rgba(110, 181, 180, 0.3);
+
+      --metal-bronze: #8c6a45;
+      --metal-copper: #a66b4a;
+
+      --font-base: "Inter", system-ui, -apple-system, sans-serif;
+      --font-ritual: "EB Garamond", serif;
+      --font-mono: "JetBrains Mono", monospace;
+
+      --font-line-height: 1.6;
+      --radius-panel: 12px;
+      --radius-chip: 4px;
+
+      --glass-bg: rgba(26, 22, 32, 0.7);
+      --glass-border: 1px solid rgba(240, 233, 216, 0.1);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+      --border-thin: 1px solid rgba(240, 233, 216, 0.1);
+      --border-ritual: 1px solid rgba(214, 77, 101, 0.4);
+
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+
+      --bg-overlay: rgba(10, 9, 12, 0.4);
+      --ink-overlay: #f0e9d8;
+
+      --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    [data-theme="light"] {
+      /* Contemplativo Aesthetic Tokens (Light) */
+      --bg-primary: #fcf6f9;
+      --bg-secondary: #f4e8f0;
+      --bg-panel: rgba(255, 255, 255, 0.8);
+      --bg-etched: #f0dfe8;
+
+      --ink-primary: #2d2833;
+      --ink-secondary: #4a4154;
+      --ink-muted: #74667a;
+
+      --glass-bg: rgba(255, 255, 255, 0.5);
+      --glass-border: 1px solid rgba(45, 40, 51, 0.08);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
+      --border-thin: 1px solid rgba(45, 40, 51, 0.08);
+      --border-ritual: 1px solid rgba(214, 77, 101, 0.15);
+
+      --bg-overlay: rgba(255, 255, 255, 0.6);
+      --ink-overlay: #2d2833;
+    }
+
+    [data-theme="sumi-e"] {
+      /* Sumi-e Aesthetic Tokens (Ink Wash) */
+      --bg-primary: #f2f2f0;
+      --bg-secondary: #e8e8e6;
+      --bg-panel: rgba(255, 255, 255, 0.6);
+      --bg-etched: #dadada;
+
+      --ink-primary: #1a1a1a;
+      --ink-secondary: #333333;
+      --ink-muted: #595959;
+
+      --ritual-red: #8b0000;
+      --ritual-pink: #c08081;
+      --ritual-purple: #4a3a4a;
+
+      --glass-bg: rgba(255, 255, 255, 0.3);
+      --glass-border: 1px solid rgba(0, 0, 0, 0.1);
+      --glass-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+      --border-thin: 1px solid rgba(0, 0, 0, 0.06);
+      --border-ritual: 2px solid rgba(0, 0, 0, 0.8);
+
+      --bg-overlay: rgba(242, 242, 240, 0.8);
+      --ink-overlay: #1a1a1a;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-primary);
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      color: var(--ink-primary);
+      font-family: var(--font-base);
+      transition: background var(--transition-slow);
+    }
+
+    .app-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-lg);
+      padding-bottom: calc(var(--space-xl) * 4);
+    }
+
+    .main-content {
+      width: 100%;
+      max-width: clamp(320px, 92vw, 600px);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+      z-index: 10;
+      margin-top: var(--space-md);
+    }
+
+    /* Header Styling */
+    .app-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-sm);
+    }
+
+    .app-logo {
+      width: 88px;
+      height: 88px;
+      padding: 12px;
+      box-sizing: border-box;
+      object-fit: contain;
+      border-radius: 50%;
+      border: var(--border-thin);
+      background: var(--bg-etched);
+      box-shadow: var(--glass-shadow);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(2deg);
+      }
+    }
+
+    @keyframes revealIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        filter: blur(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    .brand-title {
+      font-family: var(--font-ritual);
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--ink-primary);
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .sync-label {
+      font-size: 0.75rem;
+      opacity: 0.6;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      line-height: 1.4;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+
+    /* Card Area */
+    .card-stage {
+      display: flex;
+      justify-content: center;
+      perspective: 1000px;
+      width: 100%;
+    }
+
+    .card-placeholder {
+      width: 100%;
+      max-width: clamp(320px, 92vw, 600px);
+      min-height: clamp(360px, 60vh, 560px);
+      background: var(--bg-panel);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .reveal-overlay {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-ritual);
+      font-weight: 500;
+      color: var(--ritual-pink);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 1rem;
+      padding: var(--space-xl);
+      text-align: center;
+    }
+
+    /* Floating Menu Styles */
+    .floating-menu-container {
+      position: fixed;
+      bottom: var(--space-xl);
+      right: var(--space-xl);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: var(--space-md);
+      padding: 10px;
+    }
+
+    .menu-main-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: var(--border-ritual);
+      color: var(--ritual-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--glass-shadow);
+      transition: all var(--transition-base);
+      z-index: 2;
+    }
+
+    .menu-main-btn:active {
+      transform: scale(0.9);
+    }
+
+    .menu-options {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+      pointer-events: none;
+      transition: all var(--transition-slow);
+    }
+
+    .floating-menu-container.active .menu-options {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .menu-opt-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: var(--border-thin);
+      color: var(--ink-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-bounce);
+      position: relative;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .menu-opt-btn:hover {
+      background: var(--bg-secondary);
+      color: var(--ritual-pink);
+      transform: scale(1.15) translateY(-5px);
+      border-color: var(--ritual-pink);
+    }
+
+    .menu-main-btn:focus-visible,
+    .menu-opt-btn:focus-visible,
+    .btn-refresh:focus-visible,
+    .close-btn:focus-visible {
+      outline: 2px solid var(--ritual-pink);
+      outline-offset: 2px;
+    }
+
+    .menu-opt-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .menu-opt-btn.is-fav {
+      color: var(--ritual-red);
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-overlay);
+      color: var(--ink-overlay);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-xl);
+      overflow-y: auto;
+      transition: all var(--transition-slow);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-xl);
+      width: 100%;
+      max-width: 900px;
+      margin-inline: auto;
+      border-bottom: var(--border-thin);
+      padding-bottom: var(--space-md);
+    }
+
+    .modal-title {
+      font-family: var(--font-ritual);
+      font-size: 2.2rem;
+      color: var(--ritual-pink);
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .close-btn {
+      background: var(--bg-panel);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: var(--border-thin);
+      color: var(--ink-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all var(--transition-base);
+    }
+
+    .close-btn:hover {
+      color: var(--ritual-pink);
+      border-color: var(--ritual-pink);
+      transform: rotate(90deg);
+    }
+
+    .codex-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--space-xl);
+      width: 100%;
+      max-width: 1100px;
+      margin-inline: auto;
+      padding-bottom: calc(var(--space-xl) * 2);
+    }
+
+    .codex-item {
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      transition: all var(--transition-base);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .codex-item:hover {
+      transform: translateY(-5px);
+      border-color: var(--ritual-pink);
+      box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.6);
+    }
+
+    .codex-item-frase {
+      font-family: var(--font-ritual);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .codex-item-cat {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: var(--ritual-pink);
+      letter-spacing: 0.1em;
+    }
+
+    /* Common */
+    .btn-refresh {
+      background: var(--glass-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: var(--border-thin);
+      color: var(--ink-secondary);
+      padding: 14px 32px;
+      border-radius: var(--radius-panel);
+      font-size: 0.9rem;
+      font-family: var(--font-ritual);
+      cursor: pointer;
+      margin-top: var(--space-xl);
+      transition: all var(--transition-bounce);
+      width: fit-content;
+      align-self: center;
+      letter-spacing: 0.08em;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .btn-refresh:active {
+      transform: scale(0.95);
+    }
+
+    .loading {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-primary);
+      color: var(--ritual-pink);
+      font-family: var(--font-ritual);
+      font-size: 1.5rem;
+    }
+
+    .info-content {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: var(--ink-overlay);
+      font-family: var(--font-base);
+    }
+
+    .info-content h3 {
+      font-family: var(--font-ritual);
+      color: var(--ink-primary);
+      margin-top: var(--space-lg);
+    }
+
+    .support-section {
+      margin-top: var(--space-xl);
+      padding: var(--space-lg);
+      background: var(--glass-bg);
+      border: var(--border-thin);
+      border-radius: var(--radius-panel);
+      text-align: center;
+    }
+
+    .support-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      background: var(--ritual-red);
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: var(--space-md);
+      transition: all var(--transition-bounce);
+    }
+
+    .support-btn:hover {
+      transform: scale(1.05);
+      background: var(--ritual-pink);
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-_MUk4pOx.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-D7rv8Q1m.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-webgl-B4JkAj4o.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-capture-BfYXEYrK.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-RPnEDn7o.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Dataset -->
+  <script src="/dataset_taoista.js"></script>
+
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+          .then(registration => {
+            registration.addEventListener("updatefound", () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener("statechange", () => {
+                if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+                  if (window.showAppUpdateToast) {
+                    window.showAppUpdateToast();
+                  }
+                }
+              });
+            });
+          })
+          .catch(err => console.log("SW registration failed", err));
+      });
+    }
+  </script>
+</body>
+
+</html>
