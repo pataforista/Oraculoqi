@@ -732,7 +732,6 @@ function App() {
     do {
       newCard = deck[Math.floor(Math.random() * deck.length)];
     } while (card && newCard.id === card.id);
-    setIsRevealed(false);
     setCard(newCard);
     setDonationCount(prev => {
       const next = prev + 1;
@@ -854,7 +853,7 @@ function App() {
               </ElectricBorder>
             </div>
           ) : (
-            <div className="revealed-content">
+            <div className="revealed-content" key={card.id}>
               <WisdomCard card={card} ref={cardRef} />
               
               {donationCount > 0 && donationCount % 5 === 0 && !donationDismissed ? (
