@@ -1,5 +1,5 @@
 # Wrangler configuration for Oráculo Taoísta (Cloudflare Pages)
-name = "oraculoqi"
+name = "oraculo-taoista"
 pages_build_output_dir = "dist"
 
 [compatibility]
