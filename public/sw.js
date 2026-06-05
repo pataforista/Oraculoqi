@@ -1,5 +1,5 @@
 /* sw.js — Oráculo Taoísta */
-const CACHE_VERSION = "oraculo-taoista-v2.2.0";
+const CACHE_VERSION = "oraculo-taoista-v1.2.0";
 const CORE_ASSETS = [
   "./",
   "./index.html",

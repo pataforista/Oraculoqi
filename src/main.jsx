@@ -925,12 +925,12 @@ function App() {
 
       {/* Codex Modal */}
       {showCodex && (
-        <div ref={codexRef} className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="codex-title">
-          <header className="modal-header">
+        <div ref={codexRef} className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="codex-title" onClick={() => setShowCodex(false)}>
+          <header className="modal-header" onClick={(e) => e.stopPropagation()}>
             <h2 id="codex-title" className="modal-title">El Codex</h2>
             <button className="close-btn" onClick={() => setShowCodex(false)} aria-label="Cerrar modal">&times;</button>
           </header>
-          <div className="codex-list">
+          <div className="codex-list" onClick={(e) => e.stopPropagation()}>
             {favorites.length === 0 ? (
               <div className="codex-empty-donation">
                 <p>📖 Aún no guardas sabiduría.</p>
@@ -950,12 +950,12 @@ function App() {
 
       {/* Info Modal */}
       {showInfo && (
-        <div ref={infoRef} className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="info-title">
-          <header className="modal-header">
+        <div ref={infoRef} className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="info-title" onClick={() => setShowInfo(false)}>
+          <header className="modal-header" onClick={(e) => e.stopPropagation()}>
             <h2 id="info-title" className="modal-title">Protocolo Erudito</h2>
             <button className="close-btn" onClick={() => setShowInfo(false)} aria-label="Cerrar modal">&times;</button>
           </header>
-          <div className="info-content">
+          <div className="info-content" onClick={(e) => e.stopPropagation()}>
             <h3>Sobre el Conocimiento</h3>
             <p>El conocimiento interior no es neutral. A veces se explora como un paisaje. A veces se escucha como un ritual. En ambos casos, tiene consecuencias.</p>
             <h3>Créditos</h3>

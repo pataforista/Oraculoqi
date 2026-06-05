@@ -2802,7 +2802,7 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Importado de ZenQuotes. Autor: Epictetus"
     },
     {
-      "frase": "Hojas en el Arrollo",
+      "frase": "Hojas en el Arroyo",
       "interpretacion": "Nos invita a observar críticamente que el desapego a los resultados nos permite actuar con mayor pureza, transformando nuestra relación con los retos que nos rodean.",
       "practica_hoy": "En un momento de pausa hoy, busca notar la urgencia por distraerte y elegir respirar conscientemente en su lugar y permítete descansar en la simpleza de ser.",
       "categoria": "atencion",
@@ -2810,7 +2810,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0312"
     },
     {
-      "frase": "Hojas en el Arrollo: Deja que el agua se las lleve.",
+      "frase": "Hojas en el Arroyo: Deja que el agua se las lleve.",
       "interpretacion": "Los pensamientos son eventos transitorios. Si intentas atraparlos o detenerlos, te mojas y te agotas. Mirarlos pasar es permitir que la mente se limpie sola.",
       "practica_hoy": "Dedica 2 minutos a imaginar cada pensamiento como una hoja que cae al agua y se aleja flotando.",
       "categoria": "atencion",
@@ -3674,7 +3674,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0409",
-      "frase": "Nothing has more strength than dire necessity.",
+      "frase": "Nada tiene más fuerza que la necesidad extrema.",
       "interpretacion": "Esta frase ilumina un principio vital: soltar la necesidad de perfección abre paso a la verdadera excelencia, transformando nuestra relación con los retos que nos rodean.",
       "practica_hoy": "Para materializar esto, elige escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente rompiendo así el patrón del piloto automático.",
       "categoria": "wu_wei",
@@ -4601,7 +4601,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0512",
-      "frase": "Great minds discuss ideas. Average minds discuss events. Small minds discuss people.",
+      "frase": "Las grandes mentes discuten ideas. Las mentes mediocres discuten eventos. Las mentes pequeñas discuten personas.",
       "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, permitiéndonos regresar a nuestro centro emocional con total claridad.",
       "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente y observa el espacio mental que esto libera.",
       "categoria": "momento_presente",
