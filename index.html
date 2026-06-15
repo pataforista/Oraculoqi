@@ -21,14 +21,14 @@
   <meta property="og:url" content="https://oraculo-taoista.pages.dev/" />
   <meta property="og:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
   <meta property="og:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
-  <meta property="og:image" content="https://oraculo-taoista.pages.dev/icons/enso-8bit.png" />
+  <meta property="og:image" content="https://oraculo-taoista.pages.dev/og-image.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:url" content="https://oraculo-taoista.pages.dev/" />
   <meta property="twitter:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
   <meta property="twitter:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
-  <meta property="twitter:image" content="https://oraculo-taoista.pages.dev/icons/enso-8bit.png" />
+  <meta property="twitter:image" content="https://oraculo-taoista.pages.dev/og-image.png" />
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -62,8 +62,8 @@
 
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#121015">
-  <link rel="apple-touch-icon" href="icons/enso-8bit.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180x180.png">
 
 
 
@@ -147,14 +147,14 @@
       /* Sumi-e Aesthetic Tokens (Ink Wash) */
       --bg-primary: #f2f2f0;
       --bg-secondary: #e8e8e6;
-      --bg-panel: rgba(255, 255, 255, 0.6);
+      --bg-panel: rgba(248, 248, 242, 0.9);
       --bg-etched: #dadada;
 
-      --ink-primary: #1a1a1a;
-      --ink-secondary: #333333;
+      --ink-primary: #2a2a2a;
+      --ink-secondary: #4a4a4a;
       --ink-muted: #595959;
 
-      --ritual-red: #8b0000;
+      --ritual-red: #c0392b;
       --ritual-pink: #c08081;
       --ritual-purple: #4a3a4a;
 
@@ -162,11 +162,17 @@
       --glass-border: 1px solid rgba(0, 0, 0, 0.1);
       --glass-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 
-      --border-thin: 1px solid rgba(0, 0, 0, 0.06);
+      --border-thin: 2px solid rgba(0, 0, 0, 0.15);
       --border-ritual: 2px solid rgba(0, 0, 0, 0.8);
 
       --bg-overlay: rgba(242, 242, 240, 0.8);
       --ink-overlay: #1a1a1a;
+    }
+
+    * {
+      transition: background-color var(--transition-slow), 
+                  border-color var(--transition-slow),
+                  color var(--transition-slow);
     }
 
     body,
@@ -249,6 +255,16 @@
         transform: scale(1) translateY(0);
         filter: blur(0);
       }
+    }
+
+    @keyframes revealFlash {
+      0% { box-shadow: 0 0 0 0 var(--ritual-pink); }
+      50% { box-shadow: 0 0 0 20px transparent; }
+      100% { box-shadow: 0 0 0 0 transparent; }
+    }
+
+    .reveal-flash {
+      animation: revealFlash 0.8s ease-out;
     }
 
     .brand-title {
@@ -380,6 +396,30 @@
       color: var(--ritual-pink);
       transform: scale(1.15) translateY(-5px);
       border-color: var(--ritual-pink);
+    }
+
+    .menu-opt-btn::after {
+      content: attr(title);
+      position: absolute;
+      right: 70px;
+      background: var(--bg-panel);
+      backdrop-filter: blur(8px);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s ease;
+      transform: translateX(10px);
+      border: var(--border-thin);
+      font-family: var(--font-base);
+    }
+
+    .menu-opt-btn:hover::after {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.5s;
     }
 
     *:focus-visible {
@@ -521,12 +561,37 @@
     .loading {
       height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: var(--space-lg);
       background: var(--bg-primary);
-      color: var(--ritual-pink);
+    }
+
+    .loading-spinner {
+      width: 60px;
+      height: 60px;
+      border: 3px solid var(--border-thin);
+      border-top-color: var(--ritual-pink);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
       font-family: var(--font-ritual);
-      font-size: 1.5rem;
+      color: var(--ink-secondary);
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
     }
 
     .info-content {

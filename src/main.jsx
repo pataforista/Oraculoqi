@@ -48,7 +48,7 @@ uniform float uAutoCenterRepulsion;
 uniform bool uTransparent;
 varying vec2 vUv;
 
-#define NUM_LAYER 4.0
+#define NUM_LAYER 2.0
 #define STAR_COLOR_CUTOFF 0.2
 #define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071)
 #define PERIOD 3.0
@@ -406,7 +406,7 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
 
     return () => {
       mountedRef.current = false;
-      cancelAnimationFrame(animationRef.current);
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
       ro.disconnect();
     };
   }, [color, speed, chaos, borderRadius, octavedNoise, getRoundedRectPoint]);
@@ -528,7 +528,7 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
               {showDonation && (
                 <div className="pc-donation-gentle">
                   <span>✧</span>
-                  <a href="https://buymeacoffee.com/herramente" 
+                  <a href={import.meta.env.VITE_DONATION_URL || 'https://buymeacoffee.com/herramente'} 
                      target="_blank" 
                      rel="noopener noreferrer"
                      onClick={(e) => e.stopPropagation()}>
@@ -818,16 +818,32 @@ function App() {
   }, [installPrompt, isInstalled]);
 
   const openDonation = useCallback(() => {
-    window.open("https://buymeacoffee.com/herramente", "_blank", "noopener,noreferrer");
+    window.open(import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente", "_blank", "noopener,noreferrer");
   }, []);
 
-  if (!card) return <div className="loading">Consultando el Oráculo Taoísta...</div>;
+  const handleReveal = () => {
+    setIsRevealed(true);
+    setTimeout(() => {
+      const card = cardRef.current;
+      if (card) {
+        card.classList.add('reveal-flash');
+        setTimeout(() => card.classList.remove('reveal-flash'), 800);
+      }
+    }, 50);
+  };
+
+  if (!card) return (
+    <div className="loading">
+      <div className="loading-spinner"></div>
+      <div className="loading-text">Consultando el Oráculo...</div>
+    </div>
+  );
 
   const isFav = favorites.some(f => f.id === card.id);
 
   return (
     <div className="app-container">
-      <Galaxy speed={0.4} density={theme === 'dark' ? 1.2 : 0.6} hueShift={theme === 'dark' ? 140 : 200} twinkleIntensity={0.4} />
+      <Galaxy speed={0.4} density={theme === 'dark' ? 0.8 : 0.4} hueShift={theme === 'dark' ? 140 : 200} twinkleIntensity={0.4} />
 
       <main className="main-content">
         <header className="app-header">
@@ -845,8 +861,8 @@ function App() {
               role="button" 
               tabIndex={0} 
               aria-label="Desvelar la carta del oráculo" 
-              onClick={() => setIsRevealed(true)}
-              onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && setIsRevealed(true)}
+              onClick={handleReveal}
+              onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleReveal()}
             >
               <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08} borderRadius={12}>
                 <div className="reveal-overlay"><span>Desvelar el Tao</span></div>
@@ -858,10 +874,10 @@ function App() {
               
               {donationCount > 0 && donationCount % 5 === 0 && !donationDismissed ? (
                 <div className="donation-invite">
-                  <p>Si el oráculo te acompaña en tu camino, considera sostener este espacio con un café.</p>
+                  <p>Si esta sabiduría resuena contigo y quieres ayudar a que siga fluyendo, considera invitarnos un café.</p>
                   <div className="donation-invite-buttons">
                     <a 
-                      href="https://buymeacoffee.com/herramente" 
+                      href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="btn-donation-coffee"
@@ -934,7 +950,7 @@ function App() {
             {favorites.length === 0 ? (
               <div className="codex-empty-donation">
                 <p>📖 Aún no guardas sabiduría.</p>
-                <p>Si este espacio te resulta valioso, puedes <a href="https://buymeacoffee.com/herramente" target="_blank" rel="noopener noreferrer">invitar un café</a> para mantenerlo vivo y libre de anuncios.</p>
+                <p>Si este espacio te resulta valioso, puedes <a href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} target="_blank" rel="noopener noreferrer">invitar un café</a> para mantenerlo vivo y libre de anuncios.</p>
               </div>
             ) : (
               favorites.map(f => (
@@ -961,10 +977,11 @@ function App() {
             <h3>Créditos</h3>
             <p>Diseño y Concepto: Cosmología Visual de la Reflexión.</p>
             <p>Desarrollado para la contemplación diaria.</p>
+            <p>Contacto y Sugerencias: <a href="mailto:miniappsminisoluciones@gmail.com" style={{color: 'var(--ritual-pink)'}}>miniappsminisoluciones@gmail.com</a></p>
             <div className="info-modal-version">Oráculo Taoísta v1.2.0</div>
             <div className="support-section">
               <p>Si este oráculo te ha servido de guía, considera apoyar el mantenimiento de este espacio de calma.</p>
-              <a href="https://buymeacoffee.com/herramente" target="_blank" rel="noopener noreferrer" className="support-btn">
+              <a href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} target="_blank" rel="noopener noreferrer" className="support-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: '8px' }}><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
                 Invitar un Café
               </a>
