@@ -7,6 +7,23 @@ import '../Galaxy.css';
 import '../ElectricBorder.css';
 import '../ProfileCard.css';
 
+const haptic = (type = 'light') => {
+  if (typeof navigator === 'undefined' || !navigator.vibrate) return;
+  const patterns = { light: [10], medium: [25], success: [10, 50, 10] };
+  navigator.vibrate(patterns[type] || patterns.light);
+};
+
+const HeartBurst = ({ active }) => {
+  if (!active) return null;
+  return (
+    <div className="heart-burst" aria-hidden="true">
+      {Array.from({ length: 8 }, (_, i) => (
+        <div key={i} className="heart-particle" style={{ '--i': i }} />
+      ))}
+    </div>
+  );
+};
+
 class Triangle extends Geometry {
   constructor(gl) {
     super(gl, {
@@ -565,7 +582,12 @@ function App() {
   });
   const [donationDismissed, setDonationDismissed] = useState(false);
   const [cupPulse, setCupPulse] = useState(false);
+  const [cardExiting, setCardExiting] = useState(false);
+  const [exitDir, setExitDir] = useState('left');
+  const [favBurst, setFavBurst] = useState(false);
   const cardRef = useRef(null);
+  const touchStartX = useRef(null);
+  const touchStartY = useRef(null);
   
   const mountedRef = useRef(true);
   useEffect(() => {
@@ -710,9 +732,13 @@ function App() {
     setFavorites(f => {
       const exists = f.find(x => x.id === card.id);
       if (exists) {
+        haptic('light');
         showToast("Sabiduría retirada del Codex");
         return f.filter(x => x.id !== card.id);
       } else {
+        haptic('success');
+        setFavBurst(true);
+        setTimeout(() => setFavBurst(false), 700);
         showToast("Sabiduría guardada en tu Codex 📖");
         pulseCup();
         return [...f, card];
@@ -720,32 +746,43 @@ function App() {
     });
   }, [card, showToast, pulseCup]);
 
-  const refreshCard = useCallback(() => {
+  const refreshCard = useCallback((dir = 'left') => {
     if (!window.TAOISTA_DATASET) return;
     const deck = window.TAOISTA_DATASET.cards;
     if (deck.length === 0) return;
-    if (deck.length === 1) {
-      setCard(deck[0]);
-      return;
-    }
-    let newCard;
-    do {
-      newCard = deck[Math.floor(Math.random() * deck.length)];
-    } while (card && newCard.id === card.id);
-    setCard(newCard);
-    setDonationCount(prev => {
-      const next = prev + 1;
-      localStorage.setItem('oraculoqi_donation_count', next.toString());
-      return next;
-    });
-    setDonationDismissed(false);
+
+    haptic('medium');
+    setExitDir(dir);
+    setCardExiting(true);
+
+    setTimeout(() => {
+      let newCard;
+      if (deck.length === 1) {
+        newCard = deck[0];
+      } else {
+        do {
+          newCard = deck[Math.floor(Math.random() * deck.length)];
+        } while (card && newCard.id === card.id);
+      }
+      setCard(newCard);
+      setDonationCount(prev => {
+        const next = prev + 1;
+        localStorage.setItem('oraculoqi_donation_count', next.toString());
+        return next;
+      });
+      setDonationDismissed(false);
+      setCardExiting(false);
+    }, 300);
   }, [card]);
 
   const cycleTheme = useCallback(() => {
+    haptic('light');
+    document.documentElement.classList.add('theme-transitioning');
+    setTimeout(() => document.documentElement.classList.remove('theme-transitioning'), 400);
     const themes = ['dark', 'light', 'sumi-e'];
     const next = themes[(themes.indexOf(theme) + 1) % themes.length];
     setTheme(next);
-    showToast(`Tema cambiado a: ${next === 'dark' ? 'Oscuro' : next === 'light' ? 'Claro' : 'Sumi-e'} ✧`);
+    showToast(`Tema: ${next === 'dark' ? 'Oscuro ◉' : next === 'light' ? 'Claro ○' : 'Sumi-e ∿'}`);
   }, [theme, showToast]);
 
   const shareCard = useCallback(async () => {
@@ -822,20 +859,60 @@ function App() {
   }, []);
 
   const handleReveal = () => {
+    haptic('medium');
     setIsRevealed(true);
     setTimeout(() => {
-      const card = cardRef.current;
-      if (card) {
-        card.classList.add('reveal-flash');
-        setTimeout(() => card.classList.remove('reveal-flash'), 800);
+      const cardEl = cardRef.current;
+      if (cardEl) {
+        cardEl.classList.add('reveal-flash');
+        setTimeout(() => cardEl.classList.remove('reveal-flash'), 800);
+        cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
-    }, 50);
+    }, 100);
   };
 
+  const handleTouchStart = useCallback((e) => {
+    if (!e.touches[0]) return;
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    if (touchStartX.current === null) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartX.current;
+    const deltaY = Math.abs(touch.clientY - touchStartY.current);
+    touchStartX.current = null;
+    touchStartY.current = null;
+    if (Math.abs(deltaX) > 60 && deltaY < 100) {
+      refreshCard(deltaX < 0 ? 'left' : 'right');
+    }
+  }, [refreshCard]);
+
   if (!card) return (
-    <div className="loading">
-      <div className="loading-spinner"></div>
-      <div className="loading-text">Consultando el Oráculo...</div>
+    <div className="app-container skeleton-loading">
+      <div className="main-content">
+        <header className="app-header">
+          <div className="skeleton-avatar" />
+          <div className="brand-info" style={{ alignItems: 'center', gap: '8px', display: 'flex', flexDirection: 'column' }}>
+            <div className="skeleton-line" style={{ width: '180px', height: '2rem' }} />
+            <div className="skeleton-line" style={{ width: '110px', height: '0.7rem', marginTop: '4px' }} />
+          </div>
+        </header>
+        <div className="skeleton-card-wrap">
+          <div className="skeleton-line" style={{ width: '32%', height: '0.65rem' }} />
+          <div className="skeleton-line" style={{ width: '90%', height: '1.8rem', marginTop: '20px' }} />
+          <div className="skeleton-line" style={{ width: '68%', height: '1.8rem', marginTop: '10px' }} />
+          <div className="skeleton-line" style={{ width: '100%', height: '0.9rem', marginTop: '28px' }} />
+          <div className="skeleton-line" style={{ width: '86%', height: '0.9rem', marginTop: '10px' }} />
+          <div className="skeleton-line" style={{ width: '62%', height: '0.9rem', marginTop: '10px' }} />
+          <div className="skeleton-practica">
+            <div className="skeleton-line" style={{ width: '25%', height: '0.65rem' }} />
+            <div className="skeleton-line" style={{ width: '100%', height: '0.9rem', marginTop: '10px' }} />
+            <div className="skeleton-line" style={{ width: '75%', height: '0.9rem', marginTop: '8px' }} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 
@@ -869,7 +946,12 @@ function App() {
               </ElectricBorder>
             </div>
           ) : (
-            <div className="revealed-content" key={card.id}>
+            <div
+              className={`revealed-content${cardExiting ? ` exiting-${exitDir}` : ''}`}
+              key={card.id}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
               <WisdomCard card={card} ref={cardRef} />
               
               {donationCount > 0 && donationCount % 5 === 0 && !donationDismissed ? (
@@ -894,7 +976,7 @@ function App() {
                   </div>
                 </div>
               ) : (
-                <button className="btn-refresh" onClick={refreshCard}>Otra sincronía para hoy</button>
+                <button className="btn-refresh" onClick={() => refreshCard('left')}>Otra sincronía para hoy</button>
               )}
             </div>
           )}
@@ -913,9 +995,12 @@ function App() {
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
         </button>
         <div className="menu-options">
-          <button className={`menu-opt-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito" aria-label="Guardar en favoritos" tabIndex={menuOpen ? 0 : -1}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
-          </button>
+          <div style={{ position: 'relative' }}>
+            <HeartBurst active={favBurst} />
+            <button className={`menu-opt-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito" aria-label="Guardar en favoritos" tabIndex={menuOpen ? 0 : -1}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+            </button>
+          </div>
           <button className="menu-opt-btn" onClick={shareCard} title="Compartir" aria-label="Compartir carta" tabIndex={menuOpen ? 0 : -1}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
           </button>
@@ -948,9 +1033,17 @@ function App() {
           </header>
           <div className="codex-list" onClick={(e) => e.stopPropagation()}>
             {favorites.length === 0 ? (
-              <div className="codex-empty-donation">
-                <p>📖 Aún no guardas sabiduría.</p>
-                <p>Si este espacio te resulta valioso, puedes <a href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} target="_blank" rel="noopener noreferrer">invitar un café</a> para mantenerlo vivo y libre de anuncios.</p>
+              <div className="codex-empty-state">
+                <svg className="codex-empty-icon" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="36" cy="36" r="30" stroke="currentColor" strokeWidth="1.5" strokeDasharray="5 4" opacity="0.35"/>
+                  <path d="M36 18C36 18 24 30 24 39C24 45.627 29.373 51 36 51C42.627 51 48 45.627 48 39C48 30 36 18 36 18Z" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.5"/>
+                  <circle cx="36" cy="39" r="3.5" fill="currentColor" opacity="0.4"/>
+                </svg>
+                <h3 className="codex-empty-title">Tu Codex aguarda</h3>
+                <p className="codex-empty-desc">Cuando una sincronía resuene contigo, guárdala pulsando el corazón en el menú flotante.</p>
+                <button className="codex-empty-cta" onClick={() => setShowCodex(false)}>
+                  Buscar mi primera sincronía
+                </button>
               </div>
             ) : (
               favorites.map(f => (
