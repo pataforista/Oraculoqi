@@ -483,7 +483,7 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
         };
         for (const [k, v] of Object.entries(props)) w.style.setProperty(k, v);
       }
-      if (Math.abs(tarX - curX) > 0.05 || Math.abs(tarY - curY) > 0.05 || document.hasFocus()) {
+      if (Math.abs(tarX - curX) > 0.05 || Math.abs(tarY - curY) > 0.05) {
         rafId = requestAnimationFrame(step);
       } else {
         running = false;
