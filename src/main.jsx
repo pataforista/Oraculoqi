@@ -567,7 +567,7 @@ WisdomCard.displayName = 'WisdomCard';
 /* --- MAIN APP COMPONENT --- */
 function App() {
   const [card, setCard] = useState(null);
-  const [isRevealed, setIsRevealed] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(() => new URLSearchParams(window.location.search).get('reveal') === 'true');
   const [favorites, setFavorites] = useState(() => JSON.parse(localStorage.getItem('trozos_sabiduria_favorites') || '[]'));
   const [theme, setTheme] = useState(() => localStorage.getItem('ritual_theme') || 'dark');
   const [menuOpen, setMenuOpen] = useState(false);
