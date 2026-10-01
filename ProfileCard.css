@@ -91,10 +91,9 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: var(--ritual-pink);
+    color: var(--accent-text);
     font-weight: 700;
     margin-bottom: 8px;
-    opacity: 0.8;
 }
 
 .pc-frase {
@@ -127,7 +126,7 @@
     font-family: var(--font-base);
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: var(--ritual-red);
+    color: var(--accent-red-text);
     margin-bottom: var(--space-sm, 12px);
     font-weight: 600;
     letter-spacing: 0.15em;
@@ -241,6 +240,9 @@
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
+    max-width: min(92vw, 480px);
+    align-items: center;
     z-index: 9999;
     display: flex;
     flex-direction: column;
