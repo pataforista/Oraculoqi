@@ -36,6 +36,100 @@ const readFavorites = () => {
 const localDateKey = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
+
+const isCoarsePointer = () =>
+  typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches === true;
+
+const dayDiff = (a, b) => Math.round((new Date(`${a}T12:00:00`) - new Date(`${b}T12:00:00`)) / 86400000);
+
+const readStreak = () => {
+  try {
+    const s = JSON.parse(readStorage('oraculoqi_streak', 'null'));
+    if (s && Number.isFinite(s.count) && typeof s.last === 'string') return s;
+  } catch { /* ignorar */ }
+  return { count: 0, last: '' };
+};
+
+const nextStreak = (prev, today) => {
+  if (prev.last === today) return prev;
+  const count = prev.last && dayDiff(today, prev.last) === 1 ? prev.count + 1 : 1;
+  return { count, last: today };
+};
+
+const downloadBlob = (blob, filename) => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+
+const buildReminderICS = () => {
+  const pad = n => String(n).padStart(2, '0');
+  const now = new Date();
+  const start = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 9, 0, 0);
+  const stamp = d => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Oraculo Taoista//ES',
+    'CALSCALE:GREGORIAN',
+    'BEGIN:VEVENT',
+    'UID:sincronia-diaria@oraculo-taoista',
+    `DTSTAMP:${stamp(now)}`,
+    `DTSTART:${stamp(start)}`,
+    'RRULE:FREQ=DAILY',
+    'SUMMARY:Oráculo Taoísta: tu sincronía de hoy',
+    `URL:${window.location.origin}/?reveal=true`,
+    'BEGIN:VALARM',
+    'TRIGGER:PT0S',
+    'ACTION:DISPLAY',
+    'DESCRIPTION:Desvela tu sincronía de hoy',
+    'END:VALARM',
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+};
+
+const composeStoryCanvas = (cardCanvas) => {
+  const W = 1080, H = 1920;
+  const out = document.createElement('canvas');
+  out.width = W;
+  out.height = H;
+  const ctx = out.getContext('2d');
+  const css = getComputedStyle(document.documentElement);
+  const bg = css.getPropertyValue('--bg-primary').trim() || '#0a090c';
+  const ink = css.getPropertyValue('--ink-muted').trim() || '#8a8375';
+  const accent = css.getPropertyValue('--accent-text').trim() || '#eb94b3';
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, W, H);
+  const glow = ctx.createRadialGradient(W / 2, H / 2, 80, W / 2, H / 2, H * 0.6);
+  glow.addColorStop(0, 'rgba(125, 92, 138, 0.28)');
+  glow.addColorStop(1, 'rgba(125, 92, 138, 0)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, W, H);
+
+  const scale = Math.min((W - 120) / cardCanvas.width, (H - 520) / cardCanvas.height);
+  const cw = cardCanvas.width * scale, ch = cardCanvas.height * scale;
+  ctx.drawImage(cardCanvas, (W - cw) / 2, (H - ch) / 2, cw, ch);
+
+  ctx.textAlign = 'center';
+  if ('letterSpacing' in ctx) ctx.letterSpacing = '10px';
+  ctx.fillStyle = accent;
+  ctx.font = '500 40px "EB Garamond", Georgia, serif';
+  ctx.fillText('ORÁCULO TAOÍSTA', W / 2, 200);
+  ctx.fillStyle = ink;
+  ctx.font = '400 28px Inter, system-ui, sans-serif';
+  if ('letterSpacing' in ctx) ctx.letterSpacing = '4px';
+  ctx.fillText(window.location.host.toUpperCase(), W / 2, H - 150);
+  return out;
+};
+
 const haptic = (type = 'light') => {
   if (typeof navigator === 'undefined' || !navigator.vibrate) return;
   const patterns = { light: [10], medium: [25], success: [10, 50, 10] };
@@ -244,7 +338,7 @@ const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GAL
   useEffect(() => {
     if (!activated || !ctnDom.current) return;
     const ctn = ctnDom.current;
-    const renderer = new Renderer({ alpha: transparent, premultipliedAlpha: false });
+    const renderer = new Renderer({ alpha: transparent, premultipliedAlpha: false, dpr: isCoarsePointer() ? 0.6 : 1 });
     const gl = renderer.gl;
     if (transparent) {
       gl.enable(gl.BLEND);
@@ -254,12 +348,13 @@ const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GAL
       gl.clearColor(0, 0, 0, 1);
     }
 
-    let program;
+    let program, mesh;
     function resize() {
       const scale = 1;
       renderer.setSize(ctn.offsetWidth * scale, ctn.offsetHeight * scale);
       if (program) {
         program.uniforms.uResolution.value = [gl.canvas.width, gl.canvas.height, gl.canvas.width / gl.canvas.height];
+        if (!animateId && mesh) renderer.render({ scene: mesh });
       }
     }
     window.addEventListener('resize', resize, false);
@@ -291,10 +386,11 @@ const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GAL
       }
     });
 
-    const mesh = new Mesh(gl, { geometry, program });
-    let animateId;
+    mesh = new Mesh(gl, { geometry, program });
+    let animateId = 0;
+    const animate = !disableAnimation;
     function update(t) {
-      animateId = requestAnimationFrame(update);
+      animateId = animate ? requestAnimationFrame(update) : 0;
       if (!disableAnimation) {
         program.uniforms.uTime.value = t * 0.001;
         program.uniforms.uStarSpeed.value = (t * 0.001 * starSpeed) / 10.0;
@@ -311,6 +407,17 @@ const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GAL
     }
     animateId = requestAnimationFrame(update);
     ctn.appendChild(gl.canvas);
+
+    // Pausar el render cuando la pestaña no se ve: ahorra batería.
+    const onVisibility = () => {
+      if (document.hidden) {
+        cancelAnimationFrame(animateId);
+        animateId = 0;
+      } else if (animate && !animateId) {
+        animateId = requestAnimationFrame(update);
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibility);
 
     function handleMouseMove(e) {
       const rect = ctn.getBoundingClientRect();
@@ -332,6 +439,7 @@ const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GAL
 
     return () => {
       cancelAnimationFrame(animateId);
+      document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('resize', resize);
       if (mouseInteraction) {
         ctn.removeEventListener('mousemove', handleMouseMove);
@@ -416,6 +524,7 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
       ctx.scale(dpr, dpr);
       return { width, height };
     };
+    const reduceMotion = prefersReducedMotion();
     let { width, height } = updateSize();
 
     const draw = ts => {
@@ -441,14 +550,23 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
       }
       ctx.closePath();
       ctx.stroke();
-      animationRef.current = requestAnimationFrame(draw);
+      animationRef.current = reduceMotion || document.hidden ? 0 : requestAnimationFrame(draw);
     };
+
+    const onVisibility = () => {
+      if (!document.hidden && !reduceMotion && !animationRef.current) {
+        lastFrameTimeRef.current = performance.now();
+        animationRef.current = requestAnimationFrame(draw);
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibility);
 
     const ro = new ResizeObserver(() => {
       if (!mountedRef.current) return;
       const sz = updateSize();
       width = sz.width;
       height = sz.height;
+      if (reduceMotion) requestAnimationFrame(draw);
     });
     ro.observe(ctn);
     animationRef.current = requestAnimationFrame(draw);
@@ -456,6 +574,7 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
     return () => {
       mountedRef.current = false;
       if (animationRef.current) cancelAnimationFrame(animationRef.current);
+      document.removeEventListener('visibilitychange', onVisibility);
       ro.disconnect();
     };
   }, [color, speed, chaos, borderRadius, octavedNoise, getRoundedRectPoint]);
@@ -599,7 +718,7 @@ WisdomCard.displayName = 'WisdomCard';
 /* --- MAIN APP COMPONENT --- */
 function App() {
   const [card, setCard] = useState(null);
-  const [isRevealed, setIsRevealed] = useState(() => new URLSearchParams(window.location.search).get('reveal') === 'true');
+  const [isRevealed, setIsRevealed] = useState(() => new URLSearchParams(window.location.search).get('reveal') === 'true' || readStorage('oraculoqi_last_reveal', '') === localDateKey());
   const [favorites, setFavorites] = useState(readFavorites);
   const [theme, setTheme] = useState(() => {
     const t = readStorage('ritual_theme', 'dark');
@@ -620,6 +739,11 @@ function App() {
   const [cardExiting, setCardExiting] = useState(false);
   const [exitDir, setExitDir] = useState('left');
   const [favBurst, setFavBurst] = useState(false);
+  const [streak, setStreak] = useState(readStreak);
+  const [codexQuery, setCodexQuery] = useState('');
+  const [codexCat, setCodexCat] = useState('all');
+  const fileInputRef = useRef(null);
+  const reduceMotion = useMemo(prefersReducedMotion, []);
   const cardRef = useRef(null);
   const touchStartX = useRef(null);
   const touchStartY = useRef(null);
@@ -634,7 +758,7 @@ function App() {
 
   const showToast = useCallback((msg) => {
     const id = Math.random().toString(36).substring(2, 9);
-    setToasts(prev => [...prev, { id, msg }]);
+    setToasts(prev => [...prev, { id, msg }].slice(-2));
     setTimeout(() => {
       if (mountedRef.current) {
         setToasts(prev => prev.filter(t => t.id !== id));
@@ -677,6 +801,17 @@ function App() {
   useEffect(() => {
     writeStorage('trozos_sabiduria_favorites', JSON.stringify(favorites));
   }, [favorites]);
+
+  useEffect(() => {
+    if (!isRevealed) return;
+    const today = localDateKey();
+    writeStorage('oraculoqi_last_reveal', today);
+    setStreak(prev => {
+      const next = nextStreak(prev, today);
+      if (next !== prev) writeStorage('oraculoqi_streak', JSON.stringify(next));
+      return next;
+    });
+  }, [isRevealed]);
 
   const formattedDate = useMemo(() => new Date().toLocaleDateString(), []);
 
@@ -745,6 +880,13 @@ function App() {
     }
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [showCodex, showInfo]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e) => { if (e.key === 'Escape') setMenuOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [menuOpen]);
 
   useEffect(() => {
     const onBeforeInstallPrompt = (event) => {
@@ -831,7 +973,14 @@ function App() {
         useCORS: true
       });
 
-      const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+      let finalCanvas = canvas;
+      try {
+        finalCanvas = composeStoryCanvas(canvas);
+      } catch (composeErr) {
+        console.warn('Composición de historia falló, se usa la carta sola:', composeErr);
+      }
+
+      const blob = await new Promise((resolve) => finalCanvas.toBlob(resolve, 'image/png'));
       if (!blob) {
         throw new Error("No se pudo generar el blob de la imagen");
       }
@@ -850,8 +999,9 @@ function App() {
       } else {
         const link = document.createElement('a');
         link.download = 'oraculo-taoista.png';
-        link.href = canvas.toDataURL();
+        link.href = URL.createObjectURL(blob);
         link.click();
+        setTimeout(() => URL.revokeObjectURL(link.href), 1000);
         showToast("Imagen descargada con éxito ✧");
         pulseCup();
       }
@@ -879,6 +1029,64 @@ function App() {
       }
     }
   }, [card, showToast, pulseCup]);
+
+  const removeFavorite = useCallback((id) => {
+    setFavorites(f => f.filter(x => x.id !== id));
+    showToast("Sabiduría retirada del Codex");
+  }, [showToast]);
+
+  const exportFavorites = useCallback(() => {
+    const payload = {
+      app: 'oraculo-taoista',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      favorites: favorites.map(f => ({ id: f.id, frase: f.frase }))
+    };
+    downloadBlob(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }), `codex-oraculo-${localDateKey()}.json`);
+    showToast("Respaldo del Codex descargado ✧");
+  }, [favorites, showToast]);
+
+  const importFavorites = useCallback(async (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const ids = Array.isArray(data?.favorites) ? data.favorites.map(x => x?.id).filter(Boolean) : [];
+      const deck = window.TAOISTA_DATASET?.cards ?? [];
+      const byId = new Map(deck.map(c => [c.id, c]));
+      const found = ids.map(id => byId.get(id)).filter(Boolean);
+      if (found.length === 0) throw new Error('sin cartas válidas');
+      setFavorites(prev => {
+        const have = new Set(prev.map(x => x.id));
+        const fresh = found.filter(c => !have.has(c.id) && have.add(c.id));
+        return [...prev, ...fresh];
+      });
+      showToast(`Codex restaurado: ${found.length} sabidurías leídas ✧`);
+    } catch (err) {
+      console.error(err);
+      showToast("No se pudo leer ese respaldo");
+    }
+  }, [showToast]);
+
+  const addReminder = useCallback(() => {
+    downloadBlob(new Blob([buildReminderICS()], { type: 'text/calendar;charset=utf-8' }), 'oraculo-recordatorio.ics');
+    showToast("Ábrelo para añadir el recordatorio diario (9:00) a tu calendario ✧");
+  }, [showToast]);
+
+  const categories = useMemo(
+    () => [...new Set(favorites.map(f => f.categoria))].sort(),
+    [favorites]
+  );
+
+  const visibleFavorites = useMemo(() => {
+    const q = codexQuery.trim().toLowerCase();
+    const cat = categories.includes(codexCat) ? codexCat : 'all';
+    return favorites.filter(f =>
+      (cat === 'all' || f.categoria === cat) &&
+      (!q || `${f.frase} ${f.interpretacion ?? ''} ${f.categoria}`.toLowerCase().includes(q))
+    );
+  }, [favorites, categories, codexQuery, codexCat]);
 
   const installApp = useCallback(async () => {
     if (!installPrompt || isInstalled) return;
@@ -953,14 +1161,17 @@ function App() {
 
   return (
     <div className="app-container">
-      <Galaxy speed={0.4} density={theme === 'dark' ? 0.8 : 0.4} hueShift={theme === 'dark' ? 140 : 200} twinkleIntensity={0.4} />
+      <Galaxy disableAnimation={reduceMotion} mouseInteraction={!reduceMotion} speed={0.4} density={theme === 'dark' ? 0.8 : 0.4} hueShift={theme === 'dark' ? 140 : 200} twinkleIntensity={0.4} />
 
       <main className="main-content">
         <header className="app-header">
           <img src="icons/enso-8bit.png" className="app-logo" alt="Círculo Enso - Símbolo taoísta de presencia y vacío" />
           <div className="brand-info">
             <h1 className="brand-title">Oráculo Taoísta</h1>
-            <p className="sync-label">Sincronía · {formattedDate}</p>
+            <p className="sync-label">
+              Sincronía · {formattedDate}
+              {streak.count >= 2 && <span className="streak-badge" title={`${streak.count} días seguidos`}>✦ {streak.count} días</span>}
+            </p>
           </div>
         </header>
 
@@ -980,7 +1191,7 @@ function App() {
             </div>
           ) : (
             <div
-              className={`revealed-content${cardExiting ? ` exiting-${exitDir}` : ''}`}
+              className={`revealed-content${cardExiting ? ` exiting-${exitDir}` : ` enter-${exitDir}`}`}
               key={card.id}
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
@@ -1022,15 +1233,16 @@ function App() {
           className="menu-main-btn" 
           onClick={() => setMenuOpen(!menuOpen)} 
           aria-expanded={menuOpen} 
+          aria-controls="menu-options" 
           aria-label="Menú de acciones" 
           title="Menú"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
         </button>
-        <div className="menu-options">
+        <div className="menu-options" id="menu-options">
           <div style={{ position: 'relative' }}>
             <HeartBurst active={favBurst} />
-            <button className={`menu-opt-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito" aria-label="Guardar en favoritos" tabIndex={menuOpen ? 0 : -1}>
+            <button className={`menu-opt-btn ${isFav ? 'is-fav' : ''}`} onClick={toggleFavorite} title="Favorito" aria-label={isFav ? "Quitar de favoritos" : "Guardar en favoritos"} aria-pressed={isFav} tabIndex={menuOpen ? 0 : -1}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
             </button>
           </div>
@@ -1064,6 +1276,36 @@ function App() {
             <h2 id="codex-title" className="modal-title">El Codex</h2>
             <button className="close-btn" onClick={() => setShowCodex(false)} aria-label="Cerrar modal">&times;</button>
           </header>
+          {favorites.length > 0 && (
+            <div className="codex-tools" onClick={(e) => e.stopPropagation()}>
+              <div className="codex-tools-row">
+                <input
+                  type="search"
+                  className="codex-search"
+                  placeholder="Buscar en tu Codex…"
+                  aria-label="Buscar en tu Codex"
+                  value={codexQuery}
+                  onChange={(e) => setCodexQuery(e.target.value)}
+                />
+                <span className="codex-count" aria-live="polite">{visibleFavorites.length} de {favorites.length}</span>
+              </div>
+              {categories.length > 1 && (
+                <div className="codex-tools-row" role="group" aria-label="Filtrar por categoría">
+                  <button className="chip-btn" aria-pressed={!categories.includes(codexCat)} onClick={() => setCodexCat('all')}>Todas</button>
+                  {categories.map(c => (
+                    <button key={c} className="chip-btn" aria-pressed={codexCat === c} onClick={() => setCodexCat(codexCat === c ? 'all' : c)}>
+                      {c.replaceAll('_', ' ')}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <div className="codex-tools-row">
+                <button className="ghost-btn" onClick={exportFavorites}>Descargar respaldo</button>
+                <button className="ghost-btn" onClick={() => fileInputRef.current?.click()}>Restaurar respaldo</button>
+              </div>
+            </div>
+          )}
+          <input ref={fileInputRef} type="file" accept="application/json,.json" className="sr-only" tabIndex={-1} aria-hidden="true" onChange={importFavorites} />
           <div className="codex-list" onClick={(e) => e.stopPropagation()}>
             {favorites.length === 0 ? (
               <div className="codex-empty-state">
@@ -1077,12 +1319,28 @@ function App() {
                 <button className="codex-empty-cta" onClick={() => setShowCodex(false)}>
                   Buscar mi primera sincronía
                 </button>
+                <button className="ghost-btn" style={{ marginTop: 'var(--space-md)' }} onClick={() => fileInputRef.current?.click()}>
+                  Restaurar un respaldo
+                </button>
               </div>
+            ) : visibleFavorites.length === 0 ? (
+              <p className="codex-no-results">Ninguna sabiduría coincide con tu búsqueda.</p>
             ) : (
-              favorites.map(f => (
-                <div key={f.id} className="codex-item" onClick={() => { setCard(f); setShowCodex(false); setIsRevealed(true); }}>
-                  <span className="codex-item-cat">{f.categoria.replaceAll('_', ' ')}</span>
-                  <p className="codex-item-frase">"{f.frase}"</p>
+              visibleFavorites.map(f => (
+                <div key={f.id} className="codex-item">
+                  <button
+                    className="codex-item-main"
+                    onClick={() => {
+                      const fresh = window.TAOISTA_DATASET?.cards.find(c => c.id === f.id) ?? f;
+                      setCard(fresh);
+                      setShowCodex(false);
+                      setIsRevealed(true);
+                    }}
+                  >
+                    <span className="codex-item-cat">{f.categoria.replaceAll('_', ' ')}</span>
+                    <span className="codex-item-frase">"{f.frase}"</span>
+                  </button>
+                  <button className="codex-item-remove" onClick={() => removeFavorite(f.id)} aria-label={`Quitar de favoritos: ${f.frase.slice(0, 40)}`}>&times;</button>
                 </div>
               ))
             )}
@@ -1103,8 +1361,13 @@ function App() {
             <h3>Créditos</h3>
             <p>Diseño y Concepto: Cosmología Visual de la Reflexión.</p>
             <p>Desarrollado para la contemplación diaria.</p>
-            <p>Contacto y Sugerencias: <a href="mailto:miniappsminisoluciones@gmail.com" style={{color: 'var(--ritual-pink)'}}>miniappsminisoluciones@gmail.com</a></p>
-            <div className="info-modal-version">Oráculo Taoísta v1.2.0</div>
+            <p>Contacto y Sugerencias: <a href="mailto:miniappsminisoluciones@gmail.com" style={{color: 'var(--accent-text)'}}>miniappsminisoluciones@gmail.com</a></p>
+            <h3>Recordatorio diario</h3>
+            <p>Añade un aviso a las 9:00 en tu calendario. Al tocarlo se abre directamente tu sincronía del día.</p>
+            <div className="info-actions">
+              <button className="ghost-btn" onClick={addReminder}>Añadir al calendario</button>
+            </div>
+            <div className="info-modal-version">Oráculo Taoísta v1.3.0</div>
             <div className="support-section">
               <p>Si este oráculo te ha servido de guía, considera apoyar el mantenimiento de este espacio de calma.</p>
               <a href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} target="_blank" rel="noopener noreferrer" className="support-btn">
@@ -1117,7 +1380,7 @@ function App() {
       )}
 
       {/* Toasts Container */}
-      <div className="toast-container">
+      <div className="toast-container" role="status" aria-live="polite">
         {toasts.map(t => (
           <div key={t.id} className="toast-notification">
             <span>✧</span>
