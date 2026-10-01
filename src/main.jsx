@@ -7,6 +7,35 @@ import '../Galaxy.css';
 import '../ElectricBorder.css';
 import '../ProfileCard.css';
 
+const readStorage = (key, fallback) => {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw === null ? fallback : raw;
+  } catch {
+    return fallback;
+  }
+};
+
+const writeStorage = (key, value) => {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* almacenamiento bloqueado o lleno: la app sigue funcionando */
+  }
+};
+
+const readFavorites = () => {
+  try {
+    const parsed = JSON.parse(readStorage('trozos_sabiduria_favorites', '[]'));
+    return Array.isArray(parsed) ? parsed.filter(f => f && f.id && f.categoria && f.frase) : [];
+  } catch {
+    return [];
+  }
+};
+
+const localDateKey = (d = new Date()) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
 const haptic = (type = 'light') => {
   if (typeof navigator === 'undefined' || !navigator.vibrate) return;
   const patterns = { light: [10], medium: [25], success: [10, 50, 10] };
@@ -169,7 +198,10 @@ void main() {
   }
 }`;
 
-function Galaxy({ focal = [0.5, 0.5], rotation = [1.0, 0.0], starSpeed = 0.5, density = 1, hueShift = 140, disableAnimation = false, speed = 1.0, mouseInteraction = true, glowIntensity = 0.3, saturation = 0.0, mouseRepulsion = true, repulsionStrength = 2, twinkleIntensity = 0.3, rotationSpeed = 0.1, autoCenterRepulsion = 0, transparent = true, ...rest }) {
+const GALAXY_FOCAL = [0.5, 0.5];
+const GALAXY_ROTATION = [1.0, 0.0];
+
+const Galaxy = React.memo(function Galaxy({ focal = GALAXY_FOCAL, rotation = GALAXY_ROTATION, starSpeed = 0.5, density = 1, hueShift = 140, disableAnimation = false, speed = 1.0, mouseInteraction = true, glowIntensity = 0.3, saturation = 0.0, mouseRepulsion = true, repulsionStrength = 2, twinkleIntensity = 0.3, rotationSpeed = 0.1, autoCenterRepulsion = 0, transparent = true, ...rest }) {
   const [activated, setActivated] = useState(false);
   const ctnDom = useRef(null);
   const targetMousePos = useRef({ x: 0.5, y: 0.5 });
@@ -311,7 +343,7 @@ function Galaxy({ focal = [0.5, 0.5], rotation = [1.0, 0.0], starSpeed = 0.5, de
   }, [activated, focal, rotation, starSpeed, density, hueShift, disableAnimation, speed, mouseInteraction, glowIntensity, saturation, mouseRepulsion, twinkleIntensity, rotationSpeed, repulsionStrength, autoCenterRepulsion, transparent]);
 
   return <div ref={ctnDom} className="galaxy-container" {...rest} />;
-}
+});
 
 /* --- ELECTRIC BORDER COMPONENT --- */
 const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, borderRadius = 6, className, style }) => {
@@ -568,8 +600,11 @@ WisdomCard.displayName = 'WisdomCard';
 function App() {
   const [card, setCard] = useState(null);
   const [isRevealed, setIsRevealed] = useState(() => new URLSearchParams(window.location.search).get('reveal') === 'true');
-  const [favorites, setFavorites] = useState(() => JSON.parse(localStorage.getItem('trozos_sabiduria_favorites') || '[]'));
-  const [theme, setTheme] = useState(() => localStorage.getItem('ritual_theme') || 'dark');
+  const [favorites, setFavorites] = useState(readFavorites);
+  const [theme, setTheme] = useState(() => {
+    const t = readStorage('ritual_theme', 'dark');
+    return ['dark', 'light', 'sumi-e'].includes(t) ? t : 'dark';
+  });
   const [menuOpen, setMenuOpen] = useState(false);
   const [showCodex, setShowCodex] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
@@ -577,8 +612,8 @@ function App() {
   const [isInstalled, setIsInstalled] = useState(window.matchMedia('(display-mode: standalone)').matches);
   const [toasts, setToasts] = useState([]);
   const [donationCount, setDonationCount] = useState(() => {
-    const val = localStorage.getItem('oraculoqi_donation_count');
-    return val ? parseInt(val, 10) : 0;
+    const n = parseInt(readStorage('oraculoqi_donation_count', '0'), 10);
+    return Number.isFinite(n) && n > 0 ? n : 0;
   });
   const [donationDismissed, setDonationDismissed] = useState(false);
   const [cupPulse, setCupPulse] = useState(false);
@@ -623,7 +658,7 @@ function App() {
 
   useEffect(() => {
     if (window.TAOISTA_DATASET) {
-      const deck = window.TAOISTA_DATASET.cards, today = new Date().toISOString().split('T')[0];
+      const deck = window.TAOISTA_DATASET.cards, today = localDateKey();
       let hash = 0;
       for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
       setCard(deck[Math.abs(hash | 0) % deck.length]);
@@ -632,11 +667,15 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('ritual_theme', theme);
+    writeStorage('ritual_theme', theme);
   }, [theme]);
 
   useEffect(() => {
-    localStorage.setItem('trozos_sabiduria_favorites', JSON.stringify(favorites));
+    writeStorage('oraculoqi_donation_count', String(donationCount));
+  }, [donationCount]);
+
+  useEffect(() => {
+    writeStorage('trozos_sabiduria_favorites', JSON.stringify(favorites));
   }, [favorites]);
 
   const formattedDate = useMemo(() => new Date().toLocaleDateString(), []);
@@ -729,22 +768,20 @@ function App() {
 
   const toggleFavorite = useCallback(() => {
     if (!card) return;
-    setFavorites(f => {
-      const exists = f.find(x => x.id === card.id);
-      if (exists) {
-        haptic('light');
-        showToast("Sabiduría retirada del Codex");
-        return f.filter(x => x.id !== card.id);
-      } else {
-        haptic('success');
-        setFavBurst(true);
-        setTimeout(() => setFavBurst(false), 700);
-        showToast("Sabiduría guardada en tu Codex 📖");
-        pulseCup();
-        return [...f, card];
-      }
-    });
-  }, [card, showToast, pulseCup]);
+    const exists = favorites.some(x => x.id === card.id);
+    if (exists) {
+      haptic('light');
+      showToast("Sabiduría retirada del Codex");
+      setFavorites(f => f.filter(x => x.id !== card.id));
+    } else {
+      haptic('success');
+      setFavBurst(true);
+      setTimeout(() => setFavBurst(false), 700);
+      showToast("Sabiduría guardada en tu Codex 📖");
+      pulseCup();
+      setFavorites(f => [...f, card]);
+    }
+  }, [card, favorites, showToast, pulseCup]);
 
   const refreshCard = useCallback((dir = 'left') => {
     if (!window.TAOISTA_DATASET) return;
@@ -765,11 +802,7 @@ function App() {
         } while (card && newCard.id === card.id);
       }
       setCard(newCard);
-      setDonationCount(prev => {
-        const next = prev + 1;
-        localStorage.setItem('oraculoqi_donation_count', next.toString());
-        return next;
-      });
+      setDonationCount(prev => prev + 1);
       setDonationDismissed(false);
       setCardExiting(false);
     }, 300);
