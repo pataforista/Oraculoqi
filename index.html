@@ -988,9 +988,22 @@
       margin-bottom: 0;
     }
 
+    /* Velo tras el menú: evita que los botones tapen el texto de la carta */
+    .menu-scrim {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: radial-gradient(circle at calc(100% - 60px) calc(100% - 60px), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35) 60%);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      animation: scrimIn 0.2s ease-out both;
+    }
+    @keyframes scrimIn { from { opacity: 0; } to { opacity: 1; } }
+
     /* El hover pegajoso en pantallas táctiles confunde: solo con puntero real */
     @media (hover: none) {
       .menu-opt-btn:hover { transform: none; }
+      .menu-opt-btn::after { display: none; }
       .codex-item:hover { transform: none; }
     }
 
