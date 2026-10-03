@@ -988,9 +988,22 @@
       margin-bottom: 0;
     }
 
+    /* Velo tras el menú: evita que los botones tapen el texto de la carta */
+    .menu-scrim {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: radial-gradient(circle at calc(100% - 60px) calc(100% - 60px), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35) 60%);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      animation: scrimIn 0.2s ease-out both;
+    }
+    @keyframes scrimIn { from { opacity: 0; } to { opacity: 1; } }
+
     /* El hover pegajoso en pantallas táctiles confunde: solo con puntero real */
     @media (hover: none) {
       .menu-opt-btn:hover { transform: none; }
+      .menu-opt-btn::after { display: none; }
       .codex-item:hover { transform: none; }
     }
 
@@ -1010,11 +1023,11 @@
       .codex-empty-icon { animation: none; }
     }
   </style>
-  <script type="module" crossorigin src="/assets/index-CIwdETFs.js"></script>
+  <script type="module" crossorigin src="/assets/index-BjuDr1Q0.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/vendor-react-D7rv8Q1m.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-webgl-B4JkAj4o.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-capture-BfYXEYrK.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-C-WUHAiA.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-DyIVsB6a.css">
 <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 
 <body>

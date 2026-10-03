@@ -222,6 +222,8 @@
 .pc-card-logo {
     width: 48px;
     height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
     opacity: 0.9;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
     transition: all var(--transition-slow);

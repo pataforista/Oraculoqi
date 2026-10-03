@@ -96,6 +96,20 @@ const buildReminderICS = () => {
   ].join('\r\n');
 };
 
+const SHARE_CAPTURE_CSS = `
+  .is-capturing *, .is-capturing *::before, .is-capturing *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .is-capturing .pc-content > * { opacity: 1 !important; transform: none !important; }
+  .is-capturing .pc-card-wrapper, .is-capturing .pc-card-shell, .is-capturing .revealed-content {
+    transform: none !important; filter: none !important; opacity: 1 !important;
+  }
+  .is-capturing .pc-card { min-height: 0 !important; box-shadow: none !important; }
+  .is-capturing .pc-inside { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .is-capturing .pc-shine, .is-capturing .pc-donation-gentle { display: none !important; }
+`;
+
 const composeStoryCanvas = (cardCanvas) => {
   const W = 1080, H = 1920;
   const out = document.createElement('canvas');
@@ -965,12 +979,22 @@ function App() {
     const cardElement = cardRef.current;
     if (!cardElement) return;
 
+    setMenuOpen(false);
     try {
+      if (document.fonts?.ready) await document.fonts.ready;
       const canvas = await html2canvas(cardElement, {
         scale: 2,
         backgroundColor: null,
         logging: false,
-        useCORS: true
+        useCORS: true,
+        // html2canvas clona el DOM: las animaciones de entrada se reinician en el clon
+        // y el texto queda capturado invisible. Congelamos el estado final.
+        onclone: (doc) => {
+          doc.documentElement.classList.add('is-capturing');
+          const style = doc.createElement('style');
+          style.textContent = SHARE_CAPTURE_CSS;
+          doc.head.appendChild(style);
+        }
       });
 
       let finalCanvas = canvas;
@@ -1228,6 +1252,7 @@ function App() {
       </main>
 
       {/* Floating Menu */}
+      {menuOpen && <div className="menu-scrim" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
       <div className={`floating-menu-container ${menuOpen ? 'active' : ''}`}>
         <button 
           className="menu-main-btn" 
