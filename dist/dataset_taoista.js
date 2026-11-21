@@ -130,7 +130,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0015",
-      "frase": "El hombre escupió al Cielo, y la saliva le cayó en la cara.",
+      "frase": "Alguien escupió al Cielo, y la saliva le cayó en la cara.",
       "interpretacion": "Odiar la realidad es inútil; la realidad no se ofende, pero tú te manchas. La resistencia te daña a ti, no al evento.",
       "practica_hoy": "Deja de quejarte del clima o del tráfico; acéptalo.",
       "categoria": "aceptacion",
@@ -310,7 +310,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0035",
-      "frase": "Cuando el sabio señala la luna, el necio mira el dedo.",
+      "frase": "Cuando quien sabe señala la luna, quien no sabe mira el dedo.",
       "interpretacion": "Confundir el método, el nombre o la estructura con la realidad misma es quedar atrapado en las coordenadas de un mapa infinito.",
       "practica_hoy": "Nota cuántas de tus afirmaciones de hoy comienzan con clasificaciones conceptuales y trata de percibir el objeto desnudo de sus etiquetas.",
       "categoria": "atencion",
@@ -481,7 +481,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0054",
-      "frase": "El hombre necio busca el fuego con una lámpara encendida.",
+      "frase": "La persona necia busca el fuego con una lámpara encendida.",
       "interpretacion": "Ya tienes lo que buscas. Usar la consciencia para buscar la consciencia es redundante y ridículo.",
       "practica_hoy": "Deja de buscar 'sentirte bien' y solo siente.",
       "categoria": "atencion",
@@ -490,7 +490,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0055",
-      "frase": "El hombre que perdió su hacha sospechó del hijo de su vecino.",
+      "frase": "Alguien que perdió su hacha sospechó del hijo de su vecino.",
       "interpretacion": "Nuestras sospechas y prejuicios colorean la realidad. El juicio apresurado crea falsos culpables, haciendo que veamos en los demás el reflejo de nuestros propios miedos o pérdidas cotidianas.",
       "practica_hoy": "Hoy, cuando sientas desconfianza o juzgues la intención de alguien, detente un segundo. Recuerda que puedes estar proyectando tu propia inquietud y observa al otro con una mente despejada.",
       "categoria": "atencion",
@@ -499,7 +499,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0056",
-      "frase": "El hombre sabio no deja huellas, como el pájaro en el cielo.",
+      "frase": "La persona sabia no deja huellas, como el pájaro en el cielo.",
       "interpretacion": "Haz tu trabajo y desaparece. No dejes rastro de 'yo lo hice' o 'mírenme'.",
       "practica_hoy": "Realiza una tarea y borra tu autoría.",
       "categoria": "atencion",
@@ -508,7 +508,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0057",
-      "frase": "El hombre verdadero respira con los talones.",
+      "frase": "La persona verdadera respira con los talones.",
       "interpretacion": "La verdadera presencia requiere un enraizamiento total. Respirar con los talones representa una conexión profunda y corpórea con la tierra, en contraste con la respiración superficial nacida de la agitación mental.",
       "practica_hoy": "Hoy, detente tres veces a hacer cinco respiraciones lentas y profundas, imaginando de forma vívida que inhalas y exhalas el aire desde la planta de tus pies.",
       "categoria": "atencion",
@@ -625,7 +625,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0070",
-      "frase": "El sabio abraza la unidad.",
+      "frase": "La persona sabia abraza la unidad.",
       "interpretacion": "No divide el mundo en 'yo' y 'ellos'. Ve la interconexión de todo.",
       "practica_hoy": "Siente que eres parte del entorno, no un visitante.",
       "categoria": "atencion",
@@ -634,7 +634,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0071",
-      "frase": "El sabio cayó. Al levantarse, no llamó caída al suelo.",
+      "frase": "La persona sabia cayó. Al levantarse, no llamó caída al suelo.",
       "interpretacion": "A través de esta perspectiva, vemos que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, facilitando una conexión más auténtica con nosotros mismos.",
       "practica_hoy": "Para materializar esto, elige hacer una tarea rutinaria prestando atención exclusiva a las sensaciones físicas rompiendo así el patrón del piloto automático.",
       "categoria": "atencion",
@@ -643,7 +643,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0072",
-      "frase": "El sabio cierra la boca y embota sus sentidos.",
+      "frase": "La persona sabia cierra la boca y embota sus sentidos.",
       "interpretacion": "Cerrar las puertas de la percepción conserva la energía vital (Jing). Estar siempre 'conectado' te drena.",
       "practica_hoy": "Pasa una hora en modo 'no molestar' mental.",
       "categoria": "atencion",
@@ -652,7 +652,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0073",
-      "frase": "El sabio comer cuando tiene hambre y duerme cuando tiene sueño.",
+      "frase": "La persona sabia come cuando tiene hambre y duerme cuando tiene sueño.",
       "interpretacion": "Suena fácil, pero la gente común come pensando en mil cosas y duerme soñando con mil problemas. Haz solo una cosa.",
       "practica_hoy": "Come sin hacer nada más (sin pantallas, sin hablar).",
       "categoria": "atencion",
@@ -661,7 +661,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0074",
-      "frase": "El sabio conoce la luz, pero se mantiene en la oscuridad.",
+      "frase": "La persona sabia conoce la luz, pero se mantiene en la oscuridad.",
       "interpretacion": "Aunque tengas talento para brillar, prefiere el segundo plano. Allí estás seguro y libre de envidias.",
       "practica_hoy": "Deja que otro se lleve el crédito hoy.",
       "categoria": "atencion",
@@ -670,7 +670,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0075",
-      "frase": "El sabio es cuadrado pero no corta; afilado pero no hiere.",
+      "frase": "La persona sabia es cuadrado pero no corta; afilado pero no hiere.",
       "interpretacion": "El mensaje central aquí es que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, lo cual constituye la base de una vida realmente significativa.",
       "practica_hoy": "Cuando notes tensión, recuerda observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales rompiendo así el patrón del piloto automático.",
       "categoria": "atencion",
@@ -679,7 +679,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0076",
-      "frase": "El sabio no compite, por eso nadie puede competir con él.",
+      "frase": "La persona sabia no compite, por eso nadie puede competir con ella.",
       "interpretacion": "Si juegas tu propio juego, no tienes rivales. La competencia es para los que imitan.",
       "practica_hoy": "Haz algo a tu manera única, sin compararte.",
       "categoria": "atencion",
@@ -688,7 +688,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0077",
-      "frase": "El sabio no tiene compasión ritual; trata a las cosas como perros de paja.",
+      "frase": "La persona sabia no tiene compasión ritual; trata a las cosas como perros de paja.",
       "interpretacion": "El Tao no tiene preferencias sentimentales artificiales. Tratar las cosas como 'perros de paja' significa honrarlas plenamente cuando están presentes y soltarlas con ligereza y sin apegos cuando su ciclo termina.",
       "practica_hoy": "Observa un apego material o relacional que estés sosteniendo con angustia hoy. Visualízalo completando su ciclo natural y practica el arte taoísta de soltarlo sin amargura.",
       "categoria": "atencion",
@@ -697,7 +697,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0078",
-      "frase": "El sabio trata el éxito y el fracaso como el mismo impostor.",
+      "frase": "La persona sabia trata el éxito y el fracaso como el mismo impostor.",
       "interpretacion": "Ambos son eventos temporales. Ninguno te define. Mantente ecuánime ante los dos.",
       "practica_hoy": "No te emociones demasiado si algo sale bien, ni te hundas si sale mal.",
       "categoria": "atencion",
@@ -706,7 +706,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0079",
-      "frase": "El sabio usa la balsa para cruzar el río, pero la deja en la orilla al seguir su camino.",
+      "frase": "La persona sabia usa la balsa para cruzar el río, pero la deja en la orilla al seguir su camino.",
       "interpretacion": "Esta enseñanza nos recuerda que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, permitiéndonos regresar a nuestro centro emocional con total claridad.",
       "practica_hoy": "Cuando notes tensión, recuerda reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' y observa el espacio mental que esto libera.",
       "categoria": "atencion",
@@ -715,7 +715,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0080",
-      "frase": "El sabio usa la luz para volver a la claridad.",
+      "frase": "La persona sabia usa la luz para volver a la claridad.",
       "interpretacion": "Usa tu inteligencia no para analizar el mundo, sino para iluminar tu propia mente y regresar al origen.",
       "practica_hoy": "Observa tu propia mente en lugar de observar a otros.",
       "categoria": "atencion",
@@ -724,7 +724,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0081",
-      "frase": "El sabio vacía la mente y llena el vientre.",
+      "frase": "La persona sabia vacía la mente y llena el vientre.",
       "interpretacion": "Menos intelectualización, más instinto y nutrición vital. El centro está en el Hara (vientre), no en el cerebro.",
       "practica_hoy": "Pon la mano en tu vientre y respira desde ahí.",
       "categoria": "atencion",
@@ -1049,7 +1049,7 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0117",
       "frase": "Quien promete a la ligera, encuentra difícil cumplir.",
-      "interpretacion": "El 'sí' fácil trae problemas. El sabio duda antes de comprometerse y por eso siempre cumple.",
+      "interpretacion": "El 'sí' fácil trae problemas. La persona sabia duda antes de comprometerse y por eso siempre cumple.",
       "practica_hoy": "No digas 'sí' inmediatamente; di 'déjame pensarlo'.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
@@ -1129,7 +1129,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0126",
-      "frase": "Soñé que era una mariposa. Ahora no sé si soy un hombre que soñó ser mariposa, o una mariposa soñando ser hombre.",
+      "frase": "Soñé que era una mariposa. Ahora no sé si soy una persona que soñó ser mariposa, o una mariposa soñando ser persona.",
       "interpretacion": "A través de esta perspectiva, vemos que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, rompiendo el ciclo de la reactividad automática.",
       "practica_hoy": "Suspende una definición sobre ti.",
       "categoria": "atencion",
@@ -1588,7 +1588,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0177",
-      "frase": "Un perro no es buen perro solo porque ladra bien. Un hombre no es sabio solo porque habla bien.",
+      "frase": "Un perro no es buen perro solo porque ladra bien. Una persona no es sabia solo porque habla bien.",
       "interpretacion": "El discurso no es la virtud. Desconfía de la elocuencia vacía.",
       "practica_hoy": "Juzga hoy por actos, no por palabras.",
       "categoria": "discernimiento",
@@ -1732,7 +1732,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0193",
-      "frase": "El sabio sabe que no sabe. El necio cree que sabe.",
+      "frase": "La persona sabia sabe que no sabe. La necia cree que sabe.",
       "interpretacion": "Reconocer la propia ignorancia es la cima de la salud mental. Creer saber es una enfermedad.",
       "practica_hoy": "Responde 'no lo sé' con confianza al menos una vez.",
       "categoria": "humildad",
@@ -1759,7 +1759,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0196",
-      "frase": "Soñé que era mariposa. Ahora no sé si soy un hombre que soñó o una mariposa soñando.",
+      "frase": "Soñé que era mariposa. Ahora no sé si soy una persona que soñó o una mariposa soñando.",
       "interpretacion": "La identidad es una construcción narrativa y porosa, dependiente del estado de conciencia en el que el ego descansa.",
       "practica_hoy": "Durante cinco minutos, suelta la afirmación mental de 'quién eres' y observa el entorno simplemente como percepción pura.",
       "categoria": "identidad",
@@ -2101,8 +2101,8 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0234",
-      "frase": "El hombre superior busca en sí mismo; el hombre inferior busca en los demás.",
-      "interpretacion": "El sabio asume la responsabilidad de su estado. El necio culpa a las circunstancias.",
+      "frase": "Quien se cultiva busca en sí misma o en sí mismo; quien no, busca en los demás.",
+      "interpretacion": "Quien es sabio asume la responsabilidad de su estado. Quien es necio culpa a las circunstancias.",
       "practica_hoy": "No culpes a nadie de cómo te sientes hoy.",
       "categoria": "responsabilidad",
       "linaje": "contemporaneo",
@@ -2461,7 +2461,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0274",
-      "frase": "El sabio no compite con la realidad: la usa.",
+      "frase": "La persona sabia no compite con la realidad: la usa.",
       "interpretacion": "Pelear con lo que ya es consume energía y reduce opciones. Aceptar no es aprobar; es leer el tablero para jugar bien. Lo real es el punto de apoyo, no el enemigo.",
       "practica_hoy": "Escribe: ‘Esto es lo que hay’. Debajo, lista dos acciones posibles dentro de esas condiciones.",
       "categoria": "aceptacion",
@@ -2667,69 +2667,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "En respuesta a una falsa acusación."
     },
     {
-      "id": "TAO_0297",
-      "frase": "Por regla general, un hombre debe muy poco a lo que le dio la cuna – un hombre es lo que hace de sí mismo.",
-      "interpretacion": "El linaje de tu origen no condiciona tu capacidad de alineación con el Tao. La verdadera naturaleza se cultiva en el presente, a través del esfuerzo consciente y la rectitud por encima de las ventajas heredadas.",
-      "practica_hoy": "Hoy, asume la responsabilidad total de tu estado mental. Si te descubres culpando a tus circunstancias pasadas, regresa a tu respiración y elige actuar con presencia enraizada.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Alexander Graham Bell"
-    },
-    {
-      "id": "TAO_0298",
-      "frase": "Quien sueña una vida fuera de lo común termina descubriendo que no le queda más remedio que buscar un enfoque poco común para vivirla.",
-      "interpretacion": "Un sabio apunte para reconocer cómo el valor y la fuerza real se encuentran en la quietud y no en la agitación, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar y observa el espacio mental que esto libera.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Gary Keller"
-    },
-    {
-      "id": "TAO_0299",
-      "frase": "Rodéate de personas de buena calidad si valoras tu reputación; pues mejor estar solo que mal acompañado.",
-      "interpretacion": "Esta frase ilumina un principio vital: la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Transforma esta idea en acción al aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: George Washington"
-    },
-    {
-      "id": "TAO_0300",
-      "frase": "Sé fiel a ti mismo, ayuda a los demás, haz de cada día tu obra maestra.",
-      "interpretacion": "El mensaje central aquí es que abrazar lo que no podemos controlar libera una inmensa energía vital, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: John Wooden"
-    },
-    {
-      "id": "TAO_0301",
-      "frase": "¡Cree en ti mismo! ¡Ten fe en tus habilidades! Sin una confianza humilde pero razonable en tus propias fuerzas no puedes ser exitoso ni feliz.",
-      "interpretacion": "El mensaje central aquí es que abrazar lo que no podemos controlar libera una inmensa energía vital, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Transforma esta idea en acción al actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto y permítete descansar en la simpleza de ser.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Norman Vincent Peale"
-    },
-    {
-      "id": "TAO_0302",
-      "frase": "Cambia lo cambiable, acepta lo inalterable y aléjate de lo inaceptable.",
-      "interpretacion": "Esta enseñanza nos recuerda que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Cuando notes tensión, recuerda reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para cultivar una mente flexible y abierta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Denis Waitley"
-    },
-    {
-      "id": "TAO_0303",
-      "frase": "Cámbiate a ti mismo y habrás hecho tu parte para cambiar el mundo.",
-      "interpretacion": "Nos invita a observar críticamente que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Hoy, te invito a actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto para anclar tu atención en el presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Paramahansa Yogananda"
-    },
-    {
       "id": "TAO_0304",
       "frase": "Conoce el blanco, pero conserva el negro.",
       "interpretacion": "Conoce la luz y la razón, pero no pierdas contacto con el misterio, la oscuridad y lo inconsciente.",
@@ -2767,7 +2704,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0308",
-      "frase": "El sabio actúa sin esperar nada.",
+      "frase": "La persona sabia actúa sin esperar nada.",
       "interpretacion": "El sufrimiento viene de la brecha entre tu acción y tu expectativa de recompensa. Cierra la brecha.",
       "practica_hoy": "Haz un favor y olvídalo al instante.",
       "categoria": "atencion",
@@ -2782,24 +2719,6 @@ window.TAOISTA_DATASET = {
       "categoria": "atencion",
       "linaje": "mindfulness",
       "nota_editorial": "Filosofía unificadora."
-    },
-    {
-      "id": "TAO_0310",
-      "frase": "La felicidad es una elección y una habilidad, y puedes dedicarte a aprender esa habilidad y tomar esa decisión.",
-      "interpretacion": "Esta enseñanza nos recuerda que el valor y la fuerza real se encuentran en la quietud y no en la agitación, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "A lo largo del día, intenta hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas para anclar tu atención en el presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Naval Ravikant"
-    },
-    {
-      "id": "TAO_0311",
-      "frase": "Quien aprende a reírse de sí mismo nunca se queda sin cosas de las que reírse.",
-      "interpretacion": "Un sabio apunte para reconocer cómo abrazar lo que no podemos controlar libera una inmensa energía vital, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Transforma esta idea en acción al reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' rompiendo así el patrón del piloto automático.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Epictetus"
     },
     {
       "frase": "Hojas en el Arroyo",
@@ -2826,69 +2745,6 @@ window.TAOISTA_DATASET = {
       "categoria": "atencion",
       "linaje": "mindfulness",
       "nota_editorial": "Inspiración contemplativa."
-    },
-    {
-      "id": "TAO_0315",
-      "frase": "No estoy distraído. Es la presencia absoluta de mi mente lo que me hace ajeno a todo lo demás.",
-      "interpretacion": "Nos invita a observar críticamente que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Transforma esta idea en acción al reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Gilbert Chesterton"
-    },
-    {
-      "id": "TAO_0316",
-      "frase": "Creo que el autoconocimiento es probablemente lo más importante para convertirse en un campeón.",
-      "interpretacion": "Nos invita a observar críticamente que soltar la necesidad de perfección abre paso a la verdadera excelencia, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Para materializar esto, elige soltar deliberadamente la tensión en tus hombros y mandíbula para cultivar una mente flexible y abierta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Billie Jean King"
-    },
-    {
-      "id": "TAO_0317",
-      "frase": "Si no te conquistas a ti mismo, serás conquistado por ti mismo.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que soltar la necesidad de perfección abre paso a la verdadera excelencia, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Cuando notes tensión, recuerda reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' y permítete descansar en la simpleza de ser.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Napoleon Hill"
-    },
-    {
-      "id": "TAO_0318",
-      "frase": "Si no dices la verdad sobre ti mismo, no podrás decirla sobre los demás.",
-      "interpretacion": "El mensaje central aquí es que cada instante ordinario contiene la semilla de una profunda iluminación, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Virginia Woolf"
-    },
-    {
-      "frase": "Si no respetas tus propios valores, ¿cómo podrás ser digno del respeto de los demás?",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "Transforma esta idea en acción al reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' y observa el espacio mental que esto libera.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de repositorio externo. Autor: Byron Pulsifer",
-      "id": "TAO_0319"
-    },
-    {
-      "id": "TAO_0320",
-      "frase": "Si te colocas en una posición donde debes salir de tu zona de confort, te verás obligado a expandir tu conciencia.",
-      "interpretacion": "A través de esta perspectiva, vemos que el desapego a los resultados nos permite actuar con mayor pureza, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Hoy, te invito a soltar deliberadamente la tensión en tus hombros y mandíbula rompiendo así el patrón del piloto automático.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Unknown"
-    },
-    {
-      "id": "TAO_0321",
-      "frase": "Si intentas microgestionar cada aspecto de ti mismo, lo único que lograrás será hacerte desdichado.",
-      "interpretacion": "Un sabio apunte para reconocer cómo cada instante ordinario contiene la semilla de una profunda iluminación, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Transforma esta idea en acción al actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto y observa el espacio mental que esto libera.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Naval Ravikant"
     },
     {
       "id": "TAO_0322",
@@ -2918,60 +2774,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Capítulo 76."
     },
     {
-      "id": "TAO_0325",
-      "frase": "Aprende a valorarte a ti mismo, lo cual significa: lucha por tu propia felicidad.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Transforma esta idea en acción al escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente para anclar tu atención en el presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Ayn Rand"
-    },
-    {
-      "id": "TAO_0326",
-      "frase": "El talento natural solo determina los límites de tu potencial. Es la dedicación y la voluntad de disciplinar tu vida lo que te hace grande.",
-      "interpretacion": "Esta máxima sugiere sutilmente que soltar la necesidad de perfección abre paso a la verdadera excelencia, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "En un momento de pausa hoy, busca hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Billie Jean King"
-    },
-    {
-      "id": "TAO_0327",
-      "frase": "Ningún hombre es más engañado que el hombre egoísta.",
-      "interpretacion": "A través de esta perspectiva, vemos que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Para materializar esto, elige observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Henry Ward Beecher"
-    },
-    {
-      "id": "TAO_0328",
-      "frase": "Nada derriba muros de manera tan segura como la aceptación.",
-      "interpretacion": "Esta máxima sugiere sutilmente que abrazar lo que no podemos controlar libera una inmensa energía vital, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Hoy, te invito a hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas y observa el espacio mental que esto libera.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Deepak Chopra"
-    },
-    {
-      "frase": "Desde luego, no hay otra fórmula para el éxito que la aceptación incondicional de la vida y de lo que esta trae consigo.",
-      "interpretacion": "Esta frase ilumina un principio vital: somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Transforma esta idea en acción al aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas como un experimento de curiosidad radical.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de repositorio externo. Autor: Arthur Rubinstein",
-      "id": "TAO_0329"
-    },
-    {
-      "id": "TAO_0330",
-      "frase": "Solo cuando uno se concede el derecho a morir, se otorga a sí mismo el permiso para vivir.",
-      "interpretacion": "Esta frase ilumina un principio vital: nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "En las próximas horas, procura actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: C. Sean McGee"
-    },
-    {
       "id": "TAO_0331",
       "frase": "Quien justifica sus actos no convence.",
       "interpretacion": "La verdad se sostiene sola. El exceso de argumentación revela la debilidad de la posición.",
@@ -2990,96 +2792,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Estrategia 28."
     },
     {
-      "id": "TAO_0333",
-      "frase": "El éxito en cualquier empeño depende del grado en que sea una expresión de tu verdadero ser.",
-      "interpretacion": "Esta frase ilumina un principio vital: cada instante ordinario contiene la semilla de una profunda iluminación, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Para materializar esto, elige escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente como un experimento de curiosidad radical.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Ralph Marston"
-    },
-    {
-      "id": "TAO_0334",
-      "frase": "El éxito parece estar conectado con la acción. Quienes tienen éxito se mantienen en movimiento. Cometen errores, pero no abandonan.",
-      "interpretacion": "Esta máxima sugiere sutilmente que el desapego a los resultados nos permite actuar con mayor pureza, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Como ejercicio práctico, decide aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas para cultivar una mente flexible y abierta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Conrad Hilton"
-    },
-    {
-      "id": "TAO_0335",
-      "frase": "Rodéate únicamente de personas que te impulsen a llegar más alto.",
-      "interpretacion": "Esta enseñanza nos recuerda que el desapego a los resultados nos permite actuar con mayor pureza, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Para materializar esto, elige reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' y observa el espacio mental que esto libera.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Oprah Winfrey"
-    },
-    {
-      "id": "TAO_0336",
-      "frase": "El misterio último es uno mismo.",
-      "interpretacion": "Nos invita a observar críticamente que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Para materializar esto, elige reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' como un experimento de curiosidad radical.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Oscar Wilde"
-    },
-    {
-      "id": "TAO_0337",
-      "frase": "La clave del éxito es la acción.",
-      "interpretacion": "Esta máxima sugiere sutilmente que el valor y la fuerza real se encuentran en la quietud y no en la agitación, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "A lo largo del día, intenta aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas rompiendo así el patrón del piloto automático.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Brian Tracy"
-    },
-    {
-      "id": "TAO_0338",
-      "frase": "El acto más creativo que jamás emprenderás es el acto de crearte a ti mismo.",
-      "interpretacion": "Apunta directamente a la comprensión de que el valor y la fuerza real se encuentran en la quietud y no en la agitación, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "En las próximas horas, procura escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente y permítete descansar en la simpleza de ser.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Deepak Chopra"
-    },
-    {
-      "frase": "El regalo más precioso que podemos ofrecer a alguien es nuestra atención. Cuando la presencia plena abraza a quienes amamos, florecen como capullos.",
-      "interpretacion": "El mensaje central aquí es que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Hoy, te invito a reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de repositorio externo. Autor: Thich Nhat Hanh",
-      "id": "TAO_0339"
-    },
-    {
-      "frase": "El único límite para tu impacto es tu imaginación y tu compromiso.",
-      "interpretacion": "Esta frase ilumina un principio vital: somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "En un momento de pausa hoy, busca observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de repositorio externo. Autor: Tony Robbins",
-      "id": "TAO_0340"
-    },
-    {
-      "id": "TAO_0341",
-      "frase": "La oportunidad de vencer al enemigo la proporciona el enemigo mismo.",
-      "interpretacion": "Esta enseñanza nos recuerda que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "A lo largo del día, intenta actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto para anclar tu atención en el presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Sun Tzu"
-    },
-    {
-      "id": "TAO_0342",
-      "frase": "El pensamiento puro no vencerá al miedo, pero la acción sí lo hará.",
-      "interpretacion": "Apunta directamente a la comprensión de que soltar la necesidad de perfección abre paso a la verdadera excelencia, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Cuando notes tensión, recuerda soltar deliberadamente la tensión en tus hombros y mandíbula rompiendo así el patrón del piloto automático.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: W. Clement Stone"
-    },
-    {
       "id": "TAO_0343",
       "frase": "Tienes poder sobre tu mente, no sobre los eventos externos. Comprende esto y hallarás fuerza.",
       "interpretacion": "La perturbación no emana de la fricción del mundo exterior invariable, sino de la disonancia en la maquinaria reactiva que procesa los eventos.",
@@ -3087,51 +2799,6 @@ window.TAOISTA_DATASET = {
       "categoria": "atencion",
       "linaje": "mindfulness",
       "nota_editorial": "Meditaciones."
-    },
-    {
-      "id": "TAO_0344",
-      "frase": "Confía en tus instintos: mi primera reacción es casi invariablemente la correcta.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que soltar la necesidad de perfección abre paso a la verdadera excelencia, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Hoy, detente un instante y observa cómo la mente intenta etiquetarlo todo; agradece en silencio su intento de protegerte y regresa a la quietud del presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Estee Lauder"
-    },
-    {
-      "id": "TAO_0345",
-      "frase": "Podemos fortalecer nuestro carácter cada día o desperdiciar nuestras energías en distracciones.",
-      "interpretacion": "Apunta directamente a la comprensión de que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Transforma esta idea en acción al aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas para cultivar una mente flexible y abierta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Ming-Dao Deng"
-    },
-    {
-      "id": "TAO_0346",
-      "frase": "Debemos crear nuestro propio mundo o moriremos de inacción.",
-      "interpretacion": "Esta frase ilumina un principio vital: el valor y la fuerza real se encuentran en la quietud y no en la agitación, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "A lo largo del día, intenta soltar deliberadamente la tensión en tus hombros y mandíbula para anclar tu atención en el presente.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Robert Greene"
-    },
-    {
-      "id": "TAO_0347",
-      "frase": "Cambias el mundo siendo tú mismo.",
-      "interpretacion": "Esta máxima sugiere sutilmente que soltar la necesidad de perfección abre paso a la verdadera excelencia, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "En un momento de pausa hoy, busca reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Yoko Ono"
-    },
-    {
-      "id": "TAO_0348",
-      "frase": "Das muy poco cuando das de tus posesiones. Es cuando das de ti mismo cuando verdaderamente das.",
-      "interpretacion": "Nos invita a observar críticamente que el valor y la fuerza real se encuentran en la quietud y no en la agitación, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "En un momento de pausa hoy, busca reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' reconociendo que cada pequeño paso cuenta.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Kahlil Gibran"
     },
     {
       "id": "TAO_0349",
@@ -3269,7 +2936,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0364",
-      "frase": "El sabio no tiene corazón; el corazón del Tao es su corazón.",
+      "frase": "La persona sabia no tiene corazón; el corazón del Tao es su corazón.",
       "interpretacion": "Ha vaciado sus preferencias personales. Ahora fluye con la voluntad universal.",
       "practica_hoy": "Intenta querer lo que la vida te traiga hoy.",
       "categoria": "atencion",
@@ -3278,7 +2945,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0365",
-      "frase": "El sabio no viaja, y sin embargo llega.",
+      "frase": "La persona sabia no viaja, y sin embargo llega.",
       "interpretacion": "No necesitas ir a la India para encontrarte. El Tao está bajo tus pies. La búsqueda externa es una distracción.",
       "practica_hoy": "Encuentra lo sagrado en tu habitación.",
       "categoria": "atencion",
@@ -3287,7 +2954,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0366",
-      "frase": "El sabio pule el ladrillo para hacer un espejo, pero el ladrillo solo se desgasta.",
+      "frase": "La persona sabia pule el ladrillo para hacer un espejo, pero el ladrillo solo se desgasta.",
       "interpretacion": "Sentarse a meditar rígidamente no te hará un Buda, igual que pulir arcilla no la hace cristal. La naturaleza no se fuerza.",
       "practica_hoy": "Deja de intentar 'mejorarte' a la fuerza hoy.",
       "categoria": "atencion",
@@ -3421,69 +3088,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Importado de ZenQuotes. Autor: Dogen"
     },
     {
-      "frase": "Una mala hierba no es más que una flor disfrazada.",
-      "interpretacion": "Un sabio apunte para reconocer cómo la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "En las próximas horas, procura actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: James Lowell",
-      "id": "TAO_0381"
-    },
-    {
-      "id": "TAO_0382",
-      "frase": "El arte es la firma de las civilizaciones.",
-      "interpretacion": "A través de esta perspectiva, vemos que el valor y la fuerza real se encuentran en la quietud y no en la agitación, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Transforma esta idea en acción al reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Beverly Sills"
-    },
-    {
-      "frase": "El otoño es una segunda primavera en la que cada hoja es una flor.",
-      "interpretacion": "Apunta directamente a la comprensión de que cada instante ordinario contiene la semilla de una profunda iluminación, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Para materializar esto, elige hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Albert Camus",
-      "id": "TAO_0383"
-    },
-    {
-      "frase": "Sé como la flor: orienta tu rostro hacia el sol.",
-      "interpretacion": "El mensaje central aquí es que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Como ejercicio práctico, decide soltar deliberadamente la tensión en tus hombros y mandíbula rompiendo así el patrón del piloto automático.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Kahlil Gibran",
-      "id": "TAO_0384"
-    },
-    {
-      "frase": "Antes de poder inspirar emoción, debes inundarte de ella tú mismo. Antes de conmover sus lágrimas, deben brotar las tuyas. Para convencerlos, debes creer tú mismo.",
-      "interpretacion": "Esta frase ilumina un principio vital: somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Para materializar esto, elige escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente y permítete descansar en la simpleza de ser.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Winston Churchill",
-      "id": "TAO_0385"
-    },
-    {
-      "id": "TAO_0386",
-      "frase": "Ser profundamente amado por alguien te da fuerza, mientras que amar profundamente a alguien te da coraje.",
-      "interpretacion": "El mensaje central aquí es que el valor y la fuerza real se encuentran en la quietud y no en la agitación, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Cuando notes tensión, recuerda aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas rompiendo así el patrón del piloto automático.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Lao Tzu"
-    },
-    {
-      "id": "TAO_0387",
-      "frase": "Los campeones siguen jugando hasta que lo hacen bien.",
-      "interpretacion": "La maestría no es un estado estático, sino un proceso de refinamiento continuo. Seguir jugando no es luchar con resistencia, sino alinearse con la práctica hasta que la acción se vuelve espontánea y natural (Wu Wei).",
-      "practica_hoy": "Hoy, ante cualquier dificultad o error en tus tareas, no te frustres ni te detengas; simplemente continúa con ligereza, observando cómo la repetición consciente disuelve el esfuerzo.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Billie Jean King"
-    },
-    {
       "id": "TAO_0388",
       "frase": "Cuando dejas de empujar el río, el río te enseña el camino.",
       "interpretacion": "Mucho sufrimiento se sostiene por fricción voluntaria: intentar forzar un resultado, acelerar un proceso, o controlar lo incontrolable. Reducir la interferencia no es resignación; es permitir que la situación revele sus restricciones reales y tus márgenes de acción.",
@@ -3493,40 +3097,13 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Inspiración contemplativa."
     },
     {
-      "id": "TAO_0389",
-      "frase": "Las dificultades fortalecen la mente, así como el trabajo físico fortalece el cuerpo.",
-      "interpretacion": "Una profunda reflexión sobre cómo el valor y la fuerza real se encuentran en la quietud y no en la agitación, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Hoy, te invito a observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Seneca"
-    },
-    {
-      "id": "TAO_0390",
-      "frase": "El agua lejana no apaga el fuego cercano.",
-      "interpretacion": "Esta enseñanza nos recuerda que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En un momento de pausa hoy, busca escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Chinese Proverb"
-    },
-    {
       "id": "TAO_0391",
-      "frase": "El sabio deja que las cosas sucedan.",
+      "frase": "La persona sabia deja que las cosas sucedan.",
       "interpretacion": "Wu Wei no es pasividad, es no interferir con el curso natural. Deja de remar y alza la vela.",
       "practica_hoy": "Deja de controlar una situación y observa qué pasa.",
       "categoria": "wu_wei",
       "linaje": "taoismo",
       "nota_editorial": "Concepto central."
-    },
-    {
-      "id": "TAO_0392",
-      "frase": "Vacía tu mente, sé libre de formas, moldeable, como el agua.",
-      "interpretacion": "A través de esta perspectiva, vemos que soltar la necesidad de perfección abre paso a la verdadera excelencia, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "En un momento de pausa hoy, busca soltar deliberadamente la tensión en tus hombros y mandíbula para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Bruce Lee"
     },
     {
       "frase": "Fluye con lo que ocurra y deja libre tu mente. Mantén tu centro aceptando lo que sea que hagas. Esto es lo absoluto.",
@@ -3538,220 +3115,13 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0393"
     },
     {
-      "id": "TAO_0394",
-      "frase": "La mitad del mundo está compuesta por personas que tienen algo que decir y no pueden, y la otra mitad por quienes no tienen nada que decir y no dejan de hablar.",
-      "interpretacion": "Una profunda reflexión sobre cómo abrazar lo que no podemos controlar libera una inmensa energía vital, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "A lo largo del día, intenta notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Robert Frost"
-    },
-    {
-      "frase": "La felicidad es cuando lo que piensas, lo que dices y lo que haces están en armonía.",
-      "interpretacion": "A través de esta perspectiva, vemos que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Como ejercicio práctico, decide actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Mohandas Gandhi",
-      "id": "TAO_0395"
-    },
-    {
-      "frase": "Quien vive en armonía consigo mismo vive en armonía con el universo.",
-      "interpretacion": "El mensaje central aquí es que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "A lo largo del día, intenta actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto rompiendo así el patrón del piloto automático.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Marcus Aurelius",
-      "id": "TAO_0396"
-    },
-    {
-      "frase": "Quien vive en armonía consigo mismo vive en armonía con el mundo.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que cada instante ordinario contiene la semilla de una profunda iluminación, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Como ejercicio práctico, decide observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales y permítete descansar en la simpleza de ser.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Marcus Aurelius",
-      "id": "TAO_0397"
-    },
-    {
-      "frase": "Si pudiéramos ver claramente el milagro de una sola flor, nuestra vida entera cambiaría.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "Para materializar esto, elige escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente reconociendo que cada pequeño paso cuenta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Buddha",
-      "id": "TAO_0398"
-    },
-    {
-      "id": "TAO_0399",
-      "frase": "Si no tienes la fuerza para imponer tus propios términos a la vida, debes aceptar los términos que ella te ofrece.",
-      "interpretacion": "Esta frase ilumina un principio vital: somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En las próximas horas, procura actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto para cultivar una mente flexible y abierta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: T.S. Eliot"
-    },
-    {
-      "id": "TAO_0400",
-      "frase": "Es el poder del pensamiento lo que le otorga al hombre poder sobre la naturaleza.",
-      "interpretacion": "Un sabio apunte para reconocer cómo cada instante ordinario contiene la semilla de una profunda iluminación, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Como ejercicio práctico, decide reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para cultivar una mente flexible y abierta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Hans Christian Andersen"
-    },
-    {
-      "frase": "Así como una flor, que parece hermosa por su color pero carece de perfume, son las palabras estériles del hombre que las proclama pero no las practica.",
+      "frase": "Así como una flor, que parece hermosa por su color pero carece de perfume, son las palabras estériles de quien las proclama pero no las practica.",
       "interpretacion": "Nos invita a observar críticamente que abrazar lo que no podemos controlar libera una inmensa energía vital, transformando nuestra relación con los retos que nos rodean.",
       "practica_hoy": "Para materializar esto, elige reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para cultivar una mente flexible y abierta.",
       "categoria": "wu_wei",
       "linaje": "taoismo",
       "nota_editorial": "Importado de repositorio externo. Autor: Dhammapada",
       "id": "TAO_0401"
-    },
-    {
-      "id": "TAO_0402",
-      "frase": "La vida es como tocar el violín en público y aprender a tocar el instrumento sobre la marcha.",
-      "interpretacion": "Esta máxima sugiere sutilmente que abrazar lo que no podemos controlar libera una inmensa energía vital, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "Transforma esta idea en acción al actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto para cultivar una mente flexible y abierta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Samuel Butler"
-    },
-    {
-      "frase": "La vida es la flor para la cual el amor es la miel.",
-      "interpretacion": "Un sabio apunte para reconocer cómo nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Hoy, te invito a notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Victor Hugo",
-      "id": "TAO_0403"
-    },
-    {
-      "id": "TAO_0404",
-      "frase": "La pérdida no es otra cosa que cambio, y el cambio es el deleite de la naturaleza.",
-      "interpretacion": "Apunta directamente a la comprensión de que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "En un momento de pausa hoy, busca observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales para anclar tu atención en el presente.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Marcus Aurelius"
-    },
-    {
-      "frase": "El amor nunca se pierde. Si no es correspondido, fluirá de vuelta, suavizando y purificando el corazón.",
-      "interpretacion": "A través de esta perspectiva, vemos que el desapego a los resultados nos permite actuar con mayor pureza, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En un momento de pausa hoy, busca hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Washington Irving",
-      "id": "TAO_0405"
-    },
-    {
-      "frase": "El amor es la flor que debes dejar crecer.",
-      "interpretacion": "El mensaje central aquí es que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Hoy, te invito a escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: John Lennon",
-      "id": "TAO_0406"
-    },
-    {
-      "frase": "Que el jardín del despertar en nuestros corazones florezca con cientos de flores.",
-      "interpretacion": "Una profunda reflexión sobre cómo la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Como ejercicio práctico, decide aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Thich Nhat Hanh",
-      "id": "TAO_0407"
-    },
-    {
-      "id": "TAO_0408",
-      "frase": "El agua turbia se aclara mejor dejándola en paz.",
-      "interpretacion": "Un sabio apunte para reconocer cómo el desapego a los resultados nos permite actuar con mayor pureza, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Como ejercicio práctico, decide hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas reconociendo que cada pequeño paso cuenta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Alan Watts"
-    },
-    {
-      "id": "TAO_0409",
-      "frase": "Nada tiene más fuerza que la necesidad extrema.",
-      "interpretacion": "Esta frase ilumina un principio vital: soltar la necesidad de perfección abre paso a la verdadera excelencia, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Para materializar esto, elige escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente rompiendo así el patrón del piloto automático.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Euripides"
-    },
-    {
-      "frase": "En cada espina brota una sabiduría deliciosa, y en cada arroyo fluye una dulce instrucción.",
-      "interpretacion": "Esta frase ilumina un principio vital: la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Hoy, te invito a observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Edward Young",
-      "id": "TAO_0410"
-    },
-    {
-      "id": "TAO_0411",
-      "frase": "En lugar de perder tiempo y energía preocupándote, úsalos para lidiar constructivamente con lo que causa tu preocupación.",
-      "interpretacion": "Esta frase ilumina un principio vital: somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Celestine Chua"
-    },
-    {
-      "id": "TAO_0412",
-      "frase": "Enfréntate a tus obstáculos y actúa. Verás que no tienen ni la mitad de la fuerza que crees que poseen.",
-      "interpretacion": "Esta enseñanza nos recuerda que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Hoy, te invito a soltar deliberadamente la tensión en tus hombros y mandíbula como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Norman Vincent Peale"
-    },
-    {
-      "id": "TAO_0413",
-      "frase": "Los muertos reciben más flores que los vivos porque el arrepentimiento es más fuerte que la gratitud.",
-      "interpretacion": "A través de esta perspectiva, vemos que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Para materializar esto, elige aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas y observa el espacio mental que esto libera.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Anne Frank"
-    },
-    {
-      "id": "TAO_0414",
-      "frase": "La hierba es más verde donde la riegas.",
-      "interpretacion": "Apunta directamente a la comprensión de que cada instante ordinario contiene la semilla de una profunda iluminación, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En las próximas horas, procura notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Neil Barringham"
-    },
-    {
-      "frase": "La flor más pequeña es un pensamiento, una vida que responde a algún rasgo del Gran Todo, del cual tiene una intuición persistente.",
-      "interpretacion": "Nos invita a observar críticamente que soltar la necesidad de perfección abre paso a la verdadera excelencia, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "En las próximas horas, procura escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente para cultivar una mente flexible y abierta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Honore de Balzac",
-      "id": "TAO_0415"
-    },
-    {
-      "id": "TAO_0416",
-      "frase": "Hay pocas razones para decir la verdad, pero para mentir el número es infinito.",
-      "interpretacion": "Nos invita a observar críticamente que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Hoy, cuando alguien te hable, concéntrate únicamente en el tono de su voz y sus palabras, pausando activamente tu diálogo interno antes de contestar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Carlos Ruiz Zafon"
-    },
-    {
-      "id": "TAO_0417",
-      "frase": "No hay excusa para no intentarlo.",
-      "interpretacion": "El Wu Wei no es inacción perezosa, sino acción alineada y valiente. Cuando la mente se despoja de excusas, el flujo del Tao se manifiesta a través de nuestro compromiso directo con el momento inmediato.",
-      "practica_hoy": "Identifica una tarea que hayas postergado por pereza o temor hoy. Empréndela con ligereza, dando el primer paso sin juzgar si el resultado final será perfecto.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Barack Obama"
     },
     {
       "id": "TAO_0418",
@@ -3761,42 +3131,6 @@ window.TAOISTA_DATASET = {
       "categoria": "wu_wei",
       "linaje": "taoismo",
       "nota_editorial": "Importado de ZenQuotes. Autor: Dogen"
-    },
-    {
-      "frase": "Somos las hojas de una sola rama, las gotas de un solo mar, las flores de un mismo jardín.",
-      "interpretacion": "El mensaje central aquí es que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En un momento de pausa hoy, busca observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Jean Lacordaire",
-      "id": "TAO_0419"
-    },
-    {
-      "id": "TAO_0420",
-      "frase": "Las malas hierbas también son flores, una vez que las conoces.",
-      "interpretacion": "Esta enseñanza nos recuerda que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "A lo largo del día, intenta aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas para cultivar una mente flexible y abierta.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: A.A. Milne"
-    },
-    {
-      "frase": "No puedes bañarte dos veces en el mismo río, pues otras aguas fluyen continuamente en él.",
-      "interpretacion": "El mensaje central aquí es que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "En un momento de pausa hoy, busca notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar como un experimento de curiosidad radical.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de repositorio externo. Autor: Heraclitus",
-      "id": "TAO_0421"
-    },
-    {
-      "id": "TAO_0422",
-      "frase": "Tienes poder sobre tu mente, no sobre los acontecimientos externos. Date cuenta de esto y hallarás fuerza.",
-      "interpretacion": "El mensaje central aquí es que cada instante ordinario contiene la semilla de una profunda iluminación, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Cuando notes tensión, recuerda soltar deliberadamente la tensión en tus hombros y mandíbula notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "wu_wei",
-      "linaje": "taoismo",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Marcus Aurelius"
     },
     {
       "id": "TAO_0423",
@@ -4097,7 +3431,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0456",
-      "frase": "El sabio lava sus oídos cuando oye adulaciones.",
+      "frase": "La persona sabia lava sus oídos cuando oye adulaciones.",
       "interpretacion": "Esta frase ilumina un principio vital: soltar la necesidad de perfección abre paso a la verdadera excelencia, abriendo la puerta a una paz interior inquebrantable.",
       "practica_hoy": "Transforma esta idea en acción al aceptar una pequeña incomodidad inevitable sin emitir quejas para anclar tu atención en el presente.",
       "categoria": "atencion",
@@ -4546,312 +3880,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Inspiración contemplativa."
     },
     {
-      "id": "TAO_0506",
-      "frase": "Todo lo que un hombre logra y todo lo que no logra es el resultado directo de sus propios pensamientos.",
-      "interpretacion": "A través de esta perspectiva, vemos que cada instante ordinario contiene la semilla de una profunda iluminación, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En las próximas horas, procura observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales como un experimento de curiosidad radical.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: James Allen"
-    },
-    {
-      "id": "TAO_0507",
-      "frase": "Sé feliz en este instante, eso basta. Cada momento es todo lo que necesitamos, nada más.",
-      "interpretacion": "Esta frase ilumina un principio vital: nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Cuando notes tensión, recuerda hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Mother Teresa"
-    },
-    {
-      "id": "TAO_0508",
-      "frase": "Antes de la iluminación: cortar leña, llevar agua. Después de la iluminación: cortar leña, llevar agua.",
-      "interpretacion": "Apunta directamente a la comprensión de que el desapego a los resultados nos permite actuar con mayor pureza, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Para materializar esto, elige hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Buddha"
-    },
-    {
-      "id": "TAO_0509",
-      "frase": "Concentra todos tus pensamientos en la tarea que tienes entre manos. Los rayos del sol no queman hasta que se concentran en un foco.",
-      "interpretacion": "A través de esta perspectiva, vemos que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "A lo largo del día, intenta actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto como un experimento de curiosidad radical.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Alexander Graham Bell"
-    },
-    {
-      "id": "TAO_0510",
-      "frase": "El valor es el precio que la vida exige para conceder la paz.",
-      "interpretacion": "Esta enseñanza nos recuerda que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En las próximas horas, procura aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas para cultivar una mente flexible y abierta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Amelia Earhart"
-    },
-    {
-      "id": "TAO_0511",
-      "frase": "Cada uno de nosotros es la suma total de sus propios pensamientos.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Para materializar esto, elige soltar deliberadamente la tensión en tus hombros y mandíbula para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Earl Nightingale"
-    },
-    {
-      "id": "TAO_0512",
-      "frase": "Las grandes mentes discuten ideas. Las mentes mediocres discuten eventos. Las mentes pequeñas discuten personas.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Eleanor Roosevelt"
-    },
-    {
-      "id": "TAO_0513",
-      "frase": "Los seres humanos pueden alterar sus vidas alterando su actitud mental.",
-      "interpretacion": "A través de esta perspectiva, vemos que cada instante ordinario contiene la semilla de una profunda iluminación, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Hoy, al detectar un pensamiento preocupante, reconócelo con curiosidad diciendo 'veo que estás preocupado' y regresa suavemente tu atención a tu respiración.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: William James"
-    },
-    {
-      "id": "TAO_0514",
-      "frase": "Puse mi corazón y mi alma en mi trabajo, y he perdido la cordura en el proceso.",
-      "interpretacion": "Esta frase ilumina un principio vital: nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Como ejercicio práctico, decide escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Vincent van Gogh"
-    },
-    {
-      "id": "TAO_0515",
-      "frase": "La identificación con nuestra mente hace que el pensamiento se vuelva compulsivo.",
-      "interpretacion": "Esta máxima sugiere sutilmente que el valor y la fuerza real se encuentran en la quietud y no en la agitación, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "A lo largo del día, intenta soltar deliberadamente la tensión en tus hombros y mandíbula y permítete descansar en la simpleza de ser.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Eckhart Tolle"
-    },
-    {
-      "id": "TAO_0516",
-      "frase": "Si estás deprimido, vives en el pasado. Si estás ansioso, vives en el futuro. Si estás en paz, vives en el presente.",
-      "interpretacion": "Un sabio apunte para reconocer cómo la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En un momento de pausa hoy, busca soltar deliberadamente la tensión en tus hombros y mandíbula y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Lao Tzu"
-    },
-    {
-      "id": "TAO_0517",
-      "frase": "Si te aferras a un determinado pensamiento con fuerza de voluntad dinámica, finalmente este asume una forma externa tangible.",
-      "interpretacion": "El mensaje central aquí es que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Como ejercicio práctico, decide aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Paramahansa Yogananda"
-    },
-    {
-      "id": "TAO_0518",
-      "frase": "Si desechas toda idea de logro, llegarás a ver el verdadero propósito de tu búsqueda.",
-      "interpretacion": "Nos invita a observar críticamente que abrazar lo que no podemos controlar libera una inmensa energía vital, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Hoy, te invito a actuar alineado/a con un valor importante para ti, sin importar si el resultado es perfecto como un experimento de curiosidad radical.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Seungsahn"
-    },
-    {
-      "id": "TAO_0519",
-      "frase": "Si decides estar triste, nadie en el mundo podrá hacerte feliz. Pero si decides ser feliz, nadie ni nada en la tierra podrá arrebatarte esa felicidad.",
-      "interpretacion": "Una profunda reflexión sobre cómo nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Hoy, te invito a reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Paramahansa Yogananda"
-    },
-    {
-      "id": "TAO_0520",
-      "frase": "Es hermoso estar solo. Estar solo no significa estar solitario. Significa que la mente no está influenciada ni contaminada por la sociedad.",
-      "interpretacion": "Apunta directamente a la comprensión de que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Hoy, te invito a soltar deliberadamente la tensión en tus hombros y mandíbula para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Jiddu Krishnamurti"
-    },
-    {
-      "id": "TAO_0521",
-      "frase": "Las mentes pequeñas tienen pequeñas preocupaciones; las mentes grandes no tienen tiempo para preocuparse.",
-      "interpretacion": "La preocupación es el síntoma de una mente atrapada en el control de lo minúsculo. Al expandir nuestra perspectiva hacia la inmensidad del Tao, las preocupaciones cotidianas se diluyen en la inmensidad de la existencia.",
-      "practica_hoy": "Ante tu próxima preocupación hoy, levanta la mirada hacia el cielo o el horizonte por 30 segundos y pregúntate con amabilidad: '¿Tendrá esto alguna importancia real en cien años?'.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Ralph Waldo Emerson"
-    },
-    {
-      "id": "TAO_0522",
-      "frase": "Vive el momento para el momento.",
-      "interpretacion": "Esta máxima sugiere sutilmente que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "En las próximas horas, procura observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales y permítete descansar en la simpleza de ser.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Michael Jordan"
-    },
-    {
-      "frase": "La meditación trae sabiduría; la falta de meditación deja ignorancia. Conoce bien lo que te impulsa hacia adelante y lo que te retiene, y elige el camino que conduce a la sabiduría.",
-      "interpretacion": "Un sabio apunte para reconocer cómo el desapego a los resultados nos permite actuar con mayor pureza, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "Para materializar esto, elige notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar y permítete descansar en la simpleza de ser.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de repositorio externo. Autor: Buddha",
-      "id": "TAO_0523"
-    },
-    {
-      "frase": "La meditación es la disolución de los pensamientos en la atención eterna o conciencia pura sin objetivación: conocer sin pensar, fusionando la finitud en el infinito.",
-      "interpretacion": "A través de esta perspectiva, vemos que abrazar lo que no podemos controlar libera una inmensa energía vital, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Como ejercicio práctico, decide soltar deliberadamente la tensión en tus hombros y mandíbula reconociendo que cada pequeño paso cuenta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de repositorio externo. Autor: Voltaire",
-      "id": "TAO_0524"
-    },
-    {
-      "id": "TAO_0525",
-      "frase": "Mi mente parece haberse convertido en una especie de máquina para extraer leyes generales a partir de grandes colecciones de hechos.",
-      "interpretacion": "A través de esta perspectiva, vemos que soltar la necesidad de perfección abre paso a la verdadera excelencia, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "En las próximas horas, procura soltar deliberadamente la tensión en tus hombros y mandíbula y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Charles Darwin"
-    },
-    {
-      "id": "TAO_0526",
-      "frase": "Nunca ha existido una gran mente sin un toque de locura.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Para materializar esto, elige aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Aristotle"
-    },
-    {
-      "id": "TAO_0527",
-      "frase": "Nada es más creativo... ni más destructivo... que una mente brillante con un propósito.",
-      "interpretacion": "Esta enseñanza nos recuerda que abrazar lo que no podemos controlar libera una inmensa energía vital, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Hoy, te invito a escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente y permítete descansar en la simpleza de ser.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Dan Brown"
-    },
-    {
-      "id": "TAO_0528",
-      "frase": "Nutre tu mente como lo harías con tu cuerpo. La mente no puede sobrevivir con comida chatarra.",
-      "interpretacion": "Un sabio apunte para reconocer cómo la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "En un momento de pausa hoy, busca hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas para cultivar una mente flexible y abierta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Brian Tracy"
-    },
-    {
-      "frase": "El sueño es la mejor meditación.",
-      "interpretacion": "Apunta directamente a la comprensión de que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Cuando notes tensión, recuerda observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales para cultivar una mente flexible y abierta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de repositorio externo. Autor: Dalai Lama",
-      "id": "TAO_0529"
-    },
-    {
-      "id": "TAO_0530",
-      "frase": "El nacimiento de la mente es la muerte de los sentidos.",
-      "interpretacion": "Esta frase ilumina un principio vital: abrazar lo que no podemos controlar libera una inmensa energía vital, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "Cuando notes tensión, recuerda observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Dan Millman"
-    },
-    {
-      "id": "TAO_0531",
-      "frase": "El futuro será moldeado por aquellos dispuestos a comprometer sus mentes y cuerpos con la tarea.",
-      "interpretacion": "Nos invita a observar críticamente que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, revelando la inmensa belleza de existir en el 'aquí y ahora'.",
-      "practica_hoy": "En un momento de pausa hoy, busca hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Robert F. Kennedy"
-    },
-    {
-      "id": "TAO_0532",
-      "frase": "La clave del éxito es enfocar nuestra mente consciente en las cosas que deseamos, no en las que tememos.",
-      "interpretacion": "Esta frase ilumina un principio vital: soltar la necesidad de perfección abre paso a la verdadera excelencia, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En un momento de pausa hoy, busca reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Brian Tracy"
-    },
-    {
-      "id": "TAO_0533",
-      "frase": "Cuanto más alimentes tu mente con pensamientos positivos, más grandes cosas podrás atraer a tu vida.",
-      "interpretacion": "Esta enseñanza nos recuerda que el valor y la fuerza real se encuentran en la quietud y no en la agitación, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "Elige un elemento ordinario a tu alrededor hoy (una taza, una hoja, una piedra). Obsérvalo a detalle por un minuto, apreciando sus texturas y formas sin juzgar.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Roy T. Bennett"
-    },
-    {
-      "frase": "El único Zen que encontrarás en la cima de las montañas es el Zen que lleves contigo.",
-      "interpretacion": "Nos invita a observar críticamente que el desapego a los resultados nos permite actuar con mayor pureza, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "Hoy, te invito a notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar como un experimento de curiosidad radical.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de repositorio externo. Autor: Robert Pirsig",
-      "id": "TAO_0534"
-    },
-    {
-      "id": "TAO_0535",
-      "frase": "No hay limitaciones para la mente humana, ni muros alrededor del espíritu humano, ni barreras para nuestro progreso excepto las que nosotros mismos construimos.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que el desapego a los resultados nos permite actuar con mayor pureza, transformando nuestra relación con los retos que nos rodean.",
-      "practica_hoy": "A lo largo del día, intenta aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas y permítete descansar en la simpleza de ser.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Ronald Reagan"
-    },
-    {
-      "id": "TAO_0536",
-      "frase": "No existen momentos ordinarios.",
-      "interpretacion": "Cada instante, por simple o rutinario que parezca, está impregnado de la totalidad del Tao. La distinción entre lo sagrado y lo común es solo una ilusión creada por nuestra mente.",
-      "practica_hoy": "Elige una actividad sumamente común hoy (como abrir una puerta, sentarte o beber agua) y vívela con absoluta presencia, reconociendo el milagro de estar consciente aquí y ahora.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Dan Millman"
-    },
-    {
-      "frase": "A través de la meditación y prestando plena atención a una cosa a la vez, podemos aprender a dirigir la atención hacia donde elijamos.",
-      "interpretacion": "Una profunda reflexión sobre cómo la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, facilitando una conexión más auténtica con nosotros mismos.",
-      "practica_hoy": "En las próximas horas, procura reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para cultivar una mente flexible y abierta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de repositorio externo. Autor: Eknath Easwaran",
-      "id": "TAO_0537"
-    },
-    {
-      "id": "TAO_0538",
-      "frase": "La verdad es la hija del silencio y de la meditación.",
-      "interpretacion": "Frase de Isaac Newton. Contempla su significado en relación con zen.",
-      "practica_hoy": "Observa cómo esta idea resuena en tu experiencia actual.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Isaac Newton"
-    },
-    {
-      "id": "TAO_0539",
-      "frase": "Apaga tu mente, relájate y flota río abajo.",
-      "interpretacion": "Nos invita a observar críticamente que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Hoy, te invito a escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: John Lennon"
-    },
-    {
       "id": "TAO_0540",
       "frase": "Un monje pidió una enseñanza final. El maestro bebió té.",
       "interpretacion": "La práctica está en el acto ordinario.",
@@ -4895,96 +3923,6 @@ window.TAOISTA_DATASET = {
       "categoria": "momento_presente",
       "linaje": "zen",
       "nota_editorial": "Inspiración contemplativa."
-    },
-    {
-      "id": "TAO_0545",
-      "frase": "Podemos pasar toda nuestra vida escapando de los monstruos de nuestra mente.",
-      "interpretacion": "Los peores monstruos no están afuera, sino en la resistencia que oponemos a nuestros propios miedos. Escapar de ellos perpetúa el sufrimiento, mientras que sostenerlos en la conciencia los disuelve.",
-      "practica_hoy": "Cuando surja un pensamiento incómodo o temeroso hoy, no intentes evadirlo con distracciones rápidas. Míralo de frente, respira hondo y dale un espacio de calma en tu cuerpo.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Pema Chodron"
-    },
-    {
-      "id": "TAO_0546",
-      "frase": "Cuando la mente está en calma, qué tan rápido, con qué fluidez y qué tan hermosamente lo percibirás todo.",
-      "interpretacion": "Esta frase ilumina un principio vital: cada instante ordinario contiene la semilla de una profunda iluminación, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En las próximas horas, procura aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas reconociendo que cada pequeño paso cuenta.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Paramahansa Yogananda"
-    },
-    {
-      "id": "TAO_0547",
-      "frase": "Las palabras son las ropas que visten los pensamientos.",
-      "interpretacion": "En el corazón de esta idea yace la verdad de que somos el amplio espacio donde ocurren los pensamientos y no los pensamientos en sí, abriendo la puerta a una paz interior inquebrantable.",
-      "practica_hoy": "Cuando notes tensión, recuerda escuchar a la próxima persona que te hable sin formular una respuesta previa en tu mente para anclar tu atención en el presente.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Samuel Butler"
-    },
-    {
-      "id": "TAO_0548",
-      "frase": "Puedes tener la mente o puedes tener el momento.",
-      "interpretacion": "El mensaje central aquí es que abrazar lo que no podemos controlar libera una inmensa energía vital, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En un momento de pausa hoy, busca reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Naval Ravikant"
-    },
-    {
-      "id": "TAO_0549",
-      "frase": "No puedes encontrar la paz evitando la vida.",
-      "interpretacion": "A través de esta perspectiva, vemos que la resistencia al flujo natural de la vida solo genera sufrimiento innecesario, lo cual constituye la base de una vida realmente significativa.",
-      "practica_hoy": "En un momento de pausa hoy, busca notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Virginia Woolf"
-    },
-    {
-      "id": "TAO_0550",
-      "frase": "Puedes pensar que soy pequeño, pero tengo un universo dentro de mi mente.",
-      "interpretacion": "Esta máxima sugiere sutilmente que el valor y la fuerza real se encuentran en la quietud y no en la agitación, rompiendo el ciclo de la reactividad automática.",
-      "practica_hoy": "Hoy, te invito a observar un objeto cotidiano durante 60 segundos sin ponerle etiquetas verbales rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Yoko Ono"
-    },
-    {
-      "id": "TAO_0551",
-      "frase": "Tus momentos más difíciles a menudo te llevan a los mejores instantes de tu vida. Sigue adelante. Al final, las situaciones duras forjan personas fuertes.",
-      "interpretacion": "Esta máxima sugiere sutilmente que soltar la necesidad de perfección abre paso a la verdadera excelencia, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "Transforma esta idea en acción al notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar rompiendo así el patrón del piloto automático.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Roy T. Bennett"
-    },
-    {
-      "id": "TAO_0552",
-      "frase": "Tu hogar es donde tus pensamientos encuentran paz.",
-      "interpretacion": "Nos invita a observar críticamente que nuestra mente a menudo crea narrativas que nos separan de la realidad inmediata, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Como ejercicio práctico, decide notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar y observa el espacio mental que esto libera.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Zen Proverb"
-    },
-    {
-      "id": "TAO_0553",
-      "frase": "Tus únicas limitaciones son aquellas que tú estableces en tu mente o permites que otros establezcan para ti.",
-      "interpretacion": "Esta máxima sugiere sutilmente que el desapego a los resultados nos permite actuar con mayor pureza, enseñándonos a transitar por la incertidumbre con ligereza y gracia.",
-      "practica_hoy": "En un momento de pausa hoy, busca soltar deliberadamente la tensión en tus hombros y mandíbula notando cómo cambia tu experiencia interna al no luchar.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Og Mandino"
-    },
-    {
-      "id": "TAO_0554",
-      "frase": "Tu mundo es una expresión viva de cómo estás usando y has usado tu mente.",
-      "interpretacion": "El mensaje central aquí es que el valor y la fuerza real se encuentran en la quietud y no en la agitación, permitiéndonos regresar a nuestro centro emocional con total claridad.",
-      "practica_hoy": "Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar como un experimento de curiosidad radical.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Earl Nightingale"
     },
     {
       "id": "TAO_0555",
