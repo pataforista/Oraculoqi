@@ -16,7 +16,7 @@ window.TAOISTA_DATASET = {
       "frase": "Cruzar el gran río.",
       "interpretacion": "Es momento de tomar una decisión importante y arriesgada. Las condiciones favorecen la audacia, no la cautela.",
       "practica_hoy": "Toma esa decisión que has estado posponiendo.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "contemporaneo",
       "nota_editorial": "Fórmula de dictamen favorable."
     },
@@ -25,7 +25,7 @@ window.TAOISTA_DATASET = {
       "frase": "El mapa no camina por ti.",
       "interpretacion": "Los valores requieren conducta.",
       "practica_hoy": "Convierte una intención en conducta observable hoy (un acto).",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -34,7 +34,7 @@ window.TAOISTA_DATASET = {
       "frase": "La claridad suele llegar después de actuar.",
       "interpretacion": "Esperar comprensión total antes de moverse mantiene estancamiento. La acción genera datos.",
       "practica_hoy": "Da un paso reversible y observa el resultado.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1131,10 +1131,10 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0126",
       "frase": "Soñé que era una mariposa. Ahora no sé si soy una persona que soñó ser mariposa, o una mariposa soñando ser persona.",
       "interpretacion": "La identidad se sostiene en un estado de conciencia; al cambiar el estado, la certeza se suspende. La frase apunta a la inestabilidad de la auto-narración.",
-      "practica_hoy": "Durante 30 segundos, nota que “ser tú” es una sensación, no un hecho. Después retoma tu tarea.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Villatte, Villatte & Hayes (2016), Mastering the Clinical Conversation."
+      "practica_hoy": "Durante 2 minutos, escribe “soy ___” cinco veces y observa cuáles frases se sienten como hechos y cuáles como opiniones. No las corrijas.",
+      "categoria": "identidad",
+      "linaje": "taoismo",
+      "nota_editorial": "Zhuangzi, cap. 2 (齐物论), el sueño de la mariposa (庄周梦蝶); trad. Preciado Idoeta."
     },
     {
       "id": "TAO_0127",
@@ -1229,10 +1229,10 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0137",
       "frase": "¿Has comido tus gachas? Entonces lava tu cuenco.",
-      "interpretacion": "La práctica es atender lo inmediato.",
-      "practica_hoy": "Cierra una acción sin dramatizar.",
+      "interpretacion": "La práctica está en la acción concreta, no en la abstracción.",
+      "practica_hoy": "Lava un objeto cotidiano con atención plena, sin buscar “sentido” adicional.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "linaje": "zen",
       "nota_editorial": "Wumenguan (无门关), caso 7: «赵州洗钵盂»; trad. Villalba"
     },
     {
@@ -1546,7 +1546,7 @@ window.TAOISTA_DATASET = {
       "frase": "Caminar hacia el norte no se termina.",
       "interpretacion": "Los valores se viven, no se completan.",
       "practica_hoy": "Haz una repetición pequeña hoy, aunque ya la hiciste ayer.",
-      "categoria": "direccion",
+      "categoria": "valores",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1555,7 +1555,7 @@ window.TAOISTA_DATASET = {
       "frase": "El rumbo sostiene cuando la motivación cae.",
       "interpretacion": "Los valores reemplazan a la motivación.",
       "practica_hoy": "Haz una acción por valor aunque tu motivación esté en cero.",
-      "categoria": "direccion",
+      "categoria": "valores",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1564,7 +1564,7 @@ window.TAOISTA_DATASET = {
       "frase": "El timón importa más que la velocidad.",
       "interpretacion": "La dirección supera la urgencia.",
       "practica_hoy": "Revisa tu dirección antes de acelerar: ¿esto sirve a tu valor?",
-      "categoria": "direccion",
+      "categoria": "valores",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1573,7 +1573,7 @@ window.TAOISTA_DATASET = {
       "frase": "La ruta se ajusta sin perder el rumbo.",
       "interpretacion": "Flexibilidad conductual mantiene valores.",
       "practica_hoy": "Cambia el método, no la dirección: busca una alternativa viable.",
-      "categoria": "direccion",
+      "categoria": "valores",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1758,15 +1758,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Creación original (sin fuente)"
     },
     {
-      "id": "TAO_0196",
-      "frase": "Soñé que era mariposa. Ahora no sé si soy una persona que soñó o una mariposa soñando.",
-      "interpretacion": "La identidad es una narrativa dependiente del estado de conciencia. La frase apunta a la porosidad de “quién soy”.",
-      "practica_hoy": "Durante 2 minutos, escribe “soy ___” cinco veces y observa cuáles frases se sienten como hechos y cuáles como opiniones. No las corrijas.",
-      "categoria": "identidad",
-      "linaje": "contemporaneo",
-      "nota_editorial": "El sueño de la mariposa."
-    },
-    {
       "id": "TAO_0197",
       "frase": "El discípulo alcanzó un estado profundo y quiso conservarlo. Al día siguiente, ya no estaba.",
       "interpretacion": "La experiencia no es posesión. Querer congelar el río detiene la vida.",
@@ -1798,7 +1789,7 @@ window.TAOISTA_DATASET = {
       "frase": "Nombrar con cuidado reduce daño.",
       "interpretacion": "El lenguaje crea trayectorias emocionales.",
       "practica_hoy": "Sustituye un juicio por una descripción.",
-      "categoria": "lenguaje",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1852,7 +1843,7 @@ window.TAOISTA_DATASET = {
       "frase": "El eje no se confunde con la rotación.",
       "interpretacion": "La estabilidad no depende del movimiento.",
       "practica_hoy": "Encuentra tu “eje” hoy: una acción mínima repetible aunque todo cambie.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1861,7 +1852,7 @@ window.TAOISTA_DATASET = {
       "frase": "El escenario no actúa la obra.",
       "interpretacion": "Ser testigo no implica participar.",
       "practica_hoy": "Observa un impulso 10 segundos sin actuarlo.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1870,7 +1861,7 @@ window.TAOISTA_DATASET = {
       "frase": "El espacio no necesita justificarse ante lo que contiene.",
       "interpretacion": "La identidad profunda no requiere validación.",
       "practica_hoy": "Haz una acción valiosa sin explicar por qué.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1879,7 +1870,7 @@ window.TAOISTA_DATASET = {
       "frase": "El espejo no retiene los reflejos.",
       "interpretacion": "La identidad no se fija en las experiencias.",
       "practica_hoy": "Deja pasar una emoción sin guardarla como explicación de ti.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1888,7 +1879,7 @@ window.TAOISTA_DATASET = {
       "frase": "El faro no se mueve con los barcos.",
       "interpretacion": "El punto de observación permanece estable.",
       "practica_hoy": "Vuelve al “faro”: una respiración y un acto pequeño con dirección.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1897,7 +1888,7 @@ window.TAOISTA_DATASET = {
       "frase": "El fondo no comenta la figura.",
       "interpretacion": "El fondo sostiene sin opinar. La frase apunta a una forma de presencia que no juzga lo que aparece.",
       "practica_hoy": "Durante 30 segundos, nota pensamientos y sensaciones como “figuras” y tú como “fondo”. No comentes.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1906,7 +1897,7 @@ window.TAOISTA_DATASET = {
       "frase": "El intervalo entre estímulo y respuesta no tiene forma.",
       "interpretacion": "El espacio de conciencia no es representable.",
       "practica_hoy": "Crea intervalo: 1 inhalación antes de responder a un impulso.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1915,7 +1906,7 @@ window.TAOISTA_DATASET = {
       "frase": "El lago refleja tormentas sin romperse.",
       "interpretacion": "La experiencia intensa no daña al observador.",
       "practica_hoy": "Deja que una emoción fuerte esté 15 segundos sin corregirla.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1924,7 +1915,7 @@ window.TAOISTA_DATASET = {
       "frase": "El libro no es la historia que contiene.",
       "interpretacion": "El soporte no se agota en su contenido. La frase apunta a distinguir el continente del contenido.",
       "practica_hoy": "Detecta hoy una etiqueta sobre ti (“soy ansioso”, “soy torpe”) y sepárala: “hay una historia de que soy ___”. Una frase.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1933,7 +1924,7 @@ window.TAOISTA_DATASET = {
       "frase": "El pasillo no empuja a quien lo cruza.",
       "interpretacion": "El espacio no determina la dirección; la persona que lo cruza sí. La frase apunta a la diferencia entre contexto y agencia.",
       "practica_hoy": "Detecta hoy un momento en que culpas al entorno de tu dirección. Escribe una acción que dependa solo de ti.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1942,7 +1933,7 @@ window.TAOISTA_DATASET = {
       "frase": "La coordenada de origen no se desplaza con los datos.",
       "interpretacion": "El marco permanece aunque cambien las variables.",
       "practica_hoy": "Cambia lo que haces sin exigir cambiar lo que sientes primero.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1951,7 +1942,7 @@ window.TAOISTA_DATASET = {
       "frase": "La función de sostener no requiere protagonismo.",
       "interpretacion": "El yo-contexto opera sin narrarse.",
       "practica_hoy": "Sostén una emoción 20 segundos sin contar una historia sobre ella.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1960,7 +1951,7 @@ window.TAOISTA_DATASET = {
       "frase": "La luz no elige qué iluminar.",
       "interpretacion": "La conciencia no juzga lo que aparece.",
       "practica_hoy": "Observa sin calificar: reemplaza “bien/mal” por “presente”.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1969,7 +1960,7 @@ window.TAOISTA_DATASET = {
       "frase": "La mesa sostiene sin comentar.",
       "interpretacion": "Ser contexto no implica opinión.",
       "practica_hoy": "Sostén una emoción sin explicar: solo nota y continúa.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1978,7 +1969,7 @@ window.TAOISTA_DATASET = {
       "frase": "La pantalla no es la película.",
       "interpretacion": "La experiencia ocurre en algo más amplio que su contenido.",
       "practica_hoy": "Distingue: “contenido” vs “espacio donde ocurre” (una vez hoy).",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1987,7 +1978,7 @@ window.TAOISTA_DATASET = {
       "frase": "La ventana no se mancha con el paisaje.",
       "interpretacion": "El soporte no se contamina por el contenido. La frase apunta a la no-contaminación del observador.",
       "practica_hoy": "Detecta hoy un pensamiento difícil y míralo como “paisaje”. Nota que tú sigues ahí. Una respiración.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1996,7 +1987,7 @@ window.TAOISTA_DATASET = {
       "frase": "Nada de lo que aparece define el lugar donde aparece.",
       "interpretacion": "El contenido no determina la identidad.",
       "practica_hoy": "Elige hoy una acción por valor, no por tu estado interno.",
-      "categoria": "observador",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -2131,7 +2122,7 @@ window.TAOISTA_DATASET = {
       "frase": "El yo que se defiende es el yo que se encierra.",
       "interpretacion": "La identidad rígida pide confirmación constante. Cuando la mente se vuelve guardián, cada crítica o cambio se vive como amenaza. Flexibilizar el yo no lo destruye: lo hace habitable.",
       "practica_hoy": "Detecta una frase identitaria (“yo soy…”). Cámbiala por “mi mente dice que soy…” y observa la diferencia.",
-      "categoria": "self_como_contexto",
+      "categoria": "yo_contexto",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente); resonancia con self-as-context (ACT)"
     },
@@ -3139,7 +3130,7 @@ window.TAOISTA_DATASET = {
       "frase": "El maestro caminó sin decir nada.",
       "interpretacion": "La enseñanza no siempre es verbal.",
       "practica_hoy": "Camina 3 minutos sin audio y sin lectura: solo andar.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -3148,7 +3139,7 @@ window.TAOISTA_DATASET = {
       "frase": "El maestro golpeó al discípulo antes de que terminara de hablar.",
       "interpretacion": "La respuesta corta la rumiación antes de que se despliegue. El golpe es imagen del corte, no castigo.",
       "practica_hoy": "Hoy, ante un pensamiento que empieza a repetirse, “corta” con una palabra o gesto (una palmada suave, una frase) y cambia de actividad. Una vez.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "zen",
       "nota_editorial": "Tradición chan/zen (koan). Lectura no literal: el golpe es imagen del corte a la rumiación, no una instrucción a la violencia física."
     },
@@ -3157,7 +3148,7 @@ window.TAOISTA_DATASET = {
       "frase": "El maestro gritó sin motivo aparente.",
       "interpretacion": "Interrumpir el patrón restaura presencia.",
       "practica_hoy": "Interrumpe tu patrón: cambia de postura y vuelve al presente.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente); alusión al grito (喝) de Linji, Linji lu"
     },
@@ -3166,7 +3157,7 @@ window.TAOISTA_DATASET = {
       "frase": "Un monje pidió instrucción. El maestro caminó alrededor del árbol.",
       "interpretacion": "La enseñanza puede ser movimiento, no explicación.",
       "practica_hoy": "Camina 2 minutos en silencio y deja que la mente “se acomode” sola.",
-      "categoria": "accion",
+      "categoria": "accion_comprometida",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -3387,22 +3378,13 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Li Bai."
     },
     {
-      "id": "TAO_0451",
-      "frase": "El maestro señaló el ciprés en el patio.",
-      "interpretacion": "No busques respuestas metafísicas. La respuesta es la realidad inmediata frente a ti.",
-      "practica_hoy": "Mira un objeto físico cuando busques una respuesta mental.",
-      "categoria": "atencion",
-      "linaje": "zen",
-      "nota_editorial": "El ciprés en el patio."
-    },
-    {
       "id": "TAO_0452",
       "frase": "El maestro señaló un ciprés en el patio.",
       "interpretacion": "La realidad no simboliza: se presenta. La frase apunta a la diferencia entre lo que se muestra y lo que se interpreta.",
       "practica_hoy": "Mira hoy un objeto simple (una planta, una taza) durante 60 segundos sin convertirlo en idea. Solo notar.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Koan de 赵州从谂 (Zhaozhou Congshen): «庭前柏树子»; recogido en Biyan Lu (Blue Cliff Record) y Congrong Lu; verificar numeración de caso"
+      "nota_editorial": "Wumenguan (无门关), caso 37: «庭前柏树子» (el ciprés/ciprés del patio), Zhaozhou Congshen; trad. Villalba. Caso también comentado en la tradición chan posterior."
     },
     {
       "id": "TAO_0453",
@@ -4042,15 +4024,6 @@ window.TAOISTA_DATASET = {
       "categoria": "practica",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0568",
-      "frase": "Un monje pidió enseñanza. El maestro dijo: «Lávate el cuenco».",
-      "interpretacion": "La práctica está en la acción concreta, no en la abstracción.",
-      "practica_hoy": "Lava un objeto cotidiano con atención plena, sin buscar “sentido” adicional.",
-      "categoria": "practica",
-      "linaje": "zen",
-      "nota_editorial": "Wumenguan, caso 7: «赵州洗钵盂»; trad. Villalba (misma fuente que TAO_0137 — verificar duplicado)"
     },
     {
       "id": "TAO_0569",

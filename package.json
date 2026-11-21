@@ -7,10 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "validate": "node validate_dataset.cjs --editorial=warn",
-    "validate:full": "node validate_dataset.cjs",
-    "validate:strict": "node validate_dataset.cjs --strict",
-    "validate:report": "node validate_dataset.cjs --editorial=warn --json=reporte_curaduria.json"
+    "validate": "node validate_dataset.cjs --strict",
+    "validate:report": "node validate_dataset.cjs --json=reporte_curaduria.json",
+    "validate:lenient": "node validate_dataset.cjs --editorial=warn"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",

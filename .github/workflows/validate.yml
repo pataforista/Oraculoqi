@@ -23,7 +23,7 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Validar integridad del dataset (bloqueante)
+      - name: Validar dataset (modo estricto, bloqueante)
         run: npm run validate
 
       - name: Reporte de curaduría editorial (informativo)

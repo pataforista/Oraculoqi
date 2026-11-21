@@ -1,4 +1,4 @@
-> **Nota:** este informe es anterior a la aplicación de `docs/REESCRITURAS_CORREGIDAS.md`. Estado actual: 0 errores, 290 advertencias (242 notas editoriales genéricas, 46 categorías sinónimas, 2 casi-duplicadas).
+> **Nota:** este informe es anterior a la aplicación de `docs/REESCRITURAS_CORREGIDAS.md`. Estado actual: 458 tarjetas, 0 errores y 0 advertencias (ver docs/DECISIONES_CURADURIA.md).
 
 # Informe de revisión del dataset taoísta
 

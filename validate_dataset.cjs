@@ -148,20 +148,19 @@ const LINAJES_VALIDOS = CAT ? CAT.linaje : new Set(LINAJES_FALLBACK);
 
 // Grupos de categorías que deberían unificarse.
 const SINONIMOS_CATEGORIA = [
-  ['yo_contexto', 'self_como_contexto', 'observador', 'asimetria', 'ontologia', 'continuidad'],
+  // El primer elemento es la forma canónica (nombres de procesos ACT; Hayes et al., 2012).
+  ['yo_contexto', 'self_como_contexto', 'observador'],
   ['valores', 'direccion'],
-  ['lenguaje', 'lenguaje_y_realidad'],
-  ['accion', 'accion_comprometida'],
-  ['control', 'evitacion_experiencial'],
-  ['autocuidado', 'energia'],
+  ['lenguaje_y_realidad', 'lenguaje'],
+  ['accion_comprometida', 'accion'],
 ];
 
 // Coherencia proceso ACT ↔ práctica.
 const ACT_KEYWORDS = {
   defusion: ['gracias, mente', 'estoy teniendo el pensamiento', 'etiqueta', 'nota', 'radio', 'hoja', 'comentario', 'observa', 'estoy notando', 'nombra', 'pasajero'],
-  accion_comprometida: ['haz', 'da un paso', 'da hoy un paso', 'paso', 'envía', 'llama', 'escribe', 'actúa', 'repetición', 'elige', 'empieza', 'ejecuta'],
-  valores: ['valor', 'dirección', 'rumbo', 'elige', 'brújula', 'acción', 'paso', 'miedo', 'valdría', 'claridad'],
-  yo_contexto: ['observa', 'nota', 'espacio', 'testigo', 'sostén', 'contexto', 'ola', 'nube', 'mira', 'repite', 'recuérdate', 'visualiza', 'descríbelo', 'respiración', 'quién', 'dónde', 'pasa en mí', 'deja que', 'tablero'],
+  accion_comprometida: ['haz', 'da un paso', 'da hoy un paso', 'paso', 'envía', 'llama', 'escribe', 'actúa', 'repetición', 'elige', 'empieza', 'ejecuta', 'decisión', 'convierte', 'camina', 'interrumpe', 'cambia'],
+  valores: ['valor', 'dirección', 'rumbo', 'elige', 'brújula', 'acción', 'paso', 'miedo', 'valdría', 'claridad', 'repetición'],
+  yo_contexto: ['observa', 'nota', 'espacio', 'testigo', 'sostén', 'contexto', 'ola', 'nube', 'mira', 'repite', 'recuérdate', 'visualiza', 'descríbelo', 'respiración', 'quién', 'dónde', 'pasa en mí', 'deja que', 'tablero', 'etiqueta', 'historia', 'deja pasar', 'intervalo', 'acción', 'cambia', 'elige', 'detecta'],
   aceptacion: ['permite', 'deja', 'nombra', 'sostén', 'invita', 'acepta', 'respira', 'esto es', 'puedo vivir', 'no lo entiendo', 'no busques', 'contacto', 'escribe', 'lista', 'localiza', 'adelante', 'sin intentar'],
   momento_presente: ['nota', 'observa', 'escucha', 'sensa', 'registra', 'aquí', 'bebe', 'cuida', 'nombra', 'atención', 'gesto', 'camina', 'mira'],
 };
