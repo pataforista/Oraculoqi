@@ -117,7 +117,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Localiza una sensación desagradable y respira “dentro” de ella 20 segundos sin intentar que se vaya. Si el cuerpo no es accesible, apóyate en el asiento o en las manos sobre el regazo.",
       "categoria": "aceptacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hayes et al. (2012). (Corrige W203/W304: la práctica de pausa física no era aceptación; ahora sí hace espacio a la sensación.)"
+      "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
       "id": "TAO_0014",
@@ -216,7 +216,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Identifica qué alimenta tu estrés y córtalo.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 19."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 19"
     },
     {
       "id": "TAO_0025",
@@ -261,7 +261,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando busques algo hoy, verifica si ya lo tienes.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Foyan."
+      "nota_editorial": "Foyan Qingyuan, tradición chan"
     },
     {
       "id": "TAO_0030",
@@ -297,7 +297,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Corta la distracción que usas para huir de ti.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 22."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 22"
     },
     {
       "id": "TAO_0034",
@@ -360,7 +360,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Compórtate como un huésped amable en tu propia vida.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 56."
+      "nota_editorial": "Yijing, hexagrama 56"
     },
     {
       "id": "TAO_0041",
@@ -405,7 +405,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Acepta un cambio radical o una pérdida hoy.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 50 (Ding)."
+      "nota_editorial": "Yijing, hexagrama 50 (Ding)"
     },
     {
       "id": "TAO_0046",
@@ -477,7 +477,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz solo el siguiente paso lógico, nada más.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 53 (Jian)."
+      "nota_editorial": "Yijing, hexagrama 53 (Jian)"
     },
     {
       "id": "TAO_0054",
@@ -603,7 +603,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Conecta con lo que nunca cambia en ti.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 48."
+      "nota_editorial": "Yijing, hexagrama 48"
     },
     {
       "id": "TAO_0068",
@@ -629,8 +629,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "No divide el mundo en 'yo' y 'ellos'. Ve la interconexión de todo.",
       "practica_hoy": "Siente que eres parte del entorno, no un visitante.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 22."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 22"
     },
     {
       "id": "TAO_0071",
@@ -647,8 +647,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Cerrar las puertas de la percepción conserva la energía vital (Jing). Estar siempre 'conectado' te drena.",
       "practica_hoy": "Pasa una hora en modo 'no molestar' mental.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 52."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 52"
     },
     {
       "id": "TAO_0073",
@@ -665,8 +665,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Aunque tengas talento para brillar, prefiere el segundo plano. Allí estás seguro y libre de envidias.",
       "practica_hoy": "Deja que otro se lleve el crédito hoy.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 28."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 28"
     },
     {
       "id": "TAO_0075",
@@ -674,8 +674,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La firmeza no necesita agresión. Se puede tener borde sin cortar: límites claros sin daño.",
       "practica_hoy": "Detecta hoy una situación donde quieras corregir a alguien. Formula una frase firme y no hiriente. Dila o escríbela.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 58."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 58"
     },
     {
       "id": "TAO_0076",
@@ -683,8 +683,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Si juegas tu propio juego, no tienes rivales. La competencia es para los que imitan.",
       "practica_hoy": "Haz algo a tu manera única, sin compararte.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 22."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 22"
     },
     {
       "id": "TAO_0077",
@@ -692,8 +692,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El Tao no tiene preferencias sentimentales artificiales. Tratar las cosas como 'perros de paja' significa honrarlas plenamente cuando están presentes y soltarlas con ligereza y sin apegos cuando su ciclo termina.",
       "practica_hoy": "Observa un apego material o relacional que estés sosteniendo con angustia hoy. Visualízalo completando su ciclo natural y practica el arte taoísta de soltarlo sin amargura.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 5."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 5"
     },
     {
       "id": "TAO_0078",
@@ -719,8 +719,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Usa tu inteligencia no para analizar el mundo, sino para iluminar tu propia mente y regresar al origen.",
       "practica_hoy": "Observa tu propia mente en lugar de observar a otros.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 52."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 52"
     },
     {
       "id": "TAO_0081",
@@ -728,8 +728,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Menos intelectualización, más instinto y nutrición vital. El centro está en el Hara (vientre), no en el cerebro.",
       "practica_hoy": "Pon la mano en tu vientre y respira desde ahí.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 3."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 3"
     },
     {
       "id": "TAO_0082",
@@ -738,7 +738,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Guarda tu energía hoy; no la gastes.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 24 (Fu)."
+      "nota_editorial": "Yijing, hexagrama 24 (Fu)"
     },
     {
       "id": "TAO_0083",
@@ -792,7 +792,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "No muestres tu alegría o talento ante gente hostil.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 36."
+      "nota_editorial": "Yijing, hexagrama 36"
     },
     {
       "id": "TAO_0089",
@@ -810,7 +810,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una pregunta prueba para ver el estado de ánimo de alguien.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 13."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 13"
     },
     {
       "id": "TAO_0091",
@@ -819,7 +819,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En una conversación hoy, deja pasar una corrección que ibas a hacer. Nota qué ocurre en ti.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 27."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 27"
     },
     {
       "id": "TAO_0092",
@@ -837,7 +837,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Da algo pequeño para invitar a algo grande.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 17."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 17"
     },
     {
       "id": "TAO_0094",
@@ -846,7 +846,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sé suave contigo mismo para mantenerte lúcido.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 50."
+      "nota_editorial": "Yijing, hexagrama 50"
     },
     {
       "id": "TAO_0095",
@@ -917,8 +917,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La eficacia más profunda no nace del esfuerzo o la confrontación, sino de la adaptación natural a las circunstancias presentadas.",
       "practica_hoy": "Frente a un obstáculo menor hoy, busca rodearlo fluidamente en lugar de forzar una resolución frontal.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 8."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 8"
     },
     {
       "id": "TAO_0103",
@@ -944,8 +944,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Desconfía de lo que suena demasiado bien o seductor. La realidad suele ser simple y directa.",
       "practica_hoy": "Prefiere hoy una verdad incómoda a una mentira dulce.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 81."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 81"
     },
     {
       "id": "TAO_0106",
@@ -954,7 +954,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, en una situación donde podrías imponerte, elige escuchar primero. Nota qué información aparece.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 15 (Qian)."
+      "nota_editorial": "Yijing, hexagrama 15 (Qian)"
     },
     {
       "id": "TAO_0107",
@@ -962,8 +962,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El movimiento de recogerse contiene al de extenderse: la contracción es fase, no destino. La frase apunta a la alternancia natural.",
       "practica_hoy": "Detecta hoy un momento de “encogimiento” (silencio, cansancio, evitación) y nómbralo como fase. Una frase: “esto es la fase previa”.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 36."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 36"
     },
     {
       "id": "TAO_0108",
@@ -971,8 +971,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El perfeccionismo es la antesala del desastre. Saber cuándo es 'suficiente' es la sabiduría suprema.",
       "practica_hoy": "Detente cuando algo esté 'bien', no 'perfecto'.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 9."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 9"
     },
     {
       "id": "TAO_0109",
@@ -981,7 +981,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige hoy un asunto “seco” (un trámite, una conversación difícil) y dale 5 minutos de contacto directo, sin rodeos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 21 (Shi He)."
+      "nota_editorial": "Yijing, hexagrama 21 (Shi He)"
     },
     {
       "id": "TAO_0110",
@@ -1035,7 +1035,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Actúa con extrema cautela en un tema delicado.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 10 (Lu)."
+      "nota_editorial": "Yijing, hexagrama 10 (Lu)"
     },
     {
       "id": "TAO_0116",
@@ -1052,8 +1052,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El 'sí' fácil trae problemas. La persona sabia duda antes de comprometerse y por eso siempre cumple.",
       "practica_hoy": "No digas 'sí' inmediatamente; di 'déjame pensarlo'.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 63."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 63"
     },
     {
       "id": "TAO_0118",
@@ -1062,7 +1062,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Usa un problema de hoy para romper un mal hábito.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 5."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 5"
     },
     {
       "id": "TAO_0119",
@@ -1071,7 +1071,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Da un mensaje indirecto para no herir egos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 26."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 26"
     },
     {
       "id": "TAO_0120",
@@ -1097,8 +1097,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Es la ley del ciclo. No puedes inhalar sin haber exhalado. La generosidad abre la puerta a la abundancia.",
       "practica_hoy": "Ofrece algo antes de pedir algo.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 36."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 36"
     },
     {
       "id": "TAO_0123",
@@ -1143,7 +1143,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Retoma un proyecto viejo con una idea nueva.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Estrategia 14."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 14"
     },
     {
       "id": "TAO_0128",
@@ -1161,7 +1161,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elimina una opción para concentrarte en una sola.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 41."
+      "nota_editorial": "Yijing, hexagrama 41"
     },
     {
       "id": "TAO_0130",
@@ -1170,7 +1170,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento con energía disponible y úsala para una acción de 5 minutos; no la planifiques.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 42."
+      "nota_editorial": "Yijing, hexagrama 42"
     },
     {
       "id": "TAO_0131",
@@ -1224,7 +1224,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Habla hoy desde tu verdad más vulnerable.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 61."
+      "nota_editorial": "Yijing, hexagrama 61"
     },
     {
       "id": "TAO_0137",
@@ -1250,8 +1250,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La mente no recupera su claridad a través de la intervención forzada del intelecto, sino al cesar el intento de manipulación.",
       "practica_hoy": "Cuando sientas agitación, permite que la inquietud exista en tu espacio interno sin intentar resolver su causa de inmediato.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 15."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 15"
     },
     {
       "id": "TAO_0140",
@@ -1592,8 +1592,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El discurso no es la virtud. Desconfía de la elocuencia vacía.",
       "practica_hoy": "Juzga hoy por actos, no por palabras.",
       "categoria": "discernimiento",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 24."
+      "linaje": "taoismo",
+      "nota_editorial": "Zhuangzi, cap. 24 (徐无鬼); trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0178",
@@ -1736,8 +1736,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Reconocer la propia ignorancia es la cima de la salud mental. Creer saber es una enfermedad.",
       "practica_hoy": "Responde 'no lo sé' con confianza al menos una vez.",
       "categoria": "humildad",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 71."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 71"
     },
     {
       "id": "TAO_0194",
@@ -2061,7 +2061,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Pon un límite claro a alguien cercano para proteger la relación.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Hexagrama 37."
+      "nota_editorial": "Yijing, hexagrama 37"
     },
     {
       "id": "TAO_0231",
@@ -2141,8 +2141,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Las influencias más poderosas (como la gravedad o el amor) son silenciosas. No confundas ruido con poder.",
       "practica_hoy": "Influye en una situación sin decir una palabra.",
       "categoria": "silencio",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Capítulo 41."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 41"
     },
     {
       "id": "TAO_0240",
@@ -2663,8 +2663,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Conoce la luz y la razón, pero no pierdas contacto con el misterio, la oscuridad y lo inconsciente.",
       "practica_hoy": "Respeta tu parte irracional o intuitiva.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Capítulo 28."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 28"
     },
     {
       "id": "TAO_0305",
@@ -2699,8 +2699,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El sufrimiento viene de la brecha entre tu acción y tu expectativa de recompensa. Cierra la brecha.",
       "practica_hoy": "Haz un favor y olvídalo al instante.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Capítulo 2."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 2"
     },
     {
       "id": "TAO_0309",
@@ -2762,8 +2762,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Si tus opiniones, tu cuerpo o tus hábitos son rígidos, estás muriendo. Mantente verde y tierno.",
       "practica_hoy": "Cambia de opinión sobre un tema pequeño.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Capítulo 76."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 76"
     },
     {
       "id": "TAO_0331",
@@ -2771,8 +2771,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La verdad se sostiene sola. El exceso de argumentación revela la debilidad de la posición.",
       "practica_hoy": "Haz algo y no des ninguna explicación.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Capítulo 24."
+      "linaje": "taoismo",
+      "nota_editorial": "Daodejing, cap. 24"
     },
     {
       "id": "TAO_0332",
@@ -2781,7 +2781,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elimina una 'red de seguridad' en un proyecto.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Estrategia 28."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 28"
     },
     {
       "id": "TAO_0343",
@@ -2898,7 +2898,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Atiende una señal pequeña que estás ignorando.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Hexagrama 2 (Kun)."
+      "nota_editorial": "Yijing, hexagrama 2 (Kun)"
     },
     {
       "id": "TAO_0361",
@@ -2907,7 +2907,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa el espacio silencioso de donde surgen tus pensamientos, sin intentar atrapar o detener ninguno.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Capítulo 4."
+      "nota_editorial": "Daodejing, cap. 4"
     },
     {
       "id": "TAO_0362",
@@ -2934,7 +2934,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Intenta querer lo que la vida te traiga hoy.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Capítulo 49."
+      "nota_editorial": "Daodejing, cap. 49"
     },
     {
       "id": "TAO_0365",
@@ -2943,7 +2943,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Encuentra lo sagrado en tu habitación.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Capítulo 47."
+      "nota_editorial": "Daodejing, cap. 47"
     },
     {
       "id": "TAO_0366",
@@ -2979,7 +2979,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Actúa con integridad, aunque nadie te vea.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Capítulo 73."
+      "nota_editorial": "Daodejing, cap. 73"
     },
     {
       "id": "TAO_0370",
@@ -2988,7 +2988,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Atiende un detalle pequeño que has estado ignorando.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Capítulo 63."
+      "nota_editorial": "Daodejing, cap. 63"
     },
     {
       "id": "TAO_0371",
@@ -3465,7 +3465,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa un drama ajeno sin opinar ni intervenir.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Estrategia 9."
+      "nota_editorial": "Treinta y seis estratagemas, n.º 9"
     },
     {
       "id": "TAO_0462",

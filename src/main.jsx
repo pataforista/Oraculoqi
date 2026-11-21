@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { createRoot } from 'react-dom/client';
 import { Renderer, Program, Mesh, Geometry } from 'ogl';
 
+import { categoryLabel, sourceLabel } from './labels.js';
+
 import '../Galaxy.css';
 import '../ElectricBorder.css';
 import '../ProfileCard.css';
@@ -171,7 +173,8 @@ const composeShareCanvas = async (card) => {
   ctx.fillStyle = glow; ctx.fillRect(0, 0, SHARE_W, SHARE_H);
 
   const PX = 80, PW = SHARE_W - PX * 2, PAD = 64, TW = PW - PAD * 2;
-  const category = String(card.categoria).replaceAll('_', ' ').toUpperCase();
+  const category = categoryLabel(card.categoria).toUpperCase();
+  const source = sourceLabel(card.nota_editorial);
   const maxPanelH = 1240;
 
   // Medir con una escala que se reduce hasta que el contenido cabe en la hoja.
@@ -224,6 +227,13 @@ const composeShareCanvas = async (card) => {
     ctx.beginPath(); ctx.arc(PX + PW - PAD - sz / 2, PY + h - PAD - sz / 2 + 10, sz / 2, 0, Math.PI * 2); ctx.clip();
     ctx.drawImage(logo, PX + PW - PAD - sz, PY + h - PAD - sz + 10, sz, sz);
     ctx.restore();
+  }
+
+  if (source) {
+    ctx.fillStyle = inkM; ctx.font = `400 30px ${SANS}`; ctx.textAlign = 'center';
+    let label = `Fuente: ${source}`;
+    while (ctx.measureText(label).width > PW && label.length > 12) label = `${label.slice(0, -2).trimEnd()}…`;
+    ctx.fillText(label, SHARE_W / 2, PY + h + 70);
   }
 
   ctx.fillStyle = accent; ctx.font = `500 40px ${SERIF}`;
@@ -786,13 +796,16 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
           <div className="pc-inside">
             <div className="pc-shine" /><div className="pc-glare" />
             <div className="pc-content">
-              <span className="pc-wisdom-category">{card.categoria.replaceAll('_', ' ')}</span>
+              <span className="pc-wisdom-category">{categoryLabel(card.categoria)}</span>
               <h2 className="pc-frase">“{card.frase}”</h2>
               <p className="pc-interpretacion">{card.interpretacion}</p>
               <div className="pc-practica">
                 <span className="pc-practica-label">Invitación hoy</span>
                 <p>{card.practica_hoy}</p>
               </div>
+              {sourceLabel(card.nota_editorial) && (
+                <p className="pc-source"><span className="pc-source-k">Fuente</span> {sourceLabel(card.nota_editorial)}</p>
+              )}
               <div className="pc-card-footer">
                 <img src="icons/enso-8bit.png" className="pc-card-logo" alt="" aria-hidden="true" />
               </div>
@@ -941,7 +954,7 @@ function App() {
     } else if (showInfo) {
       document.title = "Protocolo Erudito — Oráculo Taoísta";
     } else if (card) {
-      document.title = `Sincronía: ${card.categoria.replaceAll('_', ' ')} — Oráculo Taoísta`;
+      document.title = `Sincronía: ${categoryLabel(card.categoria).toLowerCase()} — Oráculo Taoísta`;
     } else {
       document.title = "Oráculo Taoísta";
     }
@@ -1191,7 +1204,7 @@ function App() {
     const cat = categories.includes(codexCat) ? codexCat : 'all';
     return favorites.filter(f =>
       (cat === 'all' || f.categoria === cat) &&
-      (!q || `${f.frase} ${f.interpretacion ?? ''} ${f.categoria}`.toLowerCase().includes(q))
+      (!q || `${f.frase} ${f.interpretacion ?? ''} ${categoryLabel(f.categoria)}`.toLowerCase().includes(q))
     );
   }, [favorites, categories, codexQuery, codexCat]);
 
@@ -1293,7 +1306,7 @@ function App() {
               onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleReveal(); } }}
             >
               <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08} borderRadius={12}>
-                <div className="reveal-overlay"><span>Desvelar el Tao</span></div>
+                <div className="reveal-overlay"><span>Desvelar el Tao</span><small className="reveal-hint">Toca para recibir tu sincronía de hoy</small></div>
               </ElectricBorder>
             </div>
           ) : (
@@ -1402,7 +1415,7 @@ function App() {
                   <button className="chip-btn" aria-pressed={!categories.includes(codexCat)} onClick={() => setCodexCat('all')}>Todas</button>
                   {categories.map(c => (
                     <button key={c} className="chip-btn" aria-pressed={codexCat === c} onClick={() => setCodexCat(codexCat === c ? 'all' : c)}>
-                      {c.replaceAll('_', ' ')}
+                      {categoryLabel(c)}
                     </button>
                   ))}
                 </div>
@@ -1445,7 +1458,7 @@ function App() {
                       setIsRevealed(true);
                     }}
                   >
-                    <span className="codex-item-cat">{f.categoria.replaceAll('_', ' ')}</span>
+                    <span className="codex-item-cat">{categoryLabel(f.categoria)}</span>
                     <span className="codex-item-frase">"{f.frase}"</span>
                   </button>
                   <button className="codex-item-remove" onClick={() => removeFavorite(f.id)} aria-label={`Quitar de favoritos: ${f.frase.slice(0, 40)}`}>&times;</button>
