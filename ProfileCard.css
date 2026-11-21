@@ -121,7 +121,7 @@
     padding-left: var(--space-lg, 24px);
 }
 
-.pc-practica label {
+.pc-practica .pc-practica-label {
     display: block;
     font-family: var(--font-base);
     font-size: 0.7rem;
@@ -197,7 +197,7 @@
         padding-left: var(--space-sm, 8px);
     }
 
-    .pc-practica label {
+    .pc-practica .pc-practica-label {
         font-size: 0.6rem;
     }
 

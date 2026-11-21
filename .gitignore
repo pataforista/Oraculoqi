@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.local
+*.log
+*.bak
+reporte_curaduria.json
+.DS_Store

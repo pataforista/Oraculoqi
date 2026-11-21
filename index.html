@@ -380,6 +380,7 @@
       opacity: 0;
       transform: translateY(20px) scale(0.8);
       pointer-events: none;
+      visibility: hidden; /* cerrado: fuera del árbol de accesibilidad, no solo transparente */
       transition: all var(--transition-slow);
     }
 
@@ -387,6 +388,7 @@
       opacity: 1;
       transform: translateY(0) scale(1);
       pointer-events: auto;
+      visibility: visible;
     }
 
     .menu-opt-btn {
@@ -409,7 +411,7 @@
 
     .menu-opt-btn:hover {
       background: var(--bg-secondary);
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       transform: scale(1.15) translateY(-5px);
       border-color: var(--ritual-pink);
     }
@@ -439,7 +441,7 @@
     }
 
     *:focus-visible {
-      outline: 2px solid var(--ritual-pink);
+      outline: 2px solid var(--accent-text);
       outline-offset: 2px;
     }
 
@@ -503,7 +505,7 @@
     }
 
     .close-btn:hover {
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       border-color: var(--ritual-pink);
       transform: rotate(90deg);
     }
@@ -790,7 +792,7 @@
 
     /* ===== BTN-REFRESH HOVER POLISH ===== */
     .btn-refresh:hover {
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       border-color: rgba(235, 148, 179, 0.45);
       transform: translateY(-3px) scale(1.03);
       box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5),
@@ -965,7 +967,7 @@
       gap: var(--space-md); padding: var(--space-xl); padding-right: 64px; width: 100%;
       border-radius: var(--radius-panel);
     }
-    .codex-item-main:focus-visible { outline: 2px solid var(--ritual-pink); outline-offset: -2px; }
+    .codex-item-main:focus-visible { outline: 2px solid var(--accent-text); outline-offset: -2px; }
     .codex-item-remove {
       position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
       border-radius: 50%; border: none; background: transparent; cursor: pointer;

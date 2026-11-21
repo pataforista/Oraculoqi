@@ -701,11 +701,11 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
               <h2 className="pc-frase">“{card.frase}”</h2>
               <p className="pc-interpretacion">{card.interpretacion}</p>
               <div className="pc-practica">
-                <label>Invitación hoy</label>
+                <span className="pc-practica-label">Invitación hoy</span>
                 <p>{card.practica_hoy}</p>
               </div>
               <div className="pc-card-footer">
-                <img src="icons/enso-8bit.png" className="pc-card-logo" alt="Círculo Enso - Símbolo taoísta de presencia y vacío" />
+                <img src="icons/enso-8bit.png" className="pc-card-logo" alt="" aria-hidden="true" />
               </div>
               {showDonation && (
                 <div className="pc-donation-gentle">
@@ -773,11 +773,12 @@ function App() {
   const showToast = useCallback((msg) => {
     const id = Math.random().toString(36).substring(2, 9);
     setToasts(prev => [...prev, { id, msg }].slice(-2));
+    // Más tiempo para mensajes largos (WCAG 2.2.1: el usuario debe poder leerlos).
     setTimeout(() => {
       if (mountedRef.current) {
         setToasts(prev => prev.filter(t => t.id !== id));
       }
-    }, 4000);
+    }, Math.max(4000, msg.length * 90));
   }, []);
 
   useEffect(() => {
@@ -801,6 +802,22 @@ function App() {
       for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
       setCard(deck[Math.abs(hash | 0) % deck.length]);
     }
+  }, []);
+
+  // El dataset se depura entre versiones: sincroniza el Codex guardado con el catálogo vigente
+  // (texto actualizado y retiro de cartas que ya no existen).
+  useEffect(() => {
+    const deck = window.TAOISTA_DATASET?.cards;
+    if (!deck) return;
+    const byId = new Map(deck.map(c => [c.id, c]));
+    const next = favorites.filter(f => byId.has(f.id)).map(f => byId.get(f.id));
+    const removed = favorites.length - next.length;
+    const changed = removed > 0 || next.some((c, i) => JSON.stringify(c) !== JSON.stringify(favorites[i]));
+    if (changed) setFavorites(next);
+    if (removed > 0) {
+      showToast(`${removed} ${removed === 1 ? 'sabiduría' : 'sabidurías'} del catálogo anterior ya no existe${removed === 1 ? '' : 'n'} y se retiró de tu Codex`);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -1207,7 +1224,7 @@ function App() {
               tabIndex={0} 
               aria-label="Desvelar la carta del oráculo" 
               onClick={handleReveal}
-              onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleReveal()}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleReveal(); } }}
             >
               <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08} borderRadius={12}>
                 <div className="reveal-overlay"><span>Desvelar el Tao</span></div>
@@ -1274,7 +1291,7 @@ function App() {
           <button className="menu-opt-btn" onClick={shareCard} title="Compartir" aria-label="Compartir carta" tabIndex={menuOpen ? 0 : -1}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
           </button>
-          <button className="menu-opt-btn" onClick={cycleTheme} title="Tema" aria-label="Cambiar tema" tabIndex={menuOpen ? 0 : -1}>
+          <button className="menu-opt-btn" onClick={cycleTheme} title="Tema" aria-label={`Cambiar tema (actual: ${theme === 'dark' ? 'oscuro' : theme === 'light' ? 'claro' : 'sumi-e'})`} tabIndex={menuOpen ? 0 : -1}>
             {theme === 'dark' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>}
             {theme === 'light' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>}
             {theme === 'sumi-e' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>}
@@ -1408,7 +1425,7 @@ function App() {
       <div className="toast-container" role="status" aria-live="polite">
         {toasts.map(t => (
           <div key={t.id} className="toast-notification">
-            <span>✧</span>
+            <span aria-hidden="true">✧</span>
             <span>{t.msg}</span>
           </div>
         ))}
