@@ -9,6 +9,8 @@
  *   node validate_dataset.cjs --fix
  *   node validate_dataset.cjs --json=reporte.json --max-warnings=0
  *   node validate_dataset.cjs --list-rules
+ *   node validate_dataset.cjs --editorial=warn   (errores editoriales E1xx/E2xx pasan a warning;
+ *                                                  los estructurales y de catálogo siguen bloqueando)
  */
 'use strict';
 
@@ -29,6 +31,8 @@ const FIX = flag('fix');
 const STRICT = flag('strict');
 const QUIET = flag('quiet');
 const JSON_OUT = opt('json', null);
+const EDITORIAL_WARN = opt('editorial', 'error') === 'warn';
+const CATALOGO = opt('catalog', 'catalogos_canonicos_v1.json');
 const MAX_WARN = Number(opt('max-warnings', STRICT ? 0 : Infinity));
 
 // ─────────────────────── CONFIGURACIÓN ─────────────────────────
@@ -122,10 +126,24 @@ const SOMATICO_EXCLUYENTE = [
 ];
 const SOMATICO_INCLUSIVO = /punto de apoyo|o tus manos|el asiento|si te resulta|donde tu cuerpo|o donde/i;
 
-const LINAJES_VALIDOS = new Set([
-  'taoismo', 'zen', 'budismo', 'estoicismo', 'act', 'mindfulness',
-  'contemporaneo', 'iching', 'sufismo', 'humanista', 'existencialismo', 'sistemica',
-]);
+const LINAJES_FALLBACK = [
+  'zen', 'taoismo', 'budismo', 'sufismo', 'estoicismo', 'mindfulness',
+  'existencialismo', 'sistemica', 'humanista', 'contemporaneo',
+];
+
+// Catálogo canónico (categorías y linajes permitidos). Si no existe, solo se avisa.
+function cargarCatalogo() {
+  try {
+    const j = JSON.parse(fs.readFileSync(CATALOGO, 'utf8'));
+    const c = j.catalogos_canonicos;
+    return { categoria: new Set(c.categoria), linaje: new Set(c.linaje) };
+  } catch (e) {
+    console.error(`Aviso: no se pudo leer el catálogo (${CATALOGO}): ${e.message}`);
+    return null;
+  }
+}
+const CAT = cargarCatalogo();
+const LINAJES_VALIDOS = CAT ? CAT.linaje : new Set(LINAJES_FALLBACK);
 
 // Grupos de categorías que deberían unificarse.
 const SINONIMOS_CATEGORIA = [
@@ -195,8 +213,10 @@ function cargar(file) {
 
 // ─────────────────────── MOTOR DE REGLAS ───────────────────────
 const findings = [];
-const add = (level, code, card, field, message, extra = {}) =>
+const add = (level, code, card, field, message, extra = {}) => {
+  if (EDITORIAL_WARN && level === 'error' && /^E[12]\d\d$/.test(code)) level = 'warn';
   findings.push({ level, code, id: card?.id ?? '(sin id)', field, message, ...extra });
+};
 
 function validar(ds) {
   if (!ds || typeof ds !== 'object') {
@@ -221,7 +241,7 @@ function validar(ds) {
 
     // ── Estructura
     for (const k of CAMPOS_REQ) {
-      if (!(k in c)) add('error', 'E004', c, k, `Falta el campo requerido "${k}".`);
+      if (!(k in c)) { if (k !== 'nota_editorial') add('error', 'E004', c, k, `Falta el campo requerido "${k}".`); }
       else if (typeof c[k] !== 'string') add('error', 'E005', c, k, `Debe ser string (recibido: ${typeof c[k]}).`);
       else if (!c[k].trim() && k !== 'nota_editorial') add('error', 'E004', c, k, 'Campo vacío.');
     }
@@ -310,7 +330,9 @@ function validar(ds) {
 
     // ── Taxonomía y coherencia doctrinal
     if (linaje && !LINAJES_VALIDOS.has(linaje))
-      add('warn', 'W301', c, 'linaje', `Linaje fuera de taxonomía: "${linaje}".`);
+      add(CAT ? 'error' : 'warn', CAT ? 'E301' : 'W301', c, 'linaje', `Linaje fuera del catálogo canónico: "${linaje}".`);
+    if (CAT && cat && !CAT.categoria.has(cat))
+      add('error', 'E302', c, 'categoria', `Categoría fuera del catálogo canónico: "${cat}".`);
     if (cat && !/^[a-z][a-z0-9_]*$/.test(cat))
       add('warn', 'W302', c, 'categoria', `Categoría no es slug snake_case: "${cat}".`);
     for (const grupo of SINONIMOS_CATEGORIA) {
@@ -319,9 +341,9 @@ function validar(ds) {
           { sugerencia: `Unificar en "${grupo[0]}".` });
     }
 
-    if (/hexagrama|yi jing|i ching/.test(notaN) && !['iching', 'taoismo', 'contemporaneo'].includes(linaje))
+    if (/hexagrama|yi jing|i ching/.test(notaN) && !['taoismo', 'contemporaneo'].includes(linaje))
       add('warn', 'W303', c, 'linaje', `Fuente del Yijing clasificada como "${linaje}".`,
-        { sugerencia: 'El Yijing no es zen ni budista. Usar "iching".' });
+        { sugerencia: 'El Yijing no es zen ni budista. Usar "taoismo".' });
     if (/koan|mumonkan|zhaozhou|linji|dogen|shobogenzo|buda|monje|maestro/.test(notaN + ' ' + norm(frase))
         && linaje === 'taoismo')
       add('warn', 'W303', c, 'linaje', 'Material Chan/Zen clasificado como "taoismo".',
@@ -331,7 +353,7 @@ function validar(ds) {
       add('warn', 'W303', c, 'linaje', `Fuente estoica clasificada como "${linaje}".`);
     if (linaje === 'contemporaneo' && ACT_KEYWORDS[cat])
       add('info', 'W303', c, 'linaje', 'Tarjeta de proceso ACT con linaje "contemporaneo".',
-        { sugerencia: 'Considerar linaje "act" y citar Hayes / Wilson / Harris / Zurita Ona / Villatte.' });
+        { sugerencia: 'Citar la fuente ACT (Hayes / Wilson / Harris / Zurita Ona / Villatte) en nota_editorial.' });
 
     if (ACT_KEYWORDS[cat]) {
       const p = norm(pract);
@@ -408,6 +430,7 @@ const RULES = {
   E001: 'Estructura del dataset', E002: 'Tarjeta no objeto', E003: 'id inválido o duplicado',
   E004: 'Campo requerido faltante/vacío', E005: 'Tipo incorrecto',
   E101: 'Fuente excluida por criterio editorial', E102: 'Agregador sin verificación textual',
+  E301: 'Linaje fuera del catálogo canónico', E302: 'Categoría fuera del catálogo canónico',
   W103: 'Relleno de IA', W104: 'nota_editorial vacía o genérica',
   E201: 'Genérico masculino', W202: 'Metáfora capacitista', W203: 'Práctica somática excluyente',
   W204: 'Violencia sin aparato crítico', W205: 'Formulación culpabilizante',
