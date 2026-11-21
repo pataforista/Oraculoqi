@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "validate:dataset": "node curaduria/validate_dataset.cjs --file=public/dataset_taoista.js",
+    "validate:strict": "node curaduria/validate_dataset.cjs --file=public/dataset_taoista.js --strict"
+  }
+}

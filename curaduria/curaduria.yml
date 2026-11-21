@@ -1,0 +1,17 @@
+name: Curaduría del dataset
+on:
+  push:
+    paths: ['public/dataset_taoista.js', 'curaduria/validate_dataset.cjs']
+  pull_request:
+    paths: ['public/dataset_taoista.js']
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: node curaduria/validate_dataset.cjs --file=public/dataset_taoista.js --json=reporte.json --max-warnings=200
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: reporte-curaduria, path: reporte.json }
