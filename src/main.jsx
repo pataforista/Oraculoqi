@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Renderer, Program, Mesh, Geometry } from 'ogl';
-import html2canvas from 'html2canvas';
 
 import '../Galaxy.css';
 import '../ElectricBorder.css';
@@ -96,54 +95,141 @@ const buildReminderICS = () => {
   ].join('\r\n');
 };
 
-const SHARE_CAPTURE_CSS = `
-  .is-capturing *, .is-capturing *::before, .is-capturing *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-  .is-capturing .pc-content > * { opacity: 1 !important; transform: none !important; }
-  .is-capturing .pc-card-wrapper, .is-capturing .pc-card-shell, .is-capturing .revealed-content {
-    transform: none !important; filter: none !important; opacity: 1 !important;
-  }
-  .is-capturing .pc-card { min-height: 0 !important; box-shadow: none !important; }
-  .is-capturing .pc-inside { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
-  /* html2canvas dibuja letra por letra cuando hay letter-spacing y, en algunos navegadores
-     (sobre todo Safari/iOS), pierde el ancho de los espacios. En la imagen, texto corrido normal. */
-  .is-capturing .pc-frase, .is-capturing .pc-interpretacion, .is-capturing .pc-practica p { letter-spacing: 0 !important; word-spacing: normal !important; }
-  .is-capturing .pc-shine, .is-capturing .pc-donation-gentle { display: none !important; }
-`;
+/* --- IMAGEN PARA COMPARTIR (canvas nativo) ---
+   Se dibuja directamente con la API 2D, sin capturar el DOM: cada línea se parte por palabras
+   y se pinta como una cadena completa, de modo que los espacios no dependen del navegador. */
+const SHARE_W = 1080, SHARE_H = 1920;
 
-const composeStoryCanvas = (cardCanvas) => {
-  const W = 1080, H = 1920;
-  const out = document.createElement('canvas');
-  out.width = W;
-  out.height = H;
-  const ctx = out.getContext('2d');
+const wrapLines = (ctx, text, maxWidth) => {
+  const lines = [];
+  let line = '';
+  for (const word of String(text).trim().split(/\s+/)) {
+    const test = line ? `${line} ${word}` : word;
+    if (line && ctx.measureText(test).width > maxWidth) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+};
+
+// Texto con tracking manual (no depende de ctx.letterSpacing, ausente en Safari antiguo).
+const drawTracked = (ctx, text, x, y, tracking, align = 'left') => {
+  const chars = [...text];
+  const widths = chars.map(ch => ctx.measureText(ch).width + tracking);
+  const total = widths.reduce((a, b) => a + b, 0) - tracking;
+  let cx = align === 'center' ? x - total / 2 : x;
+  ctx.textAlign = 'left';
+  chars.forEach((ch, i) => { ctx.fillText(ch, cx, y); cx += widths[i]; });
+};
+
+const roundRect = (ctx, x, y, w, h, r) => {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+};
+
+const loadShareImage = (src) => new Promise(resolve => {
+  const img = new Image();
+  img.onload = () => resolve(img);
+  img.onerror = () => resolve(null);
+  img.src = src;
+});
+
+const ensureShareFonts = async () => {
+  if (!document.fonts?.load) return;
+  await Promise.all([
+    document.fonts.load('500 64px "EB Garamond"'),
+    document.fonts.load('400 36px Inter'),
+    document.fonts.load('700 26px Inter')
+  ]).catch(() => {});
+  if (document.fonts.ready) await document.fonts.ready;
+};
+
+const composeShareCanvas = async (card) => {
+  await ensureShareFonts();
   const css = getComputedStyle(document.documentElement);
-  const bg = css.getPropertyValue('--bg-primary').trim() || '#0a090c';
-  const ink = css.getPropertyValue('--ink-muted').trim() || '#8a8375';
-  const accent = css.getPropertyValue('--accent-text').trim() || '#eb94b3';
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, W, H);
-  const glow = ctx.createRadialGradient(W / 2, H / 2, 80, W / 2, H / 2, H * 0.6);
-  glow.addColorStop(0, 'rgba(125, 92, 138, 0.28)');
-  glow.addColorStop(1, 'rgba(125, 92, 138, 0)');
-  ctx.fillStyle = glow;
-  ctx.fillRect(0, 0, W, H);
+  const v = (name, fb) => css.getPropertyValue(name).trim() || fb;
+  const bg = v('--bg-primary', '#0a090c'), panel = v('--bg-secondary', '#121015');
+  const inkP = v('--ink-primary', '#f0e9d8'), inkS = v('--ink-secondary', '#c9bfab'), inkM = v('--ink-muted', '#8a8375');
+  const accent = v('--accent-text', '#eb94b3'), red = v('--ritual-red', '#d64d65');
+  const SERIF = '"EB Garamond", Georgia, serif', SANS = 'Inter, system-ui, -apple-system, sans-serif';
 
-  const scale = Math.min((W - 120) / cardCanvas.width, (H - 520) / cardCanvas.height);
-  const cw = cardCanvas.width * scale, ch = cardCanvas.height * scale;
-  ctx.drawImage(cardCanvas, (W - cw) / 2, (H - ch) / 2, cw, ch);
+  const out = document.createElement('canvas');
+  out.width = SHARE_W; out.height = SHARE_H;
+  const ctx = out.getContext('2d');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, SHARE_W, SHARE_H);
+  const glow = ctx.createRadialGradient(SHARE_W / 2, SHARE_H / 2, 80, SHARE_W / 2, SHARE_H / 2, SHARE_H * 0.6);
+  glow.addColorStop(0, 'rgba(125, 92, 138, 0.28)'); glow.addColorStop(1, 'rgba(125, 92, 138, 0)');
+  ctx.fillStyle = glow; ctx.fillRect(0, 0, SHARE_W, SHARE_H);
 
-  ctx.textAlign = 'center';
-  if ('letterSpacing' in ctx) ctx.letterSpacing = '10px';
-  ctx.fillStyle = accent;
-  ctx.font = '500 40px "EB Garamond", Georgia, serif';
-  ctx.fillText('ORÁCULO TAOÍSTA', W / 2, 200);
-  ctx.fillStyle = ink;
-  ctx.font = '400 28px Inter, system-ui, sans-serif';
-  if ('letterSpacing' in ctx) ctx.letterSpacing = '4px';
-  ctx.fillText(window.location.host.toUpperCase(), W / 2, H - 150);
+  const PX = 80, PW = SHARE_W - PX * 2, PAD = 64, TW = PW - PAD * 2;
+  const category = String(card.categoria).replaceAll('_', ' ').toUpperCase();
+  const maxPanelH = 1240;
+
+  // Medir con una escala que se reduce hasta que el contenido cabe en la hoja.
+  let k = 1, layout;
+  for (; k >= 0.6; k -= 0.05) {
+    const fs = { frase: 66 * k, body: 38 * k, label: 26 * k, cat: 28 * k };
+    ctx.font = `500 ${fs.frase}px ${SERIF}`;
+    const frase = wrapLines(ctx, `“${card.frase}”`, TW);
+    ctx.font = `400 ${fs.body}px ${SANS}`;
+    const interp = wrapLines(ctx, card.interpretacion, TW);
+    const prac = wrapLines(ctx, card.practica_hoy, TW - 40);
+    const lh = { frase: fs.frase * 1.25, body: fs.body * 1.55 };
+    const h = PAD + fs.cat * 2.4 + frase.length * lh.frase + 48 + interp.length * lh.body + 64
+      + fs.label * 2 + prac.length * lh.body + PAD + 90;
+    layout = { fs, lh, frase, interp, prac, h };
+    if (h <= maxPanelH) break;
+  }
+  const { fs, lh, frase, interp, prac, h } = layout;
+  const PY = Math.max(300, (SHARE_H - h) / 2);
+
+  ctx.fillStyle = panel;
+  roundRect(ctx, PX, PY, PW, h, 28); ctx.fill();
+  ctx.strokeStyle = 'rgba(240, 233, 216, 0.14)'; ctx.lineWidth = 2; ctx.stroke();
+
+  let y = PY + PAD + fs.cat;
+  ctx.fillStyle = accent; ctx.font = `700 ${fs.cat}px ${SANS}`;
+  drawTracked(ctx, category, PX + PAD, y, 7);
+  y += fs.cat * 1.4;
+
+  ctx.fillStyle = inkP; ctx.font = `500 ${fs.frase}px ${SERIF}`; ctx.textAlign = 'left';
+  for (const l of frase) { y += lh.frase; ctx.fillText(l, PX + PAD, y); }
+  y += 48;
+
+  ctx.fillStyle = inkS; ctx.font = `400 ${fs.body}px ${SANS}`;
+  for (const l of interp) { y += lh.body; ctx.fillText(l, PX + PAD, y); }
+  y += 64;
+
+  const barTop = y - fs.label * 0.2;
+  ctx.fillStyle = red; ctx.font = `700 ${fs.label}px ${SANS}`;
+  drawTracked(ctx, 'INVITACIÓN HOY', PX + PAD + 28, y + fs.label, 4);
+  y += fs.label * 1.9;
+  ctx.fillStyle = inkP; ctx.font = `400 ${fs.body}px ${SANS}`;
+  for (const l of prac) { y += lh.body; ctx.fillText(l, PX + PAD + 28, y); }
+  ctx.fillStyle = red; ctx.fillRect(PX + PAD, barTop, 4, y + fs.body * 0.35 - barTop);
+
+  const logo = await loadShareImage('icons/enso-8bit.png');
+  if (logo) {
+    const sz = 84;
+    ctx.save();
+    ctx.beginPath(); ctx.arc(PX + PW - PAD - sz / 2, PY + h - PAD - sz / 2 + 10, sz / 2, 0, Math.PI * 2); ctx.clip();
+    ctx.drawImage(logo, PX + PW - PAD - sz, PY + h - PAD - sz + 10, sz, sz);
+    ctx.restore();
+  }
+
+  ctx.fillStyle = accent; ctx.font = `500 40px ${SERIF}`;
+  drawTracked(ctx, 'ORÁCULO TAOÍSTA', SHARE_W / 2, 200, 10, 'center');
+  ctx.fillStyle = inkM; ctx.font = `400 28px ${SANS}`;
+  drawTracked(ctx, window.location.host.toUpperCase(), SHARE_W / 2, SHARE_H - 150, 4, 'center');
   return out;
 };
 
@@ -996,42 +1082,10 @@ function App() {
 
   const shareCard = useCallback(async () => {
     if (!card) return;
-    const cardElement = cardRef.current;
-    if (!cardElement) return;
 
     setMenuOpen(false);
     try {
-      // Cargar explícitamente las tipografías usadas en la carta: document.fonts.ready no espera
-      // las que aún no se han pedido, y medir con una fuente y dibujar con otra deforma los espacios.
-      if (document.fonts?.load) {
-        await Promise.all([
-          document.fonts.load('500 32px "EB Garamond"'),
-          document.fonts.load('400 17px Inter'),
-          document.fonts.load('700 12px Inter')
-        ]).catch(() => {});
-      }
-      if (document.fonts?.ready) await document.fonts.ready;
-      const canvas = await html2canvas(cardElement, {
-        scale: 2,
-        backgroundColor: null,
-        logging: false,
-        useCORS: true,
-        // html2canvas clona el DOM: las animaciones de entrada se reinician en el clon
-        // y el texto queda capturado invisible. Congelamos el estado final.
-        onclone: (doc) => {
-          doc.documentElement.classList.add('is-capturing');
-          const style = doc.createElement('style');
-          style.textContent = SHARE_CAPTURE_CSS;
-          doc.head.appendChild(style);
-        }
-      });
-
-      let finalCanvas = canvas;
-      try {
-        finalCanvas = composeStoryCanvas(canvas);
-      } catch (composeErr) {
-        console.warn('Composición de historia falló, se usa la carta sola:', composeErr);
-      }
+      const finalCanvas = await composeShareCanvas(card);
 
       const blob = await new Promise((resolve) => finalCanvas.toBlob(resolve, 'image/png'));
       if (!blob) {

@@ -12,7 +12,6 @@
     "validate:lenient": "node validate_dataset.cjs --editorial=warn"
   },
   "dependencies": {
-    "html2canvas": "^1.4.1",
     "ogl": "^0.0.32",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

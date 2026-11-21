@@ -39,7 +39,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-webgl': ['ogl'],
-          'vendor-capture': ['html2canvas'],
           'vendor-react': ['react', 'react-dom']
         }
       }
