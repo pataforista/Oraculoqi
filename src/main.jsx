@@ -107,6 +107,9 @@ const SHARE_CAPTURE_CSS = `
   }
   .is-capturing .pc-card { min-height: 0 !important; box-shadow: none !important; }
   .is-capturing .pc-inside { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  /* html2canvas dibuja letra por letra cuando hay letter-spacing y, en algunos navegadores
+     (sobre todo Safari/iOS), pierde el ancho de los espacios. En la imagen, texto corrido normal. */
+  .is-capturing .pc-frase, .is-capturing .pc-interpretacion, .is-capturing .pc-practica p { letter-spacing: 0 !important; word-spacing: normal !important; }
   .is-capturing .pc-shine, .is-capturing .pc-donation-gentle { display: none !important; }
 `;
 
@@ -998,6 +1001,15 @@ function App() {
 
     setMenuOpen(false);
     try {
+      // Cargar explícitamente las tipografías usadas en la carta: document.fonts.ready no espera
+      // las que aún no se han pedido, y medir con una fuente y dibujar con otra deforma los espacios.
+      if (document.fonts?.load) {
+        await Promise.all([
+          document.fonts.load('500 32px "EB Garamond"'),
+          document.fonts.load('400 17px Inter'),
+          document.fonts.load('700 12px Inter')
+        ]).catch(() => {});
+      }
       if (document.fonts?.ready) await document.fonts.ready;
       const canvas = await html2canvas(cardElement, {
         scale: 2,
