@@ -9,7 +9,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Di: 'Tengo suficiente para este momento'.",
       "categoria": "gratitud",
       "linaje": "budismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema budista de la contentura (santutthi)"
     },
     {
       "id": "TAO_0002",
@@ -27,7 +27,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Convierte una intención en conducta observable hoy (un acto).",
       "categoria": "accion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0004",
@@ -36,7 +36,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Da un paso reversible y observa el resultado.",
       "categoria": "accion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0005",
@@ -198,7 +198,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Recuerda hoy: sin tu atención, el pensamiento no “manda”.",
       "categoria": "asimetria",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0023",
@@ -225,7 +225,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige un objeto o sensación y durante 30 segundos nota que ya está ahí antes de nombrarlo. Solo notar; no etiquetar.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0026",
@@ -234,7 +234,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz lo cotidiano con atención.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Tradición chan; paráfrasis moderna de 青原惟信 (Qingyuan Weixin), 五灯会元 (Wudeng Huiyuan, vol. 17), secuencia «montañas son montañas»; la versión «cortar leña, llevar agua» es paráfrasis angloamericana del s. XX"
     },
     {
       "id": "TAO_0027",
@@ -252,7 +252,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Bebe un vaso de agua notando tres sensaciones (temperatura, textura, sabor) sin nombrarla. Al final, una sola palabra descriptiva.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0029",
@@ -270,7 +270,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Actúa antes de pensar demasiado.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0031",
@@ -288,7 +288,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Acepta una incomodidad física sin quejarte mentalmente.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Paradoja clásica."
+      "nota_editorial": "Atribución incierta; no localizada en Wumenguan ni Biyan Lu. Tratar como creación original hasta verificar"
     },
     {
       "id": "TAO_0033",
@@ -306,7 +306,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una búsqueda de “estar mejor” (revisar el móvil, cambiar de postura) y déjala pasar una vez. Nota qué ocurre.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente); paráfrasis de tema chan (cf. Huangbo, 传心法要)"
     },
     {
       "id": "TAO_0035",
@@ -324,7 +324,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Localiza hoy un momento sin fricción (respirar, caminar, sentarte) y nota esa ausencia durante 20 segundos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 19 (达生): «忘足，履之适也»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0037",
@@ -333,7 +333,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Descansa un momento sin historia personal.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0038",
@@ -396,7 +396,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz hoy una tarea y nota cada vez que tu atención se va al resultado (reconocimiento, nota, premio). Vuelve al gesto. Tres retornos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 19 (达生): «以黄金注者殙»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0045",
@@ -423,7 +423,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Piensa en algo propio que consideras “defecto” y nombra una función que cumple (protege, regula, señala). Una frase.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 4 (人间世), historia del Carpintero Shi y el roble sagrado; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0048",
@@ -441,7 +441,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy haz tu práctica (meditación, paseo, escritura) sin marcar progreso. Al terminar, no evalúes.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0050",
@@ -495,7 +495,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, cuando sientas desconfianza o juzgues la intención de alguien, detente un segundo. Recuerda que puedes estar proyectando tu propia inquietud y observa al otro con una mente despejada.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Liezi, cap. 8 (说符): «人有亡鈇者，意其邻之子»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0056",
@@ -504,7 +504,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Realiza una tarea y borra tu autoría.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Tradición."
+      "nota_editorial": "Tao Te Ching, cap. 27 («善行无辙迹»); cf. Dhammapada vv. 92-93 y 254-255 (Ākāsa-vagga); trad. Preciado / Dragonetti"
     },
     {
       "id": "TAO_0057",
@@ -513,7 +513,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Tres veces hoy, haz 5 respiraciones lentas notando el apoyo de tus pies en el suelo o, si no es accesible, el peso sobre el asiento y las manos en el regazo.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 6 (大宗师): «真人之息以踵»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0058",
@@ -531,7 +531,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Apaga hoy una pantalla o una luz y nota qué permanece (sonido, respiración, presencia). 30 segundos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0060",
@@ -540,7 +540,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "No respondas a una provocación.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Saṃyutta Nikāya 7.2 (Akkosaka Bhāradvāja Sutta): el Buda y el brahmán que insulta; «si no acepto el regalo, ¿de quién es?». Motivo paneasiático con versiones confucianas"
     },
     {
       "id": "TAO_0061",
@@ -549,7 +549,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento en que confundes un concepto con la experiencia (leer sobre calma en lugar de notar el cuerpo). Cambia el foco al cuerpo 20 segundos.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Metáfora chan clásica «指月»; origen en Sutra de Lankavatara (楞伽经); trad. esp. disponible"
     },
     {
       "id": "TAO_0062",
@@ -576,7 +576,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una necesidad concreta a tu alrededor (sed, cansancio, hambre) y responde con una acción mínima.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0065",
@@ -585,7 +585,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa un hecho sin interpretarlo.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0066",
@@ -621,7 +621,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Acepta la rutina necesaria de tu libertad.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Texto clásico."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0070",
@@ -639,7 +639,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, cuando ocurra algo que llamarías “fracaso”, escribe el hecho en una línea y la etiqueta en otra. Solo mira la diferencia.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0072",
@@ -702,7 +702,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "No te emociones demasiado si algo sale bien, ni te hundas si sale mal.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Convergencia."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0079",
@@ -747,7 +747,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando aparezca una emoción intensa, pon un temporizador de 3 minutos y nota si cambia de intensidad o forma al terminar.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Tao Te Ching, cap. 23: «飘风不终朝»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0084",
@@ -801,7 +801,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Retira una intervención innecesaria.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Tao Te Ching, cap. 60: «治大国若烹小鲜»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0090",
@@ -828,7 +828,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, resiste el impulso de planificarlo o controlarlo todo. Deja un espacio libre en tu día para que ocurra lo imprevisto y adáptate con fluidez natural a lo que surja.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 7 (应帝王), historia de 混沌 (Hundun); trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0093",
@@ -855,7 +855,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una reacción propia (molestia, prisa) y rastrea qué la provocó a ti. Una frase: “esto reaccionó a ___”.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 2 (齐物论): «罔两问景»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0096",
@@ -864,7 +864,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elimina una fuente innecesaria de distracción durante una hora.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0097",
@@ -873,7 +873,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Permite un contratiempo sin asignar culpables.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 20 (山木), historia de la barca vacía (虚舟); trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0098",
@@ -891,7 +891,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Trata a los objetos con compasión.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Metáfora."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0100",
@@ -927,7 +927,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una decisión en la que elijas imagen sobre comodidad real. Haz lo contrario una vez.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 17 (秋水): «吾将曳尾于涂中»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0104",
@@ -1017,7 +1017,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa una reacción antes de actuar.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Sutra de la Plataforma (六祖坛经), cap. 1 (行由品), episodio de Huineng y el estandarte; trad. Villalba"
     },
     {
       "id": "TAO_0114",
@@ -1026,7 +1026,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Explica hoy una idea importante sin tecnicismos, en una frase. Si necesitas tres, corta.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 26 (外物): «得意而忘言»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0115",
@@ -1044,7 +1044,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, ante una pregunta que te hagan, responde con una acción o un ejemplo concreto. Una frase + un gesto.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0117",
@@ -1233,7 +1233,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cierra una acción sin dramatizar.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Wumenguan (无门关), caso 7: «赵州洗钵盂»; trad. Villalba"
     },
     {
       "id": "TAO_0138",
@@ -1242,7 +1242,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Formula la pregunta sin responderla.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Huatou chan tradicional (tópico de meditación); atribuido a Huineng en la tradición; cf. Wudeng Huiyuan"
     },
     {
       "id": "TAO_0139",
@@ -1260,7 +1260,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reduce hoy una promesa a la mitad y cúmplela. Registra una línea: “prometí ___ / cumplí ___”.",
       "categoria": "autoconfianza",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0141",
@@ -1269,7 +1269,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Pregunta al cansancio: ¿qué he sostenido de más?",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0142",
@@ -1278,7 +1278,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una acción saludable aunque no apetezca.",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0143",
@@ -1287,7 +1287,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Pospón decisiones definitivas 12 horas.",
       "categoria": "autocuidado",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0144",
@@ -1296,7 +1296,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detén una tarea cuando el rendimiento cae.",
       "categoria": "autorregulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0145",
@@ -1305,7 +1305,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Escribe dos líneas: “Lo que siento” y “Lo que haré que me acerque a mis valores”.",
       "categoria": "claridad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0146",
@@ -1323,7 +1323,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Define una acción pequeña repetible, independientemente del ánimo.",
       "categoria": "coherencia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0148",
@@ -1332,7 +1332,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Redacta una frase de autocuidado realista: “Hoy puedo con X; lo demás lo retomo mañana”.",
       "categoria": "compasion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0149",
@@ -1341,7 +1341,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Baja ritmo 10% y mantén la conducta; no la abandones.",
       "categoria": "constancia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0150",
@@ -1350,7 +1350,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Define tu “paso pequeño” de hoy y hazlo antes de las 14:00.",
       "categoria": "constancia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0151",
@@ -1359,7 +1359,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nota hoy una imagen tuya antigua (foto, recuerdo) y pregúntate: “¿quién la mira ahora?”. No respondas.",
       "categoria": "continuidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); resonancia con self-as-context (ACT)"
     },
     {
       "id": "TAO_0152",
@@ -1368,7 +1368,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nota hoy un olvido (nombre, tarea) y comprueba: “¿sigo aquí?”. Una respiración.",
       "categoria": "continuidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); resonancia con self-as-context (ACT)"
     },
     {
       "id": "TAO_0153",
@@ -1377,7 +1377,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Suelta una revisión innecesaria (notificación, chequeo, reassurance) una vez.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0154",
@@ -1386,7 +1386,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Introduce una variación pequeña en una rutina.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0155",
@@ -1395,7 +1395,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa la urgencia de luchar y elige una acción pequeña con valores.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0156",
@@ -1404,7 +1404,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz conducta útil aunque el “clima” interno sea malo (1 paso).",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0157",
@@ -1413,7 +1413,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta una supresión y suelta el esfuerzo por 20 segundos.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0158",
@@ -1422,7 +1422,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En vez de apagar señales, pregunta: “¿qué acción útil puedo hacer ahora?”",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0159",
@@ -1431,7 +1431,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Suelta “la cuerda” hoy: identifica una pelea mental y no respondas.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0160",
@@ -1440,7 +1440,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja de debatir y vuelve a una acción: un mensaje, un paso, un gesto.",
       "categoria": "control",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0161",
@@ -1449,7 +1449,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Produce un borrador rápido sin corregir.",
       "categoria": "creatividad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0162",
@@ -1458,7 +1458,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Registra una señal corporal leve y ajústale respuesta hoy.",
       "categoria": "cuerpo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0163",
@@ -1530,7 +1530,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Anota un deseo actual y responde: ¿qué necesidad concreta señala?",
       "categoria": "deseo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0171",
@@ -1539,7 +1539,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reformula una auto-crítica en instrucción.",
       "categoria": "dialogo_interno",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0172",
@@ -1548,7 +1548,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una repetición pequeña hoy, aunque ya la hiciste ayer.",
       "categoria": "direccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0173",
@@ -1557,7 +1557,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una acción por valor aunque tu motivación esté en cero.",
       "categoria": "direccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0174",
@@ -1566,7 +1566,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Revisa tu dirección antes de acelerar: ¿esto sirve a tu valor?",
       "categoria": "direccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0175",
@@ -1575,7 +1575,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cambia el método, no la dirección: busca una alternativa viable.",
       "categoria": "direccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0176",
@@ -1584,7 +1584,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Verifica si hay peligro real presente.",
       "categoria": "discernimiento",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0177",
@@ -1602,7 +1602,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Trata tu señal como “alarma”: verifica con hechos antes de actuar.",
       "categoria": "discriminacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0179",
@@ -1611,7 +1611,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una verificación externa mínima antes de cambiar tus planes.",
       "categoria": "discriminacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0180",
@@ -1620,7 +1620,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra una pérdida y escribe una manera concreta en que hoy vive contigo.",
       "categoria": "duelo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); resonancia con el modelo dual de duelo (Stroebe & Schut)"
     },
     {
       "id": "TAO_0181",
@@ -1629,7 +1629,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Visualiza el evento doloroso y di en voz alta: 'Esto no cambiará, y decido soltar el intento de que sea distinto'.",
       "categoria": "duelo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0182",
@@ -1638,7 +1638,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Acepta un costo pequeño hoy por mantener tu rumbo.",
       "categoria": "eleccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0183",
@@ -1647,7 +1647,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Di que sí a una cosa y di que no a otra, explícitamente, hoy.",
       "categoria": "eleccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0184",
@@ -1656,7 +1656,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra un costo que aceptarás hoy por algo que te importa.",
       "categoria": "eleccion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0185",
@@ -1665,7 +1665,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige hoy un descanso breve (10 min) sin pantalla y sin culpa. Marca en el calendario cuándo lo harás.",
       "categoria": "energia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0186",
@@ -1674,7 +1674,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Formula una esperanza compatible con los hechos.",
       "categoria": "esperanza",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0187",
@@ -1683,7 +1683,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige hoy un asunto evitado y míralo 30 segundos (una frase escrita, un número, una fecha). Solo mirar.",
       "categoria": "evitacion_experiencial",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0188",
@@ -1692,7 +1692,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Dale 20 segundos de atención al dolor sin juicio y luego continúa.",
       "categoria": "evitacion_experiencial",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0189",
@@ -1701,7 +1701,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reduce lucha 1%: deja de “arreglar” la emoción por 30 segundos.",
       "categoria": "evitacion_experiencial",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0190",
@@ -1710,7 +1710,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz lo contrario al impulso: pausa, respira, y mueve solo un pie (un paso mínimo).",
       "categoria": "evitacion_experiencial",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0191",
@@ -1719,7 +1719,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Identifica una frase de protesta (“no debería…”). Sustitúyela por “y aun así…”. Luego actúa 1 paso.",
       "categoria": "flexibilidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0192",
@@ -1728,7 +1728,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una repetición mínima de un hábito (1 minuto) en lugar de una sesión larga.",
       "categoria": "habitos",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0193",
@@ -1755,7 +1755,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta una comparación automática y redirige la pregunta a: ¿qué me toca hoy a mí?",
       "categoria": "identidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0196",
@@ -1782,7 +1782,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Define qué evidencia mínima necesitas para una decisión (2 datos). Tómala con eso, sin buscar el dato perfecto.",
       "categoria": "incertidumbre",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0199",
@@ -1791,7 +1791,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Identifica una situación confusa y formula una sola frase honesta: “Aún no sé, y puedo quedarme aquí”.",
       "categoria": "incertidumbre",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0200",
@@ -1800,7 +1800,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sustituye un juicio por una descripción.",
       "categoria": "lenguaje",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0201",
@@ -1809,7 +1809,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Describe un objeto en palabras y luego obsérvalo en silencio. Nota la diferencia.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Alfred Korzybski, Science and Sanity (1933), cap. II («map is not the territory»); trad. esp. Ciencia y cordura"
     },
     {
       "id": "TAO_0202",
@@ -1818,7 +1818,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Da una negativa breve sin argumento extra.",
       "categoria": "limites",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0203",
@@ -1827,7 +1827,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Busca la grieta en lugar del obstáculo.",
       "categoria": "no_saber",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Zhuangzi, cap. 3 (养生主): «庖丁解牛»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0204",
@@ -1836,7 +1836,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cambia “¿por qué soy así?” por “¿qué me está importando aquí?” y actúa desde eso.",
       "categoria": "no_saber",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0205",
@@ -1845,7 +1845,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un hueco en tu agenda o en tu espacio y no lo llenes. Nota qué ocurre.",
       "categoria": "no_saber",
       "linaje": "contemporaneo",
-      "nota_editorial": ""
+      "nota_editorial": "Tao Te Ching, cap. 11: «三十辐共一毂»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0206",
@@ -1854,7 +1854,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Encuentra tu “eje” hoy: una acción mínima repetible aunque todo cambie.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0207",
@@ -1863,7 +1863,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa un impulso 10 segundos sin actuarlo.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0208",
@@ -1872,7 +1872,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una acción valiosa sin explicar por qué.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0209",
@@ -1881,7 +1881,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja pasar una emoción sin guardarla como explicación de ti.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0210",
@@ -1890,7 +1890,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Vuelve al “faro”: una respiración y un acto pequeño con dirección.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0211",
@@ -1899,7 +1899,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Durante 30 segundos, nota pensamientos y sensaciones como “figuras” y tú como “fondo”. No comentes.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0212",
@@ -1908,7 +1908,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Crea intervalo: 1 inhalación antes de responder a un impulso.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0213",
@@ -1917,7 +1917,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja que una emoción fuerte esté 15 segundos sin corregirla.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0214",
@@ -1926,7 +1926,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una etiqueta sobre ti (“soy ansioso”, “soy torpe”) y sepárala: “hay una historia de que soy ___”. Una frase.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0215",
@@ -1935,7 +1935,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento en que culpas al entorno de tu dirección. Escribe una acción que dependa solo de ti.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0216",
@@ -1944,7 +1944,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cambia lo que haces sin exigir cambiar lo que sientes primero.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0217",
@@ -1953,7 +1953,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sostén una emoción 20 segundos sin contar una historia sobre ella.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0218",
@@ -1962,7 +1962,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa sin calificar: reemplaza “bien/mal” por “presente”.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0219",
@@ -1971,7 +1971,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sostén una emoción sin explicar: solo nota y continúa.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0220",
@@ -1980,7 +1980,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Distingue: “contenido” vs “espacio donde ocurre” (una vez hoy).",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0221",
@@ -1989,7 +1989,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un pensamiento difícil y míralo como “paisaje”. Nota que tú sigues ahí. Una respiración.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0222",
@@ -1998,7 +1998,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige hoy una acción por valor, no por tu estado interno.",
       "categoria": "observador",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0223",
@@ -2016,7 +2016,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sostén 2 minutos más aunque no se sienta bien.",
       "categoria": "persistencia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0225",
@@ -2025,7 +2025,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando dudes, ejecuta el paso mínimo en vez de discutirlo.",
       "categoria": "persistencia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0226",
@@ -2034,7 +2034,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una tarea que no harás hoy.",
       "categoria": "priorizacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0227",
@@ -2043,7 +2043,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Pon nombre a la emoción dominante y agrega una frase funcional: “Puedo sostener esto y hacer un paso pequeño”.",
       "categoria": "regulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0228",
@@ -2052,7 +2052,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando surja una emoción intensa, espera 90 segundos antes de responder.",
       "categoria": "regulacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0229",
@@ -2061,7 +2061,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Identifica qué necesidad aparece detrás de un conflicto reciente.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0230",
@@ -2079,7 +2079,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reconoce una relación que cambió de forma y ajusta expectativas.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0232",
@@ -2088,7 +2088,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Ofrece 5 minutos de atención indivisa.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0233",
@@ -2097,7 +2097,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nota una relación (persona, tarea, emoción) y ajusta la forma de estar con ella.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0234",
@@ -2115,7 +2115,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Ante un error, formula una acción reparadora concreta sin adjetivos sobre ti.",
       "categoria": "responsabilidad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0236",
@@ -2124,7 +2124,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz 20 minutos sin input: sin música, sin redes, sin noticias. Solo una actividad simple.",
       "categoria": "saturacion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0237",
@@ -2133,7 +2133,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta una frase identitaria (“yo soy…”). Cámbiala por “mi mente dice que soy…” y observa la diferencia.",
       "categoria": "self_como_contexto",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); resonancia con self-as-context (ACT)"
     },
     {
       "id": "TAO_0238",
@@ -2142,7 +2142,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Lidera o enseña sin dar instrucciones verbales.",
       "categoria": "silencio",
       "linaje": "contemporaneo",
-      "nota_editorial": "Clásico."
+      "nota_editorial": "Analectas 17.19 (阳货): «天何言哉？四时行焉，百物生焉»; trad. Suárez Girard."
     },
     {
       "id": "TAO_0239",
@@ -2178,7 +2178,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra hoy una envidia concreta y traduce: “admiro ___ en ___”. Una frase.",
       "categoria": "sombra",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0243",
@@ -2187,7 +2187,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando juzgues duramente a alguien hoy, pregúntate: '¿En qué contexto yo actúo o siento algo similar?'.",
       "categoria": "sombra",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0244",
@@ -2196,7 +2196,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz hoy una acción que alivie mañana.",
       "categoria": "tiempo",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0245",
@@ -2205,7 +2205,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Tolera una incomodidad sin corregirla.",
       "categoria": "tolerancia",
       "linaje": "contemporaneo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0246",
@@ -2466,7 +2466,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Escribe: “Esto es lo que hay”. Debajo, lista dos acciones posibles dentro de esas condiciones.",
       "categoria": "aceptacion",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); de inspiración estoica (cf. Epicteto, Enquiridión 8)"
     },
     {
       "id": "TAO_0275",
@@ -2475,7 +2475,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Revisa un error reciente y extrae una sola regla funcional.",
       "categoria": "aprendizaje",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0276",
@@ -2484,7 +2484,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una sola tarea (leer, comer, escuchar) y realízala en modo 'mono-tarea' radical. Si la mente se va, tráela de vuelta sin juicio.",
       "categoria": "atencion",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0277",
@@ -2493,7 +2493,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Antes de decidir algo importante hoy, aplica una pausa de 60 segundos y formula la pregunta: “¿Qué estoy evitando sentir?”",
       "categoria": "claridad",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); cf. Séneca, De brevitate vitae (tema, no cita)"
     },
     {
       "id": "TAO_0278",
@@ -2502,7 +2502,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz hoy lo mismo que ayer, sin mejorar.",
       "categoria": "constancia",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0279",
@@ -2511,7 +2511,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige un área donde sueles controlar (mensajes, rutinas). Hoy deja 10% sin optimizar y observa que no colapsa el mundo.",
       "categoria": "control",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0280",
@@ -2520,7 +2520,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Retrasa una respuesta urgente 10 minutos.",
       "categoria": "discernimiento",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0281",
@@ -2529,7 +2529,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Recibe elogios y críticas con la misma distancia.",
       "categoria": "ego",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); cf. Marco Aurelio, Meditaciones (tema)"
     },
     {
       "id": "TAO_0282",
@@ -2538,7 +2538,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una acción como si el tiempo fuera limitado hoy.",
       "categoria": "finitud",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0283",
@@ -2547,7 +2547,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Di una verdad necesaria con respeto.",
       "categoria": "honestidad",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0284",
@@ -2556,7 +2556,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Define un límite claro para hoy (tiempo, energía) y respétalo deliberadamente.",
       "categoria": "limites",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0285",
@@ -2565,7 +2565,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Define qué estás esperando y por qué.",
       "categoria": "paciencia",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0286",
@@ -2574,7 +2574,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Distingue: 'esto ocurrió en mi cuerpo' vs 'esto decido pensar ahora'.",
       "categoria": "responsabilidad",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema estoico-CBT (no cita literal)"
     },
     {
       "id": "TAO_0287",
@@ -2583,7 +2583,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una tarea y hazla 20% más lenta de lo habitual.",
       "categoria": "tiempo",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0288",
@@ -2592,7 +2592,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra el valor que guía una decisión.",
       "categoria": "valores",
       "linaje": "estoicismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0289",
@@ -2601,7 +2601,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Di: “No lo entiendo, y sigo aquí”.",
       "categoria": "aceptacion",
       "linaje": "existencialismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0290",
@@ -2610,7 +2610,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra explícitamente a qué renuncias hoy.",
       "categoria": "eleccion",
       "linaje": "existencialismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0291",
@@ -2619,7 +2619,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Pasa 15 minutos contigo sin estímulos externos.",
       "categoria": "relacion_consigo",
       "linaje": "existencialismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0292",
@@ -2628,7 +2628,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Espera dos segundos antes de responder en una conversación.",
       "categoria": "comunicacion",
       "linaje": "humanista",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Paráfrasis de Stephen Covey, The 7 Habits of Highly Effective People (1989), hábito 5: «Most people do not listen with the intent to understand; they listen with the intent to reply»; trad. esp. Paidós"
     },
     {
       "id": "TAO_0293",
@@ -2655,7 +2655,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Escribe la condición que te impones (“hasta que pase X…”). Luego: “Puedo vivir hoy aunque esto siga aquí”.",
       "categoria": "aceptacion",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema ACT/aceptación"
     },
     {
       "id": "TAO_0296",
@@ -2726,7 +2726,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La corriente se lleva lo que se suelta. La frase apunta a la atención que deja pasar sin retener.",
       "practica_hoy": "Durante 2 minutos, nota cada pensamiento como “hoja” y déjalo pasar. Cuenta cuántas pasan sin engancharte.",
       "categoria": "atencion",
-      "linaje": "mindfulness"
+      "linaje": "mindfulness",
+      "nota_editorial": "Ejercicio ACT «Leaves on a Stream» (defusión); Hayes, Strosahl & Wilson, Acceptance and Commitment Therapy (1999/2012); Harris, ACT Made Simple (2009). Trad. esp.: Terapia de aceptación y compromiso (Desclée de Brouwer); La trampa de la felicidad (Booket)"
     },
     {
       "id": "TAO_0313",
@@ -2744,7 +2745,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Durante una conversación, guarda el teléfono y nota 3 detalles sensoriales del otro (tono, pausa, mirada) sin analizarlos.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0322",
@@ -2753,7 +2754,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa algo común durante 2 minutos.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0323",
@@ -2807,7 +2808,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Antes de decidir algo, revisa tres sensaciones corporales y considérelas datos.",
       "categoria": "cuerpo",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0350",
@@ -2824,7 +2825,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Conduce hacia tus valores sin dejar que los pasajeros ruidosos tomen el volante.",
       "practica_hoy": "Nota a un pasajero y sigue conduciendo.",
       "categoria": "defusion",
-      "linaje": "mindfulness"
+      "linaje": "mindfulness",
+      "nota_editorial": "Ejercicio ACT «Passengers on the Bus» (defusión/aceptación); Hayes et al. (1999/2012); Harris (2009). Trad. esp. citadas"
     },
     {
       "id": "TAO_0352",
@@ -2851,7 +2853,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz un escaneo corporal de 90 segundos. Solo etiqueta sensaciones (tensión, calor, pulso) sin corregirlas.",
       "categoria": "momento_presente",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0355",
@@ -2860,7 +2862,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento en que “falles” en algo (una práctica, un hábito) y anota: “volví”. No “fracasé”.",
       "categoria": "resiliencia",
       "linaje": "mindfulness",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0356",
@@ -2878,7 +2880,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Devuelve una responsabilidad pequeña.",
       "categoria": "limites",
       "linaje": "sistemica",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0358",
@@ -2887,7 +2889,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Ajusta una expectativa a lo observable.",
       "categoria": "relaciones",
       "linaje": "sistemica",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0359",
@@ -2896,7 +2898,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En un desacuerdo menor, practica una frase: “Puedo estar equivocado; quiero entender tu punto”.",
       "categoria": "humildad",
       "linaje": "sufismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); de inspiración sufí (no cita de Rumi)"
     },
     {
       "id": "TAO_0360",
@@ -2968,7 +2970,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz tu trabajo bien sin pensar en quién lo verá.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Convergencia."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0368",
@@ -3067,7 +3069,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz algo ‘inútil’ 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea.",
       "categoria": "saturacion",
       "linaje": "taoismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Zhuangzi, cap. 1 (逍遥游) y cap. 4 (人间世): «是不材之木也，无所可用，故能若是之寿»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0379",
@@ -3076,7 +3078,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elimina hoy una decisión innecesaria (qué comer, qué vestir) eligiendo la opción simple. Una vez.",
       "categoria": "simplicidad",
       "linaje": "taoismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0380",
@@ -3094,7 +3096,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige un problema y haz solo el siguiente paso mínimo verificable. Luego detente y observa qué cambia sin intervenir.",
       "categoria": "wu_wei",
       "linaje": "taoismo",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema wu-wei"
     },
     {
       "id": "TAO_0391",
@@ -3139,7 +3141,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Camina 3 minutos sin audio y sin lectura: solo andar.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0424",
@@ -3157,7 +3159,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Interrumpe tu patrón: cambia de postura y vuelve al presente.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); alusión al grito (喝) de Linji, Linji lu"
     },
     {
       "id": "TAO_0426",
@@ -3166,7 +3168,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Camina 2 minutos en silencio y deja que la mente “se acomode” sola.",
       "categoria": "accion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0427",
@@ -3175,7 +3177,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Permite una emoción difícil 30 segundos sin distraerte.",
       "categoria": "aceptacion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0428",
@@ -3184,7 +3186,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una micro-evitación y haz 30 segundos de contacto con ella.",
       "categoria": "aceptacion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0429",
@@ -3193,7 +3195,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta la palabra “eso” en tu día: ahí suelta un 5%.",
       "categoria": "apego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0430",
@@ -3202,7 +3204,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Suelta una micro-retención hoy (una pestaña abierta, una respuesta pendiente).",
       "categoria": "apego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0431",
@@ -3211,7 +3213,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Aplica una idea hoy en algo pequeño, sin coleccionarla.",
       "categoria": "aprendizaje",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0432",
@@ -3220,7 +3222,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una regla mental y déjala en pausa por el resto del día.",
       "categoria": "aprendizaje",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0433",
@@ -3310,7 +3312,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una actividad cotidiana sin multitarea por 3 minutos.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Tradición chan; cf. 大珠慧海 (Dazhu Huihai), 景德传灯录 (Jingde Chuandeng Lu, vol. 6): «饥来吃饭，困来即眠»; también Linji lu"
     },
     {
       "id": "TAO_0443",
@@ -3319,7 +3321,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Por una hora, reemplaza comparación por descripción (“esto es…”).",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0444",
@@ -3400,7 +3402,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Mira hoy un objeto simple (una planta, una taza) durante 60 segundos sin convertirlo en idea. Solo notar.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Koan de 赵州从谂 (Zhaozhou Congshen): «庭前柏树子»; recogido en Biyan Lu (Blue Cliff Record) y Congrong Lu; verificar numeración de caso"
     },
     {
       "id": "TAO_0453",
@@ -3508,7 +3510,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Escucha a alguien 60 segundos sin preparar respuesta.",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0465",
@@ -3517,7 +3519,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Si estás cansado, ajusta tu día a una acción mínima y descansa sin culpa.",
       "categoria": "autorregulacion",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Tradición chan; cf. Dazhu Huihai, Jingde Chuandeng Lu vol. 6: «困来即眠»"
     },
     {
       "id": "TAO_0466",
@@ -3526,7 +3528,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz tu práctica sin evaluación: solo cumple y suelta el resultado.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0467",
@@ -3535,7 +3537,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reduce la práctica a su versión mínima viable y repítela hoy.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0468",
@@ -3544,7 +3546,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Mantén hoy un hábito mínimo (2 minutos) aunque no tengas ganas.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0469",
@@ -3553,7 +3555,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una “tarea diaria” y hazla con cuidado deliberado.",
       "categoria": "constancia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Tradición chan; cf. 百丈怀海 (Baizhang Huaihai): «一日不作，一日不食», Jingde Chuandeng Lu / Wudeng Huiyuan"
     },
     {
       "id": "TAO_0470",
@@ -3562,7 +3564,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Permite una pequeña perturbación sin “arreglarla” de inmediato.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0471",
@@ -3571,7 +3573,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja de buscar calma y vuelve a una tarea breve y concreta (2 minutos).",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0472",
@@ -3580,7 +3582,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Quédate 30 segundos con una incomodidad sin buscar distraerte.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0473",
@@ -3589,7 +3591,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja de buscar “calma” por 2 minutos y vuelve a una tarea simple.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0474",
@@ -3598,7 +3600,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Suelta un microcontrol (p. ej., “que salga perfecto”) y vuelve a una tarea.",
       "categoria": "control",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0475",
@@ -3607,7 +3609,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "No abras el segundo ciclo de pensamiento: vuelve a una acción concreta.",
       "categoria": "dialogo_interno",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0476",
@@ -3616,7 +3618,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para anclar tu atención en el presente.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Sutra de la Plataforma, cap. 1 (行由品), episodio del estandarte; trad. Villalba"
     },
     {
       "id": "TAO_0477",
@@ -3625,7 +3627,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando no haya claridad, no respondas: respira y espera 10 segundos.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0478",
@@ -3634,7 +3636,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz primero (un paso mínimo), explica después si hace falta.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0479",
@@ -3643,7 +3645,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Anota una idea y aplícala en un acto; no la guardes como trofeo.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0480",
@@ -3652,7 +3654,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa si tu calma es evitación: nombra qué estás dejando fuera.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0481",
@@ -3661,7 +3663,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Localiza si peleas con un hecho o con una interpretación; actúa sobre el hecho.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0482",
@@ -3670,7 +3672,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Usa una instrucción y luego déjala: vuelve a la experiencia directa.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Metáfora chan «指月»; cf. Sutra de Lankavatara; ver TAO_0061"
     },
     {
       "id": "TAO_0483",
@@ -3679,7 +3681,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Identifica una insistencia y prueba una alternativa mínima.",
       "categoria": "discernimiento",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0484",
@@ -3688,7 +3690,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz lo ordinario con precisión: una tarea simple sin buscar “señales”.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0485",
@@ -3697,7 +3699,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En una conversación, responde una vez sin justificarte de más.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0486",
@@ -3706,7 +3708,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, te invito a soltar deliberadamente la tensión en tus hombros y mandíbula notando cómo cambia tu experiencia interna al no luchar.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Alusión a 丹霞天然 (Danxia Tianran) quemando la estatua de Buda; 景德传灯录 (Jingde Chuandeng Lu) / 五灯会元 (Wudeng Huiyuan)"
     },
     {
       "id": "TAO_0487",
@@ -3715,7 +3717,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reemplaza hoy un “ya sé” por “voy a observar qué pasa”.",
       "categoria": "ego",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0488",
@@ -3733,7 +3735,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una práctica (respirar, caminar, comer). Hazla 3 minutos sin explicar nada en tu cabeza.",
       "categoria": "experiencia_directa",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Variación del tema «指月»; Sutra de Lankavatara; ver TAO_0061"
     },
     {
       "id": "TAO_0490",
@@ -3742,7 +3744,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Por hoy, sustituye una opinión por una pregunta operativa.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0491",
@@ -3751,7 +3753,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una práctica y hazla sin medirla ni registrarla hoy.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0492",
@@ -3760,7 +3762,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Afloja una formalidad innecesaria hoy (sin faltar al respeto).",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0493",
@@ -3769,7 +3771,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Busca el punto de rigidez y suéltalo: reformula tu pregunta en simple.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0494",
@@ -3778,7 +3780,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja una pequeña imperfección intencional (una tarea sin pulir). Usa el malestar como entrenamiento.",
       "categoria": "flexibilidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0495",
@@ -3787,7 +3789,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Sustituye una etiqueta fija por una descripción temporal.",
       "categoria": "identidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0496",
@@ -3796,7 +3798,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa 60 segundos sin comentar mentalmente lo observado.",
       "categoria": "identidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0497",
@@ -3805,7 +3807,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja que tu atención suba y baje sin “corregirla” por 2 minutos.",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0498",
@@ -3814,7 +3816,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En las próximas horas, procura hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas notando cómo cambia tu experiencia interna al no luchar.",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0499",
@@ -3823,7 +3825,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja que tu estado cambie sin corregirlo por 2 minutos.",
       "categoria": "impermanencia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0500",
@@ -3832,7 +3834,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Corta una explicación interna y regresa a la sensación corporal por 20 segundos.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); posible alusión al motivo de la transmisión de la lámpara (传灯)"
     },
     {
       "id": "TAO_0501",
@@ -3841,7 +3843,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando aparezca una explicación, vuelve a una acción simple (respirar, caminar).",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0502",
@@ -3850,7 +3852,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Describe una emoción sin etiquetarla (sensación, temperatura, tensión).",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Eco de Tao Te Ching, cap. 1: «道可道，非常道»; en marco zen, creación original"
     },
     {
       "id": "TAO_0503",
@@ -3859,7 +3861,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "A lo largo del día, intenta reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para anclar tu atención en el presente.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0504",
@@ -3868,7 +3870,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una idealización (persona, objeto, estado) y nómbrala: “idealización”. Una vez.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Wumenguan (无门关), caso 21: «云门屎橛»; trad. Villalba"
     },
     {
       "id": "TAO_0505",
@@ -3877,7 +3879,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En un momento de pausa hoy, busca aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar.",
       "categoria": "lenguaje_y_realidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Wumenguan, caso 1: «赵州狗子»; trad. Villalba"
     },
     {
       "id": "TAO_0540",
@@ -3886,7 +3888,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Bebe agua o té con atención completa durante 30 segundos.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Tradición chan; cf. 赵州 «吃茶去» (Zhaozhou: «ve a tomar té»), recogido en Biyan Lu y Congrong Lu"
     },
     {
       "id": "TAO_0541",
@@ -3895,7 +3897,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuida una necesidad básica (comer/agua/sueño) antes de “resolver” lo demás.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Variación de Zhaozhou; creación original (sin fuente)"
     },
     {
       "id": "TAO_0542",
@@ -3904,7 +3906,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Durante una tarea ordinaria hoy (fregar, caminar), nota tres veces: “esto es”. Sin comentario.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Wumenguan, caso 19: «南泉平常心是道»; trad. Villalba"
     },
     {
       "id": "TAO_0543",
@@ -3913,7 +3915,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra “aquí” con un gesto: pies en el suelo o, si no es accesible, manos sobre el regazo. Una acción simple.",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0544",
@@ -3922,7 +3924,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra un dato directo del presente sin explicación (p. ej., “hay frío”).",
       "categoria": "momento_presente",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); eco del motivo chan del frío/calor (洞山良价, Wudeng Huiyuan)"
     },
     {
       "id": "TAO_0555",
@@ -3931,7 +3933,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento en que marques “empezar” o “terminar” y sustitúyelo por “sigo”. Una vez.",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0556",
@@ -3940,7 +3942,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Transforma esta idea en acción al hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas rompiendo así el patrón del piloto automático.",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0557",
@@ -3949,7 +3951,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa dónde haces “yo vs. esto” y vuelve a describir sin oposición.",
       "categoria": "no_dualidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0558",
@@ -3958,7 +3960,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja una pregunta abierta hoy sin resolverla con explicación.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0559",
@@ -3967,7 +3969,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Transforma esta idea en acción al notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para cultivar una mente flexible y abierta.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0560",
@@ -3976,7 +3978,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Hoy, en una conversación, responde con un gesto o un silencio en lugar de una explicación. Una vez.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Wumenguan, caso 6: «世尊拈花» (el Buda muestra una flor); trad. Villalba"
     },
     {
       "id": "TAO_0561",
@@ -3985,7 +3987,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Cuando surja urgencia por “arreglar” algo, nómbralo: “búsqueda”. Respira 3 veces y vuelve a la tarea presente.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0562",
@@ -3994,7 +3996,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En las próximas horas, procura notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para anclar tu atención en el presente.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0563",
@@ -4003,7 +4005,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja un tema sin “cierre”: solo vuelve a practicar una vez más.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0564",
@@ -4012,7 +4014,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Durante 2 minutos, deja de formular y solo registra: vista, sonido, tacto.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0565",
@@ -4021,7 +4023,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En las próximas horas, procura notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar rompiendo así el patrón del piloto automático.",
       "categoria": "no_saber",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0566",
@@ -4030,7 +4032,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Transforma esta idea en acción al aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar.",
       "categoria": "paciencia",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0567",
@@ -4039,7 +4041,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una acción cotidiana (lavar platos, ordenar). Hazla como fin en sí mismo durante 5 minutos.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0568",
@@ -4048,7 +4050,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Lava un objeto cotidiano con atención plena, sin buscar “sentido” adicional.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Wumenguan, caso 7: «赵州洗钵盂»; trad. Villalba (misma fuente que TAO_0137 — verificar duplicado)"
     },
     {
       "id": "TAO_0569",
@@ -4057,7 +4059,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una acción y hazla con atención completa por 90 segundos.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0570",
@@ -4075,7 +4077,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Por 60 segundos, observa sin narrar: solo sensaciones.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0572",
@@ -4084,7 +4086,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una pausa de 5 segundos antes de contestar la próxima pregunta.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0573",
@@ -4093,7 +4095,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Deja una pregunta sin responder por hoy, sin llenarla con explicación.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema del «trueno del silencio» de Vimalakirti (维摩一默)"
     },
     {
       "id": "TAO_0574",
@@ -4102,7 +4104,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Permanece 2 minutos en silencio tras una emoción intensa antes de explicarla.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0575",
@@ -4111,7 +4113,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Permite una pausa antes de responder algo difícil.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0576",
@@ -4120,7 +4122,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "No agregues el “pero”: di una frase y termina.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0577",
@@ -4129,7 +4131,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Quédate 60 segundos con silencio interno: sin definir lo que pasa.",
       "categoria": "silencio",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0578",
@@ -4138,7 +4140,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reduce tu lista a un solo siguiente paso verificable y ejecútalo.",
       "categoria": "simplicidad",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0579",
@@ -4147,7 +4149,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una cosa bien y detente: sin añadir “mejoras” innecesarias.",
       "categoria": "wu_wei",
       "linaje": "zen",
-      "nota_editorial": "Inspiración contemplativa."
+      "nota_editorial": "Creación original (sin fuente); tema wu-wei"
     }
   ]
 };
