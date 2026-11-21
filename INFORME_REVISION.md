@@ -1,3 +1,5 @@
+> **Nota:** este informe es anterior a la aplicación de `docs/REESCRITURAS_CORREGIDAS.md`. Estado actual: 0 errores, 290 advertencias (242 notas editoriales genéricas, 46 categorías sinónimas, 2 casi-duplicadas).
+
 # Informe de revisión del dataset taoísta
 
 Generado: 2026-11-21 · Rama `claude/academic-inclusive-dataset-96xamn`

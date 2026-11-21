@@ -56,6 +56,7 @@ const MARCAS_ACADEMICAS = [
   'analectas', 'enquiridión', 'enchiridion', 'meditaciones', 'discursos',
   'discurso', 'epistulae', 'de ira', 'de brevitate', 'hexagrama', 'capítulo',
   'shambhala', 'traducción', 'adaptado de', 'basado en', 'lectura de',
+  'lectura no literal', 'stratagems', 'chuandeng', 'genjōkōan', 'genjokoan', 'yijing',
 ];
 
 const BOILERPLATE = [
@@ -124,7 +125,7 @@ const SOMATICO_EXCLUYENTE = [
   /planta de tus pies/i, /hombros abajo/i, /mand[ií]bula suelta/i,
   /siente tus pies firmes/i, /pies en el suelo/i,
 ];
-const SOMATICO_INCLUSIVO = /punto de apoyo|o tus manos|el asiento|si te resulta|donde tu cuerpo|o donde/i;
+const SOMATICO_INCLUSIVO = /punto de apoyo|o tus manos|el asiento|si te resulta|donde tu cuerpo|o donde|si no es accesible|regazo/i;
 
 const LINAJES_FALLBACK = [
   'zen', 'taoismo', 'budismo', 'sufismo', 'estoicismo', 'mindfulness',
@@ -157,12 +158,12 @@ const SINONIMOS_CATEGORIA = [
 
 // Coherencia proceso ACT ↔ práctica.
 const ACT_KEYWORDS = {
-  defusion: ['gracias, mente', 'estoy teniendo el pensamiento', 'etiqueta', 'nota', 'radio', 'hoja', 'comentario', 'observa'],
-  accion_comprometida: ['haz', 'da un paso', 'envía', 'llama', 'escribe', 'actúa', 'repetición', 'elige', 'empieza'],
-  valores: ['valor', 'dirección', 'rumbo', 'elige', 'brújula'],
-  yo_contexto: ['observa', 'nota', 'espacio', 'testigo', 'sostén', 'contexto', 'ola', 'nube'],
-  aceptacion: ['permite', 'deja', 'nombra', 'sostén', 'invita', 'acepta'],
-  momento_presente: ['nota', 'observa', 'escucha', 'sensa', 'registra', 'aquí'],
+  defusion: ['gracias, mente', 'estoy teniendo el pensamiento', 'etiqueta', 'nota', 'radio', 'hoja', 'comentario', 'observa', 'estoy notando', 'nombra', 'pasajero'],
+  accion_comprometida: ['haz', 'da un paso', 'da hoy un paso', 'paso', 'envía', 'llama', 'escribe', 'actúa', 'repetición', 'elige', 'empieza', 'ejecuta'],
+  valores: ['valor', 'dirección', 'rumbo', 'elige', 'brújula', 'acción', 'paso', 'miedo', 'valdría', 'claridad'],
+  yo_contexto: ['observa', 'nota', 'espacio', 'testigo', 'sostén', 'contexto', 'ola', 'nube', 'mira', 'repite', 'recuérdate', 'visualiza', 'descríbelo', 'respiración', 'quién', 'dónde', 'pasa en mí', 'deja que', 'tablero'],
+  aceptacion: ['permite', 'deja', 'nombra', 'sostén', 'invita', 'acepta', 'respira', 'esto es', 'puedo vivir', 'no lo entiendo', 'no busques', 'contacto', 'escribe', 'lista', 'localiza', 'adelante', 'sin intentar'],
+  momento_presente: ['nota', 'observa', 'escucha', 'sensa', 'registra', 'aquí', 'bebe', 'cuida', 'nombra', 'atención', 'gesto', 'camina', 'mira'],
 };
 
 const CAMPOS_REQ = ['id', 'frase', 'interpretacion', 'practica_hoy', 'categoria', 'linaje', 'nota_editorial'];
