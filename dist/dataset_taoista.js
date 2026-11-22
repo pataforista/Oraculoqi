@@ -212,8 +212,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0024",
       "frase": "Alejar la leña de debajo del caldero.",
-      "interpretacion": "No luches contra la fuerza del enemigo (o la emoción). Corta su fuente de energía. Sin leña, no hay fuego.",
-      "practica_hoy": "Identifica qué alimenta tu estrés y córtalo.",
+      "interpretacion": "La estratagema no ataca el fuego: quita la leña. Ante un malestar que se repite, a veces sirve más retirar lo que lo alimenta que pelear con él cuando ya hierve.",
+      "practica_hoy": "Elige una tensión que vuelve a menudo y escribe una cosa concreta que la alimenta (una hora, un hábito, una conversación). Pregúntate: ¿cuál de esas leñas puedo apartar esta semana?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 19"
@@ -230,8 +230,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0026",
       "frase": "Antes de la iluminación: cortar leña, llevar agua. Después: lo mismo.",
-      "interpretacion": "La comprensión no cambia la tarea.",
-      "practica_hoy": "Haz lo cotidiano con atención.",
+      "interpretacion": "La tarea no cambia; cambia quien la hace. La comprensión no saca de la vida cotidiana: devuelve a ella con otra mirada.",
+      "practica_hoy": "Haz una tarea repetida de hoy (fregar, caminar al trabajo) prestando atención a un detalle que nunca notas. Pregúntate: ¿qué cambiaría si esto fuera ya la práctica y no un trámite?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Tradición chan; paráfrasis moderna de 青原惟信 (Qingyuan Weixin), 五灯会元 (Wudeng Huiyuan, vol. 17), secuencia «montañas son montañas»; la versión «cortar leña, llevar agua» es paráfrasis angloamericana del s. XX"
@@ -239,8 +239,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0027",
       "frase": "Antes de que llueva, asegura la ventana.",
-      "interpretacion": "Prever es mejor que lamentar. Arregla el problema antes de que sea un problema.",
-      "practica_hoy": "Atiende un detalle preventivo hoy.",
+      "interpretacion": "Prevenir es cuidar a la persona que serás mañana. El gesto pequeño a tiempo ahorra la urgencia después.",
+      "practica_hoy": "Escribe algo que ya sabes que te va a complicar la semana y haz hoy el primer paso para prevenirlo (5 minutos). Pregúntate: ¿qué suelo dejar para cuando ya llueve?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Sabiduría popular."
@@ -257,8 +257,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0029",
       "frase": "Buscas al mulo mientras vas montado en el mulo.",
-      "interpretacion": "Buscas la paz o la felicidad fuera, cuando es lo que sostiene tu búsqueda. Ya estás sobre lo que buscas.",
-      "practica_hoy": "Cuando busques algo hoy, verifica si ya lo tienes.",
+      "interpretacion": "Foyan señala dos errores: buscar el mulo sin ver que lo montas, y, una vez visto, no querer bajarte. Lo que buscas puede estar operando ya en tu manera de buscar.",
+      "practica_hoy": "Nombra algo que persigues (calma, reconocimiento, claridad) y anota un momento de hoy en que ya estuvo presente aunque fuera poco. Pregúntate: ¿qué me impidió notarlo?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Foyan Qingyuan, tradición chan"
@@ -275,8 +275,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0031",
       "frase": "Cabalgar un buey buscando un buey.",
-      "interpretacion": "Buscas lo que ya tienes. Eres la consciencia buscando consciencia.",
-      "practica_hoy": "Deja de buscar lo que ya eres.",
+      "interpretacion": "En las Ilustraciones del Buey, la búsqueda empieza porque el buscador cree que algo le falta. El relato no desprecia la búsqueda: muestra que el camino también es aprender a ver lo que ya está.",
+      "practica_hoy": "Escribe en una frase qué buscas en esta etapa de tu vida. Debajo, una evidencia de que ya tienes una parte. Pregúntate: ¿la búsqueda me acerca o me impide ver?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Ilustraciones del Buey."
@@ -356,8 +356,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0040",
       "frase": "El Errante: Fuego sobre la Montaña.",
-      "interpretacion": "El fuego no se queda en la montaña; pasa. Eres un viajero en este mundo. No te apegues a los lugares ni a los roles.",
-      "practica_hoy": "Compórtate como un huésped amable en tu propia vida.",
+      "interpretacion": "El hexagrama del Errante describe a quien está de paso: el fuego en la montaña no se queda, avanza. Estar de paso pide prudencia, cortesía y no aferrarse a un lugar que no es propio.",
+      "practica_hoy": "Piensa en una situación donde hoy eres «de paso» (un trabajo nuevo, una casa ajena, una etapa). Pregúntate: ¿cómo quiero comportarme allí sabiendo que no es para siempre?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 56"
@@ -365,17 +365,17 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0041",
       "frase": "El Fénix descansa solo en el árbol Wutong.",
-      "interpretacion": "El espíritu noble es selectivo. No pongas tu atención ni tu energía en cualquier lugar vulgar.",
-      "practica_hoy": "Elige con cuidado dónde pones tu atención.",
+      "interpretacion": "En Zhuangzi, el ave noble solo se posa en el wutong y Huizi teme que quiera su cargo: lo que uno valora no es lo que codicia el otro. Elegir dónde posarse es una decisión sobre valores.",
+      "practica_hoy": "Revisa en qué gastaste tu atención ayer. Marca un lugar donde «te posaste» sin elegirlo. Pregúntate: ¿qué árbol elegiría hoy si fuera fiel a lo que valoro?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "El pájaro Peng."
+      "nota_editorial": "Zhuangzi, cap. 17 (秋水): el ave yuanchu solo se posa en el wutong"
     },
     {
       "id": "TAO_0042",
       "frase": "El agua fluye, la flor cae. Cada una a lo suyo.",
-      "interpretacion": "El universo tiene un orden espontáneo donde nada interfiere con nada. Tú haces tu parte, el mundo hace la suya.",
-      "practica_hoy": "Haz tu tarea y deja que el resultado caiga donde quiera.",
+      "interpretacion": "El agua y la flor siguen su naturaleza sin estorbarse. Hacer bien lo propio y soltar lo ajeno libera mucha energía que se gasta en controlar.",
+      "practica_hoy": "Haz una lista de dos columnas: «lo que me toca hoy» y «lo que no me toca». Dedica 10 minutos a la primera. Pregúntate: ¿en qué asunto ajeno estoy remando?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Koto."
@@ -446,8 +446,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0050",
       "frase": "El ejército excesivo se derrota a sí mismo.",
-      "interpretacion": "Demasiada preparación, demasiadas herramientas o demasiadas palabras estorban. La pesadez impide la maniobra.",
-      "practica_hoy": "Simplifica tu equipo o tus herramientas hoy.",
+      "interpretacion": "Un ejército demasiado grande se vuelve lento y difícil de abastecer. También los planes, las listas y las herramientas pesan cuando exceden lo que la tarea pide.",
+      "practica_hoy": "Elige un proyecto y quita una cosa que lo hace más pesado (una herramienta, un paso, una reunión). Pregúntate: ¿qué estoy acumulando por seguridad y no por necesidad?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Arte de la Guerra."
@@ -464,17 +464,17 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0052",
       "frase": "El espejo pulido no se mancha con el polvo.",
-      "interpretacion": "Si tu mente es clara, los pensamientos pasan sin pegarse.",
-      "practica_hoy": "Deja pasar un pensamiento 'sucio' sin limpiarlo.",
+      "interpretacion": "Es el verso de Shenxiu: limpiar el espejo cada día para que el polvo no se pose. Huineng le respondió que no hay espejo que limpiar. El verso no está equivocado: describe la práctica constante, y la respuesta, su límite.",
+      "practica_hoy": "Hoy practica algo con constancia (cinco minutos de quietud, ordenar la mesa) y nota cómo te sientes al hacerlo. Pregúntate: ¿lo hago para mejorarme o para estar presente?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Disputa del espejo."
+      "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台)"
     },
     {
       "id": "TAO_0053",
       "frase": "El ganso salvaje vuela gradualmente hacia la nube.",
-      "interpretacion": "El progreso real es lento, ordenado y paso a paso. No intentes saltar etapas.",
-      "practica_hoy": "Haz solo el siguiente paso lógico, nada más.",
+      "interpretacion": "El hexagrama del Desarrollo gradual muestra al ganso que avanza por etapas: orilla, roca, tierra alta. Cada etapa tiene su forma de estar; saltarlas suele costar más.",
+      "practica_hoy": "Escribe en qué etapa estás de algo que te importa (aprender, sanar, construir). Pregúntate: ¿qué pide esta etapa y no la siguiente? Haz un paso de esta etapa hoy.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 53 (Jian)"
@@ -563,8 +563,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0063",
       "frase": "El monje dejó de meditar porque no avanzaba. Entonces se sentó.",
-      "interpretacion": "La práctica real comienza cuando cesa la expectativa de ganancia.",
-      "practica_hoy": "Haz algo sin medir tu progreso.",
+      "interpretacion": "Mientras meditaba para conseguir algo, el monje no estaba sentado: estaba persiguiendo. La práctica de shikantaza es solo sentarse, sin meta añadida.",
+      "practica_hoy": "Siéntate 3 minutos sin objetivo: ni calmarte ni mejorar. Al terminar, anota una línea. Pregúntate: ¿qué cambió al no pedirle nada a este rato?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Zazen puro (Shikantaza)."
@@ -581,8 +581,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0065",
       "frase": "El monje preguntó: «¿Qué es el Tao?». El maestro levantó una piedra y la dejó caer.",
-      "interpretacion": "La realidad no responde con conceptos. Ocurre.",
-      "practica_hoy": "Observa un hecho sin interpretarlo.",
+      "interpretacion": "La piedra cae y no explica nada; ocurre. A veces la pregunta pide un concepto y la respuesta llega como un hecho simple que no necesita traducción.",
+      "practica_hoy": "Deja caer algo pequeño (una llave, una hoja) y observa el sonido y el movimiento sin nombrarlos. Pregúntate: ¿qué pregunta me hago hoy que quizá no necesita respuesta en palabras?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
@@ -599,8 +599,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0067",
       "frase": "El pozo: La ciudad puede cambiarse, pero el pozo no.",
-      "interpretacion": "Hay una fuente profunda en ti que es inalterable, pase lo que pase en tu vida externa (la ciudad). Vuelve a beber de ahí.",
-      "practica_hoy": "Conecta con lo que nunca cambia en ti.",
+      "interpretacion": "El hexagrama del Pozo dice que la ciudad puede cambiar de lugar, pero el pozo no. Hay fuentes que sostienen, como los vínculos y los valores, que siguen ahí aunque cambie todo lo demás.",
+      "practica_hoy": "Nombra algo que te ha sostenido en distintas etapas de tu vida (una persona, una práctica, un valor). Pregúntate: ¿cuándo fui por última vez a ese pozo? Haz hoy un gesto para volver.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 48"
@@ -608,17 +608,17 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0068",
       "frase": "El puente fluye, el agua está quieta.",
-      "interpretacion": "Tu perspectiva habitual es una ilusión. Invierte tu mirada: tú eres el cambio, el fondo es quieto.",
-      "practica_hoy": "Imagina que tú te mueves y el mundo está quieto.",
+      "interpretacion": "El verso de Fu Dashi invierte la percepción: quien cruza dice que fluye el puente y no el agua. Invertir el punto de vista revela cuánto de lo que vemos depende de desde dónde miramos.",
+      "practica_hoy": "Elige una situación que te molesta y descríbela en tres líneas desde el punto de vista de la otra persona. Pregúntate: ¿qué se mueve en realidad, la situación o mi lugar ante ella?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Verso paradójico."
+      "nota_editorial": "Fu Dashi (Shanhui), verso chan (人从桥上过，桥流水不流)"
     },
     {
       "id": "TAO_0069",
       "frase": "El pájaro enjaulado sueña con nubes; el pájaro libre busca semillas.",
-      "interpretacion": "Idealizamos lo que no tenemos. La libertad real también incluye la necesidad banal de comer. No romántices.",
-      "practica_hoy": "Acepta la rutina necesaria de tu libertad.",
+      "interpretacion": "Quien no tiene libertad la idealiza; quien la tiene sabe que incluye buscar alimento cada día. La libertad real trae rutina y esfuerzo, no solo cielo abierto.",
+      "practica_hoy": "Piensa en algo que deseas (otro trabajo, otra vida) y escribe una tarea aburrida que traería consigo. Pregúntate: ¿la seguiría queriendo con esa parte incluida?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
@@ -626,8 +626,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0070",
       "frase": "La persona sabia abraza la unidad.",
-      "interpretacion": "No divide el mundo en 'yo' y 'ellos'. Ve la interconexión de todo.",
-      "practica_hoy": "Siente que eres parte del entorno, no un visitante.",
+      "interpretacion": "El Daodejing habla de «abrazar el uno»: no partirse entre lo que uno muestra y lo que es. La unidad empieza por la coherencia interna, no por una idea abstracta del todo.",
+      "practica_hoy": "Detecta hoy un momento en que digas una cosa y pienses otra. No te juzgues: anótalo. Pregúntate: ¿qué necesitaría para que lo de dentro y lo de fuera se parecieran más?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 22"
@@ -716,8 +716,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0080",
       "frase": "La persona sabia usa la luz para volver a la claridad.",
-      "interpretacion": "Usa tu inteligencia no para analizar el mundo, sino para iluminar tu propia mente y regresar al origen.",
-      "practica_hoy": "Observa tu propia mente en lugar de observar a otros.",
+      "interpretacion": "«Usar la luz y volver a la claridad»: la inteligencia que sale al mundo puede volver a iluminar el propio punto de partida. Conocer fuera sin conocerse deja a oscuras lo esencial.",
+      "practica_hoy": "Al final del día, toma algo que juzgaste de otra persona y pregúntate: ¿qué dice de mí este juicio? Escribe una línea.",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 52"
@@ -725,8 +725,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0081",
       "frase": "La persona sabia vacía la mente y llena el vientre.",
-      "interpretacion": "Menos intelectualización, más instinto y nutrición vital. El centro está en el Hara (vientre), no en el cerebro.",
-      "practica_hoy": "Pon la mano en tu vientre y respira desde ahí.",
+      "interpretacion": "En el Daodejing la frase habla de gobernar: dar sustento antes que ideas. Leída hacia dentro: atender primero las necesidades básicas ayuda a la mente a soltar lo que le sobra.",
+      "practica_hoy": "Revisa hoy tres necesidades básicas: ¿comiste, dormiste, te moviste? Atiende la que falte antes de resolver otra preocupación. Pregúntate: ¿cuántas angustias se aligeran con el cuerpo atendido?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 3"
@@ -734,8 +734,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0082",
       "frase": "El trueno bajo la tierra.",
-      "interpretacion": "La energía está acumulándose, pero aún no sale. Es el momento de la recuperación y el retorno, no de la explosión.",
-      "practica_hoy": "Guarda tu energía hoy; no la gastes.",
+      "interpretacion": "En el hexagrama del Retorno, el trueno está bajo la tierra: el impulso vuelve, pero aún es débil. Los antiguos cerraban los pasos en el solsticio para cuidarlo. Un comienzo frágil se protege, no se exhibe.",
+      "practica_hoy": "Elige algo que estás retomando (un hábito, una relación, la salud) y define un modo de cuidarlo sin presionarlo esta semana. Pregúntate: ¿qué necesita este comienzo para no apagarse?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 24 (Fu)"
@@ -797,8 +797,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0089",
       "frase": "Gobernar un gran estado es como cocinar un pez pequeño.",
-      "interpretacion": "La intervención excesiva destruye lo que intenta cuidar.",
-      "practica_hoy": "Retira una intervención innecesaria.",
+      "interpretacion": "Un pez pequeño se deshace si se le da la vuelta demasiadas veces. Lo delicado se estropea por exceso de intervención, no solo por descuido.",
+      "practica_hoy": "Elige algo que estás «removiendo» demasiado (un plan, una conversación, una herida) y déjalo un día sin tocar. Pregúntate: ¿mi intervención ayuda o deshace?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Tao Te Ching, cap. 60: «治大国若烹小鲜»; trad. Preciado Idoeta"
@@ -833,8 +833,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0093",
       "frase": "Intercambiar un ladrillo por un jade.",
-      "interpretacion": "Ofrece algo de poco valor (una idea pequeña, una escucha) para obtener algo valioso (la confianza, la verdad).",
-      "practica_hoy": "Da algo pequeño para invitar a algo grande.",
+      "interpretacion": "La estratagema ofrece algo modesto para obtener algo valioso. En la vida diaria, una pregunta sencilla o una primera idea imperfecta suelen abrir lo que la espera no abre.",
+      "practica_hoy": "Comparte hoy una idea a medio hacer o una pregunta honesta con alguien. Pregúntate: ¿qué estoy reteniendo por esperar a que sea «jade»?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 17"
@@ -842,8 +842,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0094",
       "frase": "La Olla: El fuego sobre el viento.",
-      "interpretacion": "El viento (suavidad) alimenta el fuego (claridad). Necesitas suavidad para mantener tu claridad, no rigidez.",
-      "practica_hoy": "Sé suave contigo mismo para mantenerte lúcido.",
+      "interpretacion": "En el hexagrama del Caldero, el fuego arde sobre la madera y transforma lo crudo en alimento. La transformación necesita fuego y también un recipiente estable que lo contenga.",
+      "practica_hoy": "Elige algo que quieres transformar en ti y define su «caldero»: una hora fija, un lugar, una persona de apoyo. Pregúntate: ¿tengo fuego sin recipiente, o recipiente sin fuego?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 50"
@@ -887,8 +887,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0100",
       "frase": "La luna se refleja en mil ríos; la luna es una.",
-      "interpretacion": "La verdad es una, pero cada persona la refleja según la claridad de su mente. No discutas por los reflejos.",
-      "practica_hoy": "Respeta la visión del otro como un reflejo parcial.",
+      "interpretacion": "Una sola luna aparece en mil ríos: cada agua la refleja según su quietud y su forma. Las distintas visiones de un mismo hecho pueden ser reflejos parciales, no mentiras.",
+      "practica_hoy": "En el próximo desacuerdo, pregunta a la otra persona qué ve y repítelo antes de responder. Pregúntate: ¿qué parte de la luna se ve desde su río y no desde el mío?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Metáfora clásica."
@@ -977,11 +977,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0110",
       "frase": "Nadie se mira en un río que corre; se miran en un estanque quieto.",
-      "interpretacion": "Solo una mente quieta puede reflejar la verdad y servir de espejo a otros. Si corres, no ves nada.",
-      "practica_hoy": "Aquiétate antes de escuchar a alguien.",
+      "interpretacion": "En Zhuangzi, la gente acude a quien tiene la mente en calma como quien busca agua quieta para mirarse. La serenidad no aísla: es un espacio donde otros pueden encontrarse.",
+      "practica_hoy": "Antes de tu próxima conversación importante, haz tres respiraciones y escucha sin preparar respuesta. Pregúntate: ¿soy hoy agua que corre o agua quieta para quien me habla?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Signo de la virtud completa."
+      "nota_editorial": "Zhuangzi, cap. 5 (德充符): «nadie se mira en el agua que corre, sino en el agua quieta»"
     },
     {
       "id": "TAO_0111",
@@ -1103,11 +1103,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0125",
       "frase": "Sostener una flor y sonreír.",
-      "interpretacion": "La comprensión directa no necesita palabras. Solo resonancia.",
-      "practica_hoy": "Comparte un momento con alguien sin hablar.",
+      "interpretacion": "En el relato fundacional del zen, el Buda levanta una flor y solo Mahakasyapa sonríe. Algo se transmitió sin palabras: hay comprensiones que pasan por la presencia compartida.",
+      "practica_hoy": "Comparte hoy un momento con alguien sin hablar (un paseo, una comida, mirar algo juntos) durante 2 minutos. Pregúntate: ¿qué entendimos sin decirlo?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "El sermón de la flor."
+      "nota_editorial": "Wumenguan, caso 6 (世尊拈花): el sermón de la flor"
     },
     {
       "id": "TAO_0126",
@@ -1121,8 +1121,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0127",
       "frase": "Tomar prestado el cadáver para resucitar el alma.",
-      "interpretacion": "Usa una forma vieja o una estructura existente para inyectarle vida nueva. No inventes la rueda; úsala.",
-      "practica_hoy": "Retoma un proyecto viejo con una idea nueva.",
+      "interpretacion": "La estratagema usa una forma antigua para dar vida a algo nuevo. A veces no hay que inventar desde cero: un hábito, un proyecto o una tradición abandonada pueden recibir un propósito actual.",
+      "practica_hoy": "Recupera algo que dejaste (un cuaderno, un instrumento, una práctica) y dale 10 minutos con una intención de hoy. Pregúntate: ¿qué de lo que fui todavía me sirve?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 14"
@@ -1139,8 +1139,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0129",
       "frase": "Tres personas caminan; una sobra.",
-      "interpretacion": "En las relaciones o enfoques, la multitud dispersa. A veces debes sacrificar una opción para profundizar en la otra.",
-      "practica_hoy": "Elimina una opción para concentrarte en una sola.",
+      "interpretacion": "El hexagrama de la Merma dice que cuando tres caminan juntos, uno sobra; cuando uno camina solo, encuentra compañía. Restar también es una forma de dar espacio.",
+      "practica_hoy": "Elige un área donde tengas demasiadas opciones abiertas y cierra una explícitamente. Pregúntate: ¿qué gana lo que queda cuando suelto lo que sobra?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
       "nota_editorial": "Yijing, hexagrama 41"
@@ -1175,20 +1175,20 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0133",
       "frase": "Un pelo bloquea la vista de la montaña Tai.",
-      "interpretacion": "Una pequeña obsesión o prejuicio justo delante de tus ojos te impide ver la inmensa realidad.",
-      "practica_hoy": "Identifica la pequeña obsesión que te tapa el día.",
+      "interpretacion": "El modismo dice que una sola hoja ante el ojo basta para no ver el monte Tai. Un detalle cercano, como una ofensa o una preocupación, puede ocupar todo el campo de visión.",
+      "practica_hoy": "Nombra la «hoja» que hoy ocupa más tu atención. Escribe tres cosas importantes que no estás viendo por ella. Pregúntate: ¿de qué tamaño es realmente esta hoja?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Tradición china."
+      "nota_editorial": "Heguanzi (鹖冠子): «一叶障目，不见泰山», modismo chino"
     },
     {
       "id": "TAO_0134",
       "frase": "Vencer sin luchar.",
-      "interpretacion": "La victoria suprema es romper la resistencia del enemigo sin luchar. Convence, disuade o fluye.",
-      "practica_hoy": "Resuelve un conflicto antes de que empiece.",
+      "interpretacion": "Sunzi considera la mejor victoria la que no requiere batalla. En la vida cotidiana, muchos conflictos se desactivan antes, con una conversación a tiempo o un acuerdo claro.",
+      "practica_hoy": "Identifica una fricción que crece (con alguien, con una tarea) y da un paso para resolverla antes de que estalle: una pregunta, un mensaje, un límite. Pregúntate: ¿qué batalla puedo evitar hoy?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Arte de la Guerra."
+      "nota_editorial": "Sunzi, El arte de la guerra, cap. 3 (不战而屈人之兵)"
     },
     {
       "id": "TAO_0135",
@@ -1292,11 +1292,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0146",
       "frase": "Mi corazón es como la luna de otoño; clara y brillante en el estanque verde.",
-      "interpretacion": "No hay nada que se compare a la claridad pura de la mente original. Todo lo demás son reflejos.",
-      "practica_hoy": "Visualiza tu mente como un disco de luz fría y clara.",
+      "interpretacion": "Hanshan compara su mente con la luna de otoño reflejada en un estanque verde, y añade que no hay nada con qué compararla. La claridad no se describe del todo: se reconoce.",
+      "practica_hoy": "Esta noche, si puedes, mira la luna o cualquier luz lejana durante un minuto. Pregúntate: ¿en qué momento de hoy mi mente estuvo clara, aunque fuera un instante?",
       "categoria": "claridad",
       "linaje": "contemporaneo",
-      "nota_editorial": "Poesía de Montaña Fría."
+      "nota_editorial": "Hanshan, Poemas de la Montaña Fría (吾心似秋月，碧潭清皎洁)"
     },
     {
       "id": "TAO_0147",
@@ -1724,11 +1724,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0194",
       "frase": "El valle es eterno porque se mantiene bajo.",
-      "interpretacion": "Todos quieren la cima (yang), pero la vida se acumula en el valle (yin). La posición baja recibe todos los ríos.",
-      "practica_hoy": "No busques destacar hoy; sé receptivo.",
+      "interpretacion": "Para el Daodejing, ríos y mares reinan sobre los valles porque saben estar abajo. La humildad no es empequeñecerse: es la posición desde la que se puede recibir.",
+      "practica_hoy": "En una conversación hoy, haz una pregunta sincera sobre algo que no sabes en lugar de opinar. Pregúntate: ¿qué recibí al ponerme por debajo de mi orgullo?",
       "categoria": "humildad",
       "linaje": "contemporaneo",
-      "nota_editorial": "El espíritu del valle."
+      "nota_editorial": "Daodejing, cap. 66 (cf. cap. 6, el espíritu del valle)"
     },
     {
       "id": "TAO_0195",
@@ -1742,8 +1742,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0197",
       "frase": "El discípulo alcanzó un estado profundo y quiso conservarlo. Al día siguiente, ya no estaba.",
-      "interpretacion": "La experiencia no es posesión. Querer congelar el río detiene la vida.",
-      "practica_hoy": "No intentes repetir una vivencia pasada.",
+      "interpretacion": "Los estados profundos llegan y se van. Querer retenerlos convierte la experiencia en una posesión que se puede perder, y la práctica en nostalgia.",
+      "practica_hoy": "Recuerda un momento muy bueno que intentaste repetir. Escribe qué te dejó, no cómo recuperarlo. Pregúntate: ¿qué queda de aquello en mi vida de hoy?",
       "categoria": "impermanencia",
       "linaje": "contemporaneo",
       "nota_editorial": "Enseñanza sobre el apego a los estados."
@@ -2642,8 +2642,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0304",
       "frase": "Conoce el blanco, pero conserva el negro.",
-      "interpretacion": "Conoce la luz y la razón, pero no pierdas contacto con el misterio, la oscuridad y lo inconsciente.",
-      "practica_hoy": "Respeta tu parte irracional o intuitiva.",
+      "interpretacion": "«Conoce lo blanco, guarda lo negro»: conocer la luz sin rechazar la sombra. El Daodejing invita a no quedarse solo con lo brillante y aceptable de uno mismo.",
+      "practica_hoy": "Escribe una cualidad que te gusta de ti y, al lado, su sombra (generoso / me cuesta poner límites). Pregúntate: ¿qué aprendo si acojo las dos?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 28"
@@ -2723,8 +2723,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0322",
       "frase": "La atención sostenida revela lo esencial.",
-      "interpretacion": "Mirar más tiempo cambia lo que ves.",
-      "practica_hoy": "Observa algo común durante 2 minutos.",
+      "interpretacion": "Mirar algo un poco más de lo habitual cambia lo que se ve: aparecen detalles, matices y preguntas que la mirada rápida pasa por alto.",
+      "practica_hoy": "Mira durante 2 minutos algo que ves todos los días (tu mano, una planta, la calle) y anota tres detalles nuevos. Pregúntate: ¿a qué personas o cosas miro siempre deprisa?",
       "categoria": "atencion",
       "linaje": "mindfulness",
       "nota_editorial": "Creación original (sin fuente)"
@@ -2813,11 +2813,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0353",
       "frase": "No busques huellas de pájaros en el aire.",
-      "interpretacion": "No busques el pasado; ya no existe. No busques reconocimiento; se desvanece. Vive en el acto puro.",
-      "practica_hoy": "Concéntrate solo en la acción presente, no en su rastro.",
+      "interpretacion": "El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo.",
+      "practica_hoy": "Haz hoy algo bien sin registrarlo ni contarlo. Al final del día pregúntate: ¿necesité que quedara huella para que valiera?",
       "categoria": "impermanencia",
       "linaje": "mindfulness",
-      "nota_editorial": "Koan."
+      "nota_editorial": "Imagen budista clásica; cf. Dhammapada 92–93"
     },
     {
       "id": "TAO_0354",
@@ -2876,8 +2876,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0360",
       "frase": "Caminar sobre la escarcha; el hielo sólido llega pronto.",
-      "interpretacion": "Las señales pequeñas (escarcha) avisan de eventos grandes (hielo). No ignores los primeros síntomas de un problema.",
-      "practica_hoy": "Atiende una señal pequeña que estás ignorando.",
+      "interpretacion": "El Yijing advierte: al pisar escarcha, el hielo firme está cerca. Las señales pequeñas anuncian procesos grandes; verlas a tiempo da margen para actuar.",
+      "practica_hoy": "Anota una señal pequeña que vienes notando (cansancio, irritación, un gasto, un silencio en una relación). Pregúntate: ¿de qué invierno es escarcha? Decide un paso.",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 2 (Kun)"
@@ -2921,8 +2921,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0365",
       "frase": "La persona sabia no viaja, y sin embargo llega.",
-      "interpretacion": "No necesitas ir a la India para encontrarte. El Tao está bajo tus pies. La búsqueda externa es una distracción.",
-      "practica_hoy": "Encuentra lo sagrado en tu habitación.",
+      "interpretacion": "El Daodejing dice que se puede conocer el mundo sin salir por la puerta. No niega viajar: señala que la comprensión depende más de cómo miras que de cuánto recorres.",
+      "practica_hoy": "Pasa 10 minutos en un lugar conocido de tu casa observando como si fuera la primera vez. Pregúntate: ¿qué busco lejos que quizá esté aquí?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 47"
@@ -2939,8 +2939,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0367",
       "frase": "La flor no sueña con la abeja. Florece y la abeja llega.",
-      "interpretacion": "Ocúpate de tu propia naturaleza, no de atraer a otros.",
-      "practica_hoy": "Haz tu trabajo bien sin pensar en quién lo verá.",
+      "interpretacion": "La flor no persigue a la abeja: florece, y la abeja llega. Cuidar lo propio con honestidad suele atraer más vínculos que el esfuerzo por agradar.",
+      "practica_hoy": "Dedica 20 minutos a algo que te gusta hacer bien, sin mostrarlo. Pregúntate: ¿en qué relaciones estoy persiguiendo en vez de florecer?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Creación original (sin fuente)"
@@ -2966,8 +2966,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0370",
       "frase": "Lo difícil se hace desde lo fácil; lo grande, desde lo pequeño.",
-      "interpretacion": "No esperes a que el problema sea gigante. Resuélvelo cuando es minúsculo. El viaje de mil millas es un paso.",
-      "practica_hoy": "Atiende un detalle pequeño que has estado ignorando.",
+      "interpretacion": "El Daodejing aconseja atender lo difícil cuando aún es fácil y lo grande cuando aún es pequeño. Muchas dificultades nacen de lo que se dejó crecer.",
+      "practica_hoy": "Elige un asunto que te preocupa y escribe su versión más pequeña que puedes resolver hoy. Hazla en 10 minutos. Pregúntate: ¿qué otra cosa estoy dejando crecer?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 63"
@@ -2984,17 +2984,17 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0372",
       "frase": "Una hormiga puede destruir una presa entera.",
-      "interpretacion": "Un pequeño defecto o descuido ignorado puede derrumbar una gran estructura. Atiende lo pequeño.",
-      "practica_hoy": "Corrige un error minúsculo antes de que crezca.",
+      "interpretacion": "Han Feizi recuerda que un dique enorme se rompe por un hormiguero. Las grandes estructuras, como la salud, la confianza o el trabajo, suelen fallar por grietas pequeñas desatendidas.",
+      "practica_hoy": "Revisa una «estructura» importante de tu vida y busca un hormiguero: una promesa incumplida, una molestia física ignorada, una tarea atrasada. Atiéndelo hoy.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Filosofía legalista."
+      "nota_editorial": "Han Feizi, cap. 21 (喻老): «千丈之堤，以蝼蚁之穴溃»"
     },
     {
       "id": "TAO_0373",
       "frase": "Una sola chispa puede incendiar la pradera.",
-      "interpretacion": "No subestimes lo pequeño. Un pensamiento, una palabra o una acción menor tiene un potencial expansivo enorme.",
-      "practica_hoy": "Planta una 'semilla' positiva pequeña hoy.",
+      "interpretacion": "Una chispa basta para encender la pradera: lo pequeño puede propagarse. Vale para lo destructivo y para lo valioso, como una palabra amable o una idea compartida.",
+      "practica_hoy": "Haz hoy un gesto pequeño con intención (un agradecimiento concreto, una ayuda breve). Pregúntate: ¿qué chispas, buenas o malas, he dejado caer esta semana?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Clásico chino."
@@ -3002,11 +3002,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0374",
       "frase": "Zhuangzi dijo: '¡Mira qué felices son los peces!'. Hui Zi respondió: 'Tú no eres pez, ¿cómo sabes que son felices?'.",
-      "interpretacion": "La empatía conecta lo que la lógica separa. Sabes cosas por resonancia que la mente no puede explicar.",
-      "practica_hoy": "Conecta con la emoción de alguien sin analizarla.",
+      "interpretacion": "En el diálogo del río Hao, Hui Zi pide pruebas lógicas y Zhuangzi responde desde la experiencia de estar junto al río. No es solo empatía contra lógica: es cómo conocemos lo que no somos.",
+      "practica_hoy": "Ante alguien que hoy parece triste o alegre, pregúntale cómo está en lugar de suponerlo. Pregúntate: ¿cuánto de lo que «sé» de los demás es percepción y cuánto proyección?",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "El gozo de los peces."
+      "nota_editorial": "Zhuangzi, cap. 17 (秋水): el gozo de los peces"
     },
     {
       "id": "TAO_0375",
@@ -3209,8 +3209,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0434",
       "frase": "Buscó al yo durante toda la meditación. Al levantarse, ya no estaba buscándolo.",
-      "interpretacion": "El 'yo' aparece como tensión cuando se le persigue. En la acción natural, desaparece.",
-      "practica_hoy": "Suspende la autoobservación por un momento.",
+      "interpretacion": "Buscar el yo con esfuerzo lo vuelve un objeto escurridizo. Al soltar la búsqueda, la experiencia sigue ocurriendo sin que haga falta un centro que la vigile.",
+      "practica_hoy": "Al terminar una actividad absorbente hoy, pregúntate: ¿dónde estaba «yo» mientras lo hacía? Escribe una línea sin buscar la respuesta correcta.",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Indagación del Self."
@@ -3227,26 +3227,26 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0436",
       "frase": "El discípulo preguntó: '¿Qué es el Buda?'. El maestro respondió: 'Tres libras de lino'.",
-      "interpretacion": "Lo sagrado no es especial; es el peso de la materia cotidiana.",
-      "practica_hoy": "Trata un objeto común como si fuera sagrado.",
+      "interpretacion": "A la pregunta por el Buda, Dongshan responde con lo que tenía entre manos: tres libras de lino. Lo sagrado no está separado de lo concreto y cotidiano.",
+      "practica_hoy": "Toma un objeto de tu trabajo diario y sostenlo un minuto con atención. Pregúntate: ¿qué cambiaría si tratara mis tareas comunes como parte de lo que más valoro?",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Tres libras de lino."
+      "nota_editorial": "Wumenguan, caso 18 (洞山三斤): Dongshan Shouchu"
     },
     {
       "id": "TAO_0437",
       "frase": "El ladrón entró y el maestro le regaló su ropa.",
-      "interpretacion": "Quien no posee nada, no puede ser robado. La generosidad desarma la pérdida.",
-      "practica_hoy": "Da algo antes de que sientas que te lo quitan.",
+      "interpretacion": "Ryōkan, a quien un ladrón no pudo robar nada, le dio su ropa y lamentó no poder darle la luna. Quien no se aferra pierde menos, y aun puede ofrecer.",
+      "practica_hoy": "Da hoy algo sin esperar nada (tiempo, un objeto que ya no usas, atención). Pregúntate: ¿a qué me aferro con miedo a perderlo?",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "La luna en la ventana."
+      "nota_editorial": "Relato de Ryōkan, recogido en Carne zen, huesos zen"
     },
     {
       "id": "TAO_0438",
       "frase": "El maestro cerró la puerta al discípulo inteligente.",
-      "interpretacion": "El intelecto es un obstáculo. A veces hay que frustrar la mente para que el espíritu pase.",
-      "practica_hoy": "Desconfía de tus explicaciones inteligentes hoy.",
+      "interpretacion": "El maestro frena al discípulo que lo explica todo: la inteligencia puede convertirse en defensa contra la experiencia. No se trata de pensar menos, sino de no esconderse en el pensamiento.",
+      "practica_hoy": "Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Para 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Bloqueo de la mente lógica."
@@ -3254,8 +3254,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0439",
       "frase": "El maestro dibujó un círculo y entró en él.",
-      "interpretacion": "Crea tu propio mundo y habítalo. La totalidad está donde tú decides estar.",
-      "practica_hoy": "Delimita tu espacio y quédate en él.",
+      "interpretacion": "El círculo zen (ensō) se traza de un solo gesto, sin corregir. Entrar en él es habitar plenamente lo que uno hace, con sus imperfecciones.",
+      "practica_hoy": "Dibuja un círculo de un solo trazo, sin repetirlo. Míralo un minuto. Pregúntate: ¿qué hago hoy a medias por miedo a que no salga perfecto?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Símbolo del círculo."
@@ -3272,8 +3272,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0441",
       "frase": "El maestro dijo: 'Ya está hecho'.",
-      "interpretacion": "No hay nada que lograr. Desde el principio, todo está completo.",
-      "practica_hoy": "Siente que no te falta nada en este instante.",
+      "interpretacion": "«Ya está hecho» apunta a la naturaleza original: algo de lo que buscas no hay que fabricarlo. No anula el esfuerzo; cambia el lugar desde el que se hace.",
+      "practica_hoy": "Antes de empezar tu primera tarea mañana, haz tres respiraciones y nota que ya estás aquí. Pregúntate: ¿qué cambia si actúo desde lo que tengo y no desde lo que me falta?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Naturaleza original."
@@ -3299,8 +3299,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0444",
       "frase": "El maestro enseñó durante años. Cuando murió, nada quedó escrito.",
-      "interpretacion": "La enseñanza real es transmisión viva, no un cadáver de tinta.",
-      "practica_hoy": "Acepta hacer algo sin dejar huella.",
+      "interpretacion": "El maestro no dejó escritos; su enseñanza quedó en las personas que la vivieron. Lo esencial a veces se transmite en el trato, no en el texto.",
+      "practica_hoy": "Piensa en alguien que te enseñó algo sin decirlo, con su ejemplo. Escríbele o recuérdalo con una frase concreta. Pregúntate: ¿qué enseño yo sin palabras?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Tradición oral."
@@ -3326,8 +3326,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0447",
       "frase": "El maestro no alcanzó nada ese día. Tampoco al siguiente.",
-      "interpretacion": "La vía no es una fábrica de logros. El 'no conseguir nada' es el logro.",
-      "practica_hoy": "Permite un día sin conclusiones.",
+      "interpretacion": "Mushotoku es practicar sin espíritu de provecho. Un día sin logros también es parte del camino; medirlo todo por ganancia vacía la práctica.",
+      "practica_hoy": "Hoy haz tu práctica (o una actividad que te gusta) sin registrar resultados. Al final pregúntate: ¿la disfruté menos o más sin medirla?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Mushotoku (sin espíritu de provecho)."
@@ -3380,20 +3380,20 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0454",
       "frase": "El monje preguntó por el camino. El maestro dijo: 'El camino cotidiano es el Camino'.",
-      "interpretacion": "No hay un sendero místico aparte de dormir, comer y trabajar.",
-      "practica_hoy": "Considera tu rutina de hoy como 'el Camino supremo'.",
+      "interpretacion": "Es el caso de Nanquan: «la mente ordinaria es el Camino». No hay un sendero espiritual aparte de comer, trabajar y descansar; lo que cambia es la manera de habitarlos.",
+      "practica_hoy": "Elige una rutina de hoy (cocinar, ducharte, ir al trabajo) y hazla sin prisa, notando el inicio y el final. Pregúntate: ¿qué parte de mi día trato como tiempo perdido?",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "El Tao es la mente ordinaria."
+      "nota_editorial": "Wumenguan, caso 19 (平常心是道): Nanquan y Zhaozhou"
     },
     {
       "id": "TAO_0455",
       "frase": "El monje preguntó: '¿Cómo entro en el Camino?'. El maestro dijo: '¿Oyes el arroyo? Entra por ahí'.",
-      "interpretacion": "Cualquier punto de percepción presente es una puerta de entrada al absoluto.",
-      "practica_hoy": "Usa un sonido cercano como tu ancla al presente.",
+      "interpretacion": "Xuansha muestra la entrada en lo que ya se está oyendo: el arroyo. La práctica no empieza en otro sitio, sino en lo que los sentidos traen ahora.",
+      "practica_hoy": "Cierra los ojos un minuto y escucha el sonido más lejano y el más cercano. Pregúntate: ¿por qué puerta del presente puedo entrar cuando me disperso?",
       "categoria": "atencion",
       "linaje": "zen",
-      "nota_editorial": "Entrada por el sonido."
+      "nota_editorial": "Atribuido a Xuansha Shibei, Jingde Chuandeng Lu"
     },
     {
       "id": "TAO_0456",
@@ -3461,8 +3461,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0463",
       "frase": "Preguntaron por la verdad última. El maestro bebió agua.",
-      "interpretacion": "La verdad no interrumpe lo ordinario; es lo ordinario vivido totalmente.",
-      "practica_hoy": "Permanece en una acción simple.",
+      "interpretacion": "Ante la pregunta más alta, el maestro hace lo más simple: beber agua. La verdad no está lejos de los actos básicos; está en hacerlos del todo.",
+      "practica_hoy": "Bebe un vaso de agua despacio, notando temperatura y peso. Pregúntate: ¿qué gesto sencillo de mi día hago sin estar presente?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Maestro Matsu."
@@ -4019,8 +4019,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0570",
       "frase": "El discípulo pidió una instrucción final. El maestro cerró los ojos.",
-      "interpretacion": "No toda respuesta es verbal. El silencio es la instrucción definitiva.",
-      "practica_hoy": "Permite que algo quede sin respuesta verbal.",
+      "interpretacion": "A la petición de una última instrucción, el maestro responde cerrando los ojos. Hay momentos en que lo más claro que se puede ofrecer es un silencio atento.",
+      "practica_hoy": "En una conversación difícil hoy, deja un silencio de cinco segundos antes de responder. Pregúntate: ¿qué apareció en ese silencio que no habría aparecido con palabras?",
       "categoria": "silencio",
       "linaje": "zen",
       "nota_editorial": "Transmisión silenciosa."

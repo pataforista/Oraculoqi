@@ -8,7 +8,7 @@ Fecha: noviembre de 2026. Método: lectura completa de las 458 cartas (frase, in
 |---|---|---|
 | Sólidas | ~240 | Frase, interpretación y práctica coherentes; práctica concreta y verificable |
 | Telegráficas pero coherentes | ~120 | Interpretación de una línea («La evitación amplifica el malestar»). Correctas, algo secas; sobre todo en ACT y diálogos zen breves |
-| **Superficiales** | 55 | Interpretación de lugar común o práctica vaga («Conecta con lo que nunca cambia en ti») |
+| **Superficiales** | 55 → reescritas | Interpretación de lugar común o práctica vaga («Conecta con lo que nunca cambia en ti») |
 | **Recargadas** | 12 | Lo contrario: jerga que oscurece («libertad ontológica», «estratos de temor») |
 | **Con riesgo** | 33 → corregidas | Consejos que podían dañar a una persona vulnerable |
 | **Prácticas de relleno** | 11 → corregidas | La práctica no tenía relación con la frase |
@@ -34,9 +34,18 @@ Prácticas de relleno reescritas: TAO_0051, 0476, 0486, 0498, 0503, 0505, 0556, 
 
 El validador ahora detecta esas frases de relleno, «mátalos» sin nota y patrones de consejo con riesgo (regla W206).
 
+## Reescritura de las superficiales (aplicada)
+
+Las 55 cartas superficiales se reescribieron conservando la frase. Criterio:
+- La interpretación explica qué dice el texto en su contexto (quién lo dice, en qué relato o hexagrama) y qué ofrece hoy, en 1–2 frases.
+- La práctica une una acción concreta (con tiempo, número o paso) y una pregunta de reflexión («Pregúntate: …»).
+- Se corrigieron o precisaron 18 fuentes en el camino: Zhuangzi 5 y 17, Wumenguan 6, 18 y 19, verso de Shenxiu, Fu Dashi, Hanshan, Heguanzi (la frase decía «un pelo» y el modismo dice «una hoja»), Han Feizi, Sunzi 3, Daodejing 66, Ryōkan, Xuansha.
+
+Decisión del propietario: no fusionar las repeticiones temáticas.
+
 ## Pendiente (propuesta, no aplicada)
 
-### Superficiales (55)
+### Superficiales (55) — ya reescritas
 TAO_0024, 0026, 0027, 0029, 0031, 0040, 0041, 0042, 0050, 0052, 0053, 0063, 0065, 0067, 0068, 0069, 0070, 0080, 0081, 0082, 0089, 0093, 0094, 0100, 0110, 0125, 0127, 0129, 0133, 0134, 0146, 0194, 0197, 0304, 0322, 0353, 0360, 0365, 0367, 0370, 0372, 0373, 0374, 0434, 0436, 0437, 0438, 0439, 0441, 0444, 0447, 0454, 0455, 0463, 0570.
 
 Patrón típico: la frase es buena, pero la práctica no dice qué hacer ni cuándo («Haz lo cotidiano con atención», «Encuentra lo sagrado en tu habitación»).
@@ -54,4 +63,4 @@ La misma enseñanza aparece varias veces con otra forma. No son errores, pero en
 - Silencio del maestro: TAO_0477, 0570, 0572, 0573, 0577.
 - «Yo como contexto» con metáforas de espacio (aire, cielo, mar, mesa, pantalla, ventana…): unas 30 cartas.
 
-Propuesta: reescribir las 55 superficiales y las 12 recargadas con el mismo criterio de las corregidas (interpretación de 1–2 frases, práctica con acción, tiempo o número), y fusionar cada grupo repetido en una o dos cartas.
+Pendiente: las 12 recargadas. Las repeticiones se mantienen por decisión del propietario.
