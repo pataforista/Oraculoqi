@@ -33,7 +33,7 @@
 .pc-card {
     position: relative;
     width: 100%;
-    min-height: clamp(380px, 65vh, 580px);
+    min-height: clamp(300px, 50vh, 580px);
     border-radius: var(--radius-panel, 12px);
     overflow: hidden;
     background: var(--bg-panel);
@@ -133,7 +133,7 @@
 }
 
 .pc-source {
-    margin: var(--space-md, 16px) 0 0;
+    margin: 0;
     font-family: var(--font-base);
     font-size: 0.78rem;
     line-height: 1.4;
@@ -191,6 +191,19 @@
     }
 }
 
+@media (max-height: 820px) {
+    .pc-card { min-height: 0; }
+    .pc-inside { padding-top: var(--space-md, 16px); padding-bottom: var(--space-md, 16px); }
+    .pc-content { gap: var(--space-sm, 10px); }
+    .pc-practica { margin-top: var(--space-sm, 8px); }
+}
+
+@media (max-height: 700px) {
+    .pc-frase { font-size: 1.3rem; }
+    .pc-interpretacion { font-size: 0.85rem; line-height: 1.45; }
+    .pc-practica p { font-size: 0.82rem; }
+}
+
 @media (max-width: 480px) {
     .pc-card {
         border-radius: var(--radius-panel, 6px);
@@ -228,7 +241,8 @@
 .pc-card-footer {
     margin-top: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: var(--space-md);
     align-items: center;
     padding-top: var(--space-md);
     padding-bottom: var(--space-xs);
@@ -239,8 +253,9 @@
 }
 
 .pc-card-logo {
-    width: 48px;
-    height: 48px;
+    flex: none;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     object-fit: cover;
     opacity: 0.9;

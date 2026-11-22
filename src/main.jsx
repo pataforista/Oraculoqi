@@ -803,10 +803,10 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
                 <span className="pc-practica-label">Invitación hoy</span>
                 <p>{card.practica_hoy}</p>
               </div>
-              {sourceLabel(card.nota_editorial) && (
-                <p className="pc-source"><span className="pc-source-k">Fuente</span> {sourceLabel(card.nota_editorial)}</p>
-              )}
               <div className="pc-card-footer">
+                <p className="pc-source">
+                  {sourceLabel(card.nota_editorial) && (<><span className="pc-source-k">Fuente</span> {sourceLabel(card.nota_editorial)}</>)}
+                </p>
                 <img src="icons/enso-8bit.png" className="pc-card-logo" alt="" aria-hidden="true" />
               </div>
               {showDonation && (

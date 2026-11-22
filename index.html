@@ -1036,6 +1036,40 @@
 
       .codex-empty-icon { animation: none; }
     }
+
+    /* ===== AJUSTE A LA PANTALLA: la sincronía del día se lee sin desplazarse ===== */
+    .app-container {
+      box-sizing: border-box; /* sin esto el relleno se sumaba a 100vh y la página siempre desplazaba */
+      min-height: 100vh;
+      min-height: 100dvh; /* 100vh en móvil incluye la barra del navegador y fuerza scroll */
+      padding-top: var(--space-md);
+      padding-bottom: 76px; /* espacio justo para el botón flotante (52px + margen) */
+    }
+    .main-content { gap: var(--space-md); margin-top: 0; }
+    .floating-menu-container { bottom: var(--space-md); right: var(--space-md); }
+    .app-header { gap: var(--space-sm); margin-bottom: 0; }
+    .app-logo { width: 64px; height: 64px; padding: 9px; }
+    .brand-title { font-size: 1.7rem; }
+    .btn-refresh { margin-top: var(--space-md); padding: 12px 28px; }
+    .card-placeholder { min-height: clamp(280px, 48vh, 520px); }
+    @media (max-height: 820px) {
+      .app-logo { width: 48px; height: 48px; padding: 7px; }
+      .brand-title { font-size: 1.45rem; }
+      .sync-label { font-size: 0.68rem; letter-spacing: 0.2em; }
+      .app-container { padding-top: var(--space-sm); padding-bottom: 76px; }
+      .main-content { gap: var(--space-sm); }
+      .btn-refresh { margin-top: var(--space-sm); padding: 10px 24px; }
+    }
+    @media (max-height: 700px) {
+      .app-logo { display: none; }
+      .brand-title { font-size: 1.3rem; }
+    }
+    @media (min-height: 900px) {
+      .app-logo { width: 88px; height: 88px; padding: 12px; }
+      .brand-title { font-size: 2rem; }
+      .main-content { gap: var(--space-xl); }
+      .app-header { gap: var(--space-md); }
+    }
   </style>
 </head>
 
