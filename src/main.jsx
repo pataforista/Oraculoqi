@@ -726,6 +726,71 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
   );
 };
 
+/* --- HISTORIAL DE DÍAS --- */
+const MONTHS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const WEEKDAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+
+const DaysView = ({ history, notes, deck, month, setMonth, onOpen }) => {
+  const [y, m] = month.split('-').map(Number);
+  const byId = useMemo(() => new Map(deck.map(c => [c.id, c])), [deck]);
+  const today = localDateKey();
+  const daysIn = new Date(y, m, 0).getDate();
+  const offset = (new Date(y, m - 1, 1).getDay() + 6) % 7; // semana desde el lunes
+  const shift = (n) => {
+    const d = new Date(y, m - 1 + n, 1);
+    setMonth(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
+  };
+  const isCurrent = month >= today.slice(0, 7);
+  const visitedKeys = Object.keys(history).filter(k => k.startsWith(month)).sort();
+  const entries = visitedKeys.filter(k => byId.has(history[k])).reverse();
+
+  const cells = [];
+  for (let i = 0; i < offset; i++) cells.push(<span key={`e${i}`} className="day-cell is-empty" />);
+  for (let d = 1; d <= daysIn; d++) {
+    const key = `${month}-${String(d).padStart(2, '0')}`;
+    const c = byId.get(history[key]);
+    const cls = `day-cell${key in history ? ' is-visited' : ''}${c && notes[c.id]?.text ? ' has-note' : ''}${key === today ? ' is-today' : ''}`;
+    // El calendario es atajo visual; la lista de abajo es el camino accesible por teclado y lector.
+    cells.push(c
+      ? <button key={key} className={cls} tabIndex={-1} onClick={() => onOpen(c)}>{d}</button>
+      : <span key={key} className={cls}>{d}</span>);
+  }
+
+  return (
+    <div className="days-view" onClick={(e) => e.stopPropagation()}>
+      <div className="days-nav">
+        <button className="ghost-btn" onClick={() => shift(-1)} aria-label="Mes anterior">‹</button>
+        <h3 className="days-month" aria-live="polite">{MONTHS[m - 1]} {y}</h3>
+        <button className="ghost-btn" onClick={() => shift(1)} aria-label="Mes siguiente" disabled={isCurrent}>›</button>
+      </div>
+      <div className="days-grid" aria-hidden="true">
+        {WEEKDAYS.map(w => <span key={w} className="day-head">{w}</span>)}
+        {cells}
+      </div>
+      <p className="days-summary">
+        {visitedKeys.length === 0 ? 'Sin consultas en este mes.' : `${visitedKeys.length} ${visitedKeys.length === 1 ? 'día' : 'días'} con consulta.`}
+      </p>
+      {entries.length > 0 && (
+        <ul className="days-list">
+          {entries.map(k => {
+            const c = byId.get(history[k]);
+            const note = notes[c.id]?.text;
+            return (
+              <li key={k}>
+                <button className="codex-item-main" onClick={() => onOpen(c)}>
+                  <span className="codex-item-cat">{Number(k.slice(8))} de {MONTHS[m - 1]} · {categoryLabel(c.categoria)}</span>
+                  <span className="codex-item-frase">“{c.frase}”</span>
+                  {note && <span className="codex-item-note">✎ {note.slice(0, 80)}{note.length > 80 ? '…' : ''}</span>}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
+};
+
 /* --- NOTA PERSONAL --- */
 const NoteEditor = ({ cardId, initial, onSave, label, autoFocus = false }) => {
   const [text, setText] = useState(initial ?? '');
@@ -911,6 +976,8 @@ function App() {
   const [followOpen, setFollowOpen] = useState(false);
   const [noteOpen, setNoteOpen] = useState(false);
   const [codexQuery, setCodexQuery] = useState('');
+  const [codexTab, setCodexTab] = useState('saved');
+  const [histMonth, setHistMonth] = useState(() => localDateKey().slice(0, 7));
   const [codexCat, setCodexCat] = useState('all');
   const fileInputRef = useRef(null);
   const reduceMotion = useMemo(prefersReducedMotion, []);
@@ -1397,7 +1464,11 @@ function App() {
             <h1 className="brand-title">Oráculo Taoísta</h1>
             <p className="sync-label">
               Sincronía · {formattedDate}
-              {monthDays >= 2 && <span className="streak-badge" title="Días que consultaste el oráculo este mes">✦ {monthDays} días este mes</span>}
+              {monthDays >= 2 && (
+                <button className="streak-badge" onClick={() => { setCodexTab('days'); setHistMonth(localDateKey().slice(0, 7)); setShowCodex(true); }} aria-label={`${monthDays} días con consulta este mes. Ver tus días`}>
+                  ✦ {monthDays} días este mes
+                </button>
+              )}
             </p>
           </div>
         </header>
@@ -1513,6 +1584,21 @@ function App() {
             <h2 id="codex-title" className="modal-title">El Codex</h2>
             <button className="close-btn" onClick={() => setShowCodex(false)} aria-label="Cerrar modal">&times;</button>
           </header>
+          <div className="codex-tabs" role="group" aria-label="Vista del Codex" onClick={(e) => e.stopPropagation()}>
+            <button className="chip-btn" aria-pressed={codexTab === 'saved'} onClick={() => setCodexTab('saved')}>Guardadas</button>
+            <button className="chip-btn" aria-pressed={codexTab === 'days'} onClick={() => setCodexTab('days')}>Tus días</button>
+          </div>
+          {codexTab === 'days' ? (
+            <DaysView
+              history={history}
+              notes={notes}
+              deck={window.TAOISTA_DATASET?.cards ?? []}
+              month={histMonth}
+              setMonth={setHistMonth}
+              onOpen={(c) => { setCard(c); setShowCodex(false); setIsRevealed(true); setNoteOpen(false); }}
+            />
+          ) : (
+          <>
           {favorites.length > 0 && (
             <div className="codex-tools" onClick={(e) => e.stopPropagation()}>
               <div className="codex-tools-row">
@@ -1583,6 +1669,8 @@ function App() {
               ))
             )}
           </div>
+          </>
+          )}
         </div>
       )}
 

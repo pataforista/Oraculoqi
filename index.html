@@ -1071,6 +1071,33 @@
       display: block; margin-top: var(--space-xs); font-size: 0.8rem; color: var(--ink-muted); font-style: italic;
     }
 
+    /* ===== HISTORIAL DE DÍAS ===== */
+    button.streak-badge { font: inherit; cursor: pointer; background: none; border: none; padding: 4px 6px; min-height: 24px; color: inherit; }
+    .codex-tabs { display: flex; gap: var(--space-sm); padding: 0 var(--space-lg) var(--space-sm); }
+    .days-view { padding: 0 var(--space-lg) var(--space-lg); max-width: 520px; width: 100%; margin: 0 auto; box-sizing: border-box; }
+    .days-nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); }
+    .days-nav .ghost-btn { min-width: 44px; padding: 0; font-size: 1.2rem; }
+    .days-nav .ghost-btn:disabled { opacity: 0.35; cursor: default; }
+    .days-month { margin: 0; font-family: var(--font-ritual); font-weight: 500; font-size: 1.2rem; text-transform: capitalize; color: var(--ink-primary); }
+    .days-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: var(--space-md); }
+    .day-head { text-align: center; font-size: 0.7rem; color: var(--ink-muted); letter-spacing: 0.1em; }
+    .day-cell {
+      position: relative; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; font: 400 0.85rem var(--font-base); color: var(--ink-muted);
+      background: none; border: 1px solid transparent;
+    }
+    .day-cell.is-empty { visibility: hidden; }
+    .day-cell.is-visited { color: var(--ink-primary); border-color: var(--accent-text); }
+    button.day-cell { cursor: pointer; }
+    button.day-cell:hover { background: var(--bg-secondary); }
+    .day-cell.is-today { font-weight: 700; }
+    .day-cell.has-note::after {
+      content: ''; position: absolute; bottom: 4px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent-text);
+    }
+    .days-summary { margin: var(--space-md) 0 var(--space-sm); font-size: 0.85rem; color: var(--ink-secondary); }
+    .days-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-sm); }
+    .days-list .codex-item-main { width: 100%; border: var(--border-thin); border-radius: var(--radius-panel); padding: var(--space-md); gap: var(--space-xs); background: var(--glass-bg); }
+
     /* ===== AJUSTE A LA PANTALLA: la sincronía del día se lee sin desplazarse ===== */
     .app-container {
       box-sizing: border-box; /* sin esto el relleno se sumaba a 100vh y la página siempre desplazaba */
