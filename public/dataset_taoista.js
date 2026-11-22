@@ -129,15 +129,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
-      "id": "TAO_0015",
-      "frase": "Alguien escupió al Cielo, y la saliva le cayó en la cara.",
-      "interpretacion": "Escupir al cielo es un intento de dañar lo que no puede ser dañado; la resistencia a lo inevitable recae sobre quien la ejerce, no sobre el evento.",
-      "practica_hoy": "Elige una situación incontrolable de hoy (clima, tráfico, un mensaje) y nómbrala sin intentar corregirla: “esto es así ahora”.",
-      "categoria": "aceptacion",
-      "linaje": "act",
-      "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
-    },
-    {
       "id": "TAO_0016",
       "frase": "El invitado incómodo no se va porque lo ignores.",
       "interpretacion": "El malestar persiste cuando se evita; permitirle estar un momento cambia la relación, no necesariamente la intensidad.",
@@ -160,15 +151,6 @@ window.TAOISTA_DATASET = {
       "frase": "El problema no es la lluvia, sino negarse a mojarse.",
       "interpretacion": "Aceptar lo inevitable reduce el sufrimiento secundario (la capa que añade la negativa).",
       "practica_hoy": "Permite hoy un “mojarte” pequeño: un correo difícil, una llamada, una espera, sin intentar esquivarlo.",
-      "categoria": "aceptacion",
-      "linaje": "act",
-      "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
-    },
-    {
-      "id": "TAO_0019",
-      "frase": "Empacar menos permite caminar más lejos.",
-      "interpretacion": "Soltar el equipaje innecesario (control, reaseguramiento) libera recursos para caminar. Aceptar no es cargar con todo: es dejar de cargar con lo que no hace falta.",
-      "practica_hoy": "Identifica una conducta de control (reasegurar, rumiar, evitar) y déjala pasar una vez sin ejecutarla; nota qué queda en su lugar.",
       "categoria": "aceptacion",
       "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
@@ -298,15 +280,6 @@ window.TAOISTA_DATASET = {
       "categoria": "control",
       "linaje": "zen",
       "nota_editorial": "Paráfrasis de tema chan; cf. Huangbo, Chuanxin fayao (传心法要)"
-    },
-    {
-      "id": "TAO_0035",
-      "frase": "Cuando quien sabe señala la luna, quien no sabe mira el dedo.",
-      "interpretacion": "Confundir el método, el nombre o la estructura con la realidad misma es quedar atrapado en las coordenadas de un mapa infinito.",
-      "practica_hoy": "Nota cuántas de tus afirmaciones de hoy comienzan con clasificaciones conceptuales y trata de percibir el objeto desnudo de sus etiquetas.",
-      "categoria": "lenguaje_y_realidad",
-      "linaje": "contemporaneo",
-      "nota_editorial": "El dedo y la luna."
     },
     {
       "id": "TAO_0036",
@@ -451,15 +424,6 @@ window.TAOISTA_DATASET = {
       "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Sobre la mente discriminatoria."
-    },
-    {
-      "id": "TAO_0052",
-      "frase": "El espejo pulido no se mancha con el polvo.",
-      "interpretacion": "Es el verso de Shenxiu: limpiar el espejo cada día para que el polvo no se pose. Huineng le respondió que no hay espejo que limpiar. El verso no está equivocado: describe la práctica constante, y la respuesta, su límite.",
-      "practica_hoy": "Hoy practica algo con constancia (cinco minutos de quietud, ordenar la mesa) y nota cómo te sientes al hacerlo. Pregúntate: ¿lo hago para mejorarme o para estar presente?",
-      "categoria": "practica",
-      "linaje": "zen",
-      "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台)"
     },
     {
       "id": "TAO_0053",
@@ -741,15 +705,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Tao Te Ching, cap. 23: «飘风不终朝»; trad. Preciado Idoeta"
     },
     {
-      "id": "TAO_0084",
-      "frase": "El árbol nudoso vive siglos porque nadie quiere su madera.",
-      "interpretacion": "Aquello que los estándares convencionales consideran 'inútil' puede ser el resguardo de la propia libertad ontológica.",
-      "practica_hoy": "Reconoce un aspecto de tu vida que carece de 'productividad' externa y contémplalo como tu refugio vital.",
-      "categoria": "flexibilidad",
-      "linaje": "taoismo",
-      "nota_editorial": "Zhuangzi, cap. 4 (人间世) y cap. 1 (逍遥游): el árbol inútil"
-    },
-    {
       "id": "TAO_0086",
       "frase": "Esperar con comodidad al enemigo fatigado.",
       "interpretacion": "Responder desde el agotamiento suele empeorar las cosas. Recuperar fuerzas antes de un conflicto es estrategia, no huida.",
@@ -937,15 +892,6 @@ window.TAOISTA_DATASET = {
       "categoria": "aprendizaje",
       "linaje": "zen",
       "nota_editorial": "Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai"
-    },
-    {
-      "id": "TAO_0113",
-      "frase": "No es la bandera la que se mueve, ni el viento. Es tu mente.",
-      "interpretacion": "La agitación percibida puede ser interna.",
-      "practica_hoy": "Observa una reacción antes de actuar.",
-      "categoria": "discernimiento",
-      "linaje": "zen",
-      "nota_editorial": "Sutra de la Plataforma (六祖坛经), cap. 1 (行由品), episodio de Huineng y el estandarte; trad. Villalba"
     },
     {
       "id": "TAO_0114",
@@ -1407,15 +1353,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
-      "id": "TAO_0167",
-      "frase": "Luchar contra pensamientos es como discutir con la radio.",
-      "interpretacion": "El contenido mental no necesita obediencia; la radio sigue sonando aunque no la discutas.",
-      "practica_hoy": "Deja la “radio” prendida y sigue con tu tarea 2 minutos.",
-      "categoria": "defusion",
-      "linaje": "act",
-      "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
-    },
-    {
       "id": "TAO_0168",
       "frase": "No es que pienses mucho: es que crees todo lo que piensas.",
       "interpretacion": "El problema no es la mente produciendo contenido, sino la fusión cognitiva: tratar pensamientos como hechos o mandatos.",
@@ -1582,24 +1519,6 @@ window.TAOISTA_DATASET = {
       "frase": "El dolor llama más fuerte cuando lo ignoras.",
       "interpretacion": "La evitación intensifica la experiencia.",
       "practica_hoy": "Dale 20 segundos de atención al dolor sin juicio y luego continúa.",
-      "categoria": "evitacion_experiencial",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0189",
-      "frase": "Pelear con el lodo solo te hunde más.",
-      "interpretacion": "El esfuerzo por eliminar el malestar aumenta su impacto.",
-      "practica_hoy": "Reduce lucha 1%: deja de “arreglar” la emoción por 30 segundos.",
-      "categoria": "evitacion_experiencial",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0190",
-      "frase": "Quedarte en arenas movedizas empeora al intentar salir.",
-      "interpretacion": "La evitación activa intensifica el atrapamiento.",
-      "practica_hoy": "Haz lo contrario al impulso: pausa, respira, y mueve solo un pie (un paso mínimo).",
       "categoria": "evitacion_experiencial",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
@@ -2487,15 +2406,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "La segunda flecha."
     },
     {
-      "id": "TAO_0294",
-      "frase": "El Pantano de arenas movedizas: Cuanto más luchas, más te hundes.",
-      "interpretacion": "En el malestar interno, el esfuerzo por 'no sentir' es lo que te atrapa. La aceptación es dejar de luchar y flotar; eso te da la superficie para empezar a moverte.",
-      "practica_hoy": "Si sientes ansiedad, no intentes quitarla. Nota su textura y permite que esté ahí mientras caminas.",
-      "categoria": "aceptacion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Metáfora de la no-resistencia."
-    },
-    {
       "id": "TAO_0295",
       "frase": "El dolor insiste; el sufrimiento negocia.",
       "interpretacion": "Dolor y pérdida ocurren. El sufrimiento se amplifica cuando la mente exige que no ocurra o pone condiciones imposibles para aceptar.",
@@ -2568,15 +2478,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Ejercicio ACT «Leaves on a Stream» (defusión); Hayes, Strosahl & Wilson, Acceptance and Commitment Therapy (1999/2012); Harris, ACT Made Simple (2009). Trad. esp.: Terapia de aceptación y compromiso (Desclée de Brouwer); La trampa de la felicidad (Booket)"
     },
     {
-      "id": "TAO_0313",
-      "frase": "Cada pensamiento, una hoja; el agua se las lleva todas.",
-      "interpretacion": "Los pensamientos son eventos que pasan. Si intentas atraparlos o detenerlos, te agotas. Esta es la versión en imagen del ejercicio de las hojas en el arroyo: aquí el foco es la corriente, no cada hoja.",
-      "practica_hoy": "Dedica 2 minutos a imaginar cada pensamiento como una hoja que cae al agua y se aleja flotando.",
-      "categoria": "atencion",
-      "linaje": "act",
-      "nota_editorial": "Variante en imagen del ejercicio ACT «Leaves on a Stream» (ver TAO_0312)"
-    },
-    {
       "id": "TAO_0314",
       "frase": "Hoy el mundo no te pide brillo: te pide presencia.",
       "interpretacion": "La atención fragmentada convierte la vida en una secuencia de ausencias. Estar presente no es una virtud estética; es una función básica para cuidar, decidir y vincularse.",
@@ -2647,24 +2548,6 @@ window.TAOISTA_DATASET = {
       "categoria": "cuerpo",
       "linaje": "mindfulness",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0350",
-      "frase": "La Radio de la Mente: Ruido de fondo que no puedes apagar.",
-      "interpretacion": "La mente genera pensamientos continuos como una radio encendida. No necesitas apagarla ni luchar contra el locutor; basta con retirar tu atención de esa frecuencia y enfocarte en lo que estás haciendo aquí y ahora.",
-      "practica_hoy": "Durante una tarea, si la mente critica, di: 'Gracias, mente, por esa información', y sigue con lo tuyo.",
-      "categoria": "defusion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Perspectiva funcional sobre el pensamiento."
-    },
-    {
-      "id": "TAO_0351",
-      "frase": "Pasajeros en el Autobús",
-      "interpretacion": "Conduce hacia tus valores sin dejar que los pasajeros ruidosos tomen el volante.",
-      "practica_hoy": "Nota a un pasajero y sigue conduciendo.",
-      "categoria": "defusion",
-      "linaje": "act",
-      "nota_editorial": "Ejercicio ACT «Passengers on the Bus» (defusión/aceptación); Hayes et al. (1999/2012); Harris (2009). Trad. esp. citadas"
     },
     {
       "id": "TAO_0352",
@@ -2890,15 +2773,6 @@ window.TAOISTA_DATASET = {
       "categoria": "no_saber",
       "linaje": "zen",
       "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Huineng (本来无一物，何处惹尘埃)"
-    },
-    {
-      "id": "TAO_0378",
-      "frase": "El árbol que no sirve para vigas vive más años.",
-      "interpretacion": "Zhuangzi invierte la jerarquía: lo que no sirve a la máquina puede servir para vivir. No hay inutilidad, sino usos que el estándar no mide.",
-      "practica_hoy": "Haz algo «inútil» 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea. Pregúntate: ¿qué se mide en mí cuando no produzco?",
-      "categoria": "saturacion",
-      "linaje": "taoismo",
-      "nota_editorial": "Zhuangzi, cap. 1 (逍遥游) y cap. 4 (人间世): «是不材之木也，无所可用，故能若是之寿»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0379",
@@ -3135,15 +3009,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Naturaleza original."
     },
     {
-      "id": "TAO_0442",
-      "frase": "El maestro dijo: «Cuando comes, come; cuando caminas, camina».",
-      "interpretacion": "La fragmentación atencional crea sufrimiento innecesario.",
-      "practica_hoy": "Haz una actividad cotidiana sin multitarea por 3 minutos.",
-      "categoria": "atencion",
-      "linaje": "zen",
-      "nota_editorial": "Tradición chan; cf. 大珠慧海 (Dazhu Huihai), 景德传灯录 (Jingde Chuandeng Lu, vol. 6): «饥来吃饭，困来即眠»; también Linji lu"
-    },
-    {
       "id": "TAO_0443",
       "frase": "El maestro dijo: «La mente que compara ya se perdió».",
       "interpretacion": "Evaluar constantemente rompe el contacto.",
@@ -3225,15 +3090,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Wumenguan (无门关), caso 37: «庭前柏树子» (el ciprés/ciprés del patio), Zhaozhou Congshen; trad. Villalba. Caso también comentado en la tradición chan posterior."
     },
     {
-      "id": "TAO_0453",
-      "frase": "El monje preguntó cuánto faltaba para despertar. El maestro le preguntó si ya había desayunado.",
-      "interpretacion": "La pregunta parte de una separación que no existe. La iluminación es la vida cotidiana.",
-      "practica_hoy": "Atiende una necesidad simple antes de buscar sentido.",
-      "categoria": "atencion",
-      "linaje": "zen",
-      "nota_editorial": "Variación del Koan 'Lava tu cuenco'."
-    },
-    {
       "id": "TAO_0454",
       "frase": "El monje preguntó por el camino. El maestro dijo: 'El camino cotidiano es el Camino'.",
       "interpretacion": "Es el caso de Nanquan: «la mente ordinaria es el Camino». No hay un sendero espiritual aparte de comer, trabajar y descansar; lo que cambia es la manera de habitarlos.",
@@ -3279,15 +3135,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Yijing, hexagrama 31 (Xian, «Influencia»): lago sobre montaña. La lectura montaña/lago como «centro/agitación» es moderna, no del texto original."
     },
     {
-      "id": "TAO_0459",
-      "frase": "Lava tu cuenco.",
-      "interpretacion": "La iluminación y la profundidad no residen en estados alterados o discusiones teóricas, sino en la total inmersión atencional en lo ordinario.",
-      "practica_hoy": "Ejecuta la tarea más trivial de tu día (como asearte o recoger un objeto) con la reverencia focal con la que realizarías un acto sagrado.",
-      "categoria": "atencion",
-      "linaje": "zen",
-      "nota_editorial": "Koan del cuenco."
-    },
-    {
       "id": "TAO_0460",
       "frase": "Le cortaron el dedo y alcanzó la iluminación.",
       "interpretacion": "El dolor súbito o la pérdida pueden despertar la conciencia dormida. La frase apunta al potencial de lo abrupto.",
@@ -3331,15 +3178,6 @@ window.TAOISTA_DATASET = {
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0465",
-      "frase": "Un monje preguntó: «¿Qué es la práctica?» El maestro respondió: «Cuando estás cansado, duerme».",
-      "interpretacion": "La práctica no añade capas, ajusta a la necesidad real.",
-      "practica_hoy": "Si estás cansado, ajusta tu día a una acción mínima y descansa sin culpa.",
-      "categoria": "autorregulacion",
-      "linaje": "zen",
-      "nota_editorial": "Tradición chan; cf. Dazhu Huihai, Jingde Chuandeng Lu vol. 6: «困来即眠»"
     },
     {
       "id": "TAO_0466",
@@ -3432,15 +3270,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Creación original (sin fuente)"
     },
     {
-      "id": "TAO_0476",
-      "frase": "Cuando se levantó la bandera, unos dijeron que se movía el viento, otros que se movía la tela.",
-      "interpretacion": "La discusión reproduce dos lecturas parciales de un mismo hecho. Huineng no elige bando: señala la mente que observa. La práctica es notar la propia lectura, no corregir la del otro.",
-      "practica_hoy": "Ante una discusión hoy, escribe en una línea «lo que veo» y en otra «lo que ve el otro». Pregúntate: ¿qué añade la segunda lectura que la mía no ve?",
-      "categoria": "discernimiento",
-      "linaje": "zen",
-      "nota_editorial": "Sutra de la Plataforma, cap. 1 (行由品), episodio del estandarte; trad. Villalba"
-    },
-    {
       "id": "TAO_0477",
       "frase": "El maestro cerró los ojos ante la pregunta.",
       "interpretacion": "La respuesta no siempre es informativa.",
@@ -3486,15 +3315,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Creación original (sin fuente)"
     },
     {
-      "id": "TAO_0482",
-      "frase": "El maestro dijo: «No te quedes mirando el dedo».",
-      "interpretacion": "Confundir señal con realidad desvía la práctica.",
-      "practica_hoy": "Usa una instrucción y luego déjala: vuelve a la experiencia directa.",
-      "categoria": "discernimiento",
-      "linaje": "zen",
-      "nota_editorial": "Metáfora chan «指月»; cf. Sutra de Lankavatara; ver TAO_0061"
-    },
-    {
       "id": "TAO_0483",
       "frase": "Un monje preguntó: «¿Qué es el error?» El maestro respondió: «Insistir».",
       "interpretacion": "La perseverancia rígida ignora el contexto.",
@@ -3522,15 +3342,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Creación original (sin fuente)"
     },
     {
-      "id": "TAO_0486",
-      "frase": "El maestro rompió la estatua antes de responder.",
-      "interpretacion": "Aferrarse a símbolos interrumpe el contacto directo.",
-      "practica_hoy": "Detecta un símbolo que usas para sentirte en paz (una app, un objeto, un ritual) y practica 2 minutos sin él.",
-      "categoria": "ego",
-      "linaje": "zen",
-      "nota_editorial": "Alusión a 丹霞天然 (Danxia Tianran) quemando la estatua de Buda; 景德传灯录 (Jingde Chuandeng Lu) / 五灯会元 (Wudeng Huiyuan)"
-    },
-    {
       "id": "TAO_0487",
       "frase": "Un monje preguntó: «¿Qué es la ignorancia?» El maestro respondió: «Creer que sabes».",
       "interpretacion": "La certeza prematura bloquea la indagación.",
@@ -3538,24 +3349,6 @@ window.TAOISTA_DATASET = {
       "categoria": "ego",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0488",
-      "frase": "«Si encuentras al Buda, mátalo».",
-      "interpretacion": "Aferrarse a la imagen de iluminación es otro obstáculo. La frase apunta al costo de la idealización.",
-      "practica_hoy": "Detecta hoy una imagen que veneres (de ti, de otro, de un estado) y pregúntale: “¿qué estoy evitando ver?”. Una frase.",
-      "categoria": "ego",
-      "linaje": "zen",
-      "nota_editorial": "Linji lu. Lectura no literal: matar al Buda es cortar la idealización, no un acto literal."
-    },
-    {
-      "id": "TAO_0489",
-      "frase": "El maestro señaló la luna; el alumno coleccionó dedos.",
-      "interpretacion": "Convertir herramientas en fetiches (técnicas, conceptos, etiquetas) evita la experiencia directa. La práctica real es usar el dedo para mirar, no para construir un museo.",
-      "practica_hoy": "Elige una práctica (respirar, caminar, comer). Hazla 3 minutos sin explicar nada en tu cabeza.",
-      "categoria": "experiencia_directa",
-      "linaje": "zen",
-      "nota_editorial": "Variación del tema «指月»; Sutra de Lankavatara; ver TAO_0061"
     },
     {
       "id": "TAO_0490",
@@ -3693,15 +3486,6 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Wumenguan (无门关), caso 21: «云门屎橛»; trad. Villalba"
     },
     {
-      "id": "TAO_0505",
-      "frase": "Un monje preguntó: «¿Tiene el perro naturaleza de Buda?» El maestro respondió: «Mu».",
-      "interpretacion": "La pregunta falla porque presupone una división que no existe.",
-      "practica_hoy": "Ante una pregunta de sí o no que te inquiete hoy, escribe una tercera opción que no sea ni sí ni no.",
-      "categoria": "lenguaje_y_realidad",
-      "linaje": "zen",
-      "nota_editorial": "Wumenguan, caso 1: «赵州狗子»; trad. Villalba"
-    },
-    {
       "id": "TAO_0540",
       "frase": "Un monje pidió una enseñanza final. El maestro bebió té.",
       "interpretacion": "La práctica está en el acto ordinario; la enseñanza final es el gesto presente.",
@@ -3718,15 +3502,6 @@ window.TAOISTA_DATASET = {
       "categoria": "momento_presente",
       "linaje": "zen",
       "nota_editorial": "Variación de Zhaozhou; creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0542",
-      "frase": "Un monje preguntó: «¿Cuál es el camino?» El maestro respondió: «La mente ordinaria».",
-      "interpretacion": "Buscar estados especiales es perder contacto con lo inmediato. La frase apunta a la práctica en lo ordinario.",
-      "practica_hoy": "Durante una tarea ordinaria hoy (fregar, caminar), nota tres veces: “esto es”. Sin comentario.",
-      "categoria": "momento_presente",
-      "linaje": "zen",
-      "nota_editorial": "Wumenguan, caso 19: «南泉平常心是道»; trad. Villalba"
     },
     {
       "id": "TAO_0543",
@@ -3790,15 +3565,6 @@ window.TAOISTA_DATASET = {
       "categoria": "no_saber",
       "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0560",
-      "frase": "El maestro levantó una flor. Solo uno sonrió.",
-      "interpretacion": "La comprensión no siempre pasa por el lenguaje. La frase apunta a la transmisión silenciosa.",
-      "practica_hoy": "Hoy, en una conversación, responde con un gesto o un silencio en lugar de una explicación. Una vez.",
-      "categoria": "no_saber",
-      "linaje": "zen",
-      "nota_editorial": "Wumenguan, caso 6: «世尊拈花» (el Buda muestra una flor); trad. Villalba"
     },
     {
       "id": "TAO_0561",
