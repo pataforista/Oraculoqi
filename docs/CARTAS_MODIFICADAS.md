@@ -1,10 +1,22 @@
 # Cartas modificadas en la auditoría de contenido
 
-Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revisión.
+Noviembre de 2026. «Antes» es el texto previo a la auditoría; «Ahora», el texto vigente. Cada carta indica qué campos cambiaron.
 
-- Parte 1: 55 cartas superficiales reescritas (contexto + pregunta de reflexión).
-- Parte 2: 43 cartas corregidas por riesgo, práctica de relleno o fuente.
-- Parte 3: 2 cartas eliminadas.
+| Parte | Cartas |
+|---|---|
+| 1. Superficiales reescritas (contexto + «Pregúntate») | 55 |
+| 2. Corregidas por riesgo, práctica de relleno o fuente | 43 |
+| 3. Eliminadas | 2 |
+
+En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó igual): TAO_0136, TAO_0449, TAO_0476, TAO_0486, TAO_0498, TAO_0503, TAO_0505, TAO_0556, TAO_0559, TAO_0565, TAO_0566.
+
+## Correcciones tras la revisión externa
+
+- TAO_0193 y TAO_0369: la práctica no se había cambiado; ahora sí.
+- TAO_0080, TAO_0353, TAO_0372, TAO_0434 y TAO_0447: la pregunta de reflexión se uniformó como «Pregúntate: …» (en TAO_0372 faltaba).
+- TAO_0041: «Fénix» se precisó como «ave yuanchu, una especie de fénix».
+- TAO_0032: la fuente pasa a «Fuente no verificada».
+- Verificado sin cambio necesario: TAO_0364 ya tenía la práctica alineada con su interpretación; TAO_0562 sí tiene la interpretación reescrita.
 
 ---
 
@@ -13,6 +25,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0024 · atencion · contemporaneo
 
 **Frase:** Alejar la leña de debajo del caldero.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -25,6 +39,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Antes de la iluminación: cortar leña, llevar agua. Después: lo mismo.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La comprensión no cambia la tarea. | La tarea no cambia; cambia quien la hace. La comprensión no saca de la vida cotidiana: devuelve a ella con otra mirada. |
@@ -35,6 +51,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0027 · atencion · contemporaneo
 
 **Frase:** Antes de que llueva, asegura la ventana.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -47,6 +65,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Buscas al mulo mientras vas montado en el mulo.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Buscas la paz o la felicidad fuera, cuando es lo que sostiene tu búsqueda. Ya estás sobre lo que buscas. | Foyan señala dos errores: buscar el mulo sin ver que lo montas, y, una vez visto, no querer bajarte. Lo que buscas puede estar operando ya en tu manera de buscar. |
@@ -57,6 +77,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0031 · atencion · contemporaneo
 
 **Frase:** Cabalgar un buey buscando un buey.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -69,6 +91,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El Errante: Fuego sobre la Montaña.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El fuego no se queda en la montaña; pasa. Eres un viajero en este mundo. No te apegues a los lugares ni a los roles. | El hexagrama del Errante describe a quien está de paso: el fuego en la montaña no se queda, avanza. Estar de paso pide prudencia, cortesía y no aferrarse a un lugar que no es propio. |
@@ -78,10 +102,13 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 ### TAO_0041 · atencion · contemporaneo
 
-**Frase:** El Fénix descansa solo en el árbol Wutong.
+**Frase:** El ave yuanchu, una especie de fénix, solo se posa en el árbol wutong.
+
+**Cambió:** frase, interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
+| Frase | El Fénix descansa solo en el árbol Wutong. | El ave yuanchu, una especie de fénix, solo se posa en el árbol wutong. |
 | Interpretación | El espíritu noble es selectivo. No pongas tu atención ni tu energía en cualquier lugar vulgar. | En Zhuangzi, el ave noble solo se posa en el wutong y Huizi teme que quiera su cargo: lo que uno valora no es lo que codicia el otro. Elegir dónde posarse es una decisión sobre valores. |
 | Práctica | Elige con cuidado dónde pones tu atención. | Revisa en qué gastaste tu atención ayer. Marca un lugar donde «te posaste» sin elegirlo. Pregúntate: ¿qué árbol elegiría hoy si fuera fiel a lo que valoro? |
 | Fuente | El pájaro Peng. | Zhuangzi, cap. 17 (秋水): el ave yuanchu solo se posa en el wutong |
@@ -91,6 +118,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0042 · atencion · contemporaneo
 
 **Frase:** El agua fluye, la flor cae. Cada una a lo suyo.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -103,6 +132,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El ejército excesivo se derrota a sí mismo.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Demasiada preparación, demasiadas herramientas o demasiadas palabras estorban. La pesadez impide la maniobra. | Un ejército demasiado grande se vuelve lento y difícil de abastecer. También los planes, las listas y las herramientas pesan cuando exceden lo que la tarea pide. |
@@ -113,6 +144,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0052 · atencion · contemporaneo
 
 **Frase:** El espejo pulido no se mancha con el polvo.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -126,6 +159,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El ganso salvaje vuela gradualmente hacia la nube.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El progreso real es lento, ordenado y paso a paso. No intentes saltar etapas. | El hexagrama del Desarrollo gradual muestra al ganso que avanza por etapas: orilla, roca, tierra alta. Cada etapa tiene su forma de estar; saltarlas suele costar más. |
@@ -136,6 +171,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0063 · atencion · contemporaneo
 
 **Frase:** El monje dejó de meditar porque no avanzaba. Entonces se sentó.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -148,6 +185,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El monje preguntó: «¿Qué es el Tao?». El maestro levantó una piedra y la dejó caer.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La realidad no responde con conceptos. Ocurre. | La piedra cae y no explica nada; ocurre. A veces la pregunta pide un concepto y la respuesta llega como un hecho simple que no necesita traducción. |
@@ -159,6 +198,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El pozo: La ciudad puede cambiarse, pero el pozo no.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Hay una fuente profunda en ti que es inalterable, pase lo que pase en tu vida externa (la ciudad). Vuelve a beber de ahí. | El hexagrama del Pozo dice que la ciudad puede cambiar de lugar, pero el pozo no. Hay fuentes que sostienen, como los vínculos y los valores, que siguen ahí aunque cambie todo lo demás. |
@@ -169,6 +210,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0068 · atencion · contemporaneo
 
 **Frase:** El puente fluye, el agua está quieta.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -182,6 +225,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El pájaro enjaulado sueña con nubes; el pájaro libre busca semillas.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Idealizamos lo que no tenemos. La libertad real también incluye la necesidad banal de comer. No romántices. | Quien no tiene libertad la idealiza; quien la tiene sabe que incluye buscar alimento cada día. La libertad real trae rutina y esfuerzo, no solo cielo abierto. |
@@ -192,6 +237,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0070 · atencion · taoismo
 
 **Frase:** La persona sabia abraza la unidad.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -204,16 +251,20 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La persona sabia usa la luz para volver a la claridad.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Usa tu inteligencia no para analizar el mundo, sino para iluminar tu propia mente y regresar al origen. | «Usar la luz y volver a la claridad»: la inteligencia que sale al mundo puede volver a iluminar el propio punto de partida. Conocer fuera sin conocerse deja a oscuras lo esencial. |
-| Práctica | Observa tu propia mente en lugar de observar a otros. | Al final del día, toma algo que juzgaste de otra persona y pregúntate: ¿qué dice de mí este juicio? Escribe una línea. |
+| Práctica | Observa tu propia mente en lugar de observar a otros. | Al final del día, toma algo que juzgaste de otra persona y escribe una línea sobre ello. Pregúntate: ¿qué dice de mí este juicio? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0081 · atencion · taoismo
 
 **Frase:** La persona sabia vacía la mente y llena el vientre.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -226,6 +277,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El trueno bajo la tierra.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La energía está acumulándose, pero aún no sale. Es el momento de la recuperación y el retorno, no de la explosión. | En el hexagrama del Retorno, el trueno está bajo la tierra: el impulso vuelve, pero aún es débil. Los antiguos cerraban los pasos en el solsticio para cuidarlo. Un comienzo frágil se protege, no se exhibe. |
@@ -236,6 +289,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0089 · atencion · contemporaneo
 
 **Frase:** Gobernar un gran estado es como cocinar un pez pequeño.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -248,6 +303,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Intercambiar un ladrillo por un jade.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Ofrece algo de poco valor (una idea pequeña, una escucha) para obtener algo valioso (la confianza, la verdad). | La estratagema ofrece algo modesto para obtener algo valioso. En la vida diaria, una pregunta sencilla o una primera idea imperfecta suelen abrir lo que la espera no abre. |
@@ -258,6 +315,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0094 · atencion · contemporaneo
 
 **Frase:** La Olla: El fuego sobre el viento.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -270,6 +329,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La luna se refleja en mil ríos; la luna es una.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La verdad es una, pero cada persona la refleja según la claridad de su mente. No discutas por los reflejos. | Una sola luna aparece en mil ríos: cada agua la refleja según su quietud y su forma. Las distintas visiones de un mismo hecho pueden ser reflejos parciales, no mentiras. |
@@ -280,6 +341,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0110 · atencion · contemporaneo
 
 **Frase:** Nadie se mira en un río que corre; se miran en un estanque quieto.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -293,6 +356,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Sostener una flor y sonreír.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La comprensión directa no necesita palabras. Solo resonancia. | En el relato fundacional del zen, el Buda levanta una flor y solo Mahakasyapa sonríe. Algo se transmitió sin palabras: hay comprensiones que pasan por la presencia compartida. |
@@ -305,6 +370,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Tomar prestado el cadáver para resucitar el alma.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Usa una forma vieja o una estructura existente para inyectarle vida nueva. No inventes la rueda; úsala. | La estratagema usa una forma antigua para dar vida a algo nuevo. A veces no hay que inventar desde cero: un hábito, un proyecto o una tradición abandonada pueden recibir un propósito actual. |
@@ -316,6 +383,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Tres personas caminan; una sobra.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | En las relaciones o enfoques, la multitud dispersa. A veces debes sacrificar una opción para profundizar en la otra. | El hexagrama de la Merma dice que cuando tres caminan juntos, uno sobra; cuando uno camina solo, encuentra compañía. Restar también es una forma de dar espacio. |
@@ -325,11 +394,13 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 ### TAO_0133 · atencion · contemporaneo
 
-**Frase:** Una hoja ante el ojo oculta el monte Tai.  
-*(antes: Un pelo bloquea la vista de la montaña Tai.)*
+**Frase:** Una hoja ante el ojo oculta el monte Tai.
+
+**Cambió:** frase, interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
+| Frase | Un pelo bloquea la vista de la montaña Tai. | Una hoja ante el ojo oculta el monte Tai. |
 | Interpretación | Una pequeña obsesión o prejuicio justo delante de tus ojos te impide ver la inmensa realidad. | El modismo dice que una sola hoja ante el ojo basta para no ver el monte Tai. Un detalle cercano, como una ofensa o una preocupación, puede ocupar todo el campo de visión. |
 | Práctica | Identifica la pequeña obsesión que te tapa el día. | Nombra la «hoja» que hoy ocupa más tu atención. Escribe tres cosas importantes que no estás viendo por ella. Pregúntate: ¿de qué tamaño es realmente esta hoja? |
 | Fuente | Tradición china. | Heguanzi (鹖冠子): «一叶障目，不见泰山», modismo chino |
@@ -339,6 +410,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0134 · atencion · contemporaneo
 
 **Frase:** Vencer sin luchar.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -352,6 +425,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Mi corazón es como la luna de otoño; clara y brillante en el estanque verde.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No hay nada que se compare a la claridad pura de la mente original. Todo lo demás son reflejos. | Hanshan compara su mente con la luna de otoño reflejada en un estanque verde, y añade que no hay nada con qué compararla. La claridad no se describe del todo: se reconoce. |
@@ -363,6 +438,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0194 · humildad · contemporaneo
 
 **Frase:** El valle es eterno porque se mantiene bajo.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -376,6 +453,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El discípulo alcanzó un estado profundo y quiso conservarlo. Al día siguiente, ya no estaba.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La experiencia no es posesión. Querer congelar el río detiene la vida. | Los estados profundos llegan y se van. Querer retenerlos convierte la experiencia en una posesión que se puede perder, y la práctica en nostalgia. |
@@ -386,6 +465,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0304 · atencion · taoismo
 
 **Frase:** Conoce el blanco, pero conserva el negro.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -398,6 +479,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La atención sostenida revela lo esencial.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Mirar más tiempo cambia lo que ves. | Mirar algo un poco más de lo habitual cambia lo que se ve: aparecen detalles, matices y preguntas que la mirada rápida pasa por alto. |
@@ -409,10 +492,12 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** No busques huellas de pájaros en el aire.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No busques el pasado; ya no existe. No busques reconocimiento; se desvanece. Vive en el acto puro. | El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo. |
-| Práctica | Concéntrate solo en la acción presente, no en su rastro. | Haz hoy algo bien sin registrarlo ni contarlo. Al final del día pregúntate: ¿necesité que quedara huella para que valiera? |
+| Práctica | Concéntrate solo en la acción presente, no en su rastro. | Haz hoy algo bien sin registrarlo ni contarlo. Al final del día, anota una línea. Pregúntate: ¿necesité que quedara huella para que valiera? |
 | Fuente | Koan. | Imagen budista clásica; cf. Dhammapada 92–93 |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -420,6 +505,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0360 · atencion · taoismo
 
 **Frase:** Caminar sobre la escarcha; el hielo sólido llega pronto.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -432,6 +519,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La persona sabia no viaja, y sin embargo llega.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No necesitas ir a la India para encontrarte. El Tao está bajo tus pies. La búsqueda externa es una distracción. | El Daodejing dice que se puede conocer el mundo sin salir por la puerta. No niega viajar: señala que la comprensión depende más de cómo miras que de cuánto recorres. |
@@ -442,6 +531,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0367 · atencion · taoismo
 
 **Frase:** La flor no sueña con la abeja. Florece y la abeja llega.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -454,6 +545,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Lo difícil se hace desde lo fácil; lo grande, desde lo pequeño.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No esperes a que el problema sea gigante. Resuélvelo cuando es minúsculo. El viaje de mil millas es un paso. | El Daodejing aconseja atender lo difícil cuando aún es fácil y lo grande cuando aún es pequeño. Muchas dificultades nacen de lo que se dejó crecer. |
@@ -465,10 +558,12 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Una hormiga puede destruir una presa entera.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Un pequeño defecto o descuido ignorado puede derrumbar una gran estructura. Atiende lo pequeño. | Han Feizi recuerda que un dique enorme se rompe por un hormiguero. Las grandes estructuras, como la salud, la confianza o el trabajo, suelen fallar por grietas pequeñas desatendidas. |
-| Práctica | Corrige un error minúsculo antes de que crezca. | Revisa una «estructura» importante de tu vida y busca un hormiguero: una promesa incumplida, una molestia física ignorada, una tarea atrasada. Atiéndelo hoy. |
+| Práctica | Corrige un error minúsculo antes de que crezca. | Revisa algo importante de tu vida y busca un hormiguero: una promesa incumplida, una molestia física ignorada, una tarea atrasada. Atiéndelo hoy. Pregúntate: ¿qué grieta pequeña estoy dejando crecer? |
 | Fuente | Filosofía legalista. | Han Feizi, cap. 21 (喻老): «千丈之堤，以蝼蚁之穴溃» |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -476,6 +571,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0373 · atencion · taoismo
 
 **Frase:** Una sola chispa puede incendiar la pradera.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -487,6 +584,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0374 · atencion · taoismo
 
 **Frase:** Zhuangzi dijo: '¡Mira qué felices son los peces!'. Hui Zi respondió: 'Tú no eres pez, ¿cómo sabes que son felices?'.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -500,16 +599,20 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Buscó al yo durante toda la meditación. Al levantarse, ya no estaba buscándolo.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El 'yo' aparece como tensión cuando se le persigue. En la acción natural, desaparece. | Buscar el yo con esfuerzo lo vuelve un objeto escurridizo. Al soltar la búsqueda, la experiencia sigue ocurriendo sin que haga falta un centro que la vigile. |
-| Práctica | Suspende la autoobservación por un momento. | Al terminar una actividad absorbente hoy, pregúntate: ¿dónde estaba «yo» mientras lo hacía? Escribe una línea sin buscar la respuesta correcta. |
+| Práctica | Suspende la autoobservación por un momento. | Al terminar hoy una actividad que te absorba, escribe una línea sin buscar la respuesta correcta. Pregúntate: ¿dónde estaba «yo» mientras lo hacía? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0436 · atencion · zen
 
 **Frase:** El discípulo preguntó: '¿Qué es el Buda?'. El maestro respondió: 'Tres libras de lino'.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -523,6 +626,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El ladrón entró y el maestro le regaló su ropa.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Quien no posee nada, no puede ser robado. La generosidad desarma la pérdida. | Ryōkan, a quien un ladrón no pudo robar nada, le dio su ropa y lamentó no poder darle la luna. Quien no se aferra pierde menos, y aun puede ofrecer. |
@@ -535,6 +640,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro cerró la puerta al discípulo inteligente.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El intelecto es un obstáculo. A veces hay que frustrar la mente para que el espíritu pase. | El maestro frena al discípulo que lo explica todo: la inteligencia puede convertirse en defensa contra la experiencia. No se trata de pensar menos, sino de no esconderse en el pensamiento. |
@@ -545,6 +652,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0439 · atencion · zen
 
 **Frase:** El maestro dibujó un círculo y entró en él.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -557,6 +666,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro dijo: 'Ya está hecho'.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No hay nada que lograr. Desde el principio, todo está completo. | «Ya está hecho» apunta a la naturaleza original: algo de lo que buscas no hay que fabricarlo. No anula el esfuerzo; cambia el lugar desde el que se hace. |
@@ -567,6 +678,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0444 · atencion · zen
 
 **Frase:** El maestro enseñó durante años. Cuando murió, nada quedó escrito.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -579,16 +692,20 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro no alcanzó nada ese día. Tampoco al siguiente.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La vía no es una fábrica de logros. El 'no conseguir nada' es el logro. | Mushotoku es practicar sin espíritu de provecho. Un día sin logros también es parte del camino; medirlo todo por ganancia vacía la práctica. |
-| Práctica | Permite un día sin conclusiones. | Hoy haz tu práctica (o una actividad que te gusta) sin registrar resultados. Al final pregúntate: ¿la disfruté menos o más sin medirla? |
+| Práctica | Permite un día sin conclusiones. | Hoy haz tu práctica (o una actividad que te gusta) sin registrar resultados. Pregúntate al terminar: ¿la disfruté menos o más sin medirla? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0454 · atencion · zen
 
 **Frase:** El monje preguntó por el camino. El maestro dijo: 'El camino cotidiano es el Camino'.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -602,6 +719,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El monje preguntó: '¿Cómo entro en el Camino?'. El maestro dijo: '¿Oyes el arroyo? Entra por ahí'.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Cualquier punto de percepción presente es una puerta de entrada al absoluto. | Xuansha muestra la entrada en lo que ya se está oyendo: el arroyo. La práctica no empieza en otro sitio, sino en lo que los sentidos traen ahora. |
@@ -614,6 +733,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Preguntaron por la verdad última. El maestro bebió agua.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La verdad no interrumpe lo ordinario; es lo ordinario vivido totalmente. | Ante la pregunta más alta, el maestro hace lo más simple: beber agua. La verdad no está lejos de los actos básicos; está en hacerlos del todo. |
@@ -624,6 +745,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0570 · silencio · zen
 
 **Frase:** El discípulo pidió una instrucción final. El maestro cerró los ojos.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -640,6 +763,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Cruzar el gran río.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Es momento de tomar una decisión importante y arriesgada. Las condiciones favorecen la audacia, no la cautela. | En el Yijing, «es propicio cruzar el gran río» señala el momento de una empresa que exige compromiso. No promete éxito: invita a distinguir si aplazas por prudencia o por miedo. |
@@ -652,6 +777,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Buscó el momento correcto hasta que el momento pasó.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El tiempo no espera a la decisión. | Esperar condiciones perfectas puede ser una forma de evitar. El tiempo no se detiene mientras la decisión madura. |
@@ -663,16 +790,21 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Caminaron bajo la lluvia y no se mojaron.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Si no te resistes a la incomodidad, el sufrimiento 'no te toca'. | La lluvia moja a todos; lo que cambia es la lucha añadida contra ella. Aceptar una molestia inevitable no la elimina, pero quita la segunda capa de queja. |
 | Práctica | Acepta una incomodidad física sin quejarte mentalmente. | Ante una molestia menor e inevitable hoy (clima, espera), nota la queja mental y nómbrala: «queja». Si es un dolor físico nuevo o intenso, atiéndelo: no es para aguantar. |
+| Fuente | Atribución incierta; no localizada en Wumenguan ni Biyan Lu. Tratar como creación original hasta verificar | Fuente no verificada; no localizada en Wumenguan ni Biyan Lu |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0039 · atencion · contemporaneo
 
 **Frase:** Dos monjes discutían sobre la bandera. El patriarca dijo: 'Es su mente la que se mueve'.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -685,6 +817,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El caldero se ha volcado.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | A veces es necesario que todo se derrame para empezar de nuevo. No llores por lo perdido; el caldero estaba sucio. | Hay pérdidas que derraman lo que con esfuerzo se cocinaba. Antes de rehacer nada, el primer paso es reconocer lo que se perdió. |
@@ -692,20 +826,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
-### TAO_0051 · atencion · contemporaneo
-
-**Frase:** El error ocurrió. Solo después lo llamó error.
-
-| | Antes | Ahora |
-|---|---|---|
-| Interpretación | El juicio crea el problema. El hecho en sí mismo es neutro hasta que la mente lo etiqueta. | Primero ocurre el hecho; después llega la etiqueta. Separarlas no niega el error: permite corregirlo sin castigarte. |
-| Práctica | Hoy, te invito a hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas notando cómo cambia tu experiencia interna al no luchar. | Ante un error hoy, escribe el hecho en una línea y la etiqueta en otra («soy torpe»). Actúa sobre el hecho. |
-
-**Revisión:** ☐ Aprobada ☐ Cambiar: 
-
 ### TAO_0054 · atencion · contemporaneo
 
 **Frase:** La persona necia busca el fuego con una lámpara encendida.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -717,6 +842,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0066 · atencion · contemporaneo
 
 **Frase:** El pino y el ciprés son los últimos en perder sus hojas cuando llega el invierno.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -730,6 +857,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La persona sabia conoce la luz, pero se mantiene en la oscuridad.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Aunque tengas talento para brillar, prefiere el segundo plano. Allí estás seguro y libre de envidias. | No exhibir todo lo que sabes deja margen para observar y aprender. No es esconderte por miedo: es elegir cuándo mostrarte. |
@@ -740,6 +869,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0086 · atencion · contemporaneo
 
 **Frase:** Esperar con comodidad al enemigo fatigado.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -753,6 +884,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Fingir ser un cerdo para comerse al tigre.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Parece inofensivo y tonto para que tu oponente (o tu ego) se confíe. Luego, toma el control. | El dicho habla de ocultar la fuerza para no provocar al adversario. Leído hacia dentro: no hace falta demostrar todo lo que sabes para estar seguro de ello. |
@@ -765,6 +898,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La calidad de tu vida depende de la calidad de tus pensamientos.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El tinte de la realidad experimentada no es un paisaje objetivo, sino la proyección directa de la calidad atencional de tus procesos cognitivos. | Lo que pensamos tiñe cómo vivimos lo que ocurre, aunque no decide todo lo que ocurre. Notar ese tinte da margen para elegir. |
@@ -775,6 +910,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0115 · atencion · contemporaneo
 
 **Frase:** Pisar la cola del tigre. No muerde.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -787,6 +924,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Señalar la morera para maldecir la acacia.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | A veces no puedes corregir a alguien directamente. Critica un error general (la morera) para que la persona (acacia) entienda sin ofenderse. | La estratagema describe criticar de forma indirecta. Conviene conocerla para notar cuándo la usamos: la indirecta suele herir más que una petición clara. |
@@ -797,6 +936,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0120 · atencion · contemporaneo
 
 **Frase:** Si el carro se rompe, ¿golpeas al carro o al buey?
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -810,6 +951,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Si quieres tomar, primero debes dar.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Es la ley del ciclo. No puedes inhalar sin haber exhalado. La generosidad abre la puerta a la abundancia. | En el Daodejing, la frase describe cómo las cosas se mueven por contraste. En las relaciones, ofrecer primero suele abrir más puertas que exigir. |
@@ -820,6 +963,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0124 · atencion · contemporaneo
 
 **Frase:** Solo en la montaña fría, sin preocupaciones.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -833,6 +978,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Treinta años viviendo en la montaña y olvidé el camino de vuelta.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Cuando te sumerges totalmente en el presente, el pasado (el camino de vuelta) desaparece. Eso es libertad. | Absorto en la montaña, el poeta ya no piensa en volver. Estar de lleno en un lugar afloja la nostalgia de lo que fuiste. |
@@ -845,6 +992,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Vendiendo agua junto al río.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Ofreces lo que sobra. No intentes dar lo que ya está disponible abundantemente. | Ofrecer lo que sobra no aporta. La ayuda útil responde a lo que falta. |
@@ -856,9 +1005,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Viento sobre el lago: Verdad Interior.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | El viento mueve el agua porque es invisible y penetrante. La sinceridad penetra las defensas más duras. | El viento mueve el agua porque es invisible y penetrante. La sinceridad penetra las defensas más duras. |
+| Interpretación | El viento mueve el agua porque es invisible y penetrante. La sinceridad penetra las defensas más duras. | *(sin cambios)* |
 | Práctica | Habla hoy desde tu verdad más vulnerable. | Di hoy algo sincero a una persona de confianza, en una frase y sin exagerar. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -867,16 +1018,20 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La persona sabia sabe que no sabe. La necia cree que sabe.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Reconocer la propia ignorancia es la cima de la salud mental. Creer saber es una enfermedad. | Reconocer los límites del propio saber abre la indagación; la certeza prematura la cierra. |
-| Práctica | Responde 'no lo sé' con confianza al menos una vez. | Responde 'no lo sé' con confianza al menos una vez. |
+| Práctica | Responde 'no lo sé' con confianza al menos una vez. | Hoy, ante una pregunta que no sepas responder, di «no lo sé» y añade qué necesitarías para averiguarlo. Una frase. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0324 · atencion · taoismo
 
 **Frase:** La rigidez es la característica de la muerte; la flexibilidad, de la vida.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -889,6 +1044,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Retirar la escalera después de subir.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | A veces debes ponerte en una situación sin retorno para obligarte a actuar con totalidad. El miedo te hace retroceder si puedes. | La estratagema corta la retirada para forzar el compromiso. A veces ayuda quitarse excusas; quitarse toda red de seguridad es otra cosa. |
@@ -898,11 +1055,13 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 ### TAO_0364 · atencion · taoismo
 
-**Frase:** La persona sabia no tiene un corazón fijo; hace suyo el corazón de la gente.  
-*(antes: La persona sabia no tiene corazón; el corazón del Tao es su corazón.)*
+**Frase:** La persona sabia no tiene un corazón fijo; hace suyo el corazón de la gente.
+
+**Cambió:** frase, interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
+| Frase | La persona sabia no tiene corazón; el corazón del Tao es su corazón. | La persona sabia no tiene un corazón fijo; hace suyo el corazón de la gente. |
 | Interpretación | Ha vaciado sus preferencias personales. Ahora fluye con la voluntad universal. | El Daodejing describe a quien guía sin imponer sus preferencias: escucha lo que necesitan los demás. (La versión anterior, «el corazón del Tao es su corazón», no corresponde al original.) |
 | Práctica | Intenta querer lo que la vida te traiga hoy. | En una conversación hoy, antes de opinar, pregunta qué necesita la otra persona y repítelo con tus palabras. |
 | Fuente | Daodejing, cap. 49 | Daodejing, cap. 49 (圣人无常心，以百姓心为心) |
@@ -913,16 +1072,20 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La red del Cielo es amplia, pero nada se le escapa.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La ley de causa y efecto es sutil y lenta, pero absoluta. No creas que puedes engañar al Tao. | El Daodejing afirma que el curso de las cosas acaba alcanzando los actos. Más que una amenaza, es una invitación a actuar igual con o sin testigos. |
-| Práctica | Actúa con integridad, aunque nadie te vea. | Actúa con integridad, aunque nadie te vea. |
+| Práctica | Actúa con integridad, aunque nadie te vea. | Detecta hoy una ocasión en que podrías actuar distinto porque nadie mira. Elige la opción íntegra y anota una línea. Pregúntate: ¿qué cambió en mí al hacerlo? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
 ### TAO_0376 · no_saber · taoismo
 
 **Frase:** Le preguntaron cómo estaba. Dijo: 'Como un tronco seco en invierno'.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -935,6 +1098,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0377 · no_saber · zen
 
 **Frase:** Originalmente no hay ni una sola cosa. ¿Dónde se posará el polvo?
+
+**Cambió:** interpretación, práctica, fuente, linaje
 
 | | Antes | Ahora |
 |---|---|---|
@@ -949,6 +1114,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro dijo: 'Si te encuentras a tus padres, mátalos'.
 
+**Cambió:** interpretación, práctica, fuente
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Libérate de los orígenes y condicionamientos heredados para ser libre. | En el Linji lu, «matar» es imagen de cortar el apego a toda autoridad, incluso la familiar; no es una instrucción literal. Invita a examinar lo heredado. |
@@ -960,6 +1127,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0446 · atencion · zen
 
 **Frase:** El maestro le dio un golpe de bastón (Keisaku).
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -973,9 +1142,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro rió al ver la desgracia.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | La risa del sabio ante el infortunio no es crueldad, sino la revelación de la impermanencia. Comprender que toda crisis es transitoria disuelve la gravedad con la que la mente reviste el dolor cotidiano. | La risa del sabio ante el infortunio no es crueldad, sino la revelación de la impermanencia. Comprender que toda crisis es transitoria disuelve la gravedad con la que la mente reviste el dolor cotidiano. |
+| Interpretación | La risa del sabio ante el infortunio no es crueldad, sino la revelación de la impermanencia. Comprender que toda crisis es transitoria disuelve la gravedad con la que la mente reviste el dolor cotidiano. | *(sin cambios)* |
 | Práctica | Hoy, ante una pequeña contrariedad cotidiana (como un derrame o un retraso), en lugar de quejarte, sonríe intencionalmente y recuerda que todo flujo cambia constantemente. | Ante una pequeña contrariedad hoy (un derrame, un retraso), nombra lo que pasó en una frase y nota que ya está cambiando. No hace falta sonreír si no te sale. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -983,6 +1154,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0450 · atencion · zen
 
 **Frase:** El maestro se sentó solo y la montaña se acercó.
+
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
@@ -996,6 +1169,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Mirar el fuego desde la orilla opuesta.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No te involucres en el caos ajeno. Mantén la distancia y observa cómo se desarrolla el conflicto sin quemarte. | No todo conflicto ajeno requiere tu intervención; observar a distancia evita sumar leña al fuego. |
@@ -1007,6 +1182,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Nadie sabe dónde se ha ido el maestro.
 
+**Cambió:** interpretación, práctica
+
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El verdadero sabio no deja rastro ni dirección. Es libre e inlocalizable. | En los relatos chan, el maestro que desaparece no se aferra a un lugar ni a un papel. |
@@ -1014,13 +1191,28 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
+### TAO_0051 · atencion · contemporaneo
+
+**Frase:** El error ocurrió. Solo después lo llamó error.
+
+**Cambió:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El juicio crea el problema. El hecho en sí mismo es neutro hasta que la mente lo etiqueta. | Primero ocurre el hecho; después llega la etiqueta. Separarlas no niega el error: permite corregirlo sin castigarte. |
+| Práctica | Hoy, te invito a hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas notando cómo cambia tu experiencia interna al no luchar. | Ante un error hoy, escribe el hecho en una línea y la etiqueta en otra («soy torpe»). Actúa sobre el hecho. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
 ### TAO_0476 · discernimiento · zen
 
 **Frase:** Cuando se levantó la bandera, unos dijeron que se movía el viento, otros que se movía la tela.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | El conflicto surge al ignorar el papel de la mente que observa. | El conflicto surge al ignorar el papel de la mente que observa. |
+| Interpretación | El conflicto surge al ignorar el papel de la mente que observa. | *(sin cambios)* |
 | Práctica | Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para anclar tu atención en el presente. | Ante una discusión hoy, pregunta qué ve la otra persona antes de defender lo que ves tú. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1029,9 +1221,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro rompió la estatua antes de responder.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | Aferrarse a símbolos interrumpe el contacto directo. | Aferrarse a símbolos interrumpe el contacto directo. |
+| Interpretación | Aferrarse a símbolos interrumpe el contacto directo. | *(sin cambios)* |
 | Práctica | Hoy, te invito a soltar deliberadamente la tensión en tus hombros y mandíbula notando cómo cambia tu experiencia interna al no luchar. | Detecta un símbolo que usas para sentirte en paz (una app, un objeto, un ritual) y practica 2 minutos sin él. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1040,9 +1234,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro dijo: «La práctica no se conserva».
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | Intentar retener estados rompe el proceso. | Intentar retener estados rompe el proceso. |
+| Interpretación | Intentar retener estados rompe el proceso. | *(sin cambios)* |
 | Práctica | En las próximas horas, procura hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas notando cómo cambia tu experiencia interna al no luchar. | Haz hoy tu práctica como si fuera la primera vez, sin compararla con la de ayer. 3 minutos. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1051,9 +1247,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Un monje pidió una enseñanza breve. El maestro levantó la ceja.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | El gesto puede contener la enseñanza completa. | El gesto puede contener la enseñanza completa. |
+| Interpretación | El gesto puede contener la enseñanza completa. | *(sin cambios)* |
 | Práctica | A lo largo del día, intenta reconocer un pensamiento ansioso y decirle mentalmente 'gracias, mente, por la sugerencia' para anclar tu atención en el presente. | Hoy responde a algo con un gesto en lugar de palabras (un asentimiento, una mirada) cuando baste. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1062,9 +1260,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Un monje preguntó: «¿Tiene el perro naturaleza de Buda?» El maestro respondió: «Mu».
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | La pregunta falla porque presupone una división que no existe. | La pregunta falla porque presupone una división que no existe. |
+| Interpretación | La pregunta falla porque presupone una división que no existe. | *(sin cambios)* |
 | Práctica | En un momento de pausa hoy, busca aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar. | Ante una pregunta de sí o no que te inquiete hoy, escribe una tercera opción que no sea ni sí ni no. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1073,9 +1273,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Un monje preguntó: «¿Dónde termina el camino?» El maestro respondió: «Donde empiezas».
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | Inicio y final no están separados. | Inicio y final no están separados. |
+| Interpretación | Inicio y final no están separados. | *(sin cambios)* |
 | Práctica | Transforma esta idea en acción al hacer una tarea rutinaria (como lavar platos o caminar) prestando atención exclusiva a las sensaciones físicas rompiendo así el patrón del piloto automático. | Al terminar una tarea hoy, en vez de cerrarla, nota el siguiente paso que ya está empezando. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1084,9 +1286,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** El maestro dijo: «Cuando buscas sentido, ya lo perdiste».
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | La sobreinterpretación desplaza la experiencia. | La sobreinterpretación desplaza la experiencia. |
+| Interpretación | La sobreinterpretación desplaza la experiencia. | *(sin cambios)* |
 | Práctica | Transforma esta idea en acción al notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para cultivar una mente flexible y abierta. | La próxima vez que te preguntes «¿para qué?», vuelve 1 minuto a lo que estás haciendo y nótalo con los sentidos. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1094,6 +1298,8 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 ### TAO_0562 · no_saber · zen
 
 **Frase:** Un monje preguntó algo esencial. El maestro cerró la puerta.
+
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
@@ -1106,9 +1312,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** Un monje preguntó: «¿Qué queda cuando no hay nada?» El maestro respondió: «Eso».
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | La pregunta intenta capturar lo que no es objeto. | La pregunta intenta capturar lo que no es objeto. |
+| Interpretación | La pregunta intenta capturar lo que no es objeto. | *(sin cambios)* |
 | Práctica | En las próximas horas, procura notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar rompiendo así el patrón del piloto automático. | Durante 1 minuto deja de hacer y nota lo que sigue presente: sonido, respiración, peso del cuerpo. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -1117,9 +1325,11 @@ Noviembre de 2026. Para cada carta: antes y ahora, con una casilla para tu revis
 
 **Frase:** La paciencia no acelera; sostiene.
 
+**Cambió:** práctica · **Sin cambios:** interpretación
+
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | La paciencia es una capacidad de carga, no de velocidad. Permite continuidad cuando el resultado tarda. | La paciencia es una capacidad de carga, no de velocidad. Permite continuidad cuando el resultado tarda. |
+| Interpretación | La paciencia es una capacidad de carga, no de velocidad. Permite continuidad cuando el resultado tarda. | *(sin cambios)* |
 | Práctica | Transforma esta idea en acción al aceptar una pequeña incomodidad (como el clima o el tráfico) sin emitir quejas notando cómo cambia tu experiencia interna al no luchar. | Elige algo que tarda (una respuesta, un proceso) y define una acción pequeña para sostener la espera hoy. |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 

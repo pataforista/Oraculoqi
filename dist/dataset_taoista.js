@@ -288,7 +288,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Ante una molestia menor e inevitable hoy (clima, espera), nota la queja mental y nómbrala: «queja». Si es un dolor físico nuevo o intenso, atiéndelo: no es para aguantar.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Atribución incierta; no localizada en Wumenguan ni Biyan Lu. Tratar como creación original hasta verificar"
+      "nota_editorial": "Fuente no verificada; no localizada en Wumenguan ni Biyan Lu"
     },
     {
       "id": "TAO_0033",
@@ -364,7 +364,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0041",
-      "frase": "El Fénix descansa solo en el árbol Wutong.",
+      "frase": "El ave yuanchu, una especie de fénix, solo se posa en el árbol wutong.",
       "interpretacion": "En Zhuangzi, el ave noble solo se posa en el wutong y Huizi teme que quiera su cargo: lo que uno valora no es lo que codicia el otro. Elegir dónde posarse es una decisión sobre valores.",
       "practica_hoy": "Revisa en qué gastaste tu atención ayer. Marca un lugar donde «te posaste» sin elegirlo. Pregúntate: ¿qué árbol elegiría hoy si fuera fiel a lo que valoro?",
       "categoria": "atencion",
@@ -717,7 +717,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0080",
       "frase": "La persona sabia usa la luz para volver a la claridad.",
       "interpretacion": "«Usar la luz y volver a la claridad»: la inteligencia que sale al mundo puede volver a iluminar el propio punto de partida. Conocer fuera sin conocerse deja a oscuras lo esencial.",
-      "practica_hoy": "Al final del día, toma algo que juzgaste de otra persona y pregúntate: ¿qué dice de mí este juicio? Escribe una línea.",
+      "practica_hoy": "Al final del día, toma algo que juzgaste de otra persona y escribe una línea sobre ello. Pregúntate: ¿qué dice de mí este juicio?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 52"
@@ -1716,7 +1716,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0193",
       "frase": "La persona sabia sabe que no sabe. La necia cree que sabe.",
       "interpretacion": "Reconocer los límites del propio saber abre la indagación; la certeza prematura la cierra.",
-      "practica_hoy": "Responde 'no lo sé' con confianza al menos una vez.",
+      "practica_hoy": "Hoy, ante una pregunta que no sepas responder, di «no lo sé» y añade qué necesitarías para averiguarlo. Una frase.",
       "categoria": "humildad",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 71"
@@ -2814,7 +2814,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0353",
       "frase": "No busques huellas de pájaros en el aire.",
       "interpretacion": "El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo.",
-      "practica_hoy": "Haz hoy algo bien sin registrarlo ni contarlo. Al final del día pregúntate: ¿necesité que quedara huella para que valiera?",
+      "practica_hoy": "Haz hoy algo bien sin registrarlo ni contarlo. Al final del día, anota una línea. Pregúntate: ¿necesité que quedara huella para que valiera?",
       "categoria": "impermanencia",
       "linaje": "mindfulness",
       "nota_editorial": "Imagen budista clásica; cf. Dhammapada 92–93"
@@ -2958,7 +2958,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0369",
       "frase": "La red del Cielo es amplia, pero nada se le escapa.",
       "interpretacion": "El Daodejing afirma que el curso de las cosas acaba alcanzando los actos. Más que una amenaza, es una invitación a actuar igual con o sin testigos.",
-      "practica_hoy": "Actúa con integridad, aunque nadie te vea.",
+      "practica_hoy": "Detecta hoy una ocasión en que podrías actuar distinto porque nadie mira. Elige la opción íntegra y anota una línea. Pregúntate: ¿qué cambió en mí al hacerlo?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 73"
@@ -2985,7 +2985,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0372",
       "frase": "Una hormiga puede destruir una presa entera.",
       "interpretacion": "Han Feizi recuerda que un dique enorme se rompe por un hormiguero. Las grandes estructuras, como la salud, la confianza o el trabajo, suelen fallar por grietas pequeñas desatendidas.",
-      "practica_hoy": "Revisa una «estructura» importante de tu vida y busca un hormiguero: una promesa incumplida, una molestia física ignorada, una tarea atrasada. Atiéndelo hoy.",
+      "practica_hoy": "Revisa algo importante de tu vida y busca un hormiguero: una promesa incumplida, una molestia física ignorada, una tarea atrasada. Atiéndelo hoy. Pregúntate: ¿qué grieta pequeña estoy dejando crecer?",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Han Feizi, cap. 21 (喻老): «千丈之堤，以蝼蚁之穴溃»"
@@ -3210,7 +3210,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0434",
       "frase": "Buscó al yo durante toda la meditación. Al levantarse, ya no estaba buscándolo.",
       "interpretacion": "Buscar el yo con esfuerzo lo vuelve un objeto escurridizo. Al soltar la búsqueda, la experiencia sigue ocurriendo sin que haga falta un centro que la vigile.",
-      "practica_hoy": "Al terminar una actividad absorbente hoy, pregúntate: ¿dónde estaba «yo» mientras lo hacía? Escribe una línea sin buscar la respuesta correcta.",
+      "practica_hoy": "Al terminar hoy una actividad que te absorba, escribe una línea sin buscar la respuesta correcta. Pregúntate: ¿dónde estaba «yo» mientras lo hacía?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Indagación del Self."
@@ -3327,7 +3327,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0447",
       "frase": "El maestro no alcanzó nada ese día. Tampoco al siguiente.",
       "interpretacion": "Mushotoku es practicar sin espíritu de provecho. Un día sin logros también es parte del camino; medirlo todo por ganancia vacía la práctica.",
-      "practica_hoy": "Hoy haz tu práctica (o una actividad que te gusta) sin registrar resultados. Al final pregúntate: ¿la disfruté menos o más sin medirla?",
+      "practica_hoy": "Hoy haz tu práctica (o una actividad que te gusta) sin registrar resultados. Pregúntate al terminar: ¿la disfruté menos o más sin medirla?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Mushotoku (sin espíritu de provecho)."
