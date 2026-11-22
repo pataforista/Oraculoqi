@@ -84,6 +84,14 @@ const BOILERPLATE = [
   'como un experimento de curiosidad radical',
   'reconociendo que cada pequeño paso cuenta',
   'permítete descansar en la simpleza de ser',
+  'notando cómo cambia tu experiencia interna al no luchar',
+  'rompiendo así el patrón del piloto automático',
+  'para cultivar una mente flexible y abierta',
+  'para anclar tu atención en el presente',
+  'notar la urgencia por distraerte con el teléfono',
+  'transforma esta idea en acción al',
+  'en las próximas horas, procura',
+  'hoy, te invito a',
 ];
 
 const NOTAS_GENERICAS = [
@@ -106,7 +114,7 @@ const CAPACITISMO = [
 ];
 
 const VIOLENCIA = [
-  /\bm[aá]talo\b/i, /\bmatar(lo|la|los|las)\b/i, /\bsi (te )?encuentras al buda\b/i,
+  /\bm[aá]tal[oa]s?\b/i, /\bmatar(lo|la|los|las)\b/i, /\bsi (te )?encuentras al buda\b/i,
   /\ble cortaron el dedo\b/i, /\bgolpe[oó] al d/i, /\bquem[oó] la estatua\b/i,
   /\bescupir contra el viento\b/i, /\besconder una daga\b/i,
 ];
@@ -119,6 +127,14 @@ const CULPABILIZANTE = [
   /no hay limitaciones para la mente humana/i,
   /si estás deprimido, vives en el pasado/i,
   /responsabilidad total de tu estado mental/i,
+];
+
+// Consejos que pueden dañar a una persona vulnerable: aislamiento sin aviso, aguantar dolor,
+// invalidar duelo, positividad obligatoria o atribuir enfermedad a la mente.
+const RIESGO_CLINICO = [
+  /que nadie sepa d[oó]nde/i, /sin quejarte/i, /no llores/i,
+  /agradece (una|el|la) (dificultad|dolor|p[eé]rdida)/i, /si tu cuerpo enferma/i,
+  /el dolor f[ií]sico .*(trae|despierta)/i, /saldr[aá]s ileso/i, /lo inanimado siente/i,
 ];
 
 const SOMATICO_EXCLUYENTE = [
@@ -320,6 +336,13 @@ function validar(ds) {
         break;
       }
     }
+    for (const re of RIESGO_CLINICO) {
+      if (re.test(todo)) {
+        add('warn', 'W206', c, 'frase/interpretacion/practica_hoy', 'Consejo con riesgo para personas vulnerables.',
+          { sugerencia: 'Reformular con salvaguarda (avisar, atender el dolor, validar la pérdida).' });
+        break;
+      }
+    }
     for (const re of CULPABILIZANTE) {
       if (re.test(todo)) {
         add('warn', 'W205', c, 'frase/interpretacion', 'Formulación culpabilizante o de positividad obligatoria.',
@@ -433,7 +456,7 @@ const RULES = {
   E301: 'Linaje fuera del catálogo canónico', E302: 'Categoría fuera del catálogo canónico',
   W103: 'Relleno de IA', W104: 'nota_editorial vacía o genérica',
   E201: 'Genérico masculino', W202: 'Metáfora capacitista', W203: 'Práctica somática excluyente',
-  W204: 'Violencia sin aparato crítico', W205: 'Formulación culpabilizante',
+  W204: 'Violencia sin aparato crítico', W205: 'Formulación culpabilizante', W206: 'Consejo con riesgo clínico',
   W301: 'Linaje fuera de taxonomía', W302: 'Categoría inválida o sinónima',
   W303: 'Desalineación fuente↔linaje', W304: 'Práctica incoherente con proceso ACT',
   W401: 'Frase demasiado larga', W402: 'Interpretación larga', W403: 'Práctica larga',
