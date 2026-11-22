@@ -43,6 +43,10 @@ Lo que ya hace bien (y conviene proteger): ritual de desvelar la carta, una sinc
 
 No recomendado: monedas, niveles, insignias, feeds infinitos, IA conversacional, muros de pago.
 
+## Estado
+
+Implementado (noviembre de 2026): 1 nota personal, 2 vuelta del día anterior, 3 días del mes en lugar de racha, 4 «Explorar otra carta» y «Volver a la carta de hoy», 7 donación retirada de la carta y de la invitación cada 5 cartas. Pendiente: 5 pausa de respiración, 6 historial de días.
+
 ## Fuentes
 
 1. Motivation – Daily quotes, App Store: https://apps.apple.com/app/id876080126

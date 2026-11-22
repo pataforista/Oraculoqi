@@ -1037,6 +1037,40 @@
       .codex-empty-icon { animation: none; }
     }
 
+    /* ===== ACCIONES BAJO LA CARTA, NOTA Y VUELTA DEL DÍA ANTERIOR ===== */
+    .card-actions {
+      display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+      gap: var(--space-sm); margin-top: var(--space-md);
+    }
+    .card-actions .btn-refresh { margin-top: 0; }
+    .card-actions .ghost-btn { flex: 0 1 auto; }
+    .card-note, .followup {
+      background: var(--glass-bg); border: var(--border-thin); border-radius: var(--radius-panel);
+      padding: var(--space-md); margin-top: var(--space-sm);
+    }
+    .followup { margin-top: 0; }
+    .followup-title {
+      margin: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+      font-weight: 600; color: var(--accent-red-text);
+    }
+    .followup-practice {
+      margin: var(--space-xs) 0 var(--space-sm); font-family: var(--font-ritual);
+      font-size: 1.05rem; line-height: 1.4; color: var(--ink-primary);
+    }
+    .followup-actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+    .note-editor { display: flex; flex-direction: column; gap: var(--space-xs); }
+    .note-label { font-size: 0.8rem; color: var(--ink-secondary); font-weight: 500; }
+    .note-textarea {
+      box-sizing: border-box; width: 100%; min-height: 88px; resize: vertical;
+      font: 400 0.95rem/1.5 var(--font-base); color: var(--ink-primary);
+      background: var(--bg-secondary); border: var(--border-thin); border-radius: var(--radius-chip);
+      padding: var(--space-sm);
+    }
+    .note-status { min-height: 1em; font-size: 0.75rem; color: var(--ink-muted); }
+    .codex-item-note {
+      display: block; margin-top: var(--space-xs); font-size: 0.8rem; color: var(--ink-muted); font-style: italic;
+    }
+
     /* ===== AJUSTE A LA PANTALLA: la sincronía del día se lee sin desplazarse ===== */
     .app-container {
       box-sizing: border-box; /* sin esto el relleno se sumaba a 100vh y la página siempre desplazaba */
@@ -1071,7 +1105,7 @@
       .app-header { gap: var(--space-md); }
     }
   </style>
-  <script type="module" crossorigin src="/assets/index-DK-TkfQf.js"></script>
+  <script type="module" crossorigin src="/assets/index-BheCxNJj.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/vendor-react-D7rv8Q1m.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-webgl-B4JkAj4o.js">
   <link rel="stylesheet" crossorigin href="/assets/index-Cpt_eS-I.css">

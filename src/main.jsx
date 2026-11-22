@@ -45,18 +45,43 @@ const isCoarsePointer = () =>
 
 const dayDiff = (a, b) => Math.round((new Date(`${a}T12:00:00`) - new Date(`${b}T12:00:00`)) / 86400000);
 
-const readStreak = () => {
+const readObject = (key) => {
   try {
-    const s = JSON.parse(readStorage('oraculoqi_streak', 'null'));
-    if (s && Number.isFinite(s.count) && typeof s.last === 'string') return s;
-  } catch { /* ignorar */ }
-  return { count: 0, last: '' };
+    const v = JSON.parse(readStorage(key, 'null'));
+    return v && typeof v === 'object' && !Array.isArray(v) ? v : {};
+  } catch {
+    return {};
+  }
 };
 
-const nextStreak = (prev, today) => {
-  if (prev.last === today) return prev;
-  const count = prev.last && dayDiff(today, prev.last) === 1 ? prev.count + 1 : 1;
-  return { count, last: today };
+// Historial: fecha local (AAAA-MM-DD) -> id de la carta del día desvelada.
+// Sustituye a la racha de días seguidos: contar días del mes no castiga una interrupción.
+const readHistory = () => {
+  const h = { ...readObject('oraculoqi_history') };
+  const old = readObject('oraculoqi_streak'); // migración desde la racha antigua
+  if (typeof old.last === 'string' && old.last && !(old.last in h)) h[old.last] = '';
+  return h;
+};
+
+// Notas personales: id de carta -> { text, updated }. Solo en este dispositivo.
+const readNotes = () => readObject('oraculoqi_notes');
+
+const dailyCardFor = (deck, dateKey) => {
+  let hash = 0;
+  for (let i = 0; i < dateKey.length; i++) hash = ((hash << 5) - hash) + dateKey.charCodeAt(i);
+  return deck[Math.abs(hash | 0) % deck.length];
+};
+
+// Carta de vuelta: la última carta del día anterior (máx. 7 días) sin nota todavía.
+const findFollowUp = (history, notes, deck, today, dismissedOn) => {
+  if (dismissedOn === today) return null;
+  const prev = Object.keys(history).filter(k => k < today && history[k]).sort().pop();
+  if (!prev) return null;
+  const diff = dayDiff(today, prev);
+  if (diff < 1 || diff > 7) return null;
+  const card = deck.find(c => c.id === history[prev]);
+  if (!card || notes[card.id]?.text) return null;
+  return { card, when: diff === 1 ? 'Ayer' : `Hace ${diff} días` };
 };
 
 const downloadBlob = (blob, filename) => {
@@ -701,6 +726,56 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
   );
 };
 
+/* --- NOTA PERSONAL --- */
+const NoteEditor = ({ cardId, initial, onSave, label, autoFocus = false }) => {
+  const [text, setText] = useState(initial ?? '');
+  const [status, setStatus] = useState('');
+  const pending = useRef(null);
+  const timer = useRef(null);
+  const saveRef = useRef(onSave);
+  saveRef.current = onSave;
+
+  const flush = useCallback(() => {
+    clearTimeout(timer.current);
+    if (pending.current) {
+      saveRef.current(pending.current.id, pending.current.text);
+      pending.current = null;
+    }
+  }, []);
+
+  useEffect(() => flush, [flush]); // guarda lo pendiente al cerrar
+
+  const onChange = (e) => {
+    const v = e.target.value;
+    setText(v);
+    setStatus('');
+    pending.current = { id: cardId, text: v };
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => {
+      flush();
+      setStatus(v.trim() ? 'Guardada en este dispositivo' : '');
+    }, 600);
+  };
+
+  const fieldId = `note-${cardId}`;
+  return (
+    <div className="note-editor">
+      <label htmlFor={fieldId} className="note-label">{label}</label>
+      <textarea
+        id={fieldId}
+        className="note-textarea"
+        rows={3}
+        maxLength={2000}
+        value={text}
+        onChange={onChange}
+        onBlur={flush}
+        autoFocus={autoFocus}
+      />
+      <span className="note-status" aria-live="polite">{status}</span>
+    </div>
+  );
+};
+
 /* --- WISDOM CARD COMPONENT --- */
 const clamp = (v, min = 0, max = 100) => Math.min(Math.max(v, min), max);
 const round = (v, pr = 3) => parseFloat(v.toFixed(pr));
@@ -709,15 +784,6 @@ const adjust = (v, f1, f2, t1, t2) => round(t1 + ((t2 - t1) * (v - f1)) / (f2 - 
 const WisdomCard = React.forwardRef(({ card }, ref) => {
   const wrapRef = useRef(null);
   const shellRef = useRef(null);
-
-  const showDonation = useMemo(() => {
-    if (!card || !card.id) return false;
-    let hash = 0;
-    for (let i = 0; i < card.id.length; i++) {
-      hash = (hash << 5) - hash + card.id.charCodeAt(i);
-    }
-    return Math.abs(hash) % 10 < 3; // 30% stable probability check
-  }, [card]);
 
   const tiltEngineRef = useRef(null);
   if (!tiltEngineRef.current) {
@@ -809,18 +875,6 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
                 </p>
                 <img src="icons/enso-8bit.png" className="pc-card-logo" alt="" aria-hidden="true" />
               </div>
-              {showDonation && (
-                <div className="pc-donation-gentle">
-                  <span>✧</span>
-                  <a href={import.meta.env.VITE_DONATION_URL || 'https://buymeacoffee.com/herramente'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     onClick={(e) => e.stopPropagation()}>
-                    ¿Te ha servido esta reflexión? Invita un café al oráculo
-                  </a>
-                  <span>✧</span>
-                </div>
-              )}
             </div>
           </div>
         </section>
@@ -846,16 +900,16 @@ function App() {
   const [installPrompt, setInstallPrompt] = useState(null);
   const [isInstalled, setIsInstalled] = useState(window.matchMedia('(display-mode: standalone)').matches);
   const [toasts, setToasts] = useState([]);
-  const [donationCount, setDonationCount] = useState(() => {
-    const n = parseInt(readStorage('oraculoqi_donation_count', '0'), 10);
-    return Number.isFinite(n) && n > 0 ? n : 0;
-  });
-  const [donationDismissed, setDonationDismissed] = useState(false);
   const [cupPulse, setCupPulse] = useState(false);
   const [cardExiting, setCardExiting] = useState(false);
   const [exitDir, setExitDir] = useState('left');
   const [favBurst, setFavBurst] = useState(false);
-  const [streak, setStreak] = useState(readStreak);
+  const [history, setHistory] = useState(readHistory);
+  const [notes, setNotes] = useState(readNotes);
+  const [dailyCard, setDailyCard] = useState(null);
+  const [followUp, setFollowUp] = useState(null);
+  const [followOpen, setFollowOpen] = useState(false);
+  const [noteOpen, setNoteOpen] = useState(false);
   const [codexQuery, setCodexQuery] = useState('');
   const [codexCat, setCodexCat] = useState('all');
   const fileInputRef = useRef(null);
@@ -900,10 +954,12 @@ function App() {
   useEffect(() => {
     if (window.TAOISTA_DATASET) {
       const deck = window.TAOISTA_DATASET.cards, today = localDateKey();
-      let hash = 0;
-      for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
-      setCard(deck[Math.abs(hash | 0) % deck.length]);
+      const daily = dailyCardFor(deck, today);
+      setDailyCard(daily);
+      setCard(daily);
+      setFollowUp(findFollowUp(history, notes, deck, today, readStorage('oraculoqi_followup_seen', '')));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // El dataset se depura entre versiones: sincroniza el Codex guardado con el catálogo vigente
@@ -928,23 +984,47 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    writeStorage('oraculoqi_donation_count', String(donationCount));
-  }, [donationCount]);
+    writeStorage('oraculoqi_notes', JSON.stringify(notes));
+  }, [notes]);
+
+  const saveNote = useCallback((id, text) => {
+    setNotes(prev => {
+      const next = { ...prev };
+      if (text.trim()) next[id] = { text, updated: new Date().toISOString() };
+      else delete next[id];
+      return next;
+    });
+  }, []);
 
   useEffect(() => {
     writeStorage('trozos_sabiduria_favorites', JSON.stringify(favorites));
   }, [favorites]);
 
   useEffect(() => {
-    if (!isRevealed) return;
+    if (!isRevealed || !dailyCard) return;
     const today = localDateKey();
     writeStorage('oraculoqi_last_reveal', today);
-    setStreak(prev => {
-      const next = nextStreak(prev, today);
-      if (next !== prev) writeStorage('oraculoqi_streak', JSON.stringify(next));
+    setHistory(prev => {
+      if (prev[today] === dailyCard.id) return prev;
+      const next = { ...prev, [today]: dailyCard.id };
+      const keys = Object.keys(next).sort();
+      keys.slice(0, Math.max(0, keys.length - 400)).forEach(k => { delete next[k]; });
+      writeStorage('oraculoqi_history', JSON.stringify(next));
       return next;
     });
-  }, [isRevealed]);
+  }, [isRevealed, dailyCard]);
+
+  // Constancia amable: días con consulta en el mes en curso, sin castigar interrupciones.
+  const monthDays = useMemo(() => {
+    const month = localDateKey().slice(0, 7);
+    return Object.keys(history).filter(k => k.startsWith(month)).length;
+  }, [history]);
+
+  const dismissFollowUp = useCallback(() => {
+    writeStorage('oraculoqi_followup_seen', localDateKey());
+    setFollowUp(null);
+    setFollowOpen(false);
+  }, []);
 
   const formattedDate = useMemo(() => new Date().toLocaleDateString(), []);
 
@@ -1077,11 +1157,17 @@ function App() {
         } while (card && newCard.id === card.id);
       }
       setCard(newCard);
-      setDonationCount(prev => prev + 1);
-      setDonationDismissed(false);
+      setNoteOpen(false);
       setCardExiting(false);
     }, 300);
   }, [card]);
+
+  const backToToday = useCallback(() => {
+    if (!dailyCard) return;
+    haptic('light');
+    setCard(dailyCard);
+    setNoteOpen(false);
+  }, [dailyCard]);
 
   const cycleTheme = useCallback(() => {
     haptic('light');
@@ -1158,13 +1244,15 @@ function App() {
   const exportFavorites = useCallback(() => {
     const payload = {
       app: 'oraculo-taoista',
-      version: 1,
+      version: 2,
       exportedAt: new Date().toISOString(),
-      favorites: favorites.map(f => ({ id: f.id, frase: f.frase }))
+      favorites: favorites.map(f => ({ id: f.id, frase: f.frase })),
+      notes,
+      history
     };
     downloadBlob(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }), `codex-oraculo-${localDateKey()}.json`);
     showToast("Respaldo del Codex descargado ✧");
-  }, [favorites, showToast]);
+  }, [favorites, notes, history, showToast]);
 
   const importFavorites = useCallback(async (e) => {
     const file = e.target.files?.[0];
@@ -1176,13 +1264,32 @@ function App() {
       const deck = window.TAOISTA_DATASET?.cards ?? [];
       const byId = new Map(deck.map(c => [c.id, c]));
       const found = ids.map(id => byId.get(id)).filter(Boolean);
-      if (found.length === 0) throw new Error('sin cartas válidas');
+      const inNotes = data?.notes && typeof data.notes === 'object' ? Object.entries(data.notes)
+        .filter(([id, n]) => byId.has(id) && typeof n?.text === 'string' && n.text.trim()) : [];
+      const inHistory = data?.history && typeof data.history === 'object' ? Object.entries(data.history)
+        .filter(([k, v]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && typeof v === 'string') : [];
+      if (found.length === 0 && inNotes.length === 0) throw new Error('sin cartas válidas');
       setFavorites(prev => {
         const have = new Set(prev.map(x => x.id));
         const fresh = found.filter(c => !have.has(c.id) && have.add(c.id));
         return [...prev, ...fresh];
       });
-      showToast(`Codex restaurado: ${found.length} sabidurías leídas ✧`);
+      // Conserva la versión más reciente de cada nota.
+      setNotes(prev => {
+        const next = { ...prev };
+        for (const [id, n] of inNotes) {
+          if (!next[id] || String(n.updated ?? '') > String(next[id].updated ?? '')) next[id] = { text: n.text, updated: n.updated ?? new Date().toISOString() };
+        }
+        return next;
+      });
+      if (inHistory.length) {
+        setHistory(prev => {
+          const next = { ...Object.fromEntries(inHistory), ...prev };
+          writeStorage('oraculoqi_history', JSON.stringify(next));
+          return next;
+        });
+      }
+      showToast(`Codex restaurado: ${found.length} ${found.length === 1 ? 'sabiduría' : 'sabidurías'} y ${inNotes.length} ${inNotes.length === 1 ? 'nota' : 'notas'} ✧`);
     } catch (err) {
       console.error(err);
       showToast("No se pudo leer ese respaldo");
@@ -1204,9 +1311,9 @@ function App() {
     const cat = categories.includes(codexCat) ? codexCat : 'all';
     return favorites.filter(f =>
       (cat === 'all' || f.categoria === cat) &&
-      (!q || `${f.frase} ${f.interpretacion ?? ''} ${categoryLabel(f.categoria)}`.toLowerCase().includes(q))
+      (!q || `${f.frase} ${f.interpretacion ?? ''} ${categoryLabel(f.categoria)} ${notes[f.id]?.text ?? ''}`.toLowerCase().includes(q))
     );
-  }, [favorites, categories, codexQuery, codexCat]);
+  }, [favorites, categories, codexQuery, codexCat, notes]);
 
   const installApp = useCallback(async () => {
     if (!installPrompt || isInstalled) return;
@@ -1290,10 +1397,24 @@ function App() {
             <h1 className="brand-title">Oráculo Taoísta</h1>
             <p className="sync-label">
               Sincronía · {formattedDate}
-              {streak.count >= 2 && <span className="streak-badge" title={`${streak.count} días seguidos`}>✦ {streak.count} días</span>}
+              {monthDays >= 2 && <span className="streak-badge" title="Días que consultaste el oráculo este mes">✦ {monthDays} días este mes</span>}
             </p>
           </div>
         </header>
+
+        {followUp && (!isRevealed || followOpen) && (
+          <section className="followup" aria-labelledby="followup-title">
+            <p id="followup-title" className="followup-title">{followUp.when}, tu invitación fue</p>
+            <p className="followup-practice">“{followUp.card.practica_hoy}”</p>
+            {followOpen && (
+              <NoteEditor cardId={followUp.card.id} initial={notes[followUp.card.id]?.text} onSave={saveNote} label="¿Cómo te fue?" autoFocus />
+            )}
+            <div className="followup-actions">
+              {!followOpen && <button className="ghost-btn" onClick={() => setFollowOpen(true)}>Contar cómo me fue</button>}
+              <button className="ghost-btn" onClick={dismissFollowUp}>{followOpen ? 'Listo' : 'Ahora no'}</button>
+            </div>
+          </section>
+        )}
 
         <div className="card-stage">
           {!isRevealed ? (
@@ -1318,29 +1439,24 @@ function App() {
             >
               <WisdomCard card={card} ref={cardRef} />
               
-              {donationCount > 0 && donationCount % 5 === 0 && !donationDismissed ? (
-                <div className="donation-invite">
-                  <p>Si esta sabiduría resuena contigo y quieres ayudar a que siga fluyendo, considera invitarnos un café.</p>
-                  <div className="donation-invite-buttons">
-                    <a 
-                      href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="btn-donation-coffee"
-                      onClick={() => setDonationDismissed(true)}
-                    >
-                      Invitar un café ☕
-                    </a>
-                    <button 
-                      className="btn-donation-skip" 
-                      onClick={() => setDonationDismissed(true)}
-                    >
-                      Seguir consultando
-                    </button>
-                  </div>
+              <div className="card-actions">
+                <button
+                  className="ghost-btn note-toggle"
+                  aria-expanded={noteOpen}
+                  aria-controls="card-note"
+                  onClick={() => setNoteOpen(o => !o)}
+                >
+                  ✎ {notes[card.id]?.text ? 'Tu nota' : 'Escribir una nota'}
+                </button>
+                {dailyCard && card.id !== dailyCard.id ? (
+                  <button className="btn-refresh" onClick={backToToday}>Volver a la carta de hoy</button>
+                ) : null}
+                <button className="ghost-btn" onClick={() => refreshCard('left')}>Explorar otra carta</button>
+              </div>
+              {noteOpen && (
+                <div id="card-note" className="card-note">
+                  <NoteEditor key={card.id} cardId={card.id} initial={notes[card.id]?.text} onSave={saveNote} label="Tu nota sobre esta carta" autoFocus />
                 </div>
-              ) : (
-                <button className="btn-refresh" onClick={() => refreshCard('left')}>Otra sincronía para hoy</button>
               )}
             </div>
           )}
@@ -1460,6 +1576,7 @@ function App() {
                   >
                     <span className="codex-item-cat">{categoryLabel(f.categoria)}</span>
                     <span className="codex-item-frase">"{f.frase}"</span>
+                    {notes[f.id]?.text && <span className="codex-item-note">✎ {notes[f.id].text.slice(0, 80)}{notes[f.id].text.length > 80 ? '…' : ''}</span>}
                   </button>
                   <button className="codex-item-remove" onClick={() => removeFavorite(f.id)} aria-label={`Quitar de favoritos: ${f.frase.slice(0, 40)}`}>&times;</button>
                 </div>
