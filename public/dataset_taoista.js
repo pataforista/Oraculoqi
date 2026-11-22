@@ -1174,7 +1174,7 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0133",
-      "frase": "Un pelo bloquea la vista de la montaña Tai.",
+      "frase": "Una hoja ante el ojo oculta el monte Tai.",
       "interpretacion": "El modismo dice que una sola hoja ante el ojo basta para no ver el monte Tai. Un detalle cercano, como una ofensa o una preocupación, puede ocupar todo el campo de visión.",
       "practica_hoy": "Nombra la «hoja» que hoy ocupa más tu atención. Escribe tres cosas importantes que no estás viendo por ella. Pregúntate: ¿de qué tamaño es realmente esta hoja?",
       "categoria": "atencion",
