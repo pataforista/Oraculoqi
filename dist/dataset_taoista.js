@@ -17,7 +17,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "En el Yijing, «es propicio cruzar el gran río» señala el momento de una empresa que exige compromiso. No promete éxito: invita a distinguir si aplazas por prudencia o por miedo.",
       "practica_hoy": "Escribe una decisión que estés aplazando y dos líneas: «qué la sostiene» y «qué la frena». Decide solo el siguiente paso, no toda la travesía.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, fórmula de dictamen «es propicio cruzar el gran río» (利涉大川)"
     },
     {
@@ -44,7 +44,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El ánimo es un estado interno fluctuante; la dirección elegida no depende de él. La acción comprometida se sostiene por valores, no por motivación.",
       "practica_hoy": "Elige una acción ya comprometida para hoy (una llamada, un envío, 10 min de ejercicio) y ejecútala aunque el ánimo no acompañe. Anota una línea: “lo hice con ánimo ___”.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -53,7 +53,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Elegir por valores a veces choca con la comodidad inmediata; lo correcto no es sinónimo de lo fácil.",
       "practica_hoy": "Elige hoy una opción alineada con un valor (no con la comodidad) y sostenla 2 minutos; registra qué sentiste.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -62,7 +62,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Cargar lo innecesario (reasegurar, planear de más) consume recursos que la acción valiosa necesita. Soltar peso no es abandonar la ruta: es poder recorrerla.",
       "practica_hoy": "Identifica una conducta que hoy te frena para actuar (reasegurar, sobre-planear) y omítela una vez para ejecutar una acción pequeña alineada con un valor.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -71,7 +71,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La acción comprometida es repetida, no climática. No espera justificación para ejecutarse.",
       "practica_hoy": "Haz hoy una repetición mínima (1 página, 3 min de caminata, una tecla) aunque no “valga la pena”; marca la repetición en un papel.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Wilson & DuFrene (2009), Mindfulness for Two."
     },
     {
@@ -80,7 +80,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La acción no requiere condiciones ideales; esperar el viento perfecto es una forma de no zarpar.",
       "practica_hoy": "Empieza hoy una tarea en versión “imperfecta pero real”: 5 minutos, sin condiciones ideales.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -89,7 +89,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La calma no es condición para la acción valiosa; la exposición elegida con activación interna es la que enseña a sostener la tormenta.",
       "practica_hoy": "Haz hoy una micro-exposición (una llamada pendiente, un correo difícil, una conversación breve) sin preparar el guion perfecto.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -98,7 +98,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La certeza no precede a la acción; el siguiente paso no depende de ver el final.",
       "practica_hoy": "Da hoy un paso verificable sin plan completo: solo el siguiente.",
       "categoria": "accion_comprometida",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -107,7 +107,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Aceptación no es resignación: es dejar de gastar energía en negar lo que ya ocurre, para que esa energía quede disponible para el cambio posible.",
       "practica_hoy": "Nombra hoy una situación tal como es, en una frase sin adjetivos. Después escribe una acción posible dentro de esas condiciones.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Wilson & DuFrene (2009), Mindfulness for Two."
     },
     {
@@ -116,7 +116,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La agitación (lucha, control) aumenta el malestar; la quietud no lo elimina, pero reduce la fricción añadida.",
       "practica_hoy": "Localiza una sensación desagradable y respira “dentro” de ella 20 segundos sin intentar que se vaya. Si el cuerpo no es accesible, apóyate en el asiento o en las manos sobre el regazo.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -125,7 +125,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El dolor cumple una función informativa; tratarlo como enemigo activa la lucha, tratarlo como mensajero permite escucharlo sin obedecerlo.",
       "practica_hoy": "Nombra una sensación dolorosa como “dolor” y deja que esté 30 segundos sin intentar apagarla. Después una respiración y una acción neutra.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -134,7 +134,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Escupir al cielo es un intento de dañar lo que no puede ser dañado; la resistencia a lo inevitable recae sobre quien la ejerce, no sobre el evento.",
       "practica_hoy": "Elige una situación incontrolable de hoy (clima, tráfico, un mensaje) y nómbrala sin intentar corregirla: “esto es así ahora”.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -143,7 +143,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El malestar persiste cuando se evita; permitirle estar un momento cambia la relación, no necesariamente la intensidad.",
       "practica_hoy": "Invita hoy al “huésped” 30 segundos: déjalo estar y sigue con tu día.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Wilson & DuFrene (2009), Mindfulness for Two."
     },
     {
@@ -152,7 +152,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Aceptar reduce la interferencia funcional; el ruido deja de ser el problema cuando deja de ser una pelea.",
       "practica_hoy": "Localiza el “ruido” interno o externo y respira con él presente 30 segundos, sin silenciarlo. Después retoma.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -161,7 +161,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Aceptar lo inevitable reduce el sufrimiento secundario (la capa que añade la negativa).",
       "practica_hoy": "Permite hoy un “mojarte” pequeño: un correo difícil, una llamada, una espera, sin intentar esquivarlo.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -170,7 +170,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Soltar el equipaje innecesario (control, reaseguramiento) libera recursos para caminar. Aceptar no es cargar con todo: es dejar de cargar con lo que no hace falta.",
       "practica_hoy": "Identifica una conducta de control (reasegurar, rumiar, evitar) y déjala pasar una vez sin ejecutarla; nota qué queda en su lugar.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -179,7 +179,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Evitar emociones impide el procesamiento; nombrar y localizar es el primer paso, no la cura completa.",
       "practica_hoy": "Nombra la emoción y localízala en el cuerpo (10 segundos). Una palabra + una zona.",
       "categoria": "aceptacion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -188,7 +188,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El observador no es un contenido observable más: es la perspectiva desde la que los contenidos aparecen. Confundirlo con un contenido (una emoción, un pensamiento) es el error que la frase señala.",
       "practica_hoy": "Durante 60 segundos, nota pensamientos y sensaciones como “contenidos”. Luego pregúntate: “¿desde dónde se notan?”. No busques respuesta; quédate en la pregunta.",
       "categoria": "asimetria",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Villatte, Villatte & Hayes (2016), Mastering the Clinical Conversation."
     },
     {
@@ -205,7 +205,7 @@ window.TAOISTA_DATASET = {
       "frase": "Tres nueces por la mañana y cuatro por la tarde: el mono se enfadó. Cuatro y tres: se alegró.",
       "interpretacion": "El total es idéntico; lo que varía es la forma. La mente reacciona a la presentación, no al fondo.",
       "practica_hoy": "Detecta hoy una queja por “la forma” (horario, orden, presentación) y comprueba si el fondo cambia.",
-      "categoria": "atencion",
+      "categoria": "discernimiento",
       "linaje": "contemporaneo",
       "nota_editorial": "Parábola de 'Tres por la mañana'."
     },
@@ -214,7 +214,7 @@ window.TAOISTA_DATASET = {
       "frase": "Alejar la leña de debajo del caldero.",
       "interpretacion": "La estratagema no ataca el fuego: quita la leña. Ante un malestar que se repite, a veces sirve más retirar lo que lo alimenta que pelear con él cuando ya hierve.",
       "practica_hoy": "Elige una tensión que vuelve a menudo y escribe una cosa concreta que la alimenta (una hora, un hábito, una conversación). Pregúntate: ¿cuál de esas leñas puedo apartar esta semana?",
-      "categoria": "atencion",
+      "categoria": "autorregulacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 19"
     },
@@ -223,7 +223,7 @@ window.TAOISTA_DATASET = {
       "frase": "Antes de comprender, ya era así.",
       "interpretacion": "Hay un estado previo al concepto: la realidad ya estaba ahí antes de que la mente la nombrara. La frase apunta a soltar la pretensión de que comprender antecede a estar.",
       "practica_hoy": "Elige un objeto o sensación y durante 30 segundos nota que ya está ahí antes de nombrarlo. Solo notar; no etiquetar.",
-      "categoria": "atencion",
+      "categoria": "experiencia_directa",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -232,8 +232,8 @@ window.TAOISTA_DATASET = {
       "frase": "Antes de la iluminación: cortar leña, llevar agua. Después: lo mismo.",
       "interpretacion": "La tarea no cambia; cambia quien la hace. La comprensión no saca de la vida cotidiana: devuelve a ella con otra mirada.",
       "practica_hoy": "Haz una tarea repetida de hoy (fregar, caminar al trabajo) prestando atención a un detalle que nunca notas. Pregúntate: ¿qué cambiaría si esto fuera ya la práctica y no un trámite?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "practica",
+      "linaje": "zen",
       "nota_editorial": "Tradición chan; paráfrasis moderna de 青原惟信 (Qingyuan Weixin), 五灯会元 (Wudeng Huiyuan, vol. 17), secuencia «montañas son montañas»; la versión «cortar leña, llevar agua» es paráfrasis angloamericana del s. XX"
     },
     {
@@ -241,7 +241,7 @@ window.TAOISTA_DATASET = {
       "frase": "Antes de que llueva, asegura la ventana.",
       "interpretacion": "Prevenir es cuidar a la persona que serás mañana. El gesto pequeño a tiempo ahorra la urgencia después.",
       "practica_hoy": "Escribe algo que ya sabes que te va a complicar la semana y haz hoy el primer paso para prevenirlo (5 minutos). Pregúntate: ¿qué suelo dejar para cuando ya llueve?",
-      "categoria": "atencion",
+      "categoria": "priorizacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Sabiduría popular."
     },
@@ -250,7 +250,7 @@ window.TAOISTA_DATASET = {
       "frase": "Bebió el té y se dio cuenta de que 'té' era solo una palabra.",
       "interpretacion": "La palabra “té” no es el té. La experiencia directa (calor, sabor, aroma) precede y excede al concepto. La frase apunta a distinguir el mapa del territorio.",
       "practica_hoy": "Bebe un vaso de agua notando tres sensaciones (temperatura, textura, sabor) sin nombrarla. Al final, una sola palabra descriptiva.",
-      "categoria": "atencion",
+      "categoria": "experiencia_directa",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -259,8 +259,8 @@ window.TAOISTA_DATASET = {
       "frase": "Buscas al mulo mientras vas montado en el mulo.",
       "interpretacion": "Foyan señala dos errores: buscar el mulo sin ver que lo montas, y, una vez visto, no querer bajarte. Lo que buscas puede estar operando ya en tu manera de buscar.",
       "practica_hoy": "Nombra algo que persigues (calma, reconocimiento, claridad) y anota un momento de hoy en que ya estuvo presente aunque fuera poco. Pregúntate: ¿qué me impidió notarlo?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "deseo",
+      "linaje": "zen",
       "nota_editorial": "Foyan Qingyuan, tradición chan"
     },
     {
@@ -268,7 +268,7 @@ window.TAOISTA_DATASET = {
       "frase": "Buscó el momento correcto hasta que el momento pasó.",
       "interpretacion": "Esperar condiciones perfectas puede ser una forma de evitar. El tiempo no se detiene mientras la decisión madura.",
       "practica_hoy": "Elige algo que llevas días posponiendo y fija un plazo concreto para decidir: hoy o mañana a una hora.",
-      "categoria": "atencion",
+      "categoria": "eleccion",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -277,7 +277,7 @@ window.TAOISTA_DATASET = {
       "frase": "Cabalgar un buey buscando un buey.",
       "interpretacion": "En las Ilustraciones del Buey, la búsqueda empieza porque el buscador cree que algo le falta. El relato no desprecia la búsqueda: muestra que el camino también es aprender a ver lo que ya está.",
       "practica_hoy": "Escribe en una frase qué buscas en esta etapa de tu vida. Debajo, una evidencia de que ya tienes una parte. Pregúntate: ¿la búsqueda me acerca o me impide ver?",
-      "categoria": "atencion",
+      "categoria": "deseo",
       "linaje": "contemporaneo",
       "nota_editorial": "Ilustraciones del Buey."
     },
@@ -286,26 +286,17 @@ window.TAOISTA_DATASET = {
       "frase": "Caminaron bajo la lluvia y no se mojaron.",
       "interpretacion": "La lluvia moja a todos; lo que cambia es la lucha añadida contra ella. Aceptar una molestia inevitable no la elimina, pero quita la segunda capa de queja.",
       "practica_hoy": "Ante una molestia menor e inevitable hoy (clima, espera), nota la queja mental y nómbrala: «queja». Si es un dolor físico nuevo o intenso, atiéndelo: no es para aguantar.",
-      "categoria": "atencion",
+      "categoria": "aceptacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Fuente no verificada; no localizada en Wumenguan ni Biyan Lu"
-    },
-    {
-      "id": "TAO_0033",
-      "frase": "Cierra la puerta para atrapar al ladrón.",
-      "interpretacion": "No dejes escapar tus malos hábitos. Ciérrales la salida y enfréntalos dentro de ti.",
-      "practica_hoy": "Corta la distracción que usas para huir de ti.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Treinta y seis estratagemas, n.º 22"
     },
     {
       "id": "TAO_0034",
       "frase": "Cuando dejó de buscar la mente, la mente dejó de molestarlo.",
       "interpretacion": "La búsqueda de un estado mental especial lo sostiene. Al dejar de perseguir un estado, la mente deja de ser un problema que resolver.",
       "practica_hoy": "Detecta hoy una búsqueda de “estar mejor” (revisar el móvil, cambiar de postura) y déjala pasar una vez. Nota qué ocurre.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "control",
+      "linaje": "zen",
       "nota_editorial": "Paráfrasis de tema chan; cf. Huangbo, Chuanxin fayao (传心法要)"
     },
     {
@@ -313,7 +304,7 @@ window.TAOISTA_DATASET = {
       "frase": "Cuando quien sabe señala la luna, quien no sabe mira el dedo.",
       "interpretacion": "Confundir el método, el nombre o la estructura con la realidad misma es quedar atrapado en las coordenadas de un mapa infinito.",
       "practica_hoy": "Nota cuántas de tus afirmaciones de hoy comienzan con clasificaciones conceptuales y trata de percibir el objeto desnudo de sus etiquetas.",
-      "categoria": "atencion",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "El dedo y la luna."
     },
@@ -323,7 +314,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La comodidad no se nota; la fricción sí. La frase apunta a que la ausencia de conflicto también es una forma de bienestar, aunque no llame la atención.",
       "practica_hoy": "Localiza hoy un momento sin fricción (respirar, caminar, sentarte) y nota esa ausencia durante 20 segundos.",
       "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 19 (达生): «忘足，履之适也»; trad. Preciado Idoeta"
     },
     {
@@ -331,7 +322,7 @@ window.TAOISTA_DATASET = {
       "frase": "Cuando nació, no preguntó quién era. Cuando muera, no responderá.",
       "interpretacion": "La identidad es un intervalo narrativo.",
       "practica_hoy": "Descansa un momento sin historia personal.",
-      "categoria": "atencion",
+      "categoria": "identidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -340,7 +331,7 @@ window.TAOISTA_DATASET = {
       "frase": "Dibujó una serpiente y le añadió patas.",
       "interpretacion": "El exceso de acción arruina la obra perfecta. Cuando termines, detente. Añadir más es restar.",
       "practica_hoy": "Termina una tarea y no la revises de nuevo.",
-      "categoria": "atencion",
+      "categoria": "simplicidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Modismo chino clásico."
     },
@@ -349,8 +340,8 @@ window.TAOISTA_DATASET = {
       "frase": "Dos monjes discutían sobre la bandera. El patriarca dijo: 'Es su mente la que se mueve'.",
       "interpretacion": "La misma escena se vive distinto según la mente que la mira. Esto no niega los problemas reales: ayuda a separar el hecho de la reacción.",
       "practica_hoy": "Ante una molestia hoy, escribe dos líneas: «qué ocurrió» y «qué me dije sobre eso». Si hace falta actuar, actúa sobre lo primero.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "zen",
       "nota_editorial": "Koan del viento y la bandera."
     },
     {
@@ -358,8 +349,8 @@ window.TAOISTA_DATASET = {
       "frase": "El Errante: Fuego sobre la Montaña.",
       "interpretacion": "El hexagrama del Errante describe a quien está de paso: el fuego en la montaña no se queda, avanza. Estar de paso pide prudencia, cortesía y no aferrarse a un lugar que no es propio.",
       "practica_hoy": "Piensa en una situación donde hoy eres «de paso» (un trabajo nuevo, una casa ajena, una etapa). Pregúntate: ¿cómo quiero comportarme allí sabiendo que no es para siempre?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "impermanencia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 56"
     },
     {
@@ -367,8 +358,8 @@ window.TAOISTA_DATASET = {
       "frase": "El ave yuanchu, una especie de fénix, solo se posa en el árbol wutong.",
       "interpretacion": "En Zhuangzi, el ave noble solo se posa en el wutong y Huizi teme que quiera su cargo: lo que uno valora no es lo que codicia el otro. Elegir dónde posarse es una decisión sobre valores.",
       "practica_hoy": "Revisa en qué gastaste tu atención ayer. Marca un lugar donde «te posaste» sin elegirlo. Pregúntate: ¿qué árbol elegiría hoy si fuera fiel a lo que valoro?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "valores",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 17 (秋水): el ave yuanchu solo se posa en el wutong"
     },
     {
@@ -376,7 +367,7 @@ window.TAOISTA_DATASET = {
       "frase": "El agua fluye, la flor cae. Cada una a lo suyo.",
       "interpretacion": "El agua y la flor siguen su naturaleza sin estorbarse. Hacer bien lo propio y soltar lo ajeno libera mucha energía que se gasta en controlar.",
       "practica_hoy": "Haz una lista de dos columnas: «lo que me toca hoy» y «lo que no me toca». Dedica 10 minutos a la primera. Pregúntate: ¿en qué asunto ajeno estoy remando?",
-      "categoria": "atencion",
+      "categoria": "wu_wei",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -385,7 +376,7 @@ window.TAOISTA_DATASET = {
       "frase": "El agua soporta al barco, pero también puede volcarlo.",
       "interpretacion": "Las mismas fuerzas que te ayudan (gente, dinero, poder) pueden destruirte si no las respetas. Navega con atención.",
       "practica_hoy": "Trata con respeto a quien te sirve o ayuda.",
-      "categoria": "atencion",
+      "categoria": "relaciones",
       "linaje": "contemporaneo",
       "nota_editorial": "Xunzi (王制): «el agua sostiene el barco y el agua lo vuelca» (水则载舟，水则覆舟)"
     },
@@ -394,8 +385,8 @@ window.TAOISTA_DATASET = {
       "frase": "El arquero que dispara por oro pierde el blanco.",
       "interpretacion": "El premio externo desplaza la atención del acto. La codicia del resultado corrompe la ejecución.",
       "practica_hoy": "Haz hoy una tarea y nota cada vez que tu atención se va al resultado (reconocimiento, nota, premio). Vuelve al gesto. Tres retornos.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "apego",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 19 (达生): «以黄金注者殙»; trad. Preciado Idoeta"
     },
     {
@@ -403,8 +394,8 @@ window.TAOISTA_DATASET = {
       "frase": "El caldero se ha volcado.",
       "interpretacion": "Hay pérdidas que derraman lo que con esfuerzo se cocinaba. Antes de rehacer nada, el primer paso es reconocer lo que se perdió.",
       "practica_hoy": "Si algo se ha venido abajo, nómbralo en una frase sin juzgarte: «se perdió ___». Date permiso para sentirlo antes de planear el siguiente paso.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "duelo",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 50 (Ding)"
     },
     {
@@ -412,7 +403,7 @@ window.TAOISTA_DATASET = {
       "frase": "El campesino esperó junto al árbol donde una vez chocó un conejo.",
       "interpretacion": "Que algo haya funcionado una vez por suerte no lo convierte en una ley. Aferrarse al pasado te mata de hambre en el presente.",
       "practica_hoy": "Cambia un método que usas solo 'porque antes funcionaba'.",
-      "categoria": "atencion",
+      "categoria": "flexibilidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Esperando al conejo en el tocón."
     },
@@ -421,8 +412,8 @@ window.TAOISTA_DATASET = {
       "frase": "El carpintero despreció al roble por ser nudoso e inútil. Por eso el roble vivió mil años.",
       "interpretacion": "La aparente “inutilidad” del roble nudoso es lo que le permitió durar. El criterio utilitario estrecho no agota el valor de algo.",
       "practica_hoy": "Piensa en algo propio que consideras “defecto” y nombra una función que cumple (protege, regula, señala). Una frase.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "flexibilidad",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 4 (人间世), historia del Carpintero Shi y el roble sagrado; trad. Preciado Idoeta"
     },
     {
@@ -430,8 +421,8 @@ window.TAOISTA_DATASET = {
       "frase": "El cuerpo es el árbol Bodhi; la mente, un espejo brillante. Límpialo cada día.",
       "interpretacion": "Es el verso de Shenxiu: la práctica como cuidado diario, para que el polvo no se acumule. Huineng le respondería que no hay espejo que limpiar; este verso describe el punto de partida de quien aún necesita pulir.",
       "practica_hoy": "Limpia algo físico como ritual de limpieza mental.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "practica",
+      "linaje": "zen",
       "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃). Respuesta de Huineng: TAO_0377"
     },
     {
@@ -439,7 +430,7 @@ window.TAOISTA_DATASET = {
       "frase": "El discípulo meditó diez años para avanzar. El maestro le dijo: «¿Quién te pidió llegar?»",
       "interpretacion": "La meta “avanzar” presupone un destino. La práctica no es un proyecto de llegada.",
       "practica_hoy": "Hoy haz tu práctica (meditación, paseo, escritura) sin marcar progreso. Al terminar, no evalúes.",
-      "categoria": "atencion",
+      "categoria": "practica",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -448,7 +439,7 @@ window.TAOISTA_DATASET = {
       "frase": "El ejército excesivo se derrota a sí mismo.",
       "interpretacion": "Un ejército demasiado grande se vuelve lento y difícil de abastecer. También los planes, las listas y las herramientas pesan cuando exceden lo que la tarea pide.",
       "practica_hoy": "Elige un proyecto y quita una cosa que lo hace más pesado (una herramienta, un paso, una reunión). Pregúntate: ¿qué estoy acumulando por seguridad y no por necesidad?",
-      "categoria": "atencion",
+      "categoria": "simplicidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Arte de la Guerra."
     },
@@ -457,7 +448,7 @@ window.TAOISTA_DATASET = {
       "frase": "El error ocurrió. Solo después lo llamó error.",
       "interpretacion": "Primero ocurre el hecho; después llega la etiqueta. Separarlas no niega el error: permite corregirlo sin castigarte.",
       "practica_hoy": "Ante un error hoy, escribe el hecho en una línea y la etiqueta en otra («soy torpe»). Actúa sobre el hecho.",
-      "categoria": "atencion",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Sobre la mente discriminatoria."
     },
@@ -466,8 +457,8 @@ window.TAOISTA_DATASET = {
       "frase": "El espejo pulido no se mancha con el polvo.",
       "interpretacion": "Es el verso de Shenxiu: limpiar el espejo cada día para que el polvo no se pose. Huineng le respondió que no hay espejo que limpiar. El verso no está equivocado: describe la práctica constante, y la respuesta, su límite.",
       "practica_hoy": "Hoy practica algo con constancia (cinco minutos de quietud, ordenar la mesa) y nota cómo te sientes al hacerlo. Pregúntate: ¿lo hago para mejorarme o para estar presente?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "practica",
+      "linaje": "zen",
       "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台)"
     },
     {
@@ -475,8 +466,8 @@ window.TAOISTA_DATASET = {
       "frase": "El ganso salvaje vuela gradualmente hacia la nube.",
       "interpretacion": "El hexagrama del Desarrollo gradual muestra al ganso que avanza por etapas: orilla, roca, tierra alta. Cada etapa tiene su forma de estar; saltarlas suele costar más.",
       "practica_hoy": "Escribe en qué etapa estás de algo que te importa (aprender, sanar, construir). Pregúntate: ¿qué pide esta etapa y no la siguiente? Haz un paso de esta etapa hoy.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "paciencia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 53 (Jian)"
     },
     {
@@ -484,8 +475,8 @@ window.TAOISTA_DATASET = {
       "frase": "La persona necia busca el fuego con una lámpara encendida.",
       "interpretacion": "A veces buscamos fuera algo que ya está operando dentro, como la misma atención con la que buscamos.",
       "practica_hoy": "Cuando te descubras buscando «sentirte bien», haz tres respiraciones y nota qué ya está presente.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "deseo",
+      "linaje": "zen",
       "nota_editorial": "Tradición Chan."
     },
     {
@@ -493,8 +484,8 @@ window.TAOISTA_DATASET = {
       "frase": "Alguien que perdió su hacha sospechó del hijo de su vecino.",
       "interpretacion": "Nuestras sospechas y prejuicios colorean la realidad. El juicio apresurado crea falsos culpables, haciendo que veamos en los demás el reflejo de nuestros propios miedos o pérdidas cotidianas.",
       "practica_hoy": "Hoy, cuando sientas desconfianza o juzgues la intención de alguien, detente un segundo. Recuerda que puedes estar proyectando tu propia inquietud y observa al otro con una mente despejada.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "taoismo",
       "nota_editorial": "Liezi, cap. 8 (说符): «人有亡鈇者，意其邻之子»; trad. Preciado Idoeta"
     },
     {
@@ -502,8 +493,8 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia no deja huellas, como el pájaro en el cielo.",
       "interpretacion": "Haz tu trabajo y desaparece. No dejes rastro de 'yo lo hice' o 'mírenme'.",
       "practica_hoy": "Realiza una tarea y borra tu autoría.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "ego",
+      "linaje": "taoismo",
       "nota_editorial": "Tao Te Ching, cap. 27 («善行无辙迹»); cf. Dhammapada vv. 92-93 y 254-255 (Ākāsa-vagga); trad. Preciado / Dragonetti"
     },
     {
@@ -511,17 +502,17 @@ window.TAOISTA_DATASET = {
       "frase": "La persona verdadera respira con los talones.",
       "interpretacion": "La presencia encarnada implica apoyo y descenso, no solo atención en la cabeza. La respiración con los talones es una imagen de enraizamiento, no una técnica literal.",
       "practica_hoy": "Tres veces hoy, haz 5 respiraciones lentas notando el apoyo de tus pies en el suelo o, si no es accesible, el peso sobre el asiento y las manos en el regazo.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "cuerpo",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 6 (大宗师): «真人之息以踵»; trad. Preciado Idoeta"
     },
     {
       "id": "TAO_0058",
       "frase": "El ladrón se llevó todo, pero olvidó la luna en la ventana.",
       "interpretacion": "Nuestra riqueza fundamental es la capacidad de atestiguar el momento; esto escapa a cualquier sustracción material o externalidad.",
-      "practica_hoy": "Contémpla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "practica_hoy": "Contempla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias.",
+      "categoria": "apego",
+      "linaje": "zen",
       "nota_editorial": "Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada"
     },
     {
@@ -538,7 +529,7 @@ window.TAOISTA_DATASET = {
       "frase": "El maestro fue insultado. No recogió el insulto.",
       "interpretacion": "Nada te pertenece si no lo tomas.",
       "practica_hoy": "No respondas a una provocación.",
-      "categoria": "atencion",
+      "categoria": "regulacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Saṃyutta Nikāya 7.2 (Akkosaka Bhāradvāja Sutta): el Buda y el brahmán que insulta; «si no acepto el regalo, ¿de quién es?». Motivo paneasiático con versiones confucianas"
     },
@@ -547,8 +538,8 @@ window.TAOISTA_DATASET = {
       "frase": "El maestro señaló la luna. El discípulo estudió el dedo.",
       "interpretacion": "El dedo indica; no es lo indicado. La frase señala el error de confundir la enseñanza (mapa, técnica, concepto) con aquello a lo que apunta.",
       "practica_hoy": "Detecta hoy un momento en que confundes un concepto con la experiencia (leer sobre calma en lugar de notar el cuerpo). Cambia el foco al cuerpo 20 segundos.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "lenguaje_y_realidad",
+      "linaje": "zen",
       "nota_editorial": "Metáfora chan clásica «指月»; origen en Sutra de Lankavatara (楞伽经); trad. esp. disponible"
     },
     {
@@ -556,8 +547,8 @@ window.TAOISTA_DATASET = {
       "frase": "El monje cargó a la mujer para cruzar el río y la soltó al llegar.",
       "interpretacion": "Haz lo necesario y suéltalo. No sigas cargando mentalmente lo que ya soltaste físicamente.",
       "practica_hoy": "Revisa si sigues cargando algo que ya terminó.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "apego",
+      "linaje": "zen",
       "nota_editorial": "Tanzan y Ekido, relato zen recogido en 101 historias zen (Carne zen, huesos zen)"
     },
     {
@@ -565,8 +556,8 @@ window.TAOISTA_DATASET = {
       "frase": "El monje dejó de meditar porque no avanzaba. Entonces se sentó.",
       "interpretacion": "Mientras meditaba para conseguir algo, el monje no estaba sentado: estaba persiguiendo. La práctica de shikantaza es solo sentarse, sin meta añadida.",
       "practica_hoy": "Siéntate 3 minutos sin objetivo: ni calmarte ni mejorar. Al terminar, anota una línea. Pregúntate: ¿qué cambió al no pedirle nada a este rato?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "practica",
+      "linaje": "zen",
       "nota_editorial": "Creación original (sin fuente); tema del shikantaza (Dōgen, Fukanzazengi)"
     },
     {
@@ -574,7 +565,7 @@ window.TAOISTA_DATASET = {
       "frase": "El monje preguntó por la compasión. El maestro le dio agua cuando tuvo sed.",
       "interpretacion": "La compasión no es una idea sino una respuesta ajustada al momento. El maestro no definió: respondió a una necesidad concreta.",
       "practica_hoy": "Detecta hoy una necesidad concreta a tu alrededor (sed, cansancio, hambre) y responde con una acción mínima.",
-      "categoria": "atencion",
+      "categoria": "compasion",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -583,7 +574,7 @@ window.TAOISTA_DATASET = {
       "frase": "El monje preguntó: «¿Qué es el Tao?». El maestro levantó una piedra y la dejó caer.",
       "interpretacion": "La piedra cae y no explica nada; ocurre. A veces la pregunta pide un concepto y la respuesta llega como un hecho simple que no necesita traducción.",
       "practica_hoy": "Deja caer algo pequeño (una llave, una hoja) y observa el sonido y el movimiento sin nombrarlos. Pregúntate: ¿qué pregunta me hago hoy que quizá no necesita respuesta en palabras?",
-      "categoria": "atencion",
+      "categoria": "experiencia_directa",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -592,7 +583,7 @@ window.TAOISTA_DATASET = {
       "frase": "El pino y el ciprés son los últimos en perder sus hojas cuando llega el invierno.",
       "interpretacion": "La adversidad revela qué sostiene a una persona; en tiempos fáciles todo parece firme. No significa que el sufrimiento sea bueno, sino que deja ver recursos que no conocías.",
       "practica_hoy": "Recuerda una dificultad que ya atravesaste y escribe un recurso que usaste entonces (una persona, un hábito, una idea). Una línea.",
-      "categoria": "atencion",
+      "categoria": "resiliencia",
       "linaje": "contemporaneo",
       "nota_editorial": "Analectas 9.28 (子罕): «Solo cuando llega el frío del año se sabe que el pino y el ciprés son los últimos en marchitarse»"
     },
@@ -601,8 +592,8 @@ window.TAOISTA_DATASET = {
       "frase": "El pozo: La ciudad puede cambiarse, pero el pozo no.",
       "interpretacion": "El hexagrama del Pozo dice que la ciudad puede cambiar de lugar, pero el pozo no. Hay fuentes que sostienen, como los vínculos y los valores, que siguen ahí aunque cambie todo lo demás.",
       "practica_hoy": "Nombra algo que te ha sostenido en distintas etapas de tu vida (una persona, una práctica, un valor). Pregúntate: ¿cuándo fui por última vez a ese pozo? Haz hoy un gesto para volver.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "continuidad",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 48"
     },
     {
@@ -610,8 +601,8 @@ window.TAOISTA_DATASET = {
       "frase": "El puente fluye, el agua está quieta.",
       "interpretacion": "El verso de Fu Dashi invierte la percepción: quien cruza dice que fluye el puente y no el agua. Invertir el punto de vista revela cuánto de lo que vemos depende de desde dónde miramos.",
       "practica_hoy": "Elige una situación que te molesta y descríbela en tres líneas desde el punto de vista de la otra persona. Pregúntate: ¿qué se mueve en realidad, la situación o mi lugar ante ella?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "zen",
       "nota_editorial": "Fu Dashi (Shanhui), verso chan (人从桥上过，桥流水不流)"
     },
     {
@@ -619,7 +610,7 @@ window.TAOISTA_DATASET = {
       "frase": "El pájaro enjaulado sueña con nubes; el pájaro libre busca semillas.",
       "interpretacion": "Quien no tiene libertad la idealiza; quien la tiene sabe que incluye buscar alimento cada día. La libertad real trae rutina y esfuerzo, no solo cielo abierto.",
       "practica_hoy": "Piensa en algo que deseas (otro trabajo, otra vida) y escribe una tarea aburrida que traería consigo. Pregúntate: ¿la seguiría queriendo con esa parte incluida?",
-      "categoria": "atencion",
+      "categoria": "deseo",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -628,7 +619,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia abraza la unidad.",
       "interpretacion": "El Daodejing habla de «abrazar el uno»: no partirse entre lo que uno muestra y lo que es. La unidad empieza por la coherencia interna, no por una idea abstracta del todo.",
       "practica_hoy": "Detecta hoy un momento en que digas una cosa y pienses otra. No te juzgues: anótalo. Pregúntate: ¿qué necesitaría para que lo de dentro y lo de fuera se parecieran más?",
-      "categoria": "atencion",
+      "categoria": "coherencia",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 22"
     },
@@ -637,16 +628,16 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia cayó. Al levantarse, no llamó caída al suelo.",
       "interpretacion": "El evento es uno; la etiqueta “caída” es una segunda capa. La persona sabia separa el hecho de su interpretación.",
       "practica_hoy": "Hoy, cuando ocurra algo que llamarías “fracaso”, escribe el hecho en una línea y la etiqueta en otra. Solo mira la diferencia.",
-      "categoria": "atencion",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0072",
       "frase": "La persona sabia cierra la boca y embota sus sentidos.",
-      "interpretacion": "Cerrar las puertas de la percepción conserva la energía vital (Jing). Estar siempre 'conectado' te drena.",
-      "practica_hoy": "Pasa una hora en modo 'no molestar' mental.",
-      "categoria": "atencion",
+      "interpretacion": "Reducir la entrada constante de estímulos preserva la claridad. Estar siempre conectado fragmenta la atención.",
+      "practica_hoy": "Pasa una hora sin notificaciones ni consumo de contenido; atiende solo a lo que ocurre frente a ti. Pregúntate al terminar: ¿qué noté que de otro modo habría pasado por alto?",
+      "categoria": "saturacion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 52"
     },
@@ -655,8 +646,8 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia come cuando tiene hambre y duerme cuando tiene sueño.",
       "interpretacion": "Suena fácil, pero la gente común come pensando en mil cosas y duerme soñando con mil problemas. Haz solo una cosa.",
       "practica_hoy": "Come sin hacer nada más (sin pantallas, sin hablar).",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "practica",
+      "linaje": "zen",
       "nota_editorial": "Linji."
     },
     {
@@ -664,16 +655,16 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia conoce la luz, pero se mantiene en la oscuridad.",
       "interpretacion": "No exhibir todo lo que sabes deja margen para observar y aprender. No es esconderte por miedo: es elegir cuándo mostrarte.",
       "practica_hoy": "En una conversación o reunión hoy, escucha completo antes de aportar tu idea. Después dila con claridad.",
-      "categoria": "atencion",
+      "categoria": "humildad",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 28"
     },
     {
       "id": "TAO_0075",
-      "frase": "La persona sabia es cuadrado pero no corta; afilado pero no hiere.",
+      "frase": "La persona sabia es cuadrada pero no corta; afilada pero no hiere.",
       "interpretacion": "La firmeza no necesita agresión. Se puede tener borde sin cortar: límites claros sin daño.",
       "practica_hoy": "Detecta hoy una situación donde quieras corregir a alguien. Formula una frase firme y no hiriente. Dila o escríbela.",
-      "categoria": "atencion",
+      "categoria": "limites",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 58"
     },
@@ -682,7 +673,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia no compite, por eso nadie puede competir con ella.",
       "interpretacion": "Si juegas tu propio juego, no tienes rivales. La competencia es para los que imitan.",
       "practica_hoy": "Haz algo a tu manera única, sin compararte.",
-      "categoria": "atencion",
+      "categoria": "ego",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 22"
     },
@@ -691,7 +682,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia no tiene compasión ritual; trata a las cosas como perros de paja.",
       "interpretacion": "El Tao no tiene preferencias sentimentales artificiales. Tratar las cosas como 'perros de paja' significa honrarlas plenamente cuando están presentes y soltarlas con ligereza y sin apegos cuando su ciclo termina.",
       "practica_hoy": "Observa un apego material o relacional que estés sosteniendo con angustia hoy. Visualízalo completando su ciclo natural y practica el arte taoísta de soltarlo sin amargura.",
-      "categoria": "atencion",
+      "categoria": "apego",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 5"
     },
@@ -699,8 +690,8 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0078",
       "frase": "La persona sabia trata el éxito y el fracaso como el mismo impostor.",
       "interpretacion": "Ambos son eventos temporales. Ninguno te define. Mantente ecuánime ante los dos.",
-      "practica_hoy": "No te emociones demasiado si algo sale bien, ni te hundas si sale mal.",
-      "categoria": "atencion",
+      "practica_hoy": "Ante un logro o un tropiezo hoy, permite sentir la emoción completa sin usarla para definir quién eres ni para cambiar tu rumbo.",
+      "categoria": "ego",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -709,7 +700,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia usa la balsa para cruzar el río, pero la deja en la orilla al seguir su camino.",
       "interpretacion": "Las herramientas sirven a un cruce; aferrarse a ellas después convierte el medio en carga. La frase apunta a soltar el método cuando ya cumplió.",
       "practica_hoy": "Identifica una herramienta que ya te sirvió (una app, un ritual, una frase) y hoy déjala una vez sin usar. Nota qué ocurre.",
-      "categoria": "atencion",
+      "categoria": "apego",
       "linaje": "contemporaneo",
       "nota_editorial": "La parábola de la balsa."
     },
@@ -718,7 +709,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia usa la luz para volver a la claridad.",
       "interpretacion": "«Usar la luz y volver a la claridad»: la inteligencia que sale al mundo puede volver a iluminar el propio punto de partida. Conocer fuera sin conocerse deja a oscuras lo esencial.",
       "practica_hoy": "Al final del día, toma algo que juzgaste de otra persona y escribe una línea sobre ello. Pregúntate: ¿qué dice de mí este juicio?",
-      "categoria": "atencion",
+      "categoria": "relacion_consigo",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 52"
     },
@@ -727,7 +718,7 @@ window.TAOISTA_DATASET = {
       "frase": "La persona sabia vacía la mente y llena el vientre.",
       "interpretacion": "En el Daodejing la frase habla de gobernar: dar sustento antes que ideas. Leída hacia dentro: atender primero las necesidades básicas ayuda a la mente a soltar lo que le sobra.",
       "practica_hoy": "Revisa hoy tres necesidades básicas: ¿comiste, dormiste, te moviste? Atiende la que falte antes de resolver otra preocupación. Pregúntate: ¿cuántas angustias se aligeran con el cuerpo atendido?",
-      "categoria": "atencion",
+      "categoria": "autocuidado",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 3"
     },
@@ -736,8 +727,8 @@ window.TAOISTA_DATASET = {
       "frase": "El trueno bajo la tierra.",
       "interpretacion": "En el hexagrama del Retorno, el trueno está bajo la tierra: el impulso vuelve, pero aún es débil. Los antiguos cerraban los pasos en el solsticio para cuidarlo. Un comienzo frágil se protege, no se exhibe.",
       "practica_hoy": "Elige algo que estás retomando (un hábito, una relación, la salud) y define un modo de cuidarlo sin presionarlo esta semana. Pregúntate: ¿qué necesita este comienzo para no apagarse?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "paciencia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 24 (Fu)"
     },
     {
@@ -745,8 +736,8 @@ window.TAOISTA_DATASET = {
       "frase": "El viento no dura toda la mañana.",
       "interpretacion": "Los estados (emociones, pensamientos, impulsos) son eventos con duración, no rasgos permanentes. La frase apunta a la temporalidad de lo que parece sólido.",
       "practica_hoy": "Cuando aparezca una emoción intensa, pon un temporizador de 3 minutos y nota si cambia de intensidad o forma al terminar.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "impermanencia",
+      "linaje": "taoismo",
       "nota_editorial": "Tao Te Ching, cap. 23: «飘风不终朝»; trad. Preciado Idoeta"
     },
     {
@@ -754,70 +745,34 @@ window.TAOISTA_DATASET = {
       "frase": "El árbol nudoso vive siglos porque nadie quiere su madera.",
       "interpretacion": "Aquello que los estándares convencionales consideran 'inútil' puede ser el resguardo de la propia libertad ontológica.",
       "practica_hoy": "Reconoce un aspecto de tu vida que carece de 'productividad' externa y contémplalo como tu refugio vital.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "flexibilidad",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 4 (人间世) y cap. 1 (逍遥游): el árbol inútil"
-    },
-    {
-      "id": "TAO_0085",
-      "frase": "Esconder una daga tras una sonrisa.",
-      "interpretacion": "La amabilidad falsa es más peligrosa que la hostilidad visible. La frase señala el costo de disfrazar la hostilidad.",
-      "practica_hoy": "Detecta hoy un momento en que sonríes por compromiso. Nombra la emoción real por dentro y decide si necesitas decir algo o simplemente notarlo.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Refrán chino clásico; cf. Treinta y seis estratagemas, n.º 10 (笑里藏刀). Lectura no literal: la daga es imagen de la hostilidad encubierta, no una invitación a la violencia."
     },
     {
       "id": "TAO_0086",
       "frase": "Esperar con comodidad al enemigo fatigado.",
       "interpretacion": "Responder desde el agotamiento suele empeorar las cosas. Recuperar fuerzas antes de un conflicto es estrategia, no huida.",
       "practica_hoy": "Si tienes una conversación difícil pendiente, fija un momento en que estés descansado para tenerla, en lugar de evitarla o improvisarla.",
-      "categoria": "atencion",
+      "categoria": "regulacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 4 (以逸待劳); cf. Sunzi, El arte de la guerra, cap. 7"
-    },
-    {
-      "id": "TAO_0087",
-      "frase": "Fingir ser un cerdo para comerse al tigre.",
-      "interpretacion": "El dicho habla de ocultar la fuerza para no provocar al adversario. Leído hacia dentro: no hace falta demostrar todo lo que sabes para estar seguro de ello.",
-      "practica_hoy": "Hoy deja pasar una ocasión de presumir un saber o un logro. Nota la urgencia de mostrarlo y no la sigas.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Dicho chino (扮猪吃老虎); no figura entre las Treinta y seis estratagemas"
-    },
-    {
-      "id": "TAO_0088",
-      "frase": "Fuego bajo la Tierra: La Oscuridad de la Luz.",
-      "interpretacion": "Debes esconder tu luz cuando el entorno es hostil. No brilles; sobrevive internamente.",
-      "practica_hoy": "No muestres tu alegría o talento ante gente hostil.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Yijing, hexagrama 36"
     },
     {
       "id": "TAO_0089",
       "frase": "Gobernar un gran estado es como cocinar un pez pequeño.",
       "interpretacion": "Un pez pequeño se deshace si se le da la vuelta demasiadas veces. Lo delicado se estropea por exceso de intervención, no solo por descuido.",
       "practica_hoy": "Elige algo que estás «removiendo» demasiado (un plan, una conversación, una herida) y déjalo un día sin tocar. Pregúntate: ¿mi intervención ayuda o deshace?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "wu_wei",
+      "linaje": "taoismo",
       "nota_editorial": "Tao Te Ching, cap. 60: «治大国若烹小鲜»; trad. Preciado Idoeta"
-    },
-    {
-      "id": "TAO_0090",
-      "frase": "Golpear la hierba para asustar a la serpiente.",
-      "interpretacion": "Haz una pequeña acción para ver cómo reacciona el entorno antes de comprometerte a fondo. Provoca una respuesta.",
-      "practica_hoy": "Haz una pregunta prueba para ver el estado de ánimo de alguien.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Treinta y seis estratagemas, n.º 13"
     },
     {
       "id": "TAO_0091",
       "frase": "Bajar el volumen a tu lucidez sin apagarla.",
       "interpretacion": "A veces conviene no mostrar toda la información o habilidad, no por engaño, sino por economía relacional. La frase señala el valor estratégico de no competir.",
       "practica_hoy": "En una conversación hoy, deja pasar una corrección que ibas a hacer. Nota qué ocurre en ti.",
-      "categoria": "atencion",
+      "categoria": "humildad",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 27"
     },
@@ -826,8 +781,8 @@ window.TAOISTA_DATASET = {
       "frase": "Intentaron darle cara al Caos y murió.",
       "interpretacion": "Imponer esquemas y estructuras artificiales a lo natural destruye su vitalidad interna. La fábula de Hundun nos enseña que forzar la definición, el orden o la forma al flujo del Caos apaga la vida pura.",
       "practica_hoy": "Hoy, resiste el impulso de planificarlo o controlarlo todo. Deja un espacio libre en tu día para que ocurra lo imprevisto y adáptate con fluidez natural a lo que surja.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "wu_wei",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 7 (应帝王), historia de 混沌 (Hundun); trad. Preciado Idoeta"
     },
     {
@@ -835,7 +790,7 @@ window.TAOISTA_DATASET = {
       "frase": "Intercambiar un ladrillo por un jade.",
       "interpretacion": "La estratagema ofrece algo modesto para obtener algo valioso. En la vida diaria, una pregunta sencilla o una primera idea imperfecta suelen abrir lo que la espera no abre.",
       "practica_hoy": "Comparte hoy una idea a medio hacer o una pregunta honesta con alguien. Pregúntate: ¿qué estoy reteniendo por esperar a que sea «jade»?",
-      "categoria": "atencion",
+      "categoria": "comunicacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 17"
     },
@@ -844,8 +799,8 @@ window.TAOISTA_DATASET = {
       "frase": "La Olla: El fuego sobre el viento.",
       "interpretacion": "En el hexagrama del Caldero, el fuego arde sobre la madera y transforma lo crudo en alimento. La transformación necesita fuego y también un recipiente estable que lo contenga.",
       "practica_hoy": "Elige algo que quieres transformar en ti y define su «caldero»: una hora fija, un lugar, una persona de apoyo. Pregúntate: ¿tengo fuego sin recipiente, o recipiente sin fuego?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "constancia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 50"
     },
     {
@@ -853,8 +808,8 @@ window.TAOISTA_DATASET = {
       "frase": "La Penumbra preguntó a la Sombra: ¿Por qué te mueves tanto?",
       "interpretacion": "La sombra se mueve porque la penumbra se mueve; el observador no ve su propia participación. La frase apunta a la codependencia de lo que parece autónomo.",
       "practica_hoy": "Detecta hoy una reacción propia (molestia, prisa) y rastrea qué la provocó a ti. Una frase: “esto reaccionó a ___”.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "regulacion",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 2 (齐物论): «罔两问景»; trad. Preciado Idoeta"
     },
     {
@@ -871,25 +826,16 @@ window.TAOISTA_DATASET = {
       "frase": "La barca sin amarras no choca con nadie.",
       "interpretacion": "El conflicto no surge del impacto, sino de la atribución de intención.",
       "practica_hoy": "Permite un contratiempo sin asignar culpables.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "regulacion",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 20 (山木), historia de la barca vacía (虚舟); trad. Preciado Idoeta"
-    },
-    {
-      "id": "TAO_0098",
-      "frase": "La calidad de tu vida depende de la calidad de tus pensamientos.",
-      "interpretacion": "Lo que pensamos tiñe cómo vivimos lo que ocurre, aunque no decide todo lo que ocurre. Notar ese tinte da margen para elegir.",
-      "practica_hoy": "Nombra en una palabra el tono de tu mente ahora (tenso, cansado, sereno) y nota cómo colorea lo que ves durante la próxima hora.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Marco Aurelio, Meditaciones (tema, no cita literal)"
     },
     {
       "id": "TAO_0100",
       "frase": "La luna se refleja en mil ríos; la luna es una.",
       "interpretacion": "Una sola luna aparece en mil ríos: cada agua la refleja según su quietud y su forma. Las distintas visiones de un mismo hecho pueden ser reflejos parciales, no mentiras.",
       "practica_hoy": "En el próximo desacuerdo, pregunta a la otra persona qué ve y repítelo antes de responder. Pregúntate: ¿qué parte de la luna se ve desde su río y no desde el mío?",
-      "categoria": "atencion",
+      "categoria": "relaciones",
       "linaje": "contemporaneo",
       "nota_editorial": "Metáfora clásica."
     },
@@ -898,8 +844,8 @@ window.TAOISTA_DATASET = {
       "frase": "La mantis acecha a la cigarra, sin notar al pájaro que está detrás.",
       "interpretacion": "La atención estrecha en un objetivo inmediato oculta el contexto mayor. La frase señala el costo de la visión de túnel.",
       "practica_hoy": "Antes de una decisión hoy, escribe dos consecuencias que ocurrirán “detrás” (a la semana, al mes).",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 20 (山木): la mantis que acecha a la cigarra (螳螂捕蝉)"
     },
     {
@@ -907,7 +853,7 @@ window.TAOISTA_DATASET = {
       "frase": "La mayor virtud es como el agua; nutre a todos sin competir.",
       "interpretacion": "La eficacia más profunda no nace del esfuerzo o la confrontación, sino de la adaptación natural a las circunstancias presentadas.",
       "practica_hoy": "Frente a un obstáculo menor hoy, busca rodearlo fluidamente en lugar de forzar una resolución frontal.",
-      "categoria": "atencion",
+      "categoria": "wu_wei",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 8"
     },
@@ -916,8 +862,8 @@ window.TAOISTA_DATASET = {
       "frase": "La tortuga prefirió arrastrar la cola viva que ser adorada muerta en el templo.",
       "interpretacion": "La vida ordinaria, aunque incómoda, vale más que la imagen venerada. La frase apunta al costo de la apariencia.",
       "practica_hoy": "Detecta hoy una decisión en la que elijas imagen sobre comodidad real. Haz lo contrario una vez.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "eleccion",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 17 (秋水): «吾将曳尾于涂中»; trad. Preciado Idoeta"
     },
     {
@@ -925,7 +871,7 @@ window.TAOISTA_DATASET = {
       "frase": "La violencia rebota contra el que la lanza, como escupir contra el viento.",
       "interpretacion": "El daño que intentas hacer vuelve a ti en forma de estado mental. La frase señala el costo interno de la hostilidad.",
       "practica_hoy": "Detecta hoy un pensamiento hostil y nómbralo: “hostilidad”. Nota qué ocurre en el cuerpo. Después decide si necesitas actuar o no.",
-      "categoria": "atencion",
+      "categoria": "regulacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Imagen budista clásica de la violencia que rebota (cf. Dhammapada 125); atribución por verificar. Lectura no literal: la violencia es imagen del daño que el estado mental perturbado se hace a sí mismo, no una amenaza."
     },
@@ -934,7 +880,7 @@ window.TAOISTA_DATASET = {
       "frase": "Las palabras verdaderas no son hermosas; las palabras hermosas no son verdaderas.",
       "interpretacion": "Desconfía de lo que suena demasiado bien o seductor. La realidad suele ser simple y directa.",
       "practica_hoy": "Prefiere hoy una verdad incómoda a una mentira dulce.",
-      "categoria": "atencion",
+      "categoria": "honestidad",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 81"
     },
@@ -943,8 +889,8 @@ window.TAOISTA_DATASET = {
       "frase": "Lo humilde (Montaña) bajo la Tierra.",
       "interpretacion": "La montaña bajo la tierra es fuerza contenida: el poder que no se muestra. La humildad no es debilidad; es reserva.",
       "practica_hoy": "Hoy, en una situación donde podrías imponerte, elige escuchar primero. Nota qué información aparece.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "humildad",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 15 (Qian)"
     },
     {
@@ -952,7 +898,7 @@ window.TAOISTA_DATASET = {
       "frase": "Lo que se encoge debe primero estirarse.",
       "interpretacion": "El movimiento de recogerse contiene al de extenderse: la contracción es fase, no destino. La frase apunta a la alternancia natural.",
       "practica_hoy": "Detecta hoy un momento de “encogimiento” (silencio, cansancio, evitación) y nómbralo como fase. Una frase: “esto es la fase previa”.",
-      "categoria": "atencion",
+      "categoria": "paciencia",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 36"
     },
@@ -961,7 +907,7 @@ window.TAOISTA_DATASET = {
       "frase": "Mejor detenerse antes de llenar el vaso hasta el borde.",
       "interpretacion": "El perfeccionismo es la antesala del desastre. Saber cuándo es 'suficiente' es la sabiduría suprema.",
       "practica_hoy": "Detente cuando algo esté 'bien', no 'perfecto'.",
-      "categoria": "atencion",
+      "categoria": "limites",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 9"
     },
@@ -970,8 +916,8 @@ window.TAOISTA_DATASET = {
       "frase": "Mordiendo la carne seca.",
       "interpretacion": "Lo seco no cede de inmediato: requiere paciencia y dientes. La frase apunta al trabajo con material duro (hábitos, duelos) sin falsa suavidad.",
       "practica_hoy": "Elige hoy un asunto “seco” (un trámite, una conversación difícil) y dale 5 minutos de contacto directo, sin rodeos.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "persistencia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 21 (Shi He)"
     },
     {
@@ -979,8 +925,8 @@ window.TAOISTA_DATASET = {
       "frase": "Nadie se mira en un río que corre; se miran en un estanque quieto.",
       "interpretacion": "En Zhuangzi, la gente acude a quien tiene la mente en calma como quien busca agua quieta para mirarse. La serenidad no aísla: es un espacio donde otros pueden encontrarse.",
       "practica_hoy": "Antes de tu próxima conversación importante, haz tres respiraciones y escucha sin preparar respuesta. Pregúntate: ¿soy hoy agua que corre o agua quieta para quien me habla?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "relaciones",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 5 (德充符): «nadie se mira en el agua que corre, sino en el agua quieta»"
     },
     {
@@ -988,26 +934,17 @@ window.TAOISTA_DATASET = {
       "frase": "No busques las huellas de los antiguos; busca lo que ellos buscaron.",
       "interpretacion": "La imitación de la forma externa es una trampa histórica. El despertar exige una investigación vital y genuina de la propia experiencia presente.",
       "practica_hoy": "En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "aprendizaje",
+      "linaje": "zen",
       "nota_editorial": "Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai"
-    },
-    {
-      "id": "TAO_0112",
-      "frase": "No eres tus pensamientos; eres la conciencia que los observa.",
-      "interpretacion": "Identificarse con el flujo del intelecto es encadenarse a fragmentos transitorios; la verdadera autonomía es establecerse como el testigo inmutable.",
-      "practica_hoy": "Permite que un pensamiento repetitivo ingrese en tu mente y asume, deliberadamente, la postura interna del 'testigo silencioso' que lo ve originarse y perecer.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Referencia universal: Tolle / Vipassana."
     },
     {
       "id": "TAO_0113",
       "frase": "No es la bandera la que se mueve, ni el viento. Es tu mente.",
       "interpretacion": "La agitación percibida puede ser interna.",
       "practica_hoy": "Observa una reacción antes de actuar.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "zen",
       "nota_editorial": "Sutra de la Plataforma (六祖坛经), cap. 1 (行由品), episodio de Huineng y el estandarte; trad. Villalba"
     },
     {
@@ -1015,8 +952,8 @@ window.TAOISTA_DATASET = {
       "frase": "Olvidé las palabras porque atrapé el sentido.",
       "interpretacion": "El sentido no es la suma de palabras; cuando se capta, el vehículo se vuelve prescindible. La frase apunta a distinguir la comprensión del vocabulario.",
       "practica_hoy": "Explica hoy una idea importante sin tecnicismos, en una frase. Si necesitas tres, corta.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "lenguaje_y_realidad",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 26 (外物): «得意而忘言»; trad. Preciado Idoeta"
     },
     {
@@ -1024,8 +961,8 @@ window.TAOISTA_DATASET = {
       "frase": "Pisar la cola del tigre. No muerde.",
       "interpretacion": "El hexagrama describe avanzar en una situación delicada con cuidado y buenas formas. La prudencia reduce el riesgo; no lo garantiza.",
       "practica_hoy": "Antes de abordar un tema delicado hoy, escribe en una frase cómo lo dirías con respeto y elige el momento.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "comunicacion",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 10 (Lu)"
     },
     {
@@ -1033,7 +970,7 @@ window.TAOISTA_DATASET = {
       "frase": "Preguntaron por el camino. El maestro siguió caminando.",
       "interpretacion": "La respuesta es la acción, no la explicación. El camino se muestra haciéndolo.",
       "practica_hoy": "Hoy, ante una pregunta que te hagan, responde con una acción o un ejemplo concreto. Una frase + un gesto.",
-      "categoria": "atencion",
+      "categoria": "practica",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1042,7 +979,7 @@ window.TAOISTA_DATASET = {
       "frase": "Quien promete a la ligera, encuentra difícil cumplir.",
       "interpretacion": "El 'sí' fácil trae problemas. La persona sabia duda antes de comprometerse y por eso siempre cumple.",
       "practica_hoy": "No digas 'sí' inmediatamente; di 'déjame pensarlo'.",
-      "categoria": "atencion",
+      "categoria": "responsabilidad",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 63"
     },
@@ -1051,7 +988,7 @@ window.TAOISTA_DATASET = {
       "frase": "Señalar la morera para maldecir la acacia.",
       "interpretacion": "La estratagema describe criticar de forma indirecta. Conviene conocerla para notar cuándo la usamos: la indirecta suele herir más que una petición clara.",
       "practica_hoy": "Si hoy te descubres lanzando una indirecta, conviértela en una petición directa y amable: «me ayudaría que…».",
-      "categoria": "atencion",
+      "categoria": "comunicacion",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 26"
     },
@@ -1060,16 +997,16 @@ window.TAOISTA_DATASET = {
       "frase": "Si el carro se rompe, ¿golpeas al carro o al buey?",
       "interpretacion": "Nanyue pregunta a Mazu si, cuando el carro no avanza, se golpea al carro o al buey: forzar la postura no produce el despertar. En los hábitos, cambiar la superficie sin entender lo que los mueve no basta.",
       "practica_hoy": "Elige un hábito que intentas cambiar y escribe qué lo pone en marcha (cansancio, aburrimiento, una hora del día). Trabaja sobre eso una vez hoy.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "habitos",
+      "linaje": "zen",
       "nota_editorial": "Nanyue Huairang y Mazu; Jingde Chuandeng Lu"
     },
     {
       "id": "TAO_0121",
       "frase": "Si el nombre no es correcto, las palabras no fluyen.",
-      "interpretacion": "Llama a las cosas por su nombre. Si llamas 'amor' a la 'dependencia', nunca podrás resolverlo.",
-      "practica_hoy": "Nombra un problema con la palabra exacta, aunque duela.",
-      "categoria": "atencion",
+      "interpretacion": "Cuando confundes un hecho con una etiqueta vaga, pierdes margen de acción. Nombrar con precisión lo que ocurre es el primer paso para responder bien.",
+      "practica_hoy": "Describe un problema actual usando solo hechos observables, sin adjetivos ni diagnósticos.",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Analectas 13.3 (子路): «必也正名乎»; trad. Suárez Girard"
     },
@@ -1078,7 +1015,7 @@ window.TAOISTA_DATASET = {
       "frase": "Si quieres tomar, primero debes dar.",
       "interpretacion": "En el Daodejing, la frase describe cómo las cosas se mueven por contraste. En las relaciones, ofrecer primero suele abrir más puertas que exigir.",
       "practica_hoy": "Antes de pedir algo hoy, ofrece algo concreto (tiempo, ayuda, reconocimiento) sin condicionarlo.",
-      "categoria": "atencion",
+      "categoria": "relaciones",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 36"
     },
@@ -1087,8 +1024,8 @@ window.TAOISTA_DATASET = {
       "frase": "Si te encuentras al Buda en el camino, mátalo.",
       "interpretacion": "Toda autoridad externa (incluida la imagen de iluminación) es un obstáculo cuando se convierte en ídolo. La frase señala el costo de la dependencia.",
       "practica_hoy": "Detecta hoy una figura o idea que veneras sin examinar y formula una pregunta crítica. Una frase.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "discernimiento",
+      "linaje": "zen",
       "nota_editorial": "Linji lu (Registros de Linji). Lectura no literal: \"matar\" es imagen de cortar la idealización, no una instrucción literal."
     },
     {
@@ -1096,8 +1033,8 @@ window.TAOISTA_DATASET = {
       "frase": "Solo en la montaña fría, sin preocupaciones.",
       "interpretacion": "Hanshan cantó la soledad de la montaña como espacio de claridad. Elegir momentos a solas puede descansar la mente; no sustituye al vínculo con otros.",
       "practica_hoy": "Reserva 15 minutos a solas hoy, sin pantallas. Si llevas días aislándote, escribe a alguien de confianza.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "relacion_consigo",
+      "linaje": "zen",
       "nota_editorial": "Hanshan, Poemas de la Montaña Fría"
     },
     {
@@ -1105,8 +1042,8 @@ window.TAOISTA_DATASET = {
       "frase": "Sostener una flor y sonreír.",
       "interpretacion": "En el relato fundacional del zen, el Buda levanta una flor y solo Mahakasyapa sonríe. Algo se transmitió sin palabras: hay comprensiones que pasan por la presencia compartida.",
       "practica_hoy": "Comparte hoy un momento con alguien sin hablar (un paseo, una comida, mirar algo juntos) durante 2 minutos. Pregúntate: ¿qué entendimos sin decirlo?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "silencio",
+      "linaje": "zen",
       "nota_editorial": "Wumenguan, caso 6 (世尊拈花): el sermón de la flor"
     },
     {
@@ -1123,7 +1060,7 @@ window.TAOISTA_DATASET = {
       "frase": "Tomar prestado el cadáver para resucitar el alma.",
       "interpretacion": "La estratagema usa una forma antigua para dar vida a algo nuevo. A veces no hay que inventar desde cero: un hábito, un proyecto o una tradición abandonada pueden recibir un propósito actual.",
       "practica_hoy": "Recupera algo que dejaste (un cuaderno, un instrumento, una práctica) y dale 10 minutos con una intención de hoy. Pregúntate: ¿qué de lo que fui todavía me sirve?",
-      "categoria": "atencion",
+      "categoria": "creatividad",
       "linaje": "contemporaneo",
       "nota_editorial": "Treinta y seis estratagemas, n.º 14"
     },
@@ -1132,8 +1069,8 @@ window.TAOISTA_DATASET = {
       "frase": "Treinta años viviendo en la montaña y olvidé el camino de vuelta.",
       "interpretacion": "Absorto en la montaña, el poeta ya no piensa en volver. Estar de lleno en un lugar afloja la nostalgia de lo que fuiste.",
       "practica_hoy": "Cuando hoy te compares con quien eras antes, vuelve a lo que estás haciendo con tres respiraciones.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "identidad",
+      "linaje": "zen",
       "nota_editorial": "Atribuido a Hanshan, Poemas de la Montaña Fría"
     },
     {
@@ -1141,8 +1078,8 @@ window.TAOISTA_DATASET = {
       "frase": "Tres personas caminan; una sobra.",
       "interpretacion": "El hexagrama de la Merma dice que cuando tres caminan juntos, uno sobra; cuando uno camina solo, encuentra compañía. Restar también es una forma de dar espacio.",
       "practica_hoy": "Elige un área donde tengas demasiadas opciones abiertas y cierra una explícitamente. Pregúntate: ¿qué gana lo que queda cuando suelto lo que sobra?",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "priorizacion",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 41"
     },
     {
@@ -1150,25 +1087,16 @@ window.TAOISTA_DATASET = {
       "frase": "Trueno y Viento: Aumento.",
       "interpretacion": "Trueno (movimiento) y viento (penetración): lo que crece lo hace por impulso sostenido. La frase apunta a aprovechar la energía disponible sin forzarla.",
       "practica_hoy": "Detecta hoy un momento con energía disponible y úsala para una acción de 5 minutos; no la planifiques.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "energia",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 42"
-    },
-    {
-      "id": "TAO_0131",
-      "frase": "Tu tarea no es buscar el amor, sino buscar las barreras que has construido contra él.",
-      "interpretacion": "La separación es una ilusión sostenida por mecánicas de defensa acumuladas; la conexión última jamás estuvo ausente, solo oculta bajo estratos de temor.",
-      "practica_hoy": "Al cruzar una mirada con alguien, presta atención veloz a la barrera psíquica involuntaria que eriges, y prueba suavizar conscientemente esa frontera.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Atribuida a Rumi sin fuente localizada; la formulación aparece en Un curso de milagros (T-16.IV.6)"
     },
     {
       "id": "TAO_0132",
       "frase": "Un caballo blanco no es un caballo.",
       "interpretacion": "Las categorías del lenguaje (blanco + caballo) no son la realidad. Te pierdes en las palabras y olvidas el animal vivo.",
       "practica_hoy": "Mira un objeto sin nombrarlo mentalmente.",
-      "categoria": "atencion",
+      "categoria": "lenguaje_y_realidad",
       "linaje": "contemporaneo",
       "nota_editorial": "Gongsun Longzi (公孙龙子): «Un caballo blanco no es un caballo» (白马非马)"
     },
@@ -1186,7 +1114,7 @@ window.TAOISTA_DATASET = {
       "frase": "Vencer sin luchar.",
       "interpretacion": "Sunzi considera la mejor victoria la que no requiere batalla. En la vida cotidiana, muchos conflictos se desactivan antes, con una conversación a tiempo o un acuerdo claro.",
       "practica_hoy": "Identifica una fricción que crece (con alguien, con una tarea) y da un paso para resolverla antes de que estalle: una pregunta, un mensaje, un límite. Pregúntate: ¿qué batalla puedo evitar hoy?",
-      "categoria": "atencion",
+      "categoria": "relaciones",
       "linaje": "contemporaneo",
       "nota_editorial": "Sunzi, El arte de la guerra, cap. 3 (不战而屈人之兵)"
     },
@@ -1195,7 +1123,7 @@ window.TAOISTA_DATASET = {
       "frase": "Vendiendo agua junto al río.",
       "interpretacion": "Ofrecer lo que sobra no aporta. La ayuda útil responde a lo que falta.",
       "practica_hoy": "Antes de ofrecer ayuda hoy, pregunta: «¿qué te sería útil?».",
-      "categoria": "atencion",
+      "categoria": "relaciones",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente); imagen de la ironía clásica"
     },
@@ -1204,8 +1132,8 @@ window.TAOISTA_DATASET = {
       "frase": "Viento sobre el lago: Verdad Interior.",
       "interpretacion": "El viento mueve el agua porque es invisible y penetrante. La sinceridad penetra las defensas más duras.",
       "practica_hoy": "Di hoy algo sincero a una persona de confianza, en una frase y sin exagerar.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "honestidad",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 61"
     },
     {
@@ -1213,7 +1141,7 @@ window.TAOISTA_DATASET = {
       "frase": "¿Has comido tus gachas? Entonces lava tu cuenco.",
       "interpretacion": "La práctica está en la acción concreta, no en la abstracción.",
       "practica_hoy": "Lava un objeto cotidiano con atención plena, sin buscar “sentido” adicional.",
-      "categoria": "atencion",
+      "categoria": "practica",
       "linaje": "zen",
       "nota_editorial": "Wumenguan (无门关), caso 7: «赵州洗钵盂»; trad. Villalba"
     },
@@ -1222,8 +1150,8 @@ window.TAOISTA_DATASET = {
       "frase": "¿Quién es el que arrastra este cadáver?",
       "interpretacion": "El cuerpo es objeto; la pregunta apunta a lo que observa.",
       "practica_hoy": "Formula la pregunta sin responderla.",
-      "categoria": "atencion",
-      "linaje": "contemporaneo",
+      "categoria": "no_saber",
+      "linaje": "zen",
       "nota_editorial": "Huatou chan tradicional (tópico de meditación); atribuido a Huineng en la tradición; cf. Wudeng Huiyuan"
     },
     {
@@ -1231,7 +1159,7 @@ window.TAOISTA_DATASET = {
       "frase": "¿Quién puede purificar el agua turbia? Déjala en calma y se aclarará sola.",
       "interpretacion": "La mente no recupera su claridad a través de la intervención forzada del intelecto, sino al cesar el intento de manipulación.",
       "practica_hoy": "Cuando sientas agitación, permite que la inquietud exista en tu espacio interno sin intentar resolver su causa de inmediato.",
-      "categoria": "atencion",
+      "categoria": "autorregulacion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 15"
     },
@@ -1295,7 +1223,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Hanshan compara su mente con la luna de otoño reflejada en un estanque verde, y añade que no hay nada con qué compararla. La claridad no se describe del todo: se reconoce.",
       "practica_hoy": "Esta noche, si puedes, mira la luna o cualquier luz lejana durante un minuto. Pregúntate: ¿en qué momento de hoy mi mente estuvo clara, aunque fuera un instante?",
       "categoria": "claridad",
-      "linaje": "contemporaneo",
+      "linaje": "zen",
       "nota_editorial": "Hanshan, Poemas de la Montaña Fría (吾心似秋月，碧潭清皎洁)"
     },
     {
@@ -1448,7 +1376,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Responder a pensamientos los mantiene. La defusión no es apagar el eco: es dejar de contestarle.",
       "practica_hoy": "Toma un pensamiento repetido y escríbelo como “estoy teniendo el pensamiento de que ___”. Léelo en voz alta dos veces.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -1457,7 +1385,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La lucha verbal interna no reduce el sufrimiento; cambia solo el volumen de la pelea.",
       "practica_hoy": "Pon el dolor en palabras: “esto es dolor”. Después: “estoy notando dolor”. Nota la diferencia entre las dos frases.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -1466,7 +1394,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La fusión verbal restringe la conducta: las palabras funcionan como barrotes. Etiquetar el pensamiento como pensamiento afloja la jaula.",
       "practica_hoy": "Escribe tu pensamiento como frase y añade: “estoy teniendo el pensamiento de que…”. Léelo dos veces.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Villatte, Villatte & Hayes (2016), Mastering the Clinical Conversation."
     },
     {
@@ -1475,7 +1403,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El pensamiento no dicta la acción; comenta, no dirige.",
       "practica_hoy": "Etiqueta un pensamiento como “comentario” y sigue con tu conducta elegida.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -1484,7 +1412,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El contenido mental no necesita obediencia; la radio sigue sonando aunque no la discutas.",
       "practica_hoy": "Deja la “radio” prendida y sigue con tu tarea 2 minutos.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -1493,7 +1421,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El problema no es la mente produciendo contenido, sino la fusión cognitiva: tratar pensamientos como hechos o mandatos.",
       "practica_hoy": "Escribe un pensamiento difícil y añade: “estoy teniendo el pensamiento de que…”. Léelo en voz alta 3 veces.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -1502,7 +1430,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La defusión no exige silencio mental; exige una relación distinta con el contenido.",
       "practica_hoy": "Ponle nombre a la emisión (“la estación crítica”) y escúchala durante 1 minuto como si fuera radio. No la corrijas.",
       "categoria": "defusion",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -1556,15 +1484,6 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Flexibilidad conductual mantiene valores.",
       "practica_hoy": "Cambia el método, no la dirección: busca una alternativa viable.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0176",
-      "frase": "La intuición susurra; la herida grita.",
-      "interpretacion": "La urgencia caótica suele ser memoria de amenaza.",
-      "practica_hoy": "Verifica si hay peligro real presente.",
-      "categoria": "discernimiento",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1637,15 +1556,6 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Toda dirección significativa implica costo.",
       "practica_hoy": "Nombra un costo que aceptarás hoy por algo que te importa.",
       "categoria": "eleccion",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0185",
-      "frase": "Elegir descanso también es productividad.",
-      "interpretacion": "El descanso elegido no es lo opuesto a la productividad: la sostiene. La frase apunta a la falsa dicotomía entre descanso y valor.",
-      "practica_hoy": "Elige hoy un descanso breve (10 min) sin pantalla y sin culpa. Marca en el calendario cuándo lo harás.",
-      "categoria": "energia",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
     },
@@ -1727,7 +1637,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Para el Daodejing, ríos y mares reinan sobre los valles porque saben estar abajo. La humildad no es empequeñecerse: es la posición desde la que se puede recibir.",
       "practica_hoy": "En una conversación hoy, haz una pregunta sincera sobre algo que no sabes en lugar de opinar. Pregúntate: ¿qué recibí al ponerme por debajo de mi orgullo?",
       "categoria": "humildad",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 66 (cf. cap. 6, el espíritu del valle)"
     },
     {
@@ -1799,7 +1709,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La habilidad surge al no forzar.",
       "practica_hoy": "Busca la grieta en lugar del obstáculo.",
       "categoria": "no_saber",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 3 (养生主): «庖丁解牛»; trad. Preciado Idoeta"
     },
     {
@@ -1817,7 +1727,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La utilidad no está en la materia sino en el espacio que la organiza. La frase apunta al valor de lo que no se ve.",
       "practica_hoy": "Detecta hoy un hueco en tu agenda o en tu espacio y no lo llenes. Nota qué ocurre.",
       "categoria": "no_saber",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Tao Te Ching, cap. 11: «三十辐共一毂»; trad. Preciado Idoeta"
     },
     {
@@ -1979,7 +1889,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El observador no es un evento entre eventos; es la condición en la que ocurren. La frase apunta a la diferencia entre experiencia y experimentador.",
       "practica_hoy": "Nota hoy una experiencia cualquiera (sonido, pensamiento) y pregúntate: “¿dónde ocurre?”. No respondas. 30 segundos.",
       "categoria": "ontologia",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2042,7 +1952,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El fuego (pasión/conflicto) debe venir de la madera (estructura). Las relaciones necesitan estructura para dar calor sin quemar la casa.",
       "practica_hoy": "Pon un límite claro a alguien cercano para proteger la relación.",
       "categoria": "relaciones",
-      "linaje": "contemporaneo",
+      "linaje": "taoismo",
       "nota_editorial": "Yijing, hexagrama 37"
     },
     {
@@ -2050,15 +1960,6 @@ window.TAOISTA_DATASET = {
       "frase": "No todo vínculo requiere permanencia.",
       "interpretacion": "Algunas relaciones cumplen su función y concluyen. Forzar continuidad genera resentimiento.",
       "practica_hoy": "Reconoce una relación que cambió de forma y ajusta expectativas.",
-      "categoria": "relaciones",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0232",
-      "frase": "Tu atención es el acto de amor más puro.",
-      "interpretacion": "La atención valida la existencia del otro.",
-      "practica_hoy": "Ofrece 5 minutos de atención indivisa.",
       "categoria": "relaciones",
       "linaje": "contemporaneo",
       "nota_editorial": "Creación original (sin fuente)"
@@ -2141,26 +2042,8 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Si hablas, limitas. Si callas, ocultas. ¿Cómo te expresas entonces? Con la acción viva.",
       "practica_hoy": "Expresa algo con un acto, no con palabras ni silencios.",
       "categoria": "silencio",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Nanquan."
-    },
-    {
-      "id": "TAO_0242",
-      "frase": "La envidia es admiración mal gestionada.",
-      "interpretacion": "La envidia contiene información: señala un valor o una capacidad que deseas. La frase apunta a leerla como admiración desordenada, no como defecto.",
-      "practica_hoy": "Nombra hoy una envidia concreta y traduce: “admiro ___ en ___”. Una frase.",
-      "categoria": "sombra",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0243",
-      "frase": "Lo que te irrita del otro suele ser un inquilino no reconocido en tu propia casa.",
-      "interpretacion": "La proyección psicológica convierte nuestros rasgos rechazados en defectos ajenos. El juicio excesivo hacia afuera suele ser un mecanismo de defensa para no integrar la propia sombra.",
-      "practica_hoy": "Cuando juzgues duramente a alguien hoy, pregúntate: '¿En qué contexto yo actúo o siento algo similar?'.",
-      "categoria": "sombra",
-      "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente)"
+      "linaje": "zen",
+      "nota_editorial": "Atribuido a Nanquan; cf. Wumenguan, caso 24 (Fengxue: el habla y el silencio)"
     },
     {
       "id": "TAO_0244",
@@ -2186,7 +2069,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los valores no dependen de validación externa; el aplauso es un resultado, no una dirección.",
       "practica_hoy": "Haz hoy una acción valiosa sin contársela a nadie.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -2195,7 +2078,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Cuando se traicionan valores de forma sostenida aparece desgaste ético, no solo físico.",
       "practica_hoy": "Revisa hoy una acción reciente y ajústala a un valor central.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Wilson & DuFrene (2009), Mindfulness for Two."
     },
     {
@@ -2204,7 +2087,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los valores no regulan emociones, guían acciones.",
       "practica_hoy": "Haz hoy una acción orientada a valor aunque el estado sea tormenta.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2213,7 +2096,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El miedo psicológico suele señalar valores importantes. La frase apunta a leerlo como información, no como obstáculo.",
       "practica_hoy": "Pregunta: “si no tuviera miedo, ¿valdría la pena?”.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2222,7 +2105,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los valores se clarifican en la acción, no antes.",
       "practica_hoy": "No esperes claridad: haz el primer paso y observa la información que aparece.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2231,7 +2114,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La acción valiosa coexiste con malestar; el miedo no es condición para actuar.",
       "practica_hoy": "Lleva el miedo contigo y avanza 1 paso igual.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -2240,7 +2123,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los valores contextualizan la dificultad: el obstáculo no desaparece, cambia de función.",
       "practica_hoy": "Conecta una dificultad actual con un valor (una frase).",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2249,7 +2132,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los valores guían aun con confusión; la claridad no es requisito.",
       "practica_hoy": "Si hay confusión, decide por valor, no por certeza.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2258,7 +2141,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Orientan la conducta sin prometer llegada final.",
       "practica_hoy": "Elige una dirección (valor) y haz una acción de 2 minutos coherente.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2267,7 +2150,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La vida valiosa no exige ausencia de malestar. El criterio funcional no es “sentirme bien”, sino moverme hacia valores con el malestar a cuestas.",
       "practica_hoy": "Define un valor en una frase (p. ej., “cuidado”). Haz una acción de 10 minutos coherente, aunque haya incomodidad.",
       "categoria": "valores",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -2276,7 +2159,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La conciencia no se altera por la narrativa; el aire no se agita por lo que suena en él.",
       "practica_hoy": "Nota un pensamiento difícil y pregúntate: “¿quién lo nota?”. Quédate en la posición del que nota, no del que piensa. 30 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Villatte, Villatte & Hayes (2016), Mastering the Clinical Conversation."
     },
     {
@@ -2285,7 +2168,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El espacio interno no discrimina contenidos; sostiene lo agradable y lo desagradable por igual.",
       "practica_hoy": "Nombra tres contenidos presentes (pensamiento, emoción, sensación) y nota que los tres aparecen en el mismo espacio. Una respiración.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2294,7 +2177,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El espacio que observa no necesita cambiar lo que aparece.",
       "practica_hoy": "Nota un pensamiento como “nube” y a ti como “cielo”. Después vuelve al cuerpo 10 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2303,7 +2186,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "No hay saturación del contexto: el espacio que sostiene no se agota.",
       "practica_hoy": "Deja que haya más cosas sin “cerrarlas”: una respiración y seguir.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2312,7 +2195,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Las emociones no agotan lo que eres; el mar no se reduce a sus olas.",
       "practica_hoy": "Cuando suba una emoción, di: “ola” y sigue respirando 3 ciclos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2321,7 +2204,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "No hay necesidad de proteger el contexto: el punto cero no se ataca.",
       "practica_hoy": "Ante una crítica hoy, nota la sensación de “ser atacado” sin defenderte mentalmente. Pregúntate: “¿quién es criticado?”. Una respiración.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2330,7 +2213,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El observador no puede ser objeto de su propia observación sin convertirse en contenido. La frase apunta a la asimetría entre mirada y mirado.",
       "practica_hoy": "Mira un objeto 20 segundos y luego pregúntate: “¿dónde está el que mira?”. No respondas. Una respiración.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2339,7 +2222,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Lo observado no define al que observa; el río no se moja con lo que lo atraviesa.",
       "practica_hoy": "Repite: “esto pasa en mí, pero no es todo lo que soy”.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2348,7 +2231,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El contexto no entra en conflicto con el contenido; el silencio no compite con el ruido.",
       "practica_hoy": "Nota un pensamiento y nota el espacio entre dos pensamientos. Quédate en el espacio 10 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2357,7 +2240,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La identidad profunda no evalúa el paso; el suelo sostiene sin juzgar.",
       "practica_hoy": "Piensa en algo que hiciste hoy y descríbelo como hecho (“entré a las 9”, “dije X”). Sin adjetivos. Una frase.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2366,7 +2249,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Las historias pasan; el espacio permanece.",
       "practica_hoy": "Nota “historia” y vuelve a “aquí”: pies, manos, respiración.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2375,7 +2258,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El espacio interno no selecciona experiencias; recibe por igual.",
       "practica_hoy": "Nota un pensamiento repetido y observa el espacio en el que suena. 30 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2384,7 +2267,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El contenido intenso no colapsa el contexto.",
       "practica_hoy": "Cuando algo sea intenso, nota los tres (pensamiento, emoción, sensación) y el espacio común. 30 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2393,16 +2276,16 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Observar no equivale a fusionarse; la distancia entre el que mira y lo mirado no se cierra.",
       "practica_hoy": "Etiqueta: “estoy notando…” para crear distancia con un pensamiento.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
       "id": "TAO_0270",
-      "frase": "La estabilidad no es rigidez, es indiferencia al cambio.",
+      "frase": "La estabilidad no es rigidez; es equilibrio en medio del cambio.",
       "interpretacion": "El contexto permanece sin resistir; la estabilidad no es rigidez.",
       "practica_hoy": "Cuando ocurra un cambio pequeño, nota que algo en ti lo nota sin cambiar. 20 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2411,7 +2294,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El yo es el espacio, no lo que lo ocupa.",
       "practica_hoy": "Nota “muebles” (pensamientos) y vuelve a “habitación” (presencia).",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2420,7 +2303,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los pensamientos no definen el soporte.",
       "practica_hoy": "Escribe un pensamiento. Luego escribe: “este pensamiento aparece en mí”. Nota la diferencia.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2429,7 +2312,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "El soporte no toma partido por el contenido.",
       "practica_hoy": "Nota un argumento interno y observa: “hay un argumento”. No participes. 20 segundos.",
       "categoria": "yo_contexto",
-      "linaje": "contemporaneo",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change."
     },
     {
@@ -2542,9 +2425,9 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0286",
-      "frase": "No eres responsable de la primera emoción, pero sí de la segunda.",
-      "interpretacion": "La reacción inicial es automática. Lo que haces con ella pertenece al terreno de la elección.",
-      "practica_hoy": "Distingue: 'esto ocurrió en mi cuerpo' vs 'esto decido pensar ahora'.",
+      "frase": "No eliges la primera reacción, pero sí el paso que das después.",
+      "interpretacion": "La emoción inicial aparece de forma automática; la conducta que sigue pertenece al terreno de tus valores.",
+      "practica_hoy": "Distingue hoy: «esto apareció en mi cuerpo» y «esta es la acción que elijo hacer ahora».",
       "categoria": "responsabilidad",
       "linaje": "estoicismo",
       "nota_editorial": "Creación original (sin fuente); tema estoico-CBT (no cita literal)"
@@ -2587,21 +2470,12 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0291",
-      "frase": "La soledad asusta cuando te caes mal; se disfruta cuando te habitas.",
+      "frase": "La soledad asusta cuando huyes de tu mente; descansa cuando dejas de pelear con ella.",
       "interpretacion": "El miedo a la soledad suele ser miedo al diálogo interno.",
       "practica_hoy": "Pasa 15 minutos contigo sin estímulos externos.",
       "categoria": "relacion_consigo",
       "linaje": "existencialismo",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0292",
-      "frase": "Escuchar no es esperar tu turno para hablar.",
-      "interpretacion": "La escucha real implica suspender la agenda propia para recibir la estructura del otro.",
-      "practica_hoy": "Espera dos segundos antes de responder en una conversación.",
-      "categoria": "comunicacion",
-      "linaje": "humanista",
-      "nota_editorial": "Paráfrasis de Stephen Covey, The 7 Habits of Highly Effective People (1989), hábito 5: «Most people do not listen with the intent to understand; they listen with the intent to reply»; trad. esp. Paidós"
     },
     {
       "id": "TAO_0293",
@@ -2663,7 +2537,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La autoridad externa no sustituye la escucha propia. La frase apunta a distinguir la voz propia de la adoptada.",
       "practica_hoy": "Detecta hoy una opinión que repites sin examinar (sobre ti o sobre otro) y pregúntate: “¿esto es mío o lo heredé?”. Una frase.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
+      "linaje": "zen",
       "nota_editorial": "Atribuido a Dōgen por un agregador (ZenQuotes); atribución por verificar. Tratar como paráfrasis moderna."
     },
     {
@@ -2685,21 +2559,12 @@ window.TAOISTA_DATASET = {
       "nota_editorial": "Daodejing, cap. 2"
     },
     {
-      "id": "TAO_0309",
-      "frase": "Eres una apertura a través de la cual el universo se explora a sí mismo.",
-      "interpretacion": "El yo aislado es una quimera lingüística. A nivel profundo, el acto subjetivo de vivir funciona como la punta sensorial con la cual el cosmos toma conciencia de sí.",
-      "practica_hoy": "Observa el cielo, tu propio cuerpo respirando u otra forma viva, pero intentando percibirlo no 'tú observando la vida', sino como 'la vida observándose a través de ti'.",
-      "categoria": "atencion",
-      "linaje": "mindfulness",
-      "nota_editorial": "Atribuida a Alan Watts; fuente exacta por verificar"
-    },
-    {
       "id": "TAO_0312",
       "frase": "Hojas en el Arroyo",
       "interpretacion": "La corriente se lleva lo que se suelta. La frase apunta a la atención que deja pasar sin retener.",
       "practica_hoy": "Durante 2 minutos, nota cada pensamiento como “hoja” y déjalo pasar. Cuenta cuántas pasan sin engancharte.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
+      "linaje": "act",
       "nota_editorial": "Ejercicio ACT «Leaves on a Stream» (defusión); Hayes, Strosahl & Wilson, Acceptance and Commitment Therapy (1999/2012); Harris, ACT Made Simple (2009). Trad. esp.: Terapia de aceptación y compromiso (Desclée de Brouwer); La trampa de la felicidad (Booket)"
     },
     {
@@ -2708,7 +2573,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los pensamientos son eventos que pasan. Si intentas atraparlos o detenerlos, te agotas. Esta es la versión en imagen del ejercicio de las hojas en el arroyo: aquí el foco es la corriente, no cada hoja.",
       "practica_hoy": "Dedica 2 minutos a imaginar cada pensamiento como una hoja que cae al agua y se aleja flotando.",
       "categoria": "atencion",
-      "linaje": "mindfulness",
+      "linaje": "act",
       "nota_editorial": "Variante en imagen del ejercicio ACT «Leaves on a Stream» (ver TAO_0312)"
     },
     {
@@ -2735,7 +2600,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación.",
       "practica_hoy": "En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada?",
       "categoria": "atencion",
-      "linaje": "mindfulness",
+      "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 20 (山木): «人能虚己以游世，其孰能害之»"
     },
     {
@@ -2778,7 +2643,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0349",
       "frase": "El cuerpo entiende antes que el argumento.",
       "interpretacion": "Las señales corporales suelen anticipar límites y necesidades. Ignorarlas prolonga el conflicto mental.",
-      "practica_hoy": "Antes de decidir algo, revisa tres sensaciones corporales y considérelas datos.",
+      "practica_hoy": "Antes de decidir algo, revisa tres sensaciones corporales y considéralas datos.",
       "categoria": "cuerpo",
       "linaje": "mindfulness",
       "nota_editorial": "Creación original (sin fuente)"
@@ -2798,7 +2663,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Conduce hacia tus valores sin dejar que los pasajeros ruidosos tomen el volante.",
       "practica_hoy": "Nota a un pasajero y sigue conduciendo.",
       "categoria": "defusion",
-      "linaje": "mindfulness",
+      "linaje": "act",
       "nota_editorial": "Ejercicio ACT «Passengers on the Bus» (defusión/aceptación); Hayes et al. (1999/2012); Harris (2009). Trad. esp. citadas"
     },
     {
@@ -2807,7 +2672,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los miedos y juicios son pasajeros ruidosos que intentan indicar la ruta. Nombrarlos («esto es miedo al juicio») crea distancia sin expulsarlos.",
       "practica_hoy": "Nombra el pasajero: “esto es miedo al juicio”. Repite: “hay un pasajero que dice que me van a juzgar”. Nota la diferencia entre el pasajero y tú.",
       "categoria": "defusion",
-      "linaje": "mindfulness",
+      "linaje": "act",
       "nota_editorial": "Basado en el marco ACT: Hayes, Strosahl & Wilson (2012), Acceptance and Commitment Therapy: The Process and Practice of Mindful Change; Harris (2009), ACT Made Simple."
     },
     {
@@ -2843,7 +2708,7 @@ window.TAOISTA_DATASET = {
       "interpretacion": "Los pensamientos y emociones son piezas en conflicto; tú no eres las piezas, sino el espacio donde se mueven.",
       "practica_hoy": "Cuando aparezca un sentimiento difícil, visualízalo como una pieza moviéndose. Recuérdate: “Yo soy el tablero”.",
       "categoria": "yo_contexto",
-      "linaje": "mindfulness",
+      "linaje": "act",
       "nota_editorial": "Metáfora clásica de ACT (Steven Hayes / Russ Harris)."
     },
     {
@@ -2863,15 +2728,6 @@ window.TAOISTA_DATASET = {
       "categoria": "relaciones",
       "linaje": "sistemica",
       "nota_editorial": "Creación original (sin fuente)"
-    },
-    {
-      "id": "TAO_0359",
-      "frase": "El ego quiere tener razón; el corazón quiere estar entero.",
-      "interpretacion": "La necesidad de ganar discusiones puede funcionar como anestesia ante vulnerabilidad. Priorizar integridad relacional implica tolerar no ser vencedor.",
-      "practica_hoy": "En un desacuerdo menor, practica una frase: “Puedo estar equivocado; quiero entender tu punto”.",
-      "categoria": "humildad",
-      "linaje": "sufismo",
-      "nota_editorial": "Creación original (sin fuente); de inspiración sufí (no cita de Rumi)"
     },
     {
       "id": "TAO_0360",
@@ -2912,7 +2768,7 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0364",
       "frase": "La persona sabia no tiene un corazón fijo; hace suyo el corazón de la gente.",
-      "interpretacion": "El Daodejing describe a quien guía sin imponer sus preferencias: escucha lo que necesitan los demás. (La versión anterior, «el corazón del Tao es su corazón», no corresponde al original.)",
+      "interpretacion": "El Daodejing describe a quien guía sin imponer sus preferencias: escucha lo que necesitan los demás.",
       "practica_hoy": "En una conversación hoy, antes de opinar, pregunta qué necesita la otra persona y repítelo con tus palabras.",
       "categoria": "atencion",
       "linaje": "taoismo",
