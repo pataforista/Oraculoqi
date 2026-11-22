@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Renderer, Program, Mesh, Geometry } from 'ogl';
-import html2canvas from 'html2canvas';
+
+import { categoryLabel, sourceLabel } from './labels.js';
 
 import '../Galaxy.css';
 import '../ElectricBorder.css';
@@ -44,18 +45,43 @@ const isCoarsePointer = () =>
 
 const dayDiff = (a, b) => Math.round((new Date(`${a}T12:00:00`) - new Date(`${b}T12:00:00`)) / 86400000);
 
-const readStreak = () => {
+const readObject = (key) => {
   try {
-    const s = JSON.parse(readStorage('oraculoqi_streak', 'null'));
-    if (s && Number.isFinite(s.count) && typeof s.last === 'string') return s;
-  } catch { /* ignorar */ }
-  return { count: 0, last: '' };
+    const v = JSON.parse(readStorage(key, 'null'));
+    return v && typeof v === 'object' && !Array.isArray(v) ? v : {};
+  } catch {
+    return {};
+  }
 };
 
-const nextStreak = (prev, today) => {
-  if (prev.last === today) return prev;
-  const count = prev.last && dayDiff(today, prev.last) === 1 ? prev.count + 1 : 1;
-  return { count, last: today };
+// Historial: fecha local (AAAA-MM-DD) -> id de la carta del día desvelada.
+// Sustituye a la racha de días seguidos: contar días del mes no castiga una interrupción.
+const readHistory = () => {
+  const h = { ...readObject('oraculoqi_history') };
+  const old = readObject('oraculoqi_streak'); // migración desde la racha antigua
+  if (typeof old.last === 'string' && old.last && !(old.last in h)) h[old.last] = '';
+  return h;
+};
+
+// Notas personales: id de carta -> { text, updated }. Solo en este dispositivo.
+const readNotes = () => readObject('oraculoqi_notes');
+
+const dailyCardFor = (deck, dateKey) => {
+  let hash = 0;
+  for (let i = 0; i < dateKey.length; i++) hash = ((hash << 5) - hash) + dateKey.charCodeAt(i);
+  return deck[Math.abs(hash | 0) % deck.length];
+};
+
+// Carta de vuelta: la última carta del día anterior (máx. 7 días) sin nota todavía.
+const findFollowUp = (history, notes, deck, today, dismissedOn) => {
+  if (dismissedOn === today) return null;
+  const prev = Object.keys(history).filter(k => k < today && history[k]).sort().pop();
+  if (!prev) return null;
+  const diff = dayDiff(today, prev);
+  if (diff < 1 || diff > 7) return null;
+  const card = deck.find(c => c.id === history[prev]);
+  if (!card || notes[card.id]?.text) return null;
+  return { card, when: diff === 1 ? 'Ayer' : `Hace ${diff} días` };
 };
 
 const downloadBlob = (blob, filename) => {
@@ -96,51 +122,149 @@ const buildReminderICS = () => {
   ].join('\r\n');
 };
 
-const SHARE_CAPTURE_CSS = `
-  .is-capturing *, .is-capturing *::before, .is-capturing *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-  .is-capturing .pc-content > * { opacity: 1 !important; transform: none !important; }
-  .is-capturing .pc-card-wrapper, .is-capturing .pc-card-shell, .is-capturing .revealed-content {
-    transform: none !important; filter: none !important; opacity: 1 !important;
-  }
-  .is-capturing .pc-card { min-height: 0 !important; box-shadow: none !important; }
-  .is-capturing .pc-inside { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
-  .is-capturing .pc-shine, .is-capturing .pc-donation-gentle { display: none !important; }
-`;
+/* --- IMAGEN PARA COMPARTIR (canvas nativo) ---
+   Se dibuja directamente con la API 2D, sin capturar el DOM: cada línea se parte por palabras
+   y se pinta como una cadena completa, de modo que los espacios no dependen del navegador. */
+const SHARE_W = 1080, SHARE_H = 1920;
 
-const composeStoryCanvas = (cardCanvas) => {
-  const W = 1080, H = 1920;
-  const out = document.createElement('canvas');
-  out.width = W;
-  out.height = H;
-  const ctx = out.getContext('2d');
+const wrapLines = (ctx, text, maxWidth) => {
+  const lines = [];
+  let line = '';
+  for (const word of String(text).trim().split(/\s+/)) {
+    const test = line ? `${line} ${word}` : word;
+    if (line && ctx.measureText(test).width > maxWidth) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+};
+
+// Texto con tracking manual (no depende de ctx.letterSpacing, ausente en Safari antiguo).
+const drawTracked = (ctx, text, x, y, tracking, align = 'left') => {
+  const chars = [...text];
+  const widths = chars.map(ch => ctx.measureText(ch).width + tracking);
+  const total = widths.reduce((a, b) => a + b, 0) - tracking;
+  let cx = align === 'center' ? x - total / 2 : x;
+  ctx.textAlign = 'left';
+  chars.forEach((ch, i) => { ctx.fillText(ch, cx, y); cx += widths[i]; });
+};
+
+const roundRect = (ctx, x, y, w, h, r) => {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+};
+
+const loadShareImage = (src) => new Promise(resolve => {
+  const img = new Image();
+  img.onload = () => resolve(img);
+  img.onerror = () => resolve(null);
+  img.src = src;
+});
+
+const ensureShareFonts = async () => {
+  if (!document.fonts?.load) return;
+  await Promise.all([
+    document.fonts.load('500 64px "EB Garamond"'),
+    document.fonts.load('400 36px Inter'),
+    document.fonts.load('700 26px Inter')
+  ]).catch(() => {});
+  if (document.fonts.ready) await document.fonts.ready;
+};
+
+const composeShareCanvas = async (card) => {
+  await ensureShareFonts();
   const css = getComputedStyle(document.documentElement);
-  const bg = css.getPropertyValue('--bg-primary').trim() || '#0a090c';
-  const ink = css.getPropertyValue('--ink-muted').trim() || '#8a8375';
-  const accent = css.getPropertyValue('--accent-text').trim() || '#eb94b3';
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, W, H);
-  const glow = ctx.createRadialGradient(W / 2, H / 2, 80, W / 2, H / 2, H * 0.6);
-  glow.addColorStop(0, 'rgba(125, 92, 138, 0.28)');
-  glow.addColorStop(1, 'rgba(125, 92, 138, 0)');
-  ctx.fillStyle = glow;
-  ctx.fillRect(0, 0, W, H);
+  const v = (name, fb) => css.getPropertyValue(name).trim() || fb;
+  const bg = v('--bg-primary', '#0a090c'), panel = v('--bg-secondary', '#121015');
+  const inkP = v('--ink-primary', '#f0e9d8'), inkS = v('--ink-secondary', '#c9bfab'), inkM = v('--ink-muted', '#8a8375');
+  const accent = v('--accent-text', '#eb94b3'), red = v('--ritual-red', '#d64d65');
+  const SERIF = '"EB Garamond", Georgia, serif', SANS = 'Inter, system-ui, -apple-system, sans-serif';
 
-  const scale = Math.min((W - 120) / cardCanvas.width, (H - 520) / cardCanvas.height);
-  const cw = cardCanvas.width * scale, ch = cardCanvas.height * scale;
-  ctx.drawImage(cardCanvas, (W - cw) / 2, (H - ch) / 2, cw, ch);
+  const out = document.createElement('canvas');
+  out.width = SHARE_W; out.height = SHARE_H;
+  const ctx = out.getContext('2d');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, SHARE_W, SHARE_H);
+  const glow = ctx.createRadialGradient(SHARE_W / 2, SHARE_H / 2, 80, SHARE_W / 2, SHARE_H / 2, SHARE_H * 0.6);
+  glow.addColorStop(0, 'rgba(125, 92, 138, 0.28)'); glow.addColorStop(1, 'rgba(125, 92, 138, 0)');
+  ctx.fillStyle = glow; ctx.fillRect(0, 0, SHARE_W, SHARE_H);
 
-  ctx.textAlign = 'center';
-  if ('letterSpacing' in ctx) ctx.letterSpacing = '10px';
-  ctx.fillStyle = accent;
-  ctx.font = '500 40px "EB Garamond", Georgia, serif';
-  ctx.fillText('ORÁCULO TAOÍSTA', W / 2, 200);
-  ctx.fillStyle = ink;
-  ctx.font = '400 28px Inter, system-ui, sans-serif';
-  if ('letterSpacing' in ctx) ctx.letterSpacing = '4px';
-  ctx.fillText(window.location.host.toUpperCase(), W / 2, H - 150);
+  const PX = 80, PW = SHARE_W - PX * 2, PAD = 64, TW = PW - PAD * 2;
+  const category = categoryLabel(card.categoria).toUpperCase();
+  const source = sourceLabel(card.nota_editorial);
+  const maxPanelH = 1240;
+
+  // Medir con una escala que se reduce hasta que el contenido cabe en la hoja.
+  let k = 1, layout;
+  for (; k >= 0.6; k -= 0.05) {
+    const fs = { frase: 66 * k, body: 38 * k, label: 26 * k, cat: 28 * k };
+    ctx.font = `500 ${fs.frase}px ${SERIF}`;
+    const frase = wrapLines(ctx, `“${card.frase}”`, TW);
+    ctx.font = `400 ${fs.body}px ${SANS}`;
+    const interp = wrapLines(ctx, card.interpretacion, TW);
+    const prac = wrapLines(ctx, card.practica_hoy, TW - 40);
+    const lh = { frase: fs.frase * 1.25, body: fs.body * 1.55 };
+    const h = PAD + fs.cat * 2.4 + frase.length * lh.frase + 48 + interp.length * lh.body + 64
+      + fs.label * 2 + prac.length * lh.body + PAD + 90;
+    layout = { fs, lh, frase, interp, prac, h };
+    if (h <= maxPanelH) break;
+  }
+  const { fs, lh, frase, interp, prac, h } = layout;
+  const PY = Math.max(300, (SHARE_H - h) / 2);
+
+  ctx.fillStyle = panel;
+  roundRect(ctx, PX, PY, PW, h, 28); ctx.fill();
+  ctx.strokeStyle = 'rgba(240, 233, 216, 0.14)'; ctx.lineWidth = 2; ctx.stroke();
+
+  let y = PY + PAD + fs.cat;
+  ctx.fillStyle = accent; ctx.font = `700 ${fs.cat}px ${SANS}`;
+  drawTracked(ctx, category, PX + PAD, y, 7);
+  y += fs.cat * 1.4;
+
+  ctx.fillStyle = inkP; ctx.font = `500 ${fs.frase}px ${SERIF}`; ctx.textAlign = 'left';
+  for (const l of frase) { y += lh.frase; ctx.fillText(l, PX + PAD, y); }
+  y += 48;
+
+  ctx.fillStyle = inkS; ctx.font = `400 ${fs.body}px ${SANS}`;
+  for (const l of interp) { y += lh.body; ctx.fillText(l, PX + PAD, y); }
+  y += 64;
+
+  const barTop = y - fs.label * 0.2;
+  ctx.fillStyle = red; ctx.font = `700 ${fs.label}px ${SANS}`;
+  drawTracked(ctx, 'INVITACIÓN HOY', PX + PAD + 28, y + fs.label, 4);
+  y += fs.label * 1.9;
+  ctx.fillStyle = inkP; ctx.font = `400 ${fs.body}px ${SANS}`;
+  for (const l of prac) { y += lh.body; ctx.fillText(l, PX + PAD + 28, y); }
+  ctx.fillStyle = red; ctx.fillRect(PX + PAD, barTop, 4, y + fs.body * 0.35 - barTop);
+
+  const logo = await loadShareImage('icons/enso-8bit.png');
+  if (logo) {
+    const sz = 84;
+    ctx.save();
+    ctx.beginPath(); ctx.arc(PX + PW - PAD - sz / 2, PY + h - PAD - sz / 2 + 10, sz / 2, 0, Math.PI * 2); ctx.clip();
+    ctx.drawImage(logo, PX + PW - PAD - sz, PY + h - PAD - sz + 10, sz, sz);
+    ctx.restore();
+  }
+
+  if (source) {
+    ctx.fillStyle = inkM; ctx.font = `400 30px ${SANS}`; ctx.textAlign = 'center';
+    let label = `Fuente: ${source}`;
+    while (ctx.measureText(label).width > PW && label.length > 12) label = `${label.slice(0, -2).trimEnd()}…`;
+    ctx.fillText(label, SHARE_W / 2, PY + h + 70);
+  }
+
+  ctx.fillStyle = accent; ctx.font = `500 40px ${SERIF}`;
+  drawTracked(ctx, 'ORÁCULO TAOÍSTA', SHARE_W / 2, 200, 10, 'center');
+  ctx.fillStyle = inkM; ctx.font = `400 28px ${SANS}`;
+  drawTracked(ctx, window.location.host.toUpperCase(), SHARE_W / 2, SHARE_H - 150, 4, 'center');
   return out;
 };
 
@@ -602,6 +726,121 @@ const ElectricBorder = ({ children, color = '#c5a059', speed = 1, chaos = 0.12, 
   );
 };
 
+/* --- HISTORIAL DE DÍAS --- */
+const MONTHS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const WEEKDAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+
+const DaysView = ({ history, notes, deck, month, setMonth, onOpen }) => {
+  const [y, m] = month.split('-').map(Number);
+  const byId = useMemo(() => new Map(deck.map(c => [c.id, c])), [deck]);
+  const today = localDateKey();
+  const daysIn = new Date(y, m, 0).getDate();
+  const offset = (new Date(y, m - 1, 1).getDay() + 6) % 7; // semana desde el lunes
+  const shift = (n) => {
+    const d = new Date(y, m - 1 + n, 1);
+    setMonth(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
+  };
+  const isCurrent = month >= today.slice(0, 7);
+  const visitedKeys = Object.keys(history).filter(k => k.startsWith(month)).sort();
+  const entries = visitedKeys.filter(k => byId.has(history[k])).reverse();
+
+  const cells = [];
+  for (let i = 0; i < offset; i++) cells.push(<span key={`e${i}`} className="day-cell is-empty" />);
+  for (let d = 1; d <= daysIn; d++) {
+    const key = `${month}-${String(d).padStart(2, '0')}`;
+    const c = byId.get(history[key]);
+    const cls = `day-cell${key in history ? ' is-visited' : ''}${c && notes[c.id]?.text ? ' has-note' : ''}${key === today ? ' is-today' : ''}`;
+    // El calendario es atajo visual; la lista de abajo es el camino accesible por teclado y lector.
+    cells.push(c
+      ? <button key={key} className={cls} tabIndex={-1} onClick={() => onOpen(c)}>{d}</button>
+      : <span key={key} className={cls}>{d}</span>);
+  }
+
+  return (
+    <div className="days-view" onClick={(e) => e.stopPropagation()}>
+      <div className="days-nav">
+        <button className="ghost-btn" onClick={() => shift(-1)} aria-label="Mes anterior">‹</button>
+        <h3 className="days-month" aria-live="polite">{MONTHS[m - 1]} {y}</h3>
+        <button className="ghost-btn" onClick={() => shift(1)} aria-label="Mes siguiente" disabled={isCurrent}>›</button>
+      </div>
+      <div className="days-grid" aria-hidden="true">
+        {WEEKDAYS.map(w => <span key={w} className="day-head">{w}</span>)}
+        {cells}
+      </div>
+      <p className="days-summary">
+        {visitedKeys.length === 0 ? 'Sin consultas en este mes.' : `${visitedKeys.length} ${visitedKeys.length === 1 ? 'día' : 'días'} con consulta.`}
+      </p>
+      {entries.length > 0 && (
+        <ul className="days-list">
+          {entries.map(k => {
+            const c = byId.get(history[k]);
+            const note = notes[c.id]?.text;
+            return (
+              <li key={k}>
+                <button className="codex-item-main" onClick={() => onOpen(c)}>
+                  <span className="codex-item-cat">{Number(k.slice(8))} de {MONTHS[m - 1]} · {categoryLabel(c.categoria)}</span>
+                  <span className="codex-item-frase">“{c.frase}”</span>
+                  {note && <span className="codex-item-note">✎ {note.slice(0, 80)}{note.length > 80 ? '…' : ''}</span>}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+/* --- NOTA PERSONAL --- */
+const NoteEditor = ({ cardId, initial, onSave, label, autoFocus = false }) => {
+  const [text, setText] = useState(initial ?? '');
+  const [status, setStatus] = useState('');
+  const pending = useRef(null);
+  const timer = useRef(null);
+  const saveRef = useRef(onSave);
+  saveRef.current = onSave;
+
+  const flush = useCallback(() => {
+    clearTimeout(timer.current);
+    if (pending.current) {
+      saveRef.current(pending.current.id, pending.current.text);
+      pending.current = null;
+    }
+  }, []);
+
+  useEffect(() => flush, [flush]); // guarda lo pendiente al cerrar
+
+  const onChange = (e) => {
+    const v = e.target.value;
+    setText(v);
+    setStatus('');
+    pending.current = { id: cardId, text: v };
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => {
+      flush();
+      setStatus(v.trim() ? 'Guardada en este dispositivo' : '');
+    }, 600);
+  };
+
+  const fieldId = `note-${cardId}`;
+  return (
+    <div className="note-editor">
+      <label htmlFor={fieldId} className="note-label">{label}</label>
+      <textarea
+        id={fieldId}
+        className="note-textarea"
+        rows={3}
+        maxLength={2000}
+        value={text}
+        onChange={onChange}
+        onBlur={flush}
+        autoFocus={autoFocus}
+      />
+      <span className="note-status" aria-live="polite">{status}</span>
+    </div>
+  );
+};
+
 /* --- WISDOM CARD COMPONENT --- */
 const clamp = (v, min = 0, max = 100) => Math.min(Math.max(v, min), max);
 const round = (v, pr = 3) => parseFloat(v.toFixed(pr));
@@ -610,15 +849,6 @@ const adjust = (v, f1, f2, t1, t2) => round(t1 + ((t2 - t1) * (v - f1)) / (f2 - 
 const WisdomCard = React.forwardRef(({ card }, ref) => {
   const wrapRef = useRef(null);
   const shellRef = useRef(null);
-
-  const showDonation = useMemo(() => {
-    if (!card || !card.id) return false;
-    let hash = 0;
-    for (let i = 0; i < card.id.length; i++) {
-      hash = (hash << 5) - hash + card.id.charCodeAt(i);
-    }
-    return Math.abs(hash) % 10 < 3; // 30% stable probability check
-  }, [card]);
 
   const tiltEngineRef = useRef(null);
   if (!tiltEngineRef.current) {
@@ -697,28 +927,19 @@ const WisdomCard = React.forwardRef(({ card }, ref) => {
           <div className="pc-inside">
             <div className="pc-shine" /><div className="pc-glare" />
             <div className="pc-content">
-              <span className="pc-wisdom-category">{card.categoria.replaceAll('_', ' ')}</span>
+              <span className="pc-wisdom-category">{categoryLabel(card.categoria)}</span>
               <h2 className="pc-frase">“{card.frase}”</h2>
               <p className="pc-interpretacion">{card.interpretacion}</p>
               <div className="pc-practica">
-                <label>Invitación hoy</label>
+                <span className="pc-practica-label">Invitación hoy</span>
                 <p>{card.practica_hoy}</p>
               </div>
               <div className="pc-card-footer">
-                <img src="icons/enso-8bit.png" className="pc-card-logo" alt="Círculo Enso - Símbolo taoísta de presencia y vacío" />
+                <p className="pc-source">
+                  {sourceLabel(card.nota_editorial) && (<><span className="pc-source-k">Fuente</span> {sourceLabel(card.nota_editorial)}</>)}
+                </p>
+                <img src="icons/enso-8bit.png" className="pc-card-logo" alt="" aria-hidden="true" />
               </div>
-              {showDonation && (
-                <div className="pc-donation-gentle">
-                  <span>✧</span>
-                  <a href={import.meta.env.VITE_DONATION_URL || 'https://buymeacoffee.com/herramente'} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     onClick={(e) => e.stopPropagation()}>
-                    ¿Te ha servido esta reflexión? Invita un café al oráculo
-                  </a>
-                  <span>✧</span>
-                </div>
-              )}
             </div>
           </div>
         </section>
@@ -744,17 +965,19 @@ function App() {
   const [installPrompt, setInstallPrompt] = useState(null);
   const [isInstalled, setIsInstalled] = useState(window.matchMedia('(display-mode: standalone)').matches);
   const [toasts, setToasts] = useState([]);
-  const [donationCount, setDonationCount] = useState(() => {
-    const n = parseInt(readStorage('oraculoqi_donation_count', '0'), 10);
-    return Number.isFinite(n) && n > 0 ? n : 0;
-  });
-  const [donationDismissed, setDonationDismissed] = useState(false);
   const [cupPulse, setCupPulse] = useState(false);
   const [cardExiting, setCardExiting] = useState(false);
   const [exitDir, setExitDir] = useState('left');
   const [favBurst, setFavBurst] = useState(false);
-  const [streak, setStreak] = useState(readStreak);
+  const [history, setHistory] = useState(readHistory);
+  const [notes, setNotes] = useState(readNotes);
+  const [dailyCard, setDailyCard] = useState(null);
+  const [followUp, setFollowUp] = useState(null);
+  const [followOpen, setFollowOpen] = useState(false);
+  const [noteOpen, setNoteOpen] = useState(false);
   const [codexQuery, setCodexQuery] = useState('');
+  const [codexTab, setCodexTab] = useState('saved');
+  const [histMonth, setHistMonth] = useState(() => localDateKey().slice(0, 7));
   const [codexCat, setCodexCat] = useState('all');
   const fileInputRef = useRef(null);
   const reduceMotion = useMemo(prefersReducedMotion, []);
@@ -773,11 +996,12 @@ function App() {
   const showToast = useCallback((msg) => {
     const id = Math.random().toString(36).substring(2, 9);
     setToasts(prev => [...prev, { id, msg }].slice(-2));
+    // Más tiempo para mensajes largos (WCAG 2.2.1: el usuario debe poder leerlos).
     setTimeout(() => {
       if (mountedRef.current) {
         setToasts(prev => prev.filter(t => t.id !== id));
       }
-    }, 4000);
+    }, Math.max(4000, msg.length * 90));
   }, []);
 
   useEffect(() => {
@@ -797,10 +1021,28 @@ function App() {
   useEffect(() => {
     if (window.TAOISTA_DATASET) {
       const deck = window.TAOISTA_DATASET.cards, today = localDateKey();
-      let hash = 0;
-      for (let i = 0; i < today.length; i++) hash = ((hash << 5) - hash) + today.charCodeAt(i);
-      setCard(deck[Math.abs(hash | 0) % deck.length]);
+      const daily = dailyCardFor(deck, today);
+      setDailyCard(daily);
+      setCard(daily);
+      setFollowUp(findFollowUp(history, notes, deck, today, readStorage('oraculoqi_followup_seen', '')));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // El dataset se depura entre versiones: sincroniza el Codex guardado con el catálogo vigente
+  // (texto actualizado y retiro de cartas que ya no existen).
+  useEffect(() => {
+    const deck = window.TAOISTA_DATASET?.cards;
+    if (!deck) return;
+    const byId = new Map(deck.map(c => [c.id, c]));
+    const next = favorites.filter(f => byId.has(f.id)).map(f => byId.get(f.id));
+    const removed = favorites.length - next.length;
+    const changed = removed > 0 || next.some((c, i) => JSON.stringify(c) !== JSON.stringify(favorites[i]));
+    if (changed) setFavorites(next);
+    if (removed > 0) {
+      showToast(`${removed} ${removed === 1 ? 'sabiduría' : 'sabidurías'} del catálogo anterior ya no existe${removed === 1 ? '' : 'n'} y se retiró de tu Codex`);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -809,23 +1051,47 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    writeStorage('oraculoqi_donation_count', String(donationCount));
-  }, [donationCount]);
+    writeStorage('oraculoqi_notes', JSON.stringify(notes));
+  }, [notes]);
+
+  const saveNote = useCallback((id, text) => {
+    setNotes(prev => {
+      const next = { ...prev };
+      if (text.trim()) next[id] = { text, updated: new Date().toISOString() };
+      else delete next[id];
+      return next;
+    });
+  }, []);
 
   useEffect(() => {
     writeStorage('trozos_sabiduria_favorites', JSON.stringify(favorites));
   }, [favorites]);
 
   useEffect(() => {
-    if (!isRevealed) return;
+    if (!isRevealed || !dailyCard) return;
     const today = localDateKey();
     writeStorage('oraculoqi_last_reveal', today);
-    setStreak(prev => {
-      const next = nextStreak(prev, today);
-      if (next !== prev) writeStorage('oraculoqi_streak', JSON.stringify(next));
+    setHistory(prev => {
+      if (prev[today] === dailyCard.id) return prev;
+      const next = { ...prev, [today]: dailyCard.id };
+      const keys = Object.keys(next).sort();
+      keys.slice(0, Math.max(0, keys.length - 400)).forEach(k => { delete next[k]; });
+      writeStorage('oraculoqi_history', JSON.stringify(next));
       return next;
     });
-  }, [isRevealed]);
+  }, [isRevealed, dailyCard]);
+
+  // Constancia amable: días con consulta en el mes en curso, sin castigar interrupciones.
+  const monthDays = useMemo(() => {
+    const month = localDateKey().slice(0, 7);
+    return Object.keys(history).filter(k => k.startsWith(month)).length;
+  }, [history]);
+
+  const dismissFollowUp = useCallback(() => {
+    writeStorage('oraculoqi_followup_seen', localDateKey());
+    setFollowUp(null);
+    setFollowOpen(false);
+  }, []);
 
   const formattedDate = useMemo(() => new Date().toLocaleDateString(), []);
 
@@ -835,7 +1101,7 @@ function App() {
     } else if (showInfo) {
       document.title = "Protocolo Erudito — Oráculo Taoísta";
     } else if (card) {
-      document.title = `Sincronía: ${card.categoria.replaceAll('_', ' ')} — Oráculo Taoísta`;
+      document.title = `Sincronía: ${categoryLabel(card.categoria).toLowerCase()} — Oráculo Taoísta`;
     } else {
       document.title = "Oráculo Taoísta";
     }
@@ -958,11 +1224,17 @@ function App() {
         } while (card && newCard.id === card.id);
       }
       setCard(newCard);
-      setDonationCount(prev => prev + 1);
-      setDonationDismissed(false);
+      setNoteOpen(false);
       setCardExiting(false);
     }, 300);
   }, [card]);
+
+  const backToToday = useCallback(() => {
+    if (!dailyCard) return;
+    haptic('light');
+    setCard(dailyCard);
+    setNoteOpen(false);
+  }, [dailyCard]);
 
   const cycleTheme = useCallback(() => {
     haptic('light');
@@ -976,33 +1248,10 @@ function App() {
 
   const shareCard = useCallback(async () => {
     if (!card) return;
-    const cardElement = cardRef.current;
-    if (!cardElement) return;
 
     setMenuOpen(false);
     try {
-      if (document.fonts?.ready) await document.fonts.ready;
-      const canvas = await html2canvas(cardElement, {
-        scale: 2,
-        backgroundColor: null,
-        logging: false,
-        useCORS: true,
-        // html2canvas clona el DOM: las animaciones de entrada se reinician en el clon
-        // y el texto queda capturado invisible. Congelamos el estado final.
-        onclone: (doc) => {
-          doc.documentElement.classList.add('is-capturing');
-          const style = doc.createElement('style');
-          style.textContent = SHARE_CAPTURE_CSS;
-          doc.head.appendChild(style);
-        }
-      });
-
-      let finalCanvas = canvas;
-      try {
-        finalCanvas = composeStoryCanvas(canvas);
-      } catch (composeErr) {
-        console.warn('Composición de historia falló, se usa la carta sola:', composeErr);
-      }
+      const finalCanvas = await composeShareCanvas(card);
 
       const blob = await new Promise((resolve) => finalCanvas.toBlob(resolve, 'image/png'));
       if (!blob) {
@@ -1062,13 +1311,15 @@ function App() {
   const exportFavorites = useCallback(() => {
     const payload = {
       app: 'oraculo-taoista',
-      version: 1,
+      version: 2,
       exportedAt: new Date().toISOString(),
-      favorites: favorites.map(f => ({ id: f.id, frase: f.frase }))
+      favorites: favorites.map(f => ({ id: f.id, frase: f.frase })),
+      notes,
+      history
     };
     downloadBlob(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }), `codex-oraculo-${localDateKey()}.json`);
     showToast("Respaldo del Codex descargado ✧");
-  }, [favorites, showToast]);
+  }, [favorites, notes, history, showToast]);
 
   const importFavorites = useCallback(async (e) => {
     const file = e.target.files?.[0];
@@ -1080,13 +1331,32 @@ function App() {
       const deck = window.TAOISTA_DATASET?.cards ?? [];
       const byId = new Map(deck.map(c => [c.id, c]));
       const found = ids.map(id => byId.get(id)).filter(Boolean);
-      if (found.length === 0) throw new Error('sin cartas válidas');
+      const inNotes = data?.notes && typeof data.notes === 'object' ? Object.entries(data.notes)
+        .filter(([id, n]) => byId.has(id) && typeof n?.text === 'string' && n.text.trim()) : [];
+      const inHistory = data?.history && typeof data.history === 'object' ? Object.entries(data.history)
+        .filter(([k, v]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && typeof v === 'string') : [];
+      if (found.length === 0 && inNotes.length === 0) throw new Error('sin cartas válidas');
       setFavorites(prev => {
         const have = new Set(prev.map(x => x.id));
         const fresh = found.filter(c => !have.has(c.id) && have.add(c.id));
         return [...prev, ...fresh];
       });
-      showToast(`Codex restaurado: ${found.length} sabidurías leídas ✧`);
+      // Conserva la versión más reciente de cada nota.
+      setNotes(prev => {
+        const next = { ...prev };
+        for (const [id, n] of inNotes) {
+          if (!next[id] || String(n.updated ?? '') > String(next[id].updated ?? '')) next[id] = { text: n.text, updated: n.updated ?? new Date().toISOString() };
+        }
+        return next;
+      });
+      if (inHistory.length) {
+        setHistory(prev => {
+          const next = { ...Object.fromEntries(inHistory), ...prev };
+          writeStorage('oraculoqi_history', JSON.stringify(next));
+          return next;
+        });
+      }
+      showToast(`Codex restaurado: ${found.length} ${found.length === 1 ? 'sabiduría' : 'sabidurías'} y ${inNotes.length} ${inNotes.length === 1 ? 'nota' : 'notas'} ✧`);
     } catch (err) {
       console.error(err);
       showToast("No se pudo leer ese respaldo");
@@ -1108,9 +1378,9 @@ function App() {
     const cat = categories.includes(codexCat) ? codexCat : 'all';
     return favorites.filter(f =>
       (cat === 'all' || f.categoria === cat) &&
-      (!q || `${f.frase} ${f.interpretacion ?? ''} ${f.categoria}`.toLowerCase().includes(q))
+      (!q || `${f.frase} ${f.interpretacion ?? ''} ${categoryLabel(f.categoria)} ${notes[f.id]?.text ?? ''}`.toLowerCase().includes(q))
     );
-  }, [favorites, categories, codexQuery, codexCat]);
+  }, [favorites, categories, codexQuery, codexCat, notes]);
 
   const installApp = useCallback(async () => {
     if (!installPrompt || isInstalled) return;
@@ -1194,10 +1464,28 @@ function App() {
             <h1 className="brand-title">Oráculo Taoísta</h1>
             <p className="sync-label">
               Sincronía · {formattedDate}
-              {streak.count >= 2 && <span className="streak-badge" title={`${streak.count} días seguidos`}>✦ {streak.count} días</span>}
+              {monthDays >= 2 && (
+                <button className="streak-badge" onClick={() => { setCodexTab('days'); setHistMonth(localDateKey().slice(0, 7)); setShowCodex(true); }} aria-label={`${monthDays} días con consulta este mes. Ver tus días`}>
+                  ✦ {monthDays} días este mes
+                </button>
+              )}
             </p>
           </div>
         </header>
+
+        {followUp && (!isRevealed || followOpen) && (
+          <section className="followup" aria-labelledby="followup-title">
+            <p id="followup-title" className="followup-title">{followUp.when}, tu invitación fue</p>
+            <p className="followup-practice">“{followUp.card.practica_hoy}”</p>
+            {followOpen && (
+              <NoteEditor cardId={followUp.card.id} initial={notes[followUp.card.id]?.text} onSave={saveNote} label="¿Cómo te fue?" autoFocus />
+            )}
+            <div className="followup-actions">
+              {!followOpen && <button className="ghost-btn" onClick={() => setFollowOpen(true)}>Contar cómo me fue</button>}
+              <button className="ghost-btn" onClick={dismissFollowUp}>{followOpen ? 'Listo' : 'Ahora no'}</button>
+            </div>
+          </section>
+        )}
 
         <div className="card-stage">
           {!isRevealed ? (
@@ -1207,10 +1495,10 @@ function App() {
               tabIndex={0} 
               aria-label="Desvelar la carta del oráculo" 
               onClick={handleReveal}
-              onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleReveal()}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleReveal(); } }}
             >
               <ElectricBorder color="var(--ritual-red)" speed={0.6} chaos={0.08} borderRadius={12}>
-                <div className="reveal-overlay"><span>Desvelar el Tao</span></div>
+                <div className="reveal-overlay"><span>Desvelar el Tao</span><small className="reveal-hint">Toca para recibir tu sincronía de hoy</small></div>
               </ElectricBorder>
             </div>
           ) : (
@@ -1222,29 +1510,24 @@ function App() {
             >
               <WisdomCard card={card} ref={cardRef} />
               
-              {donationCount > 0 && donationCount % 5 === 0 && !donationDismissed ? (
-                <div className="donation-invite">
-                  <p>Si esta sabiduría resuena contigo y quieres ayudar a que siga fluyendo, considera invitarnos un café.</p>
-                  <div className="donation-invite-buttons">
-                    <a 
-                      href={import.meta.env.VITE_DONATION_URL || "https://buymeacoffee.com/herramente"} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="btn-donation-coffee"
-                      onClick={() => setDonationDismissed(true)}
-                    >
-                      Invitar un café ☕
-                    </a>
-                    <button 
-                      className="btn-donation-skip" 
-                      onClick={() => setDonationDismissed(true)}
-                    >
-                      Seguir consultando
-                    </button>
-                  </div>
+              <div className="card-actions">
+                <button
+                  className="ghost-btn note-toggle"
+                  aria-expanded={noteOpen}
+                  aria-controls="card-note"
+                  onClick={() => setNoteOpen(o => !o)}
+                >
+                  ✎ {notes[card.id]?.text ? 'Tu nota' : 'Escribir una nota'}
+                </button>
+                {dailyCard && card.id !== dailyCard.id ? (
+                  <button className="btn-refresh" onClick={backToToday}>Volver a la carta de hoy</button>
+                ) : null}
+                <button className="ghost-btn" onClick={() => refreshCard('left')}>Explorar otra carta</button>
+              </div>
+              {noteOpen && (
+                <div id="card-note" className="card-note">
+                  <NoteEditor key={card.id} cardId={card.id} initial={notes[card.id]?.text} onSave={saveNote} label="Tu nota sobre esta carta" autoFocus />
                 </div>
-              ) : (
-                <button className="btn-refresh" onClick={() => refreshCard('left')}>Otra sincronía para hoy</button>
               )}
             </div>
           )}
@@ -1274,7 +1557,7 @@ function App() {
           <button className="menu-opt-btn" onClick={shareCard} title="Compartir" aria-label="Compartir carta" tabIndex={menuOpen ? 0 : -1}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" /></svg>
           </button>
-          <button className="menu-opt-btn" onClick={cycleTheme} title="Tema" aria-label="Cambiar tema" tabIndex={menuOpen ? 0 : -1}>
+          <button className="menu-opt-btn" onClick={cycleTheme} title="Tema" aria-label={`Cambiar tema (actual: ${theme === 'dark' ? 'oscuro' : theme === 'light' ? 'claro' : 'sumi-e'})`} tabIndex={menuOpen ? 0 : -1}>
             {theme === 'dark' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>}
             {theme === 'light' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>}
             {theme === 'sumi-e' && <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>}
@@ -1301,6 +1584,21 @@ function App() {
             <h2 id="codex-title" className="modal-title">El Codex</h2>
             <button className="close-btn" onClick={() => setShowCodex(false)} aria-label="Cerrar modal">&times;</button>
           </header>
+          <div className="codex-tabs" role="group" aria-label="Vista del Codex" onClick={(e) => e.stopPropagation()}>
+            <button className="chip-btn" aria-pressed={codexTab === 'saved'} onClick={() => setCodexTab('saved')}>Guardadas</button>
+            <button className="chip-btn" aria-pressed={codexTab === 'days'} onClick={() => setCodexTab('days')}>Tus días</button>
+          </div>
+          {codexTab === 'days' ? (
+            <DaysView
+              history={history}
+              notes={notes}
+              deck={window.TAOISTA_DATASET?.cards ?? []}
+              month={histMonth}
+              setMonth={setHistMonth}
+              onOpen={(c) => { setCard(c); setShowCodex(false); setIsRevealed(true); setNoteOpen(false); }}
+            />
+          ) : (
+          <>
           {favorites.length > 0 && (
             <div className="codex-tools" onClick={(e) => e.stopPropagation()}>
               <div className="codex-tools-row">
@@ -1319,7 +1617,7 @@ function App() {
                   <button className="chip-btn" aria-pressed={!categories.includes(codexCat)} onClick={() => setCodexCat('all')}>Todas</button>
                   {categories.map(c => (
                     <button key={c} className="chip-btn" aria-pressed={codexCat === c} onClick={() => setCodexCat(codexCat === c ? 'all' : c)}>
-                      {c.replaceAll('_', ' ')}
+                      {categoryLabel(c)}
                     </button>
                   ))}
                 </div>
@@ -1362,14 +1660,17 @@ function App() {
                       setIsRevealed(true);
                     }}
                   >
-                    <span className="codex-item-cat">{f.categoria.replaceAll('_', ' ')}</span>
+                    <span className="codex-item-cat">{categoryLabel(f.categoria)}</span>
                     <span className="codex-item-frase">"{f.frase}"</span>
+                    {notes[f.id]?.text && <span className="codex-item-note">✎ {notes[f.id].text.slice(0, 80)}{notes[f.id].text.length > 80 ? '…' : ''}</span>}
                   </button>
                   <button className="codex-item-remove" onClick={() => removeFavorite(f.id)} aria-label={`Quitar de favoritos: ${f.frase.slice(0, 40)}`}>&times;</button>
                 </div>
               ))
             )}
           </div>
+          </>
+          )}
         </div>
       )}
 
@@ -1408,7 +1709,7 @@ function App() {
       <div className="toast-container" role="status" aria-live="polite">
         {toasts.map(t => (
           <div key={t.id} className="toast-notification">
-            <span>✧</span>
+            <span aria-hidden="true">✧</span>
             <span>{t.msg}</span>
           </div>
         ))}

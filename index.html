@@ -6,7 +6,7 @@
   <title>Oráculo Taoísta — Sincronía y Sabiduría Diaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Una aplicación web progresiva (PWA) de meditación y sincronía diaria. Explora 579 reflexiones de sabiduría taoísta y zen en español con soporte offline completo." />
+    content="Una aplicación web progresiva (PWA) de meditación y sincronía diaria. Explora 414 reflexiones de sabiduría taoísta y zen en español con soporte offline completo." />
   <meta name="keywords" content="oraculo taoista, oraculoqi, sabiduria taoista, sincronia, zen, meditacion, mindfulness, taoismo, lao tzu, zhuangzi, PWA, reflexion diaria, paz interior, calma" />
   <meta name="author" content="Herramente" />
   
@@ -20,14 +20,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://oraculo-taoista.pages.dev/" />
   <meta property="og:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
-  <meta property="og:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
+  <meta property="og:description" content="Explora 414 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
   <meta property="og:image" content="https://oraculo-taoista.pages.dev/og-image.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:url" content="https://oraculo-taoista.pages.dev/" />
   <meta property="twitter:title" content="Oráculo Taoísta — Sincronía y Sabiduría Diaria" />
-  <meta property="twitter:description" content="Explora 579 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
+  <meta property="twitter:description" content="Explora 414 reflexiones de meditación diaria de forma offline. Sincronía, calma y presencia en tu día a día." />
   <meta property="twitter:image" content="https://oraculo-taoista.pages.dev/og-image.png" />
 
   <!-- Structured Data (JSON-LD) -->
@@ -38,7 +38,7 @@
       "name": "Oráculo Taoísta",
       "alternateName": "Oraculoqi",
       "url": "https://oraculo-taoista.pages.dev/",
-      "description": "Una aplicación web progresiva (PWA) de meditación y sincronía diaria que ofrece 579 reflexiones de sabiduría taoísta y zen en español con modo offline completo.",
+      "description": "Una aplicación web progresiva (PWA) de meditación y sincronía diaria que ofrece 414 reflexiones de sabiduría taoísta y zen en español con modo offline completo.",
       "applicationCategory": "HealthApplication, Lifestyle, Meditación, Espiritualidad",
       "operatingSystem": "All",
       "author": {
@@ -323,6 +323,7 @@
     }
 
     .reveal-overlay {
+      box-sizing: border-box; /* el relleno no debe sumarse al 100% (descentraba el texto) */
       width: 100%;
       height: 100%;
       display: flex;
@@ -336,6 +337,17 @@
       font-size: 1rem;
       padding: var(--space-xl);
       text-align: center;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .reveal-hint {
+      font-family: var(--font-base);
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      color: var(--ink-secondary);
     }
 
     /* Floating Menu Styles */
@@ -380,6 +392,7 @@
       opacity: 0;
       transform: translateY(20px) scale(0.8);
       pointer-events: none;
+      visibility: hidden; /* cerrado: fuera del árbol de accesibilidad, no solo transparente */
       transition: all var(--transition-slow);
     }
 
@@ -387,6 +400,7 @@
       opacity: 1;
       transform: translateY(0) scale(1);
       pointer-events: auto;
+      visibility: visible;
     }
 
     .menu-opt-btn {
@@ -409,7 +423,7 @@
 
     .menu-opt-btn:hover {
       background: var(--bg-secondary);
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       transform: scale(1.15) translateY(-5px);
       border-color: var(--ritual-pink);
     }
@@ -439,7 +453,7 @@
     }
 
     *:focus-visible {
-      outline: 2px solid var(--ritual-pink);
+      outline: 2px solid var(--accent-text);
       outline-offset: 2px;
     }
 
@@ -503,7 +517,7 @@
     }
 
     .close-btn:hover {
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       border-color: var(--ritual-pink);
       transform: rotate(90deg);
     }
@@ -790,7 +804,7 @@
 
     /* ===== BTN-REFRESH HOVER POLISH ===== */
     .btn-refresh:hover {
-      color: var(--ritual-pink);
+      color: var(--accent-text);
       border-color: rgba(235, 148, 179, 0.45);
       transform: translateY(-3px) scale(1.03);
       box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5),
@@ -965,7 +979,7 @@
       gap: var(--space-md); padding: var(--space-xl); padding-right: 64px; width: 100%;
       border-radius: var(--radius-panel);
     }
-    .codex-item-main:focus-visible { outline: 2px solid var(--ritual-pink); outline-offset: -2px; }
+    .codex-item-main:focus-visible { outline: 2px solid var(--accent-text); outline-offset: -2px; }
     .codex-item-remove {
       position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
       border-radius: 50%; border: none; background: transparent; cursor: pointer;
@@ -1022,6 +1036,101 @@
 
       .codex-empty-icon { animation: none; }
     }
+
+    /* ===== ACCIONES BAJO LA CARTA, NOTA Y VUELTA DEL DÍA ANTERIOR ===== */
+    .card-actions {
+      display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+      gap: var(--space-sm); margin-top: var(--space-md);
+    }
+    .card-actions .btn-refresh { margin-top: 0; }
+    .card-actions .ghost-btn { flex: 0 1 auto; }
+    .card-note, .followup {
+      background: var(--glass-bg); border: var(--border-thin); border-radius: var(--radius-panel);
+      padding: var(--space-md); margin-top: var(--space-sm);
+    }
+    .followup { margin-top: 0; }
+    .followup-title {
+      margin: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+      font-weight: 600; color: var(--accent-red-text);
+    }
+    .followup-practice {
+      margin: var(--space-xs) 0 var(--space-sm); font-family: var(--font-ritual);
+      font-size: 1.05rem; line-height: 1.4; color: var(--ink-primary);
+    }
+    .followup-actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+    .note-editor { display: flex; flex-direction: column; gap: var(--space-xs); }
+    .note-label { font-size: 0.8rem; color: var(--ink-secondary); font-weight: 500; }
+    .note-textarea {
+      box-sizing: border-box; width: 100%; min-height: 88px; resize: vertical;
+      font: 400 0.95rem/1.5 var(--font-base); color: var(--ink-primary);
+      background: var(--bg-secondary); border: var(--border-thin); border-radius: var(--radius-chip);
+      padding: var(--space-sm);
+    }
+    .note-status { min-height: 1em; font-size: 0.75rem; color: var(--ink-muted); }
+    .codex-item-note {
+      display: block; margin-top: var(--space-xs); font-size: 0.8rem; color: var(--ink-muted); font-style: italic;
+    }
+
+    /* ===== HISTORIAL DE DÍAS ===== */
+    button.streak-badge { font: inherit; cursor: pointer; background: none; border: none; padding: 4px 6px; min-height: 24px; color: inherit; }
+    .codex-tabs { display: flex; gap: var(--space-sm); padding: 0 var(--space-lg) var(--space-sm); }
+    .days-view { padding: 0 var(--space-lg) var(--space-lg); max-width: 520px; width: 100%; margin: 0 auto; box-sizing: border-box; }
+    .days-nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); }
+    .days-nav .ghost-btn { min-width: 44px; padding: 0; font-size: 1.2rem; }
+    .days-nav .ghost-btn:disabled { opacity: 0.35; cursor: default; }
+    .days-month { margin: 0; font-family: var(--font-ritual); font-weight: 500; font-size: 1.2rem; text-transform: capitalize; color: var(--ink-primary); }
+    .days-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: var(--space-md); }
+    .day-head { text-align: center; font-size: 0.7rem; color: var(--ink-muted); letter-spacing: 0.1em; }
+    .day-cell {
+      position: relative; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; font: 400 0.85rem var(--font-base); color: var(--ink-muted);
+      background: none; border: 1px solid transparent;
+    }
+    .day-cell.is-empty { visibility: hidden; }
+    .day-cell.is-visited { color: var(--ink-primary); border-color: var(--accent-text); }
+    button.day-cell { cursor: pointer; }
+    button.day-cell:hover { background: var(--bg-secondary); }
+    .day-cell.is-today { font-weight: 700; }
+    .day-cell.has-note::after {
+      content: ''; position: absolute; bottom: 4px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent-text);
+    }
+    .days-summary { margin: var(--space-md) 0 var(--space-sm); font-size: 0.85rem; color: var(--ink-secondary); }
+    .days-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-sm); }
+    .days-list .codex-item-main { width: 100%; border: var(--border-thin); border-radius: var(--radius-panel); padding: var(--space-md); gap: var(--space-xs); background: var(--glass-bg); }
+
+    /* ===== AJUSTE A LA PANTALLA: la sincronía del día se lee sin desplazarse ===== */
+    .app-container {
+      box-sizing: border-box; /* sin esto el relleno se sumaba a 100vh y la página siempre desplazaba */
+      min-height: 100vh;
+      min-height: 100dvh; /* 100vh en móvil incluye la barra del navegador y fuerza scroll */
+      padding-top: var(--space-md);
+      padding-bottom: 76px; /* espacio justo para el botón flotante (52px + margen) */
+    }
+    .main-content { gap: var(--space-md); margin-top: 0; }
+    .floating-menu-container { bottom: var(--space-md); right: var(--space-md); }
+    .app-header { gap: var(--space-sm); margin-bottom: 0; }
+    .app-logo { width: 64px; height: 64px; padding: 9px; }
+    .brand-title { font-size: 1.7rem; }
+    .btn-refresh { margin-top: var(--space-md); padding: 12px 28px; }
+    .card-placeholder { min-height: clamp(280px, 48vh, 520px); }
+    @media (max-height: 820px) {
+      .app-logo { width: 48px; height: 48px; padding: 7px; }
+      .brand-title { font-size: 1.45rem; }
+      .sync-label { font-size: 0.68rem; letter-spacing: 0.2em; }
+      .app-container { padding-top: var(--space-sm); padding-bottom: 76px; }
+      .main-content { gap: var(--space-sm); }
+      .btn-refresh { margin-top: var(--space-sm); padding: 10px 24px; }
+    }
+    @media (max-height: 700px) {
+      .app-logo { display: none; }
+      .brand-title { font-size: 1.3rem; }
+    }
+    @media (min-height: 900px) {
+      .app-logo { width: 88px; height: 88px; padding: 12px; }
+      .brand-title { font-size: 2rem; }
+      .main-content { gap: var(--space-xl); }
+      .app-header { gap: var(--space-md); }
+    }
   </style>
 </head>
 
@@ -1042,7 +1151,7 @@
           </p>
           <p>
             Bienvenido al <strong>Oráculo Taoísta</strong>, un espacio digital de meditación, sincronía diaria y mindfulness offline. 
-            Esta aplicación te ofrece un acceso íntimo y personal a <strong>579 reflexiones y prácticas diarias</strong> basadas en la filosofía taoísta, 
+            Esta aplicación te ofrece un acceso íntimo y personal a <strong>414 reflexiones y prácticas diarias</strong> basadas en la filosofía taoísta, 
             el budismo zen, estoicismo, mindfulness y otras tradiciones contemplativas clásicas y contemporáneas.
           </p>
           <p>

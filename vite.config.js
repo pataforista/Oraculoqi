@@ -16,6 +16,16 @@ export default defineConfig({
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: 'CacheFirst',
             options: { cacheName: 'google-fonts' }
+          },
+          {
+            // Los archivos de fuente viven en gstatic: sin cachearlos, sin conexión cae a la tipografía de respaldo
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-files',
+              cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 365 }
+            }
           }
         ]
       }
@@ -29,7 +39,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-webgl': ['ogl'],
-          'vendor-capture': ['html2canvas'],
           'vendor-react': ['react', 'react-dom']
         }
       }

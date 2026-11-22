@@ -23,8 +23,19 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Validar integridad del dataset
+      - name: Validar dataset (modo estricto, bloqueante)
         run: npm run validate
+
+      - name: Reporte de curaduría editorial (informativo)
+        run: node validate_dataset.cjs --json=reporte_curaduria.json --quiet || true
+
+      - name: Subir reporte de curaduría
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reporte-curaduria
+          path: reporte_curaduria.json
+          if-no-files-found: ignore
 
       - name: Verificar compilación en producción
         run: npm run build
