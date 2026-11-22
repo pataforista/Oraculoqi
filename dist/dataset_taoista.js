@@ -473,8 +473,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0058",
       "frase": "El ladrón se llevó todo, pero olvidó la luna en la ventana.",
-      "interpretacion": "Nuestra riqueza fundamental es la capacidad de atestiguar el momento; esto escapa a cualquier sustracción material o externalidad.",
-      "practica_hoy": "Contempla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias.",
+      "interpretacion": "Un ladrón puede llevarse lo material. Lo que no puede llevarse es la capacidad de mirar el mundo: la luna en la ventana. Esa capacidad sigue ahí aunque se pierda todo lo demás.",
+      "practica_hoy": "Esta noche busca una luz (la luna, una farola, una vela) y mírala un minuto. Pregúntate: ¿qué de lo que tengo no me lo puede quitar nadie?",
       "categoria": "apego",
       "linaje": "zen",
       "nota_editorial": "Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada"
@@ -887,8 +887,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0111",
       "frase": "No busques las huellas de los antiguos; busca lo que ellos buscaron.",
-      "interpretacion": "La imitación de la forma externa es una trampa histórica. El despertar exige una investigación vital y genuina de la propia experiencia presente.",
-      "practica_hoy": "En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante.",
+      "interpretacion": "Repetir las palabras de los maestros del pasado no es seguir su camino: es copiar el gesto sin hacer la pregunta. La forma externa caduca; la pregunta que ellos hicieron sigue viva.",
+      "practica_hoy": "Elige una práctica que hagas por costumbre (meditar, caminar, escribir) y hazla hoy sin seguir las instrucciones de nadie. Al terminar, anota una línea: ¿qué descubrí por mí mismo?",
       "categoria": "aprendizaje",
       "linaje": "zen",
       "nota_editorial": "Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai"
@@ -1103,8 +1103,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0139",
       "frase": "¿Quién puede purificar el agua turbia? Déjala en calma y se aclarará sola.",
-      "interpretacion": "La mente no recupera su claridad a través de la intervención forzada del intelecto, sino al cesar el intento de manipulación.",
-      "practica_hoy": "Cuando sientas agitación, permite que la inquietud exista en tu espacio interno sin intentar resolver su causa de inmediato.",
+      "interpretacion": "El agua turbia no se aclara removiéndola: se aclara cuando la dejas quieta. La mente funciona igual. Forzarla a calmarse la agita más; dejarla quieta le permite aclararse sola.",
+      "practica_hoy": "Cuando notes agitación, no hagas nada para calmarla. Siéntate 2 minutos y deja que la inquietud esté ahí. Al terminar, nota si algo cambió.",
       "categoria": "autorregulacion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 15"
@@ -2498,7 +2498,7 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0323",
       "frase": "Si vas por el mundo vacío de ti, ¿quién podrá dañarte?",
-      "interpretacion": "La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación.",
+      "interpretacion": "Una ofensa necesita alguien que la recoja. Si no hay un «yo» rígido al que agarrarse, el insulto no encuentra dónde quedarse. Esto no es aguantarlo todo: es no cargar con lo que no es tuyo.",
       "practica_hoy": "En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada?",
       "categoria": "atencion",
       "linaje": "taoismo",
@@ -2624,8 +2624,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0361",
       "frase": "El Tao es como un pozo: se usa pero nunca se llena.",
-      "interpretacion": "La fuente de la conciencia es inagotable porque carece de una forma fija que la limite.",
-      "practica_hoy": "Observa el espacio silencioso de donde surgen tus pensamientos, sin intentar atrapar o detener ninguno.",
+      "interpretacion": "Un pozo se usa y no se agota: siempre hay agua debajo. La atención funciona igual. Cuanto más la usas con cuidado, más disponible está; lo que la agota es la dispersión, no el uso.",
+      "practica_hoy": "Hoy, cuando te sientes a hacer algo (leer, comer, esperar), nota el silencio que hay debajo del ruido. Un minuto. No busques nada.",
       "categoria": "atencion",
       "linaje": "taoismo",
       "nota_editorial": "Daodejing, cap. 4"
@@ -2714,11 +2714,11 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0371",
       "frase": "Permítele a las cosas derrumbarse; es el comienzo de una sanación.",
-      "interpretacion": "La obsesión por mantener estructuras frágiles impide el flujo vital. Dejar que se derrumben los patrones inservibles es el comienzo de una auténtica transformación.",
-      "practica_hoy": "En el instante mismo que sientas el impulso compulsivo de corregir o estabilizar algo que escapa a tu control, detente deliberadamente en la contemplación del desorden.",
+      "interpretacion": "A veces sostenemos cosas que ya no funcionan solo por miedo a que se caigan. Dejar que se caigan puede ser el comienzo de algo distinto. No se trata de buscar el desastre: se trata de no fingir que todo está bien cuando no lo está.",
+      "practica_hoy": "Piensa en algo que estás sosteniendo por obligación o miedo (una rutina, una expectativa, un plan). Hoy deja que se caiga una parte. Pregúntate: ¿qué pasa si no lo sostengo?",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Cuando todo se derrumba."
+      "nota_editorial": "Creación original (sin fuente); tema de la aceptación del desorden"
     },
     {
       "id": "TAO_0372",

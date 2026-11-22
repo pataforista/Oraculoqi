@@ -63,4 +63,4 @@ La misma enseñanza aparece varias veces con otra forma. No son errores, pero en
 - Silencio del maestro: TAO_0477, 0570, 0572, 0573, 0577.
 - «Yo como contexto» con metáforas de espacio (aire, cielo, mar, mesa, pantalla, ventana…): unas 30 cartas.
 
-Pendiente: las 12 recargadas. Las repeticiones se mantienen por decisión del propietario.
+Las 12 recargadas quedaron cerradas: 6 reescritas sin jerga y 6 eliminadas (ver docs/CARTAS_RECARGADAS.md). Las repeticiones se mantienen por decisión del propietario.

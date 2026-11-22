@@ -1,113 +1,91 @@
-# Las 12 cartas «recargadas» (jerga que oscurece)
+# Las 12 cartas «recargadas» · cerradas
 
-Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se eliminaron en la tercera revisión.
+Estado tras la tercera revisión: 6 vigentes reescritas sin jerga y 6 eliminadas con motivo documentado.
 
 | ID | Estado |
 |---|---|
 | TAO_0035 | Eliminada — duplicado (dedo y luna); se conserva TAO_0061 |
-| TAO_0058 | Vigente, ya reescrita (segunda revisión) |
+| TAO_0058 | Vigente, cerrada (3.ª revisión) |
 | TAO_0084 | Eliminada — duplicado (árbol inútil); se conserva TAO_0047 |
-| TAO_0111 | Vigente, pendiente de reescribir |
+| TAO_0111 | Vigente, reescrita |
 | TAO_0112 | Eliminada — psicología pop (Tolle, «testigo inmutable») |
 | TAO_0131 | Eliminada — fuente: Un curso de milagros |
-| TAO_0139 | Vigente, pendiente de reescribir |
+| TAO_0139 | Vigente, reescrita |
 | TAO_0309 | Eliminada — cliché atribuido a Alan Watts sin fuente verificada |
-| TAO_0323 | Vigente, ya reescrita (segunda revisión) |
-| TAO_0361 | Vigente, pendiente de reescribir |
-| TAO_0371 | Vigente, pendiente de reescribir |
+| TAO_0323 | Vigente, cerrada (3.ª revisión) |
+| TAO_0361 | Vigente, reescrita |
+| TAO_0371 | Vigente, reescrita + fuente corregida |
 | TAO_0459 | Eliminada — duplicado (lava tu cuenco); se conserva TAO_0137 |
 
 ---
 
-## Vigentes (6)
+## Vigentes (6) · antes y ahora
+
+«Antes» es el texto previo a esta corrección.
 
 ### TAO_0058 · apego · zen
 
 **Frase:** El ladrón se llevó todo, pero olvidó la luna en la ventana.
 
-**Interpretación:** Nuestra riqueza fundamental es la capacidad de atestiguar el momento; esto escapa a cualquier sustracción material o externalidad.
-
-**Práctica:** Contempla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias.
-
-**Fuente:** Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada
-
-**Estado:** ya reescrita (texto actual arriba)
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Nuestra riqueza fundamental es la capacidad de atestiguar el momento; esto escapa a cualquier sustracción material o externalidad. | Un ladrón puede llevarse lo material. Lo que no puede llevarse es la capacidad de mirar el mundo: la luna en la ventana. Esa capacidad sigue ahí aunque se pierda todo lo demás. |
+| Práctica | Contempla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias. | Esta noche busca una luz (la luna, una farola, una vela) y mírala un minuto. Pregúntate: ¿qué de lo que tengo no me lo puede quitar nadie? |
+| Fuente | Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada | *(sin cambios)* |
 
 ### TAO_0111 · aprendizaje · zen
 
 **Frase:** No busques las huellas de los antiguos; busca lo que ellos buscaron.
 
-**Interpretación:** La imitación de la forma externa es una trampa histórica. El despertar exige una investigación vital y genuina de la propia experiencia presente.
-
-**Práctica:** En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante.
-
-**Fuente:** Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai
-
-**Estado:** pendiente: texto original, con jerga
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La imitación de la forma externa es una trampa histórica. El despertar exige una investigación vital y genuina de la propia experiencia presente. | Repetir las palabras de los maestros del pasado no es seguir su camino: es copiar el gesto sin hacer la pregunta. La forma externa caduca; la pregunta que ellos hicieron sigue viva. |
+| Práctica | En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante. | Elige una práctica que hagas por costumbre (meditar, caminar, escribir) y hazla hoy sin seguir las instrucciones de nadie. Al terminar, anota una línea: ¿qué descubrí por mí mismo? |
+| Fuente | Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai | *(sin cambios)* |
 
 ### TAO_0139 · autorregulacion · taoismo
 
 **Frase:** ¿Quién puede purificar el agua turbia? Déjala en calma y se aclarará sola.
 
-**Interpretación:** La mente no recupera su claridad a través de la intervención forzada del intelecto, sino al cesar el intento de manipulación.
-
-**Práctica:** Cuando sientas agitación, permite que la inquietud exista en tu espacio interno sin intentar resolver su causa de inmediato.
-
-**Fuente:** Daodejing, cap. 15
-
-**Estado:** pendiente: texto original, con jerga
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La mente no recupera su claridad a través de la intervención forzada del intelecto, sino al cesar el intento de manipulación. | El agua turbia no se aclara removiéndola: se aclara cuando la dejas quieta. La mente funciona igual. Forzarla a calmarse la agita más; dejarla quieta le permite aclararse sola. |
+| Práctica | Cuando sientas agitación, permite que la inquietud exista en tu espacio interno sin intentar resolver su causa de inmediato. | Cuando notes agitación, no hagas nada para calmarla. Siéntate 2 minutos y deja que la inquietud esté ahí. Al terminar, nota si algo cambió. |
+| Fuente | Daodejing, cap. 15 | *(sin cambios)* |
 
 ### TAO_0323 · atencion · taoismo
 
 **Frase:** Si vas por el mundo vacío de ti, ¿quién podrá dañarte?
 
-**Interpretación:** La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación.
-
-**Práctica:** En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada?
-
-**Fuente:** Zhuangzi, cap. 20 (山木): «人能虚己以游世，其孰能害之»
-
-**Estado:** ya reescrita (texto actual arriba)
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación. | Una ofensa necesita alguien que la recoja. Si no hay un «yo» rígido al que agarrarse, el insulto no encuentra dónde quedarse. Esto no es aguantarlo todo: es no cargar con lo que no es tuyo. |
+| Práctica | En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada? | *(sin cambios)* |
+| Fuente | Zhuangzi, cap. 20 (山木): «人能虚己以游世，其孰能害之» | *(sin cambios)* |
 
 ### TAO_0361 · atencion · taoismo
 
 **Frase:** El Tao es como un pozo: se usa pero nunca se llena.
 
-**Interpretación:** La fuente de la conciencia es inagotable porque carece de una forma fija que la limite.
-
-**Práctica:** Observa el espacio silencioso de donde surgen tus pensamientos, sin intentar atrapar o detener ninguno.
-
-**Fuente:** Daodejing, cap. 4
-
-**Estado:** pendiente: texto original, con jerga
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La fuente de la conciencia es inagotable porque carece de una forma fija que la limite. | Un pozo se usa y no se agota: siempre hay agua debajo. La atención funciona igual. Cuanto más la usas con cuidado, más disponible está; lo que la agota es la dispersión, no el uso. |
+| Práctica | Observa el espacio silencioso de donde surgen tus pensamientos, sin intentar atrapar o detener ninguno. | Hoy, cuando te sientes a hacer algo (leer, comer, esperar), nota el silencio que hay debajo del ruido. Un minuto. No busques nada. |
+| Fuente | Daodejing, cap. 4 | *(sin cambios)* |
 
 ### TAO_0371 · atencion · taoismo
 
 **Frase:** Permítele a las cosas derrumbarse; es el comienzo de una sanación.
 
-**Interpretación:** La obsesión por mantener estructuras frágiles impide el flujo vital. Dejar que se derrumben los patrones inservibles es el comienzo de una auténtica transformación.
-
-**Práctica:** En el instante mismo que sientas el impulso compulsivo de corregir o estabilizar algo que escapa a tu control, detente deliberadamente en la contemplación del desorden.
-
-**Fuente:** Cuando todo se derrumba.
-
-**Estado:** pendiente: texto original, con jerga
-
-**Propuesta del revisor:** 
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La obsesión por mantener estructuras frágiles impide el flujo vital. Dejar que se derrumben los patrones inservibles es el comienzo de una auténtica transformación. | A veces sostenemos cosas que ya no funcionan solo por miedo a que se caigan. Dejar que se caigan puede ser el comienzo de algo distinto. No se trata de buscar el desastre: se trata de no fingir que todo está bien cuando no lo está. |
+| Práctica | En el instante mismo que sientas el impulso compulsivo de corregir o estabilizar algo que escapa a tu control, detente deliberadamente en la contemplación del desorden. | Piensa en algo que estás sosteniendo por obligación o miedo (una rutina, una expectativa, un plan). Hoy deja que se caiga una parte. Pregúntate: ¿qué pasa si no lo sostengo? |
+| Fuente | Cuando todo se derrumba. | Creación original (sin fuente); tema de la aceptación del desorden |
 
 ---
 
-## Eliminadas (6) — texto que tenían
+## Eliminadas (6) · texto que tenían
 
 ### TAO_0035
 
@@ -115,7 +93,7 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** Confundir el método, el nombre o la estructura con la realidad misma es quedar atrapado en las coordenadas de un mapa infinito.
 
-**Motivo de eliminación:** duplicado (dedo y luna); se conserva TAO_0061
+**Motivo:** duplicado (dedo y luna); se conserva TAO_0061
 
 ### TAO_0084
 
@@ -123,7 +101,7 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** Aquello que los estándares convencionales consideran 'inútil' puede ser el resguardo de la propia libertad ontológica.
 
-**Motivo de eliminación:** duplicado (árbol inútil); se conserva TAO_0047
+**Motivo:** duplicado (árbol inútil); se conserva TAO_0047
 
 ### TAO_0112
 
@@ -131,7 +109,7 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** Identificarse con el flujo del intelecto es encadenarse a fragmentos transitorios; la verdadera autonomía es establecerse como el testigo inmutable.
 
-**Motivo de eliminación:** psicología pop (Tolle, «testigo inmutable»)
+**Motivo:** psicología pop (Tolle, «testigo inmutable»)
 
 ### TAO_0131
 
@@ -139,7 +117,7 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** La separación es una ilusión sostenida por mecánicas de defensa acumuladas; la conexión última jamás estuvo ausente, solo oculta bajo estratos de temor.
 
-**Motivo de eliminación:** fuente: Un curso de milagros
+**Motivo:** fuente: Un curso de milagros
 
 ### TAO_0309
 
@@ -147,7 +125,7 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** El yo aislado es una quimera lingüística. A nivel profundo, el acto subjetivo de vivir funciona como la punta sensorial con la cual el cosmos toma conciencia de sí.
 
-**Motivo de eliminación:** cliché atribuido a Alan Watts sin fuente verificada
+**Motivo:** cliché atribuido a Alan Watts sin fuente verificada
 
 ### TAO_0459
 
@@ -155,4 +133,4 @@ Estado al cierre de la tercera revisión. De las 12: 6 siguen en el mazo y 6 se 
 
 **Interpretación:** La iluminación y la profundidad no residen en estados alterados o discusiones teóricas, sino en la total inmersión atencional en lo ordinario.
 
-**Motivo de eliminación:** duplicado (lava tu cuenco); se conserva TAO_0137
+**Motivo:** duplicado (lava tu cuenco); se conserva TAO_0137
