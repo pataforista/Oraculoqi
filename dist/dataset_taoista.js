@@ -306,7 +306,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una búsqueda de “estar mejor” (revisar el móvil, cambiar de postura) y déjala pasar una vez. Nota qué ocurre.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Creación original (sin fuente); paráfrasis de tema chan (cf. Huangbo, 传心法要)"
+      "nota_editorial": "Paráfrasis de tema chan; cf. Huangbo, Chuanxin fayao (传心法要)"
     },
     {
       "id": "TAO_0035",
@@ -378,7 +378,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Haz una lista de dos columnas: «lo que me toca hoy» y «lo que no me toca». Dedica 10 minutos a la primera. Pregúntate: ¿en qué asunto ajeno estoy remando?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Koto."
+      "nota_editorial": "Creación original (sin fuente)"
     },
     {
       "id": "TAO_0043",
@@ -387,7 +387,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Trata con respeto a quien te sirve o ayuda.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Filosofía política china."
+      "nota_editorial": "Xunzi (王制): «el agua sostiene el barco y el agua lo vuelca» (水则载舟，水则覆舟)"
     },
     {
       "id": "TAO_0044",
@@ -427,12 +427,12 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0048",
-      "frase": "El cuerpo es el árbol Bodhi; la mente un espejo brillante.",
-      "interpretacion": "Cuida tu estructura y límpiala a diario. La disciplina constante evita que el polvo se acumule.",
+      "frase": "El cuerpo es el árbol Bodhi; la mente, un espejo brillante. Límpialo cada día.",
+      "interpretacion": "Es el verso de Shenxiu: la práctica como cuidado diario, para que el polvo no se acumule. Huineng le respondería que no hay espejo que limpiar; este verso describe el punto de partida de quien aún necesita pulir.",
       "practica_hoy": "Limpia algo físico como ritual de limpieza mental.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Verso gradual del Zen."
+      "nota_editorial": "Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃). Respuesta de Huineng: TAO_0377"
     },
     {
       "id": "TAO_0049",
@@ -522,7 +522,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Contémpla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "La luna no puede ser robada."
+      "nota_editorial": "Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada"
     },
     {
       "id": "TAO_0059",
@@ -558,7 +558,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Revisa si sigues cargando algo que ya terminó.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Tanzan y Ekido."
+      "nota_editorial": "Tanzan y Ekido, relato zen recogido en 101 historias zen (Carne zen, huesos zen)"
     },
     {
       "id": "TAO_0063",
@@ -567,7 +567,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Siéntate 3 minutos sin objetivo: ni calmarte ni mejorar. Al terminar, anota una línea. Pregúntate: ¿qué cambió al no pedirle nada a este rato?",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Zazen puro (Shikantaza)."
+      "nota_editorial": "Creación original (sin fuente); tema del shikantaza (Dōgen, Fukanzazengi)"
     },
     {
       "id": "TAO_0064",
@@ -756,7 +756,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Reconoce un aspecto de tu vida que carece de 'productividad' externa y contémplalo como tu refugio vital.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "El árbol inútil."
+      "nota_editorial": "Zhuangzi, cap. 4 (人间世) y cap. 1 (逍遥游): el árbol inútil"
     },
     {
       "id": "TAO_0085",
@@ -765,7 +765,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un momento en que sonríes por compromiso. Nombra la emoción real por dentro y decide si necesitas decir algo o simplemente notarlo.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Refrán chino clásico, recogido en Thirty-Six Stratagems (estratagema 10). Lectura no literal: la daga es imagen de la hostilidad encubierta, no una invitación a la violencia."
+      "nota_editorial": "Refrán chino clásico; cf. Treinta y seis estratagemas, n.º 10 (笑里藏刀). Lectura no literal: la daga es imagen de la hostilidad encubierta, no una invitación a la violencia."
     },
     {
       "id": "TAO_0086",
@@ -882,7 +882,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra en una palabra el tono de tu mente ahora (tenso, cansado, sereno) y nota cómo colorea lo que ves durante la próxima hora.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Meditaciones."
+      "nota_editorial": "Marco Aurelio, Meditaciones (tema, no cita literal)"
     },
     {
       "id": "TAO_0100",
@@ -900,7 +900,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Antes de una decisión hoy, escribe dos consecuencias que ocurrirán “detrás” (a la semana, al mes).",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "La mantis y la cigarra."
+      "nota_editorial": "Zhuangzi, cap. 20 (山木): la mantis que acecha a la cigarra (螳螂捕蝉)"
     },
     {
       "id": "TAO_0102",
@@ -990,7 +990,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "La verdadera búsqueda."
+      "nota_editorial": "Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai"
     },
     {
       "id": "TAO_0112",
@@ -1071,7 +1071,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Nombra un problema con la palabra exacta, aunque duela.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Rectificación de los nombres."
+      "nota_editorial": "Analectas 13.3 (子路): «必也正名乎»; trad. Suárez Girard"
     },
     {
       "id": "TAO_0122",
@@ -1161,7 +1161,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Al cruzar una mirada con alguien, presta atención veloz a la barrera psíquica involuntaria que eriges, y prueba suavizar conscientemente esa frontera.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Poesía mística Sufí."
+      "nota_editorial": "Atribuida a Rumi sin fuente localizada; la formulación aparece en Un curso de milagros (T-16.IV.6)"
     },
     {
       "id": "TAO_0132",
@@ -1170,7 +1170,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Mira un objeto sin nombrarlo mentalmente.",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Escuela de los Nombres."
+      "nota_editorial": "Gongsun Longzi (公孙龙子): «Un caballo blanco no es un caballo» (白马非马)"
     },
     {
       "id": "TAO_0133",
@@ -1197,7 +1197,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Antes de ofrecer ayuda hoy, pregunta: «¿qué te sería útil?».",
       "categoria": "atencion",
       "linaje": "contemporaneo",
-      "nota_editorial": "Ironía clásica."
+      "nota_editorial": "Creación original (sin fuente); imagen de la ironía clásica"
     },
     {
       "id": "TAO_0136",
@@ -2664,7 +2664,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una opinión que repites sin examinar (sobre ti o sobre otro) y pregúntate: “¿esto es mío o lo heredé?”. Una frase.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Importado de ZenQuotes. Autor: Dogen"
+      "nota_editorial": "Atribuido a Dōgen por un agregador (ZenQuotes); atribución por verificar. Tratar como paráfrasis moderna."
     },
     {
       "id": "TAO_0307",
@@ -2691,7 +2691,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Observa el cielo, tu propio cuerpo respirando u otra forma viva, pero intentando percibirlo no 'tú observando la vida', sino como 'la vida observándose a través de ti'.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Filosofía unificadora."
+      "nota_editorial": "Atribuida a Alan Watts; fuente exacta por verificar"
     },
     {
       "id": "TAO_0312",
@@ -2704,12 +2704,12 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0313",
-      "frase": "Hojas en el Arroyo: Deja que el agua se las lleve.",
-      "interpretacion": "Los pensamientos son eventos transitorios. Si intentas atraparlos o detenerlos, te mojas y te agotas. Mirarlos pasar es permitir que la mente se limpie sola.",
+      "frase": "Cada pensamiento, una hoja; el agua se las lleva todas.",
+      "interpretacion": "Los pensamientos son eventos que pasan. Si intentas atraparlos o detenerlos, te agotas. Esta es la versión en imagen del ejercicio de las hojas en el arroyo: aquí el foco es la corriente, no cada hoja.",
       "practica_hoy": "Dedica 2 minutos a imaginar cada pensamiento como una hoja que cae al agua y se aleja flotando.",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "Ejercicio de observación no reactiva."
+      "nota_editorial": "Variante en imagen del ejercicio ACT «Leaves on a Stream» (ver TAO_0312)"
     },
     {
       "id": "TAO_0314",
@@ -2731,12 +2731,12 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0323",
-      "frase": "La barca vacía no choca con nadie.",
-      "interpretacion": "El impacto y el conflicto requieren de una entidad rígida que se sienta herida o amenazada. Sin ese núcleo defensivo, la ofensa no tiene dónde anclarse.",
-      "practica_hoy": "En medio de una interacción tensa, intenta observar el impulso sutil de defender una imagen sobre ti mismo y permite que esa necesidad se disipe.",
+      "frase": "Si vas por el mundo vacío de ti, ¿quién podrá dañarte?",
+      "interpretacion": "La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación.",
+      "practica_hoy": "En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada?",
       "categoria": "atencion",
       "linaje": "mindfulness",
-      "nota_editorial": "La barca vacía."
+      "nota_editorial": "Zhuangzi, cap. 20 (山木): «人能虚己以游世，其孰能害之»"
     },
     {
       "id": "TAO_0324",
@@ -2772,7 +2772,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Ante una molestia, escribe el hecho y el juicio por separado. Dos líneas.",
       "categoria": "atencion",
       "linaje": "estoicismo",
-      "nota_editorial": "Marco Aurelio, Meditaciones (idea afín: Epicteto, Enquiridión 5); formulación por verificar."
+      "nota_editorial": "Paráfrasis popular atribuida a Marco Aurelio; no es cita literal de las Meditaciones (idea afín: Epicteto, Enquiridión 1)"
     },
     {
       "id": "TAO_0349",
@@ -2803,8 +2803,8 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0352",
-      "frase": "Pasajeros en el Autobús: Tú conduces, ellos gritan.",
-      "interpretacion": "Los miedos y juicios son pasajeros ruidosos que intentan indicar la ruta; puedes escucharlos sin cederles el volante.",
+      "frase": "Un pasajero grita: «te van a juzgar». Tú sigues conduciendo.",
+      "interpretacion": "Los miedos y juicios son pasajeros ruidosos que intentan indicar la ruta. Nombrarlos («esto es miedo al juicio») crea distancia sin expulsarlos.",
       "practica_hoy": "Nombra el pasajero: “esto es miedo al juicio”. Repite: “hay un pasajero que dice que me van a juzgar”. Nota la diferencia entre el pasajero y tú.",
       "categoria": "defusion",
       "linaje": "mindfulness",
@@ -2814,7 +2814,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0353",
       "frase": "No busques huellas de pájaros en el aire.",
       "interpretacion": "El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo.",
-      "practica_hoy": "Haz hoy algo bien sin registrarlo ni contarlo. Al final del día, anota una línea. Pregúntate: ¿necesité que quedara huella para que valiera?",
+      "practica_hoy": "Haz hoy algo bien sin registrarlo ni contarlo. Pregúntate al final del día: ¿necesité que quedara huella para que valiera?",
       "categoria": "impermanencia",
       "linaje": "mindfulness",
       "nota_editorial": "Imagen budista clásica; cf. Dhammapada 92–93"
@@ -2929,8 +2929,8 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0366",
-      "frase": "La persona sabia pule el ladrillo para hacer un espejo, pero el ladrillo solo se desgasta.",
-      "interpretacion": "La naturaleza no se fuerza. Pulir arcilla no la vuelve cristal. La frase apunta a la futilidad del esfuerzo contra la naturaleza.",
+      "frase": "Nanyue pulía una teja para hacer un espejo; la teja solo se desgastaba.",
+      "interpretacion": "Nanyue pulía una teja delante de Mazu para mostrarle que meditar sentado no fabrica un Buda. La naturaleza no se fuerza: pulir arcilla no la vuelve cristal.",
       "practica_hoy": "Detecta hoy un intento de “mejorarte a la fuerza” y detenlo una vez. Nota qué queda.",
       "categoria": "atencion",
       "linaje": "zen",
@@ -3037,9 +3037,9 @@ window.TAOISTA_DATASET = {
     },
     {
       "id": "TAO_0378",
-      "frase": "La inutilidad del árbol lo salvó del hacha.",
-      "interpretacion": "Zhuangzi invierte la jerarquía: lo que no sirve para la máquina puede servir para vivir. La obsesión por rendimiento puede destruir lo que te sostiene.",
-      "practica_hoy": "Haz algo ‘inútil’ 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea.",
+      "frase": "El árbol que no sirve para vigas vive más años.",
+      "interpretacion": "Zhuangzi invierte la jerarquía: lo que no sirve a la máquina puede servir para vivir. No hay inutilidad, sino usos que el estándar no mide.",
+      "practica_hoy": "Haz algo «inútil» 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea. Pregúntate: ¿qué se mide en mí cuando no produzco?",
       "categoria": "saturacion",
       "linaje": "taoismo",
       "nota_editorial": "Zhuangzi, cap. 1 (逍遥游) y cap. 4 (人间世): «是不材之木也，无所可用，故能若是之寿»; trad. Preciado Idoeta"
@@ -3060,7 +3060,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy un evento que no coincide con tu preferencia y nómbralo: “esto es así”. Una vez.",
       "categoria": "wu_wei",
       "linaje": "zen",
-      "nota_editorial": "Dōgen, Genjōkōan (Shōbōgenzō), traducción por verificar."
+      "nota_editorial": "Dōgen, Genjōkōan (Shōbōgenzō); traducción por verificar. Tratar como paráfrasis del original hasta confirmar."
     },
     {
       "id": "TAO_0388",
@@ -3069,7 +3069,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige un problema y haz solo el siguiente paso mínimo verificable. Luego detente y observa qué cambia sin intervenir.",
       "categoria": "wu_wei",
       "linaje": "taoismo",
-      "nota_editorial": "Creación original (sin fuente); tema wu-wei"
+      "nota_editorial": "Paráfrasis moderna sobre tema wu-wei; atribuida a Zhuangzi en agregadores, sin localizar en el texto"
     },
     {
       "id": "TAO_0391",
@@ -3105,7 +3105,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Detecta hoy una imperfección (tuya o ajena) que te active y nómbrala: “imperfección”. Una vez.",
       "categoria": "wu_wei",
       "linaje": "zen",
-      "nota_editorial": "Atribuido a Dōgen por un agregador; atribución por verificar."
+      "nota_editorial": "Atribuido a Dōgen por un agregador; atribución por verificar. Tratar como paráfrasis moderna."
     },
     {
       "id": "TAO_0423",
@@ -3246,7 +3246,7 @@ window.TAOISTA_DATASET = {
       "id": "TAO_0438",
       "frase": "El maestro cerró la puerta al discípulo inteligente.",
       "interpretacion": "El maestro frena al discípulo que lo explica todo: la inteligencia puede convertirse en defensa contra la experiencia. No se trata de pensar menos, sino de no esconderse en el pensamiento.",
-      "practica_hoy": "Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Para 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo?",
+      "practica_hoy": "Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Detente 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo?",
       "categoria": "atencion",
       "linaje": "zen",
       "nota_editorial": "Bloqueo de la mente lógica."
@@ -3420,7 +3420,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Siente tus pies firmes o, si no es accesible, el peso sobre el asiento y las manos en el regazo, mientras hablas con emoción. 30 segundos.",
       "categoria": "atencion",
       "linaje": "taoismo",
-      "nota_editorial": "Yijing, hexagrama 31 (Xian, \"Influencia\": lago sobre montaña); correspondencia por verificar."
+      "nota_editorial": "Yijing, hexagrama 31 (Xian, «Influencia»): lago sobre montaña. La lectura montaña/lago como «centro/agitación» es moderna, no del texto original."
     },
     {
       "id": "TAO_0459",
@@ -3578,8 +3578,8 @@ window.TAOISTA_DATASET = {
     {
       "id": "TAO_0476",
       "frase": "Cuando se levantó la bandera, unos dijeron que se movía el viento, otros que se movía la tela.",
-      "interpretacion": "El conflicto surge al ignorar el papel de la mente que observa.",
-      "practica_hoy": "Ante una discusión hoy, pregunta qué ve la otra persona antes de defender lo que ves tú.",
+      "interpretacion": "La discusión reproduce dos lecturas parciales de un mismo hecho. Huineng no elige bando: señala la mente que observa. La práctica es notar la propia lectura, no corregir la del otro.",
+      "practica_hoy": "Ante una discusión hoy, escribe en una línea «lo que veo» y en otra «lo que ve el otro». Pregúntate: ¿qué añade la segunda lectura que la mía no ve?",
       "categoria": "discernimiento",
       "linaje": "zen",
       "nota_editorial": "Sutra de la Plataforma, cap. 1 (行由品), episodio del estandarte; trad. Villalba"
@@ -4005,7 +4005,7 @@ window.TAOISTA_DATASET = {
       "practica_hoy": "Elige una acción cotidiana (lavar platos, ordenar). Hazla como fin en sí mismo durante 5 minutos.",
       "categoria": "practica",
       "linaje": "zen",
-      "nota_editorial": "Creación original (sin fuente)"
+      "nota_editorial": "Creación original (sin fuente); tema de Dōgen (práctica-realización)"
     },
     {
       "id": "TAO_0569",

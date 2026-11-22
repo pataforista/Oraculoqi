@@ -1,22 +1,15 @@
 # Cartas modificadas en la auditoría de contenido
 
-Noviembre de 2026. «Antes» es el texto previo a la auditoría; «Ahora», el texto vigente. Cada carta indica qué campos cambiaron.
+Noviembre de 2026. «Antes» es el texto previo a la auditoría; «Ahora», el vigente (incluye las dos revisiones externas). Cada carta indica qué campos cambiaron.
 
 | Parte | Cartas |
 |---|---|
 | 1. Superficiales reescritas (contexto + «Pregúntate») | 55 |
 | 2. Corregidas por riesgo, práctica de relleno o fuente | 43 |
 | 3. Eliminadas | 2 |
+| 4. Cambios de la segunda revisión externa (detalle) | 32 |
 
-En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó igual): TAO_0136, TAO_0449, TAO_0476, TAO_0486, TAO_0498, TAO_0503, TAO_0505, TAO_0556, TAO_0559, TAO_0565, TAO_0566.
-
-## Correcciones tras la revisión externa
-
-- TAO_0193 y TAO_0369: la práctica no se había cambiado; ahora sí.
-- TAO_0080, TAO_0353, TAO_0372, TAO_0434 y TAO_0447: la pregunta de reflexión se uniformó como «Pregúntate: …» (en TAO_0372 faltaba).
-- TAO_0041: «Fénix» se precisó como «ave yuanchu, una especie de fénix».
-- TAO_0032: la fuente pasa a «Fuente no verificada».
-- Verificado sin cambio necesario: TAO_0364 ya tenía la práctica alineada con su interpretación; TAO_0562 sí tiene la interpretación reescrita.
+Las Partes 1 y 2 ya muestran el texto vigente; la Parte 4 detalla solo lo que cambió en la segunda revisión.
 
 ---
 
@@ -119,12 +112,13 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 
 **Frase:** El agua fluye, la flor cae. Cada una a lo suyo.
 
-**Cambió:** interpretación, práctica
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El universo tiene un orden espontáneo donde nada interfiere con nada. Tú haces tu parte, el mundo hace la suya. | El agua y la flor siguen su naturaleza sin estorbarse. Hacer bien lo propio y soltar lo ajeno libera mucha energía que se gasta en controlar. |
 | Práctica | Haz tu tarea y deja que el resultado caiga donde quiera. | Haz una lista de dos columnas: «lo que me toca hoy» y «lo que no me toca». Dedica 10 minutos a la primera. Pregúntate: ¿en qué asunto ajeno estoy remando? |
+| Fuente | Koto. | Creación original (sin fuente) |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -172,12 +166,13 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 
 **Frase:** El monje dejó de meditar porque no avanzaba. Entonces se sentó.
 
-**Cambió:** interpretación, práctica
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | La práctica real comienza cuando cesa la expectativa de ganancia. | Mientras meditaba para conseguir algo, el monje no estaba sentado: estaba persiguiendo. La práctica de shikantaza es solo sentarse, sin meta añadida. |
 | Práctica | Haz algo sin medir tu progreso. | Siéntate 3 minutos sin objetivo: ni calmarte ni mejorar. Al terminar, anota una línea. Pregúntate: ¿qué cambió al no pedirle nada a este rato? |
+| Fuente | Zazen puro (Shikantaza). | Creación original (sin fuente); tema del shikantaza (Dōgen, Fukanzazengi) |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -497,7 +492,7 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | No busques el pasado; ya no existe. No busques reconocimiento; se desvanece. Vive en el acto puro. | El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo. |
-| Práctica | Concéntrate solo en la acción presente, no en su rastro. | Haz hoy algo bien sin registrarlo ni contarlo. Al final del día, anota una línea. Pregúntate: ¿necesité que quedara huella para que valiera? |
+| Práctica | Concéntrate solo en la acción presente, no en su rastro. | Haz hoy algo bien sin registrarlo ni contarlo. Pregúntate al final del día: ¿necesité que quedara huella para que valiera? |
 | Fuente | Koan. | Imagen budista clásica; cf. Dhammapada 92–93 |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
@@ -645,7 +640,7 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El intelecto es un obstáculo. A veces hay que frustrar la mente para que el espíritu pase. | El maestro frena al discípulo que lo explica todo: la inteligencia puede convertirse en defensa contra la experiencia. No se trata de pensar menos, sino de no esconderse en el pensamiento. |
-| Práctica | Desconfía de tus explicaciones inteligentes hoy. | Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Para 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo? |
+| Práctica | Desconfía de tus explicaciones inteligentes hoy. | Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Detente 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -758,6 +753,8 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 ---
 
 ## Parte 2 · Corregidas por riesgo, relleno o fuente
+
+> Nota: en TAO_0136, 0449, 0486, 0498, 0503, 0505, 0556, 0559, 0565 y 0566 la corrección de esta parte afectó solo a la práctica; la interpretación se mantuvo literal. TAO_0476 estaba en ese grupo y en la segunda revisión recibió también una interpretación nueva.
 
 ### TAO_0002 · accion_comprometida · contemporaneo
 
@@ -898,12 +895,13 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 
 **Frase:** La calidad de tu vida depende de la calidad de tus pensamientos.
 
-**Cambió:** interpretación, práctica
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | El tinte de la realidad experimentada no es un paisaje objetivo, sino la proyección directa de la calidad atencional de tus procesos cognitivos. | Lo que pensamos tiñe cómo vivimos lo que ocurre, aunque no decide todo lo que ocurre. Notar ese tinte da margen para elegir. |
 | Práctica | Toma nota silente del matiz general (optimista, ansioso, neutral) que tiñe tu mente ahora y observa cómo filtra pasivamente tu percepción inmediata. | Nombra en una palabra el tono de tu mente ahora (tenso, cansado, sereno) y nota cómo colorea lo que ves durante la próxima hora. |
+| Fuente | Meditaciones. | Marco Aurelio, Meditaciones (tema, no cita literal) |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -992,12 +990,13 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 
 **Frase:** Vendiendo agua junto al río.
 
-**Cambió:** interpretación, práctica
+**Cambió:** interpretación, práctica, fuente
 
 | | Antes | Ahora |
 |---|---|---|
 | Interpretación | Ofreces lo que sobra. No intentes dar lo que ya está disponible abundantemente. | Ofrecer lo que sobra no aporta. La ayuda útil responde a lo que falta. |
 | Práctica | No ayudes a quien no lo necesita. | Antes de ofrecer ayuda hoy, pregunta: «¿qué te sería útil?». |
+| Fuente | Ironía clásica. | Creación original (sin fuente); imagen de la ironía clásica |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -1208,12 +1207,12 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 
 **Frase:** Cuando se levantó la bandera, unos dijeron que se movía el viento, otros que se movía la tela.
 
-**Cambió:** práctica · **Sin cambios:** interpretación
+**Cambió:** interpretación, práctica
 
 | | Antes | Ahora |
 |---|---|---|
-| Interpretación | El conflicto surge al ignorar el papel de la mente que observa. | *(sin cambios)* |
-| Práctica | Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para anclar tu atención en el presente. | Ante una discusión hoy, pregunta qué ve la otra persona antes de defender lo que ves tú. |
+| Interpretación | El conflicto surge al ignorar el papel de la mente que observa. | La discusión reproduce dos lecturas parciales de un mismo hecho. Huineng no elige bando: señala la mente que observa. La práctica es notar la propia lectura, no corregir la del otro. |
+| Práctica | Cuando notes tensión, recuerda notar la urgencia por distraerte con el teléfono y elegir respirar conscientemente en su lugar para anclar tu atención en el presente. | Ante una discusión hoy, escribe en una línea «lo que veo» y en otra «lo que ve el otro». Pregúntate: ¿qué añade la segunda lectura que la mía no ve? |
 
 **Revisión:** ☐ Aprobada ☐ Cambiar: 
 
@@ -1353,3 +1352,457 @@ En la Parte 2, 11 cartas solo cambiaron la práctica (la interpretación quedó 
 **Interpretación:** Cuando hay caos (una crisis), es el mejor momento para cambiar algo radicalmente. Usa la crisis a tu favor.
 
 **Motivo:** la estratagema aconseja aprovechar el desastre ajeno
+
+---
+
+## Parte 4 · Cambios de la segunda revisión externa
+
+«Antes» es el texto tras la primera ronda.
+
+### TAO_0034 · atencion · contemporaneo
+
+**Frase:** Cuando dejó de buscar la mente, la mente dejó de molestarlo.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La búsqueda de un estado mental especial lo sostiene. Al dejar de perseguir un estado, la mente deja de ser un problema que resolver. | *(sin cambios)* |
+| Práctica | Detecta hoy una búsqueda de “estar mejor” (revisar el móvil, cambiar de postura) y déjala pasar una vez. Nota qué ocurre. | *(sin cambios)* |
+| Fuente | Creación original (sin fuente); paráfrasis de tema chan (cf. Huangbo, 传心法要) | Paráfrasis de tema chan; cf. Huangbo, Chuanxin fayao (传心法要) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0042 · atencion · contemporaneo
+
+**Frase:** El agua fluye, la flor cae. Cada una a lo suyo.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El agua y la flor siguen su naturaleza sin estorbarse. Hacer bien lo propio y soltar lo ajeno libera mucha energía que se gasta en controlar. | *(sin cambios)* |
+| Práctica | Haz una lista de dos columnas: «lo que me toca hoy» y «lo que no me toca». Dedica 10 minutos a la primera. Pregúntate: ¿en qué asunto ajeno estoy remando? | *(sin cambios)* |
+| Fuente | Koto. | Creación original (sin fuente) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0043 · atencion · contemporaneo
+
+**Frase:** El agua soporta al barco, pero también puede volcarlo.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Las mismas fuerzas que te ayudan (gente, dinero, poder) pueden destruirte si no las respetas. Navega con atención. | *(sin cambios)* |
+| Práctica | Trata con respeto a quien te sirve o ayuda. | *(sin cambios)* |
+| Fuente | Filosofía política china. | Xunzi (王制): «el agua sostiene el barco y el agua lo vuelca» (水则载舟，水则覆舟) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0048 · atencion · contemporaneo
+
+**Frase:** El cuerpo es el árbol Bodhi; la mente, un espejo brillante. Límpialo cada día.
+
+**Cambió:** frase, interpretación, fuente · **Sin cambios:** práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | El cuerpo es el árbol Bodhi; la mente un espejo brillante. | El cuerpo es el árbol Bodhi; la mente, un espejo brillante. Límpialo cada día. |
+| Interpretación | Cuida tu estructura y límpiala a diario. La disciplina constante evita que el polvo se acumule. | Es el verso de Shenxiu: la práctica como cuidado diario, para que el polvo no se acumule. Huineng le respondería que no hay espejo que limpiar; este verso describe el punto de partida de quien aún necesita pulir. |
+| Práctica | Limpia algo físico como ritual de limpieza mental. | *(sin cambios)* |
+| Fuente | Verso gradual del Zen. | Sutra de la Plataforma, cap. 1: verso de Shenxiu (身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃). Respuesta de Huineng: TAO_0377 |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0058 · atencion · contemporaneo
+
+**Frase:** El ladrón se llevó todo, pero olvidó la luna en la ventana.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Nuestra riqueza fundamental es la capacidad de atestiguar el momento; esto escapa a cualquier sustracción material o externalidad. | *(sin cambios)* |
+| Práctica | Contémpla un elemento simple de la naturaleza a tu alrededor, reconociendo que tu capacidad de apreciarlo no depende de tus circunstancias. | *(sin cambios)* |
+| Fuente | La luna no puede ser robada. | Ryōkan, haiku de la luna en la ventana (盗人にとり残されし窓の月); versión adaptada |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0062 · atencion · contemporaneo
+
+**Frase:** El monje cargó a la mujer para cruzar el río y la soltó al llegar.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Haz lo necesario y suéltalo. No sigas cargando mentalmente lo que ya soltaste físicamente. | *(sin cambios)* |
+| Práctica | Revisa si sigues cargando algo que ya terminó. | *(sin cambios)* |
+| Fuente | Tanzan y Ekido. | Tanzan y Ekido, relato zen recogido en 101 historias zen (Carne zen, huesos zen) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0063 · atencion · contemporaneo
+
+**Frase:** El monje dejó de meditar porque no avanzaba. Entonces se sentó.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Mientras meditaba para conseguir algo, el monje no estaba sentado: estaba persiguiendo. La práctica de shikantaza es solo sentarse, sin meta añadida. | *(sin cambios)* |
+| Práctica | Siéntate 3 minutos sin objetivo: ni calmarte ni mejorar. Al terminar, anota una línea. Pregúntate: ¿qué cambió al no pedirle nada a este rato? | *(sin cambios)* |
+| Fuente | Zazen puro (Shikantaza). | Creación original (sin fuente); tema del shikantaza (Dōgen, Fukanzazengi) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0084 · atencion · contemporaneo
+
+**Frase:** El árbol nudoso vive siglos porque nadie quiere su madera.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Aquello que los estándares convencionales consideran 'inútil' puede ser el resguardo de la propia libertad ontológica. | *(sin cambios)* |
+| Práctica | Reconoce un aspecto de tu vida que carece de 'productividad' externa y contémplalo como tu refugio vital. | *(sin cambios)* |
+| Fuente | El árbol inútil. | Zhuangzi, cap. 4 (人间世) y cap. 1 (逍遥游): el árbol inútil |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0085 · atencion · contemporaneo
+
+**Frase:** Esconder una daga tras una sonrisa.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La amabilidad falsa es más peligrosa que la hostilidad visible. La frase señala el costo de disfrazar la hostilidad. | *(sin cambios)* |
+| Práctica | Detecta hoy un momento en que sonríes por compromiso. Nombra la emoción real por dentro y decide si necesitas decir algo o simplemente notarlo. | *(sin cambios)* |
+| Fuente | Refrán chino clásico, recogido en Thirty-Six Stratagems (estratagema 10). Lectura no literal: la daga es imagen de la hostilidad encubierta, no una invitación a la violencia. | Refrán chino clásico; cf. Treinta y seis estratagemas, n.º 10 (笑里藏刀). Lectura no literal: la daga es imagen de la hostilidad encubierta, no una invitación a la violencia. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0098 · atencion · contemporaneo
+
+**Frase:** La calidad de tu vida depende de la calidad de tus pensamientos.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Lo que pensamos tiñe cómo vivimos lo que ocurre, aunque no decide todo lo que ocurre. Notar ese tinte da margen para elegir. | *(sin cambios)* |
+| Práctica | Nombra en una palabra el tono de tu mente ahora (tenso, cansado, sereno) y nota cómo colorea lo que ves durante la próxima hora. | *(sin cambios)* |
+| Fuente | Meditaciones. | Marco Aurelio, Meditaciones (tema, no cita literal) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0101 · atencion · contemporaneo
+
+**Frase:** La mantis acecha a la cigarra, sin notar al pájaro que está detrás.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La atención estrecha en un objetivo inmediato oculta el contexto mayor. La frase señala el costo de la visión de túnel. | *(sin cambios)* |
+| Práctica | Antes de una decisión hoy, escribe dos consecuencias que ocurrirán “detrás” (a la semana, al mes). | *(sin cambios)* |
+| Fuente | La mantis y la cigarra. | Zhuangzi, cap. 20 (山木): la mantis que acecha a la cigarra (螳螂捕蝉) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0111 · atencion · contemporaneo
+
+**Frase:** No busques las huellas de los antiguos; busca lo que ellos buscaron.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La imitación de la forma externa es una trampa histórica. El despertar exige una investigación vital y genuina de la propia experiencia presente. | *(sin cambios)* |
+| Práctica | En lugar de repetir una fórmula de bienestar aprendida, siéntate a investigar directamente, sin ideas previas, cómo se siente existir en este instante. | *(sin cambios)* |
+| Fuente | La verdadera búsqueda. | Matsuo Bashō, palabras de despedida a Kyoriku (1693), que atribuye la idea a Kūkai |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0121 · atencion · contemporaneo
+
+**Frase:** Si el nombre no es correcto, las palabras no fluyen.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Llama a las cosas por su nombre. Si llamas 'amor' a la 'dependencia', nunca podrás resolverlo. | *(sin cambios)* |
+| Práctica | Nombra un problema con la palabra exacta, aunque duela. | *(sin cambios)* |
+| Fuente | Rectificación de los nombres. | Analectas 13.3 (子路): «必也正名乎»; trad. Suárez Girard |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0131 · atencion · contemporaneo
+
+**Frase:** Tu tarea no es buscar el amor, sino buscar las barreras que has construido contra él.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La separación es una ilusión sostenida por mecánicas de defensa acumuladas; la conexión última jamás estuvo ausente, solo oculta bajo estratos de temor. | *(sin cambios)* |
+| Práctica | Al cruzar una mirada con alguien, presta atención veloz a la barrera psíquica involuntaria que eriges, y prueba suavizar conscientemente esa frontera. | *(sin cambios)* |
+| Fuente | Poesía mística Sufí. | Atribuida a Rumi sin fuente localizada; la formulación aparece en Un curso de milagros (T-16.IV.6) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0132 · atencion · contemporaneo
+
+**Frase:** Un caballo blanco no es un caballo.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Las categorías del lenguaje (blanco + caballo) no son la realidad. Te pierdes en las palabras y olvidas el animal vivo. | *(sin cambios)* |
+| Práctica | Mira un objeto sin nombrarlo mentalmente. | *(sin cambios)* |
+| Fuente | Escuela de los Nombres. | Gongsun Longzi (公孙龙子): «Un caballo blanco no es un caballo» (白马非马) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0135 · atencion · contemporaneo
+
+**Frase:** Vendiendo agua junto al río.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Ofrecer lo que sobra no aporta. La ayuda útil responde a lo que falta. | *(sin cambios)* |
+| Práctica | Antes de ofrecer ayuda hoy, pregunta: «¿qué te sería útil?». | *(sin cambios)* |
+| Fuente | Ironía clásica. | Creación original (sin fuente); imagen de la ironía clásica |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0306 · atencion · mindfulness
+
+**Frase:** No sigas las ideas de otros, aprende a escuchar la voz que hay dentro de ti.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La autoridad externa no sustituye la escucha propia. La frase apunta a distinguir la voz propia de la adoptada. | *(sin cambios)* |
+| Práctica | Detecta hoy una opinión que repites sin examinar (sobre ti o sobre otro) y pregúntate: “¿esto es mío o lo heredé?”. Una frase. | *(sin cambios)* |
+| Fuente | Importado de ZenQuotes. Autor: Dogen | Atribuido a Dōgen por un agregador (ZenQuotes); atribución por verificar. Tratar como paráfrasis moderna. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0309 · atencion · mindfulness
+
+**Frase:** Eres una apertura a través de la cual el universo se explora a sí mismo.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El yo aislado es una quimera lingüística. A nivel profundo, el acto subjetivo de vivir funciona como la punta sensorial con la cual el cosmos toma conciencia de sí. | *(sin cambios)* |
+| Práctica | Observa el cielo, tu propio cuerpo respirando u otra forma viva, pero intentando percibirlo no 'tú observando la vida', sino como 'la vida observándose a través de ti'. | *(sin cambios)* |
+| Fuente | Filosofía unificadora. | Atribuida a Alan Watts; fuente exacta por verificar |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0313 · atencion · mindfulness
+
+**Frase:** Cada pensamiento, una hoja; el agua se las lleva todas.
+
+**Cambió:** frase, interpretación, fuente · **Sin cambios:** práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | Hojas en el Arroyo: Deja que el agua se las lleve. | Cada pensamiento, una hoja; el agua se las lleva todas. |
+| Interpretación | Los pensamientos son eventos transitorios. Si intentas atraparlos o detenerlos, te mojas y te agotas. Mirarlos pasar es permitir que la mente se limpie sola. | Los pensamientos son eventos que pasan. Si intentas atraparlos o detenerlos, te agotas. Esta es la versión en imagen del ejercicio de las hojas en el arroyo: aquí el foco es la corriente, no cada hoja. |
+| Práctica | Dedica 2 minutos a imaginar cada pensamiento como una hoja que cae al agua y se aleja flotando. | *(sin cambios)* |
+| Fuente | Ejercicio de observación no reactiva. | Variante en imagen del ejercicio ACT «Leaves on a Stream» (ver TAO_0312) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0323 · atencion · mindfulness
+
+**Frase:** Si vas por el mundo vacío de ti, ¿quién podrá dañarte?
+
+**Cambió:** frase, interpretación, práctica, fuente
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | La barca vacía no choca con nadie. | Si vas por el mundo vacío de ti, ¿quién podrá dañarte? |
+| Interpretación | El impacto y el conflicto requieren de una entidad rígida que se sienta herida o amenazada. Sin ese núcleo defensivo, la ofensa no tiene dónde anclarse. | La ofensa necesita un destinatario. Sin un «yo» rígido al que aferrarse, el insulto no encuentra dónde anclarse. La vacuidad aquí es práctica, no resignación. |
+| Práctica | En medio de una interacción tensa, intenta observar el impulso sutil de defender una imagen sobre ti mismo y permite que esa necesidad se disipe. | En una interacción tensa hoy, nota el impulso de defender una imagen de ti. Deja pasar una respuesta y observa qué queda. Pregúntate: ¿qué parte de mí se sintió atacada? |
+| Fuente | La barca vacía. | Zhuangzi, cap. 20 (山木): «人能虚己以游世，其孰能害之» |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0343 · atencion · estoicismo
+
+**Frase:** Tienes poder sobre tu mente, no sobre los eventos externos. Comprende esto y hallarás fuerza.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La perturbación no viene del evento sino del juicio sobre el evento. La frase apunta a la distinción entre hecho y evaluación. | *(sin cambios)* |
+| Práctica | Ante una molestia, escribe el hecho y el juicio por separado. Dos líneas. | *(sin cambios)* |
+| Fuente | Marco Aurelio, Meditaciones (idea afín: Epicteto, Enquiridión 5); formulación por verificar. | Paráfrasis popular atribuida a Marco Aurelio; no es cita literal de las Meditaciones (idea afín: Epicteto, Enquiridión 1) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0352 · defusion · mindfulness
+
+**Frase:** Un pasajero grita: «te van a juzgar». Tú sigues conduciendo.
+
+**Cambió:** frase, interpretación · **Sin cambios:** práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | Pasajeros en el Autobús: Tú conduces, ellos gritan. | Un pasajero grita: «te van a juzgar». Tú sigues conduciendo. |
+| Interpretación | Los miedos y juicios son pasajeros ruidosos que intentan indicar la ruta; puedes escucharlos sin cederles el volante. | Los miedos y juicios son pasajeros ruidosos que intentan indicar la ruta. Nombrarlos («esto es miedo al juicio») crea distancia sin expulsarlos. |
+| Práctica | Nombra el pasajero: “esto es miedo al juicio”. Repite: “hay un pasajero que dice que me van a juzgar”. Nota la diferencia entre el pasajero y tú. | *(sin cambios)* |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0353 · impermanencia · mindfulness
+
+**Frase:** No busques huellas de pájaros en el aire.
+
+**Cambió:** práctica · **Sin cambios:** interpretación
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El pájaro vuela y el aire no guarda su huella. Lo vivido deja efectos, pero no marcas que se puedan poseer; buscar el rastro puede distraer del vuelo. | *(sin cambios)* |
+| Práctica | Haz hoy algo bien sin registrarlo ni contarlo. Al final del día, anota una línea. Pregúntate: ¿necesité que quedara huella para que valiera? | Haz hoy algo bien sin registrarlo ni contarlo. Pregúntate al final del día: ¿necesité que quedara huella para que valiera? |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0366 · atencion · zen
+
+**Frase:** Nanyue pulía una teja para hacer un espejo; la teja solo se desgastaba.
+
+**Cambió:** frase, interpretación · **Sin cambios:** práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | La persona sabia pule el ladrillo para hacer un espejo, pero el ladrillo solo se desgasta. | Nanyue pulía una teja para hacer un espejo; la teja solo se desgastaba. |
+| Interpretación | La naturaleza no se fuerza. Pulir arcilla no la vuelve cristal. La frase apunta a la futilidad del esfuerzo contra la naturaleza. | Nanyue pulía una teja delante de Mazu para mostrarle que meditar sentado no fabrica un Buda. La naturaleza no se fuerza: pulir arcilla no la vuelve cristal. |
+| Práctica | Detecta hoy un intento de “mejorarte a la fuerza” y detenlo una vez. Nota qué queda. | *(sin cambios)* |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0378 · saturacion · taoismo
+
+**Frase:** El árbol que no sirve para vigas vive más años.
+
+**Cambió:** frase, interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Frase | La inutilidad del árbol lo salvó del hacha. | El árbol que no sirve para vigas vive más años. |
+| Interpretación | Zhuangzi invierte la jerarquía: lo que no sirve para la máquina puede servir para vivir. La obsesión por rendimiento puede destruir lo que te sostiene. | Zhuangzi invierte la jerarquía: lo que no sirve a la máquina puede servir para vivir. No hay inutilidad, sino usos que el estándar no mide. |
+| Práctica | Haz algo ‘inútil’ 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea. | Haz algo «inútil» 15 minutos: caminar sin objetivo, mirar el cielo, escuchar una pieza completa sin multitarea. Pregúntate: ¿qué se mide en mí cuando no produzco? |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0380 · wu_wei · zen
+
+**Frase:** Una flor cae, aunque la amemos; y una mala hierba crece, aunque no la amemos.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El mundo no se ordena según nuestros deseos. La frase apunta a la indiferencia de lo real a la preferencia. | *(sin cambios)* |
+| Práctica | Detecta hoy un evento que no coincide con tu preferencia y nómbralo: “esto es así”. Una vez. | *(sin cambios)* |
+| Fuente | Dōgen, Genjōkōan (Shōbōgenzō), traducción por verificar. | Dōgen, Genjōkōan (Shōbōgenzō); traducción por verificar. Tratar como paráfrasis del original hasta confirmar. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0388 · wu_wei · taoismo
+
+**Frase:** Cuando dejas de empujar el río, el río te enseña el camino.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Mucho sufrimiento se sostiene por fricción voluntaria: intentar forzar un resultado, acelerar un proceso, o controlar lo incontrolable. Reducir la interferencia no es resignación; es permitir que la situación revele sus restricciones reales y tus márgenes de acción. | *(sin cambios)* |
+| Práctica | Elige un problema y haz solo el siguiente paso mínimo verificable. Luego detente y observa qué cambia sin intervenir. | *(sin cambios)* |
+| Fuente | Creación original (sin fuente); tema wu-wei | Paráfrasis moderna sobre tema wu-wei; atribuida a Zhuangzi en agregadores, sin localizar en el texto |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0418 · wu_wei · zen
+
+**Frase:** Estar en armonía con la totalidad de las cosas significa no tener ansiedad por las imperfecciones.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | La armonía no exige un mundo perfecto. La ansiedad por las imperfecciones es el verdadero desorden. La frase apunta a que la tranquilidad no depende de corregir el mundo. | *(sin cambios)* |
+| Práctica | Detecta hoy una imperfección (tuya o ajena) que te active y nómbrala: “imperfección”. Una vez. | *(sin cambios)* |
+| Fuente | Atribuido a Dōgen por un agregador; atribución por verificar. | Atribuido a Dōgen por un agregador; atribución por verificar. Tratar como paráfrasis moderna. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0438 · atencion · zen
+
+**Frase:** El maestro cerró la puerta al discípulo inteligente.
+
+**Cambió:** práctica · **Sin cambios:** interpretación
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El maestro frena al discípulo que lo explica todo: la inteligencia puede convertirse en defensa contra la experiencia. No se trata de pensar menos, sino de no esconderse en el pensamiento. | *(sin cambios)* |
+| Práctica | Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Para 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo? | Detecta hoy un momento en que explicas en vez de sentir (por ejemplo, analizar una emoción). Detente 30 segundos y nota el cuerpo. Pregúntate: ¿qué evito al explicarlo? |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0458 · atencion · taoismo
+
+**Frase:** La montaña está quieta, el lago se agita.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Mantén tu centro (montaña) aunque las emociones superficiales (lago) reaccionen al entorno. La frase apunta a la estabilidad en medio de la agitación. | *(sin cambios)* |
+| Práctica | Siente tus pies firmes o, si no es accesible, el peso sobre el asiento y las manos en el regazo, mientras hablas con emoción. 30 segundos. | *(sin cambios)* |
+| Fuente | Yijing, hexagrama 31 (Xian, "Influencia": lago sobre montaña); correspondencia por verificar. | Yijing, hexagrama 31 (Xian, «Influencia»): lago sobre montaña. La lectura montaña/lago como «centro/agitación» es moderna, no del texto original. |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0476 · discernimiento · zen
+
+**Frase:** Cuando se levantó la bandera, unos dijeron que se movía el viento, otros que se movía la tela.
+
+**Cambió:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | El conflicto surge al ignorar el papel de la mente que observa. | La discusión reproduce dos lecturas parciales de un mismo hecho. Huineng no elige bando: señala la mente que observa. La práctica es notar la propia lectura, no corregir la del otro. |
+| Práctica | Ante una discusión hoy, pregunta qué ve la otra persona antes de defender lo que ves tú. | Ante una discusión hoy, escribe en una línea «lo que veo» y en otra «lo que ve el otro». Pregúntate: ¿qué añade la segunda lectura que la mía no ve? |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
+
+### TAO_0567 · practica · zen
+
+**Frase:** El camino se pierde cuando lo miras como una meta.
+
+**Cambió:** fuente · **Sin cambios:** interpretación, práctica
+
+| | Antes | Ahora |
+|---|---|---|
+| Interpretación | Convertir la vida en proyecto perpetuo desplaza la vivencia. En Dōgen, la práctica no es medio para otra cosa: la práctica es la realización, aquí. | *(sin cambios)* |
+| Práctica | Elige una acción cotidiana (lavar platos, ordenar). Hazla como fin en sí mismo durante 5 minutos. | *(sin cambios)* |
+| Fuente | Creación original (sin fuente) | Creación original (sin fuente); tema de Dōgen (práctica-realización) |
+
+**Revisión:** ☐ Aprobada ☐ Cambiar: 
